@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASKMOJO Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        body {
+            background: #F9FAFB;
+        }
+        .menu-item {
+            transition: all 0.2s ease;
+        }
+        .menu-item.active {
+            background: linear-gradient(90deg, #ECFDF5 0%, #D1FAE5 100%);
+            color: #059669;
+            font-weight: 600;
+            border-left: 3px solid #10B981;
+            box-shadow: 0 1px 3px rgba(16, 185, 129, 0.1);
+        }
+        .menu-item:hover:not(.active) {
+            background: #F0FDF4;
+            color: #047857;
+            transform: translateX(2px);
+        }
+        .stat-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #10B981 0%, #059669 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+        .stat-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .page.active {
+            animation: fadeIn 0.3s ease;
+        }
+        .page {
+            min-height: 100%;
+        }
+        #slackUsersPage {
+            background: transparent;
+        }
+        .table-row {
+            transition: all 0.2s ease;
+        }
+        .table-row:hover {
+            background: #F9FAFB;
+            transform: scale(1.001);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Sidebar -->
+    <aside class="fixed left-0 top-0 h-screen w-72 bg-white border-r border-gray-200 flex flex-col z-50 shadow-lg">
+        <!-- Logo -->
+        <div class="p-6 border-b border-gray-200 bg-gradient-to-br from-white to-gray-50">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform">
+                    <span class="text-white font-bold text-xl">A</span>
+                </div>
+                <div>
+                    <span class="text-xl font-bold text-gray-900 block">ASKMOJO</span>
+                    <span class="text-xs text-gray-500 font-medium">Admin Panel</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex-1 p-5 overflow-y-auto">
+            <div class="mb-6">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest px-3 mb-4">MENU</p>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium active" data-page="dashboard">
+                            <i class="fas fa-th-large w-5 text-center text-base"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="users">
+                            <i class="fas fa-users w-5 text-center text-base"></i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="slack">
+                            <i class="fab fa-slack w-5 text-center text-base"></i>
+                            <span>Slack Integration</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="slack-users">
+                            <i class="fas fa-user-friends w-5 text-center text-base"></i>
+                            <span>Slack Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="categories">
+                            <i class="fas fa-folder w-5 text-center text-base"></i>
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="documents">
+                            <i class="fas fa-file-alt w-5 text-center text-base"></i>
+                            <span>Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700" data-page="logs">
+                            <i class="fas fa-list-alt w-5 text-center text-base"></i>
+                            <span>Logs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest px-3 mb-4">GENERAL</p>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="menu-item flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt w-5 text-center text-base"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="ml-72">
+        <!-- Top Header -->
+        <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm backdrop-blur-sm bg-white/95">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <div class="flex-1 max-w-lg">
+                    <div class="relative">
+                        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+                        <input type="text" placeholder="Search users, documents..." class="w-full pl-11 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all placeholder-gray-400">
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 ml-6">
+                    <div class="flex items-center gap-4 px-4 py-2 bg-gray-50 rounded-xl border border-gray-200 hover:bg-gray-100 transition-colors cursor-pointer">
+                        <div class="w-11 h-11 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center text-white font-semibold text-sm shadow-md">
+                            <span id="userInitial">A</span>
+                        </div>
+                        <div class="text-left hidden md:block">
+                            <p class="text-sm font-semibold text-gray-900" id="userName">Admin</p>
+                            <p class="text-xs text-gray-500" id="userEmail">admin@askmojo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="p-8">
+            <!-- Dashboard Page -->
+            <div id="dashboardPage" class="page active">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-2">Dashboard</h1>
+                    <p class="text-gray-600 text-base">Monitor and manage your system overview</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="stat-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-300">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Total Users</span>
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center group-hover:from-green-200 group-hover:to-emerald-200 transition-all shadow-sm">
+                                <i class="fas fa-users text-green-600 text-lg"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2" id="totalUsers">-</h3>
+                        <p class="text-xs text-green-600 font-semibold flex items-center gap-2">
+                            <i class="fas fa-arrow-up text-xs"></i>
+                            <span>Active users</span>
+                        </p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-300">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Documents</span>
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center group-hover:from-green-200 group-hover:to-emerald-200 transition-all shadow-sm">
+                                <i class="fas fa-file-alt text-green-600 text-lg"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2" id="totalDocuments">-</h3>
+                        <p class="text-xs text-green-600 font-semibold flex items-center gap-2">
+                            <i class="fas fa-arrow-up text-xs"></i>
+                            <span>Total documents</span>
+                        </p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-300">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Queries</span>
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center group-hover:from-green-200 group-hover:to-emerald-200 transition-all shadow-sm">
+                                <i class="fas fa-search text-green-600 text-lg"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2" id="totalQueries">-</h3>
+                        <p class="text-xs text-green-600 font-semibold flex items-center gap-2">
+                            <i class="fas fa-arrow-up text-xs"></i>
+                            <span>Total queries</span>
+                        </p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl hover:border-green-300">
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Active Users</span>
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center group-hover:from-green-200 group-hover:to-emerald-200 transition-all shadow-sm">
+                                <i class="fas fa-user-check text-green-600 text-lg"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2" id="activeUsers">-</h3>
+                        <p class="text-xs text-green-600 font-semibold flex items-center gap-2">
+                            <i class="fas fa-arrow-up text-xs"></i>
+                            <span>Currently active</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Stats -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="lg:col-span-2 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">System Overview</h3>
+                                <p class="text-sm text-gray-500 mt-1">Key metrics and statistics</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-5 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-100 hover:shadow-lg transition-all group cursor-pointer">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                        <i class="fas fa-users text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-bold text-gray-900">Total Users</p>
+                                        <p class="text-xs text-gray-600 font-medium">Registered accounts</p>
+                                    </div>
+                                </div>
+                                <span class="text-2xl font-bold text-green-600" id="totalUsersCard">-</span>
+                            </div>
+                            <div class="flex items-center justify-between p-5 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-100 hover:shadow-lg transition-all group cursor-pointer">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                        <i class="fas fa-file-alt text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-bold text-gray-900">Documents</p>
+                                        <p class="text-xs text-gray-600 font-medium">Total documents</p>
+                                    </div>
+                                </div>
+                                <span class="text-2xl font-bold text-green-600" id="totalDocumentsCard">-</span>
+                            </div>
+                            <div class="flex items-center justify-between p-5 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-100 hover:shadow-lg transition-all group cursor-pointer">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                                        <i class="fas fa-search text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-bold text-gray-900">Queries</p>
+                                        <p class="text-xs text-gray-600 font-medium">Total queries</p>
+                                    </div>
+                                </div>
+                                <span class="text-2xl font-bold text-green-600" id="totalQueriesCard">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">Quick Actions</h3>
+                            <p class="text-sm text-gray-500">Common tasks</p>
+                        </div>
+                        <div class="space-y-3">
+                            <button id="quickCreateUserBtn" class="w-full flex items-center justify-center gap-3 px-5 py-3.5 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-200 font-semibold text-sm transform hover:-translate-y-0.5">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Add New User</span>
+                            </button>
+                            <button class="w-full flex items-center justify-center gap-3 px-5 py-3.5 bg-white text-gray-700 rounded-xl hover:bg-green-50 hover:text-green-700 hover:border-green-300 transition-all duration-200 font-semibold text-sm border-2 border-gray-200">
+                                <i class="fas fa-download"></i>
+                                <span>Export Data</span>
+                            </button>
+                            <button class="w-full flex items-center justify-center gap-3 px-5 py-3.5 bg-white text-gray-700 rounded-xl hover:bg-green-50 hover:text-green-700 hover:border-green-300 transition-all duration-200 font-semibold text-sm border-2 border-gray-200">
+                                <i class="fas fa-chart-line"></i>
+                                <span>View Reports</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Page -->
+            <div id="usersPage" class="page hidden">
+                <div class="mb-8 flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-2">User Management</h1>
+                        <p class="text-gray-600 text-base">Manage and monitor user accounts</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button id="createUserBtn" class="px-5 py-2.5 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-xl hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-200 font-semibold text-sm flex items-center gap-2 transform hover:-translate-y-0.5">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Add New User</span>
+                        </button>
+                        <button id="refreshUsersBtn" class="px-5 py-2.5 bg-green-50 text-green-700 rounded-xl hover:bg-green-100 border-2 border-green-200 hover:border-green-300 transition-all duration-200 font-semibold text-sm hover:shadow-md flex items-center gap-2">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Refresh</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Users Table -->
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gradient-to-r from-gray-50 to-gray-100 border-b-2 border-gray-200">
+                                <tr>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">ID</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Name</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Email</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Role</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Status</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Created</th>
+                                    <th class="px-8 py-5 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody" class="divide-y divide-gray-100">
+                                <tr class="table-row">
+                                    <td colspan="7" class="px-8 py-16 text-center text-gray-500">
+                                        <i class="fas fa-spinner fa-spin text-3xl mb-4 block text-green-600"></i>
+                                        <p class="font-medium">Loading users...</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slack Integration Page -->
+    <div id="slackPage" class="page hidden ">
+        <div class="w-full">
+            <div class="mb-6 flex items-center justify-between flex-wrap gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-1">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-md">
+                            <i class="fab fa-slack text-white text-base"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900">Slack Integration</h1>
+                            <p class="text-gray-600 text-sm mt-0.5">Connect ASKMOJO with Slack to answer questions directly in your workspace</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="slackStatusBadge" class="px-3 py-1.5 rounded-lg bg-gray-100 border border-gray-200">
+                    <div class="flex items-center gap-1.5">
+                        <div class="w-1.5 h-1.5 rounded-full bg-gray-400"></div>
+                        <span class="text-xs font-semibold text-gray-700">Not Configured</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connection Status Card -->
+            <div id="slackStatusCard" class="bg-white rounded-xl p-4 border border-gray-200 shadow-sm mb-4 w-full hidden">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-slack text-green-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold text-gray-900" id="slackWorkspaceNameDisplay">-</h3>
+                            <p class="text-xs text-gray-500" id="slackWorkspaceIdDisplay">-</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span id="slackActiveBadge" class="px-2.5 py-1 text-xs font-bold rounded-full bg-gray-100 text-gray-800 border border-gray-200">Inactive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slack Configuration Card -->
+            <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-6 w-full">
+                <div class="mb-5 flex items-center justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
+                        <i class="fas fa-cog text-green-600 text-base"></i>
+                        Configuration Settings
+                    </h3>
+                    <p class="text-xs text-gray-500">Configure your Slack workspace connection</p>
+                </div>
+                </div>
+
+                <form id="slackConfigForm">
+                <div class="space-y-5">
+                    <!-- Workspace Information Section -->
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-building text-gray-400 text-xs"></i>
+                            Workspace Information
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="w-full">
+                                <label class="block mb-1.5">
+                                    <span class="text-xs font-semibold text-gray-700">Workspace Name</span>
+                                </label>
+                                <div class="relative w-full">
+                                    <input type="text" id="slackWorkspaceName" class="input input-sm input-bordered w-full rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; My Workspace">
+                                    <i class="fas fa-building absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <label class="block mb-1.5">
+                                    <span class="text-xs font-semibold text-gray-700">Workspace ID</span>
+                                </label>
+                                <div class="relative w-full">
+                                    <input type="text" id="slackWorkspaceId" class="input input-sm input-bordered w-full rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; T1234567890">
+                                    <i class="fas fa-hashtag absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Socket Mode Section -->
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-plug text-gray-400 text-xs"></i>
+                            Socket Mode Configuration
+                        </h4>
+                        <div class="space-y-4">
+                            <!-- Socket Mode Toggle -->
+                            <div class="p-4 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-lg border border-indigo-200">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-socket text-indigo-600 text-sm"></i>
+                                        <span class="font-semibold text-gray-900 text-xs">Enable Socket Mode</span>
+                                    </div>
+                                    <input type="checkbox" id="slackSocketModeEnabled" class="toggle toggle-primary toggle-sm" onchange="toggleSocketModeFields(this.checked)">
+                                </div>
+                                <p class="text-xs text-gray-600 mb-3">Socket Mode uses WebSocket connections instead of webhooks. No public URL required!</p>
+                                <div id="socketModeFields" class="space-y-3 hidden">
+                                    <div>
+                                        <label class="block mb-1.5">
+                                            <span class="text-xs font-semibold text-gray-700">App-Level Token (xapp-...)</span>
+                                            <span class="text-xs text-red-500 ml-1">*</span>
+                                        </label>
+                                        <div class="relative">
+                                            <input type="password" id="slackAppToken" class="input input-sm input-bordered w-full rounded-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; xapp-...">
+                                            <i class="fas fa-key absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-1">Get from <a href="https://api.slack.com/apps" target="_blank" class="text-indigo-600 hover:underline">Slack API</a> → Basic Information → App-Level Tokens</p>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-1.5">
+                                            <span class="text-xs font-semibold text-gray-700">Bot Token (xoxb-...)</span>
+                                            <span class="text-xs text-red-500 ml-1">*</span>
+                                        </label>
+                                        <div class="relative">
+                                            <input type="password" id="slackBotToken" class="input input-sm input-bordered w-full rounded-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; xoxb-...">
+                                            <i class="fas fa-robot absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-1">Get from <a href="https://api.slack.com/apps" target="_blank" class="text-indigo-600 hover:underline">Slack API</a> → OAuth & Permissions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Legacy Webhook Option (hidden when Socket Mode enabled) -->
+                            <div id="webhookOption" class="p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg border border-purple-200">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i class="fas fa-link text-purple-600 text-sm"></i>
+                                    <span class="font-semibold text-gray-900 text-xs">Legacy: Webhook URL (Not used with Socket Mode)</span>
+                                </div>
+                                <div>
+                                    <label class="block mb-1.5">
+                                        <span class="text-xs font-semibold text-gray-700">Webhook URL</span>
+                                        <span class="text-xs text-gray-500 ml-1">Optional</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="url" id="slackWebhookUrl" class="input input-sm input-bordered w-full rounded-lg focus:border-purple-500 focus:ring-1 focus:ring-purple-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp;  https://hooks.slack.com/services/...">
+                                        <i class="fas fa-link absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1">Only used if Socket Mode is disabled</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Channel ID (for responses) -->
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-hashtag text-gray-400 text-xs"></i>
+                            Channel Settings
+                        </h4>
+                        <div>
+                            <label class="block mb-1.5">
+                                <span class="text-xs font-semibold text-gray-700">Default Channel ID</span>
+                                <span class="text-xs text-gray-500 ml-1">Optional</span>
+                            </label>
+                            <div class="relative">
+                                <input type="text" id="slackChannelId" class="input input-sm input-bordered w-full rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; C1234567890">
+                                <i class="fas fa-hashtag absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Default channel for responses (can be overridden per message)</p>
+                        </div>
+                    </div>
+
+                    <!-- Security Settings Section -->
+                    <div class="pb-4 border-b border-gray-200">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fas fa-shield-alt text-gray-400 text-xs"></i>
+                            Security Settings
+                        </h4>
+                        <div>
+                            <label class="block mb-1.5">
+                                <span class="text-xs font-semibold text-gray-700">Signing Secret</span>
+                                <span class="text-xs text-gray-500 ml-1">Optional</span>
+                            </label>
+                            <div class="relative">
+                                <input type="password" id="slackSigningSecret" class="input input-sm input-bordered w-full rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500 pl-8 text-sm h-9" placeholder="&nbsp;&nbsp; Enter signing secret">
+                                <i class="fas fa-lock absolute left-2.5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xs"></i>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">Get from <a href="https://api.slack.com/apps" target="_blank" class="text-green-600 hover:underline">Slack API</a> → Basic Information</p>
+                        </div>
+                    </div>
+
+                    <!-- Status Toggle -->
+                    <div class="p-3 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                                    <i class="fas fa-power-off text-gray-600 text-xs"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-semibold text-gray-900 block">Integration Status</span>
+                                    <span class="text-xs text-gray-500">Enable or disable Slack integration</span>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="slackIsActive" class="toggle toggle-success toggle-sm" checked>
+                        </div>
+                    </div>
+
+                    <div id="slackErrorMessage" class="alert alert-error alert-sm hidden rounded-lg shadow-sm py-2">
+                        <i class="fas fa-exclamation-circle text-xs"></i>
+                        <span id="slackErrorText" class="text-xs"></span>
+                    </div>
+                    <div id="slackSuccessMessage" class="alert alert-success alert-sm hidden rounded-lg shadow-sm py-2">
+                        <i class="fas fa-check-circle text-xs"></i>
+                        <span id="slackSuccessText" class="text-xs"></span>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-gray-200 flex items-center gap-2 flex-wrap">
+                    <button type="submit" class="btn btn-sm bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-lg hover:from-green-700 hover:to-emerald-700 transition-all rounded-lg px-5 py-2 font-semibold flex items-center gap-2 text-xs h-9">
+                        <i class="fas fa-save text-xs"></i>
+                        <span>Save Configuration</span>
+                    </button>
+                    <button type="button" id="testSlackBtn" class="btn btn-sm bg-white text-green-700 border border-green-200 hover:bg-green-50 hover:border-green-300 hover:shadow-md rounded-lg px-5 py-2 font-semibold flex items-center gap-2 transition-all text-xs h-9">
+                        <i class="fab fa-slack text-xs"></i>
+                        <span>Test Connection</span>
+                    </button>
+                    <button type="button" id="deleteSlackBtn" class="btn btn-sm bg-white text-red-700 border border-red-200 hover:bg-red-50 hover:border-red-300 hover:shadow-md rounded-lg px-5 py-2 font-semibold flex items-center gap-2 transition-all text-xs h-9">
+                        <i class="fas fa-trash text-xs"></i>
+                        <span>Delete Configuration</span>
+                    </button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Comprehensive Setup Guide -->
+            <div class="w-full mb-6">
+            <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-6 border border-purple-200 shadow-sm">
+                <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-book text-white text-sm"></i>
+                    </div>
+                    <span>Complete Setup Guide</span>
+                </h3>
+                
+                <!-- Step 1: Create Slack App -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">1</div>
+                        <h4 class="text-base font-bold text-gray-900">Create a Slack App</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>Go to <a href="https://api.slack.com/apps" target="_blank" class="text-purple-600 hover:underline font-medium">https://api.slack.com/apps</a></li>
+                        <li>Click <strong>"Create New App"</strong> → <strong>"From scratch"</strong></li>
+                        <li>Enter your app name (e.g., "ASKMOJO Assistant")</li>
+                        <li>Select your workspace</li>
+                        <li>Click <strong>"Create App"</strong></li>
+                    </ol>
+                </div>
+
+                <!-- Step 2: Configure Bot Token -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">2</div>
+                        <h4 class="text-base font-bold text-gray-900">Configure Bot Token & Permissions</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>In your app settings, go to <strong>"OAuth & Permissions"</strong> (left sidebar)</li>
+                        <li>Scroll to <strong>"Bot Token Scopes"</strong> and add these scopes:
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1">
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">chat:write</code> - Send messages ✅ Required</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">im:read</code> - Read direct messages ✅ Required for in-app messaging</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">im:write</code> - Write direct messages ✅ Required for in-app messaging</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">im:history</code> - Read message history ✅ Required for app home Messages tab</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">users:read</code> - Read user info ✅ Required</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">users:read.email</code> - Read user emails ✅ Required</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">app_mentions:read</code> - Read app mentions ✅ Required</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">channels:read</code> - Read channel info (optional, for channel support)</li>
+                            </ul>
+                        </li>
+                        <li class="text-xs text-red-600 font-semibold mt-2">⚠️ <strong>Important:</strong> Make sure to add <code class="bg-gray-100 px-1 rounded">im:history</code> scope! This is required for the Messages tab to work properly.</li>
+                        <li>Scroll to top and click <strong>"Install to Workspace"</strong></li>
+                        <li>Authorize the app in your workspace</li>
+                        <li>Copy the <strong>"Bot User OAuth Token"</strong> (starts with <code class="bg-gray-100 px-1 rounded text-xs">xoxb-</code>)</li>
+                        <li>Paste it in the <strong>"Bot Token"</strong> field above</li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>Note:</strong> These scopes enable in-app messaging like AskEva. Users can message the app directly!</li>
+                    </ol>
+                </div>
+
+                <!-- Step 3: Enable Socket Mode -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
+                        <h4 class="text-base font-bold text-gray-900">Enable Socket Mode</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>In your app settings, go to <strong>"Socket Mode"</strong> (left sidebar)</li>
+                        <li>Toggle <strong>"Enable Socket Mode"</strong> to ON</li>
+                        <li>Click <strong>"Generate Token"</strong> to create an App-Level Token</li>
+                        <li>Give it a name (e.g., "ASKMOJO Socket Mode") and select scopes:
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1">
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">connections:write</code> - Required for Socket Mode</li>
+                            </ul>
+                        </li>
+                        <li>Copy the <strong>App-Level Token</strong> (starts with <code class="bg-gray-100 px-1 rounded text-xs">xapp-</code>)</li>
+                        <li>Paste it in the <strong>"App-Level Token"</strong> field above</li>
+                        <li class="text-xs text-green-600 font-semibold">✅ <strong>Advantage:</strong> No public URL needed! Works behind firewalls and on localhost.</li>
+                    </ol>
+                </div>
+                
+                <!-- Step 3b: Configure Event Subscriptions (for Socket Mode) -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3b</div>
+                        <h4 class="text-base font-bold text-gray-900">Configure Event Subscriptions (Socket Mode)</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>In your app settings, go to <strong>"Event Subscriptions"</strong> (left sidebar)</li>
+                        <li>Toggle <strong>"Enable Events"</strong> to ON</li>
+                        <li class="text-xs text-blue-600 font-semibold">💡 <strong>Note:</strong> With Socket Mode, you don't need to configure a Request URL. Events are delivered via WebSocket.</li>
+                        <li>Scroll to <strong>"Subscribe to bot events"</strong> and add these events:
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1">
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">message.im</code> - Receive direct messages ✅ Required for in-app messaging</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">app_mention</code> - Receive @mentions ✅ Required for app mentions</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">app_home_opened</code> - When user opens app ✅ Required for app home</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>"Save Changes"</strong></li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>Important:</strong> These events enable in-app messaging like AskEva. Users can install and message the app directly!</li>
+                    </ol>
+                </div>
+                
+                <!-- Step 3 Alternative: Event Subscriptions (for non-Socket Mode) -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4 hidden" id="eventSubscriptionsStep">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">3</div>
+                        <h4 class="text-base font-bold text-gray-900">Enable Event Subscriptions (Legacy - Not needed with Socket Mode)</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>In your app settings, go to <strong>"Event Subscriptions"</strong> (left sidebar)</li>
+                        <li>Toggle <strong>"Enable Events"</strong> to ON</li>
+                        <li>In <strong>"Request URL"</strong>, paste your webhook URL:
+                            <div class="bg-gray-900 rounded-lg p-2 mt-2 mb-2">
+                                <code class="text-green-400 text-xs break-all font-mono" id="webhookUrlDisplayGuide">https://your-domain.com/api/v1/slack/webhook</code>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">💡 <strong>Note:</strong> Your server must be publicly accessible (use ngrok for local testing)</p>
+                        </li>
+                        <li>Slack will verify the URL - you should see <strong>"Verified ✓"</strong></li>
+                        <li>Scroll to <strong>"Subscribe to bot events"</strong> and add:
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1">
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">message.im</code> - Receive direct messages (DMs) ✅ Required for in-app messaging</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">app_mention</code> - Receive @mentions ✅ Required for app mentions</li>
+                                <li><code class="bg-gray-100 px-1 rounded text-xs">app_home_opened</code> - When user opens app ✅ Required for app home</li>
+                            </ul>
+                        </li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>Note:</strong> For in-app messaging like AskEva, you only need <code class="bg-gray-100 px-1 rounded">message.im</code> and <code class="bg-gray-100 px-1 rounded">app_home_opened</code>. Channel events are optional.</li>
+                        <li>Click <strong>"Save Changes"</strong></li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>Important:</strong> Make sure to add <code class="bg-gray-100 px-1 rounded">message.im</code> to enable direct messages!</li>
+                    </ol>
+                </div>
+
+                <!-- Step 4: Enable App Home (for in-app messaging) -->
+                <div class="bg-white rounded-lg p-5 border-2 border-green-200 mb-4 bg-gradient-to-br from-green-50 to-emerald-50">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">4</div>
+                        <h4 class="text-base font-bold text-gray-900">Enable App Home (Required for in-app messaging)</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>In your app settings, go to <strong>"App Home"</strong> (left sidebar)</li>
+                        <li>Under <strong>"Home Tab"</strong>, toggle <strong>"Show Tabs"</strong> to ON</li>
+                        <li>Enable <strong>"Messages Tab"</strong> - This allows users to message the app directly</li>
+                        <li><strong>IMPORTANT:</strong> Check the checkbox <strong>"Allow users to send Slash commands and messages from the messages tab"</strong> ✅</li>
+                        <li>Click <strong>"Save Changes"</strong> at the bottom of the page</li>
+                        <li class="text-xs text-red-600 font-semibold font-bold mt-2">⚠️ <strong>Critical:</strong> If you don't check the "Allow users to send messages" checkbox, users won't be able to send messages even if the Messages tab is enabled!</li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>This enables in-app messaging like AskEva!</strong> Users can install the app and message it directly without channel invites.</li>
+                        <li class="text-xs text-gray-600 mt-2">💡 <strong>How it works:</strong> When users install your app, they'll see it in the Apps section. Clicking on it opens the app home with a Messages tab where they can chat directly with the bot.</li>
+                    </ol>
+                </div>
+                
+                <!-- Step 4b: Channel Setup (Optional) -->
+                <div class="bg-white rounded-lg p-5 border border-gray-200 mb-4 opacity-70">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-gray-400 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">4b</div>
+                        <h4 class="text-base font-bold text-gray-500">Channel Setup (Optional - not needed for in-app messaging)</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-500 ml-11">
+                        <li>If you want channel support (optional), invite bot to channels</li>
+                        <li>Copy the <strong>Channel ID</strong> and paste it in the <strong>"Channel ID"</strong> field above</li>
+                        <li class="text-xs text-gray-400">💡 <strong>Note:</strong> Channel setup is optional. In-app messaging works without channels! Focus on App Home for AskEva-like experience.</li>
+                    </ol>
+                </div>
+
+                <!-- Step 5: Register Users -->
+                <div class="bg-white rounded-lg p-5 border border-purple-100 mb-4">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">5</div>
+                        <h4 class="text-base font-bold text-gray-900">Register Slack Users</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>Go to <strong>"Slack Users"</strong> page in the admin panel (left sidebar)</li>
+                        <li>Enter a Slack user's email address</li>
+                        <li>Click <strong>"Fetch User"</strong> to retrieve their Slack profile</li>
+                        <li>Click <strong>"Register This User"</strong> to allow them to use the bot</li>
+                        <li>Only registered users can ask questions via Slack (in-app messaging or DMs)</li>
+                        <li class="text-xs text-blue-600 font-semibold mt-2">💡 <strong>Tip:</strong> Register users before they try to use the app. Unregistered users will see an error message.</li>
+                    </ol>
+                </div>
+
+                <!-- Step 6: Test Integration -->
+                <div class="bg-white rounded-lg p-5 border border-green-200 bg-gradient-to-br from-green-50 to-emerald-50">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">6</div>
+                        <h4 class="text-base font-bold text-gray-900">Test Your Integration</h4>
+                    </div>
+                    <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700 ml-11">
+                        <li>Fill in all required fields in the form above:
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-xs">
+                                <li>App-Level Token (xapp-...)</li>
+                                <li>Bot Token (xoxb-...)</li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>"Save Configuration"</strong> - Socket Mode will start automatically</li>
+                        <li class="text-xs text-red-600 font-semibold">⚠️ <strong>If messages are disabled:</strong> Go back to Slack App Home settings and verify the checkbox "Allow users to send messages from the messages tab" is checked, then reinstall the app!</li>
+                        <li>Click <strong>"Test Integration"</strong> to send a test message</li>
+                        <li><strong>Test via App Home (Recommended):</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-xs">
+                                <li>Go to your Slack workspace</li>
+                                <li>Click on <strong>"Apps"</strong> in the left sidebar</li>
+                                <li>Find and click on your app (e.g., "ASKMOJO Assistant")</li>
+                                <li>Click on the <strong>"Messages"</strong> tab</li>
+                                <li>Send a message: <code class="bg-gray-100 px-1 rounded">what is aftershoot?</code></li>
+                                <li>The bot should respond with a formatted answer!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Test via Direct Message:</strong> Open a direct message with the bot and send: <code class="bg-gray-100 px-1 rounded text-xs">what is aftershoot?</code></li>
+                        <li class="text-xs text-green-600 font-semibold mt-2">✅ <strong>Success!</strong> If you see formatted responses with lists, bold text, and emojis, your integration is working perfectly!</li>
+                    </ol>
+                </div>
+
+                <!-- Troubleshooting Section -->
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mt-6 rounded-r-lg">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-exclamation-circle text-red-600 mt-0.5"></i>
+                        <div class="text-sm text-gray-700">
+                            <p class="font-bold text-gray-900 mb-2">Troubleshooting: "Sending messages to this app has been turned off"</p>
+                            <p class="text-xs text-gray-600 mb-2">If you see this message in Slack, follow these steps:</p>
+                            <ol class="list-decimal list-inside space-y-1 ml-2 text-xs">
+                                <li><strong>Check App Home Settings:</strong> Go to Slack App → App Home → Make sure the checkbox <strong>"Allow users to send Slash commands and messages from the messages tab"</strong> is ✅ CHECKED</li>
+                                <li><strong>Add Missing Scope:</strong> Go to OAuth & Permissions → Add <code class="bg-gray-100 px-1 rounded">im:history</code> scope if missing</li>
+                                <li><strong>Reinstall the App:</strong> After making changes, go to "Install App" → Click "Reinstall to Workspace" to apply new scopes/events</li>
+                                <li><strong>Check Event Subscriptions:</strong> Verify <code class="bg-gray-100 px-1 rounded">message.im</code> event is added in Event Subscriptions</li>
+                                <li><strong>Verify Socket Mode:</strong> Make sure Socket Mode is enabled and App-Level Token is configured</li>
+                                <li><strong>Check Server Logs:</strong> Look for errors in your server console when trying to send a message</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Notes -->
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-exclamation-triangle text-yellow-600 mt-0.5"></i>
+                        <div class="text-sm text-gray-700">
+                            <p class="font-bold text-gray-900 mb-2">Important Notes:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-2">
+                                <li><strong>Socket Mode Recommended:</strong> Socket Mode uses WebSocket connections and doesn't require a public URL. Perfect for local development and behind firewalls!</li>
+                                <li><strong>In-App Messaging:</strong> Users can install the app and message it directly (like AskEva). No channel invites needed! Enable App Home → Messages Tab in Slack app settings.</li>
+                                <li><strong>Direct Messages Supported:</strong> Users can message the bot directly via DMs or through the app's Messages tab. Make sure to add <code class="bg-gray-100 px-1 rounded">message.im</code> and <code class="bg-gray-100 px-1 rounded">app_home_opened</code> event subscriptions.</li>
+                                <li><strong>Channel Support Optional:</strong> Channel invites are optional. The app works primarily through direct messaging and app home.</li>
+                                <li><strong>User Registration:</strong> Only users registered via the admin panel can ask questions. Unregistered users will receive an error message.</li>
+                                <li><strong>Security:</strong> Keep your App-Level Token and Bot Token secure. Never commit them to version control.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Instructions and Webhook URL Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+
+            <!-- Quick Reference Card -->
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-5 border border-blue-200 shadow-sm">
+                <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-white text-xs"></i>
+                    </div>
+                    <span class="text-sm">Quick Reference</span>
+                </h3>
+                <div class="space-y-3">
+                    <div class="bg-white rounded-lg p-3 border border-blue-200">
+                        <p class="text-xs font-semibold text-gray-700 mb-2">Required Scopes:</p>
+                        <div class="space-y-1 text-xs text-gray-600">
+                            <div>• <code class="bg-gray-100 px-1 rounded">chat:write</code></div>
+                            <div>• <code class="bg-gray-100 px-1 rounded">im:read</code> + <code class="bg-gray-100 px-1 rounded">im:write</code></div>
+                            <div>• <code class="bg-gray-100 px-1 rounded">users:read</code> + <code class="bg-gray-100 px-1 rounded">users:read.email</code></div>
+                            <div>• <code class="bg-gray-100 px-1 rounded">app_mentions:read</code></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 border border-blue-200">
+                        <p class="text-xs font-semibold text-gray-700 mb-2">Required Events:</p>
+                        <div class="space-y-1 text-xs text-gray-600">
+                            <div>• <code class="bg-gray-100 px-1 rounded">message.im</code> - Direct messages</div>
+                            <div>• <code class="bg-gray-100 px-1 rounded">app_home_opened</code> - App home</div>
+                            <div>• <code class="bg-gray-100 px-1 rounded">app_mention</code> - Mentions</div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 border border-blue-200">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-600 mt-0.5 text-xs"></i>
+                            <div class="text-xs text-gray-600">
+                                <p class="font-semibold mb-1 text-green-700">Socket Mode Benefits:</p>
+                                <p>✅ No public URL needed<br>✅ Works on localhost<br>✅ Works behind firewalls<br>✅ Perfect for in-app messaging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+            <!-- Slack Users Management Page -->
+            <div id="slackUsersPage" class="page hidden">
+                <div class="w-full">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-1">
+                            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
+                                <i class="fas fa-user-friends text-white text-base"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-900">Slack User Management</h1>
+                                <p class="text-gray-600 text-sm mt-0.5">Register Slack users to allow them to use the app</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Slack User Card - Always Visible -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-200 shadow-sm mb-6 w-full">
+                        <div class="mb-5 flex items-center justify-between">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-1 flex items-center gap-2">
+                                    <i class="fas fa-user-plus text-blue-600 text-base"></i>
+                                    Add New Slack User
+                                </h3>
+                                <p class="text-xs text-gray-500">Enter a Slack user's email or Slack User ID to fetch their information and register them</p>
+                            </div>
+                        </div>
+                        <form id="fetchSlackUserForm" class="space-y-4">
+                            <div class="flex items-end gap-3">
+                                <div class="w-32">
+                                    <label class="block mb-1.5">
+                                        <span class="text-xs font-semibold text-gray-700">Search By</span>
+                                    </label>
+                                    <select id="fetchUserType" class="select select-bordered w-full rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500 h-10 text-sm">
+                                        <option value="email">Email</option>
+                                        <option value="user_id">User ID</option>
+                                    </select>
+                                </div>
+                                <div class="flex-1">
+                                    <label class="block mb-1.5">
+                                        <span class="text-xs font-semibold text-gray-700" id="fetchUserLabel">Email Address</span>
+                                        <span class="text-xs text-red-500 ml-1">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="email" id="fetchUserInput" class="input input-bordered w-full rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500 pl-10 h-10" placeholder="user@example.com" required>
+                                        <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" id="fetchUserIcon"></i>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn bg-blue-600 text-white border-none hover:bg-blue-700 rounded-lg px-6 h-10 font-semibold flex items-center gap-2">
+                                    <i class="fas fa-search"></i>
+                                    <span>Fetch User</span>
+                                </button>
+                            </div>
+                            <div id="fetchErrorMessage" class="alert alert-error hidden rounded-lg shadow-sm py-3">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span id="fetchErrorText" class="text-sm"></span>
+                            </div>
+                        </form>
+
+                        <!-- User Info Display -->
+                        <div id="fetchedUserInfo" class="mt-6 p-5 bg-white rounded-lg border-2 border-blue-300 shadow-md hidden">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="text-base font-bold text-gray-900 flex items-center gap-2">
+                                    <i class="fas fa-user-circle text-blue-600"></i>
+                                    User Information
+                                </h4>
+                                <button id="clearFetchedInfo" class="btn btn-sm btn-ghost btn-circle">
+                                    <i class="fas fa-times text-gray-400"></i>
+                                </button>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <img id="fetchedUserImage" src="" alt="" class="w-12 h-12 rounded-full hidden">
+                                        <i class="fas fa-user text-blue-600 text-lg" id="fetchedUserIcon"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="text-sm font-bold text-gray-900" id="fetchedName">-</div>
+                                        <div class="text-xs text-gray-500" id="fetchedDisplayName"></div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-envelope text-gray-400 text-xs w-4"></i>
+                                        <span class="text-xs text-gray-500">Email:</span>
+                                        <span class="text-xs font-semibold text-gray-900 ml-1" id="fetchedEmail">-</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fab fa-slack text-gray-400 text-xs w-4"></i>
+                                        <span class="text-xs text-gray-500">Slack ID:</span>
+                                        <span class="text-xs font-mono font-semibold text-gray-900 ml-1" id="fetchedSlackId">-</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-info-circle text-gray-400 text-xs w-4"></i>
+                                        <span class="text-xs text-gray-500">Status:</span>
+                                        <span class="text-xs font-semibold ml-1" id="fetchedStatus">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                                <button id="registerSlackUserBtn" class="btn bg-green-600 text-white border-none hover:bg-green-700 rounded-lg px-6 font-semibold flex items-center gap-2 flex-1">
+                                    <i class="fas fa-check"></i>
+                                    <span>Register This User</span>
+                                </button>
+                                <button type="button" id="cancelRegister" class="btn btn-ghost rounded-lg px-4">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slack Users Table -->
+                    <div class="bg-white rounded-xl border border-gray-200 shadow-sm w-full overflow-hidden">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                                <i class="fas fa-list text-blue-600 text-base"></i>
+                                Registered Slack Users
+                            </h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="table w-full">
+                                <thead>
+                                    <tr class="bg-gray-50">
+                                        <th class="text-xs font-bold text-gray-700">User</th>
+                                        <th class="text-xs font-bold text-gray-700">Email</th>
+                                        <th class="text-xs font-bold text-gray-700">Slack ID</th>
+                                        <th class="text-xs font-bold text-gray-700">Status</th>
+                                        <th class="text-xs font-bold text-gray-700">Registered</th>
+                                        <th class="text-xs font-bold text-gray-700">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="slackUsersTableBody">
+                                    <tr>
+                                        <td colspan="6" class="text-center py-8 text-gray-500 text-sm">Loading users...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Management Page -->
+            <div id="categoriesPage" class="page hidden">
+                <div class="w-full">
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
+                                    <i class="fas fa-folder text-white text-base"></i>
+                                </div>
+                                <div>
+                                    <h1 class="text-2xl font-bold text-gray-900">Category Management</h1>
+                                    <p class="text-gray-600 text-sm mt-0.5">Manage document categories and ChromaDB collections</p>
+                                </div>
+                            </div>
+                            <button id="addCategoryBtn" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold flex items-center gap-2">
+                                <i class="fas fa-plus"></i>
+                                <span>Add Category</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Table -->
+                    <div class="bg-white rounded-xl border border-gray-200 shadow-sm w-full overflow-hidden">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                                <i class="fas fa-list text-purple-600 text-base"></i>
+                                All Categories
+                            </h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="table w-full">
+                                <thead>
+                                    <tr class="bg-gray-50">
+                                        <th class="text-xs font-bold text-gray-700">Category Name</th>
+                                        <th class="text-xs font-bold text-gray-700">Description</th>
+                                        <th class="text-xs font-bold text-gray-700">Collection Name</th>
+                                        <th class="text-xs font-bold text-gray-700">Documents</th>
+                                        <th class="text-xs font-bold text-gray-700">Status</th>
+                                        <th class="text-xs font-bold text-gray-700">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="categoriesTableBody">
+                                    <tr>
+                                        <td colspan="6" class="text-center py-8 text-gray-500 text-sm">Loading categories...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents Management Page -->
+            <div id="documentsPage" class="page hidden">
+                <div class="w-full">
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center shadow-md">
+                                    <i class="fas fa-file-alt text-white text-base"></i>
+                                </div>
+                                <div>
+                                    <h1 class="text-2xl font-bold text-gray-900">Document Management</h1>
+                                    <p class="text-gray-600 text-sm mt-0.5">Upload, manage, and organize documents</p>
+                                </div>
+                            </div>
+                            <button id="uploadDocumentBtn" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold flex items-center gap-2">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload Document</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Documents Table -->
+                    <div class="bg-white rounded-xl border border-gray-200 shadow-sm w-full overflow-hidden">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                                <i class="fas fa-list text-green-600 text-base"></i>
+                                All Documents
+                            </h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="table w-full">
+                                <thead>
+                                    <tr class="bg-gray-50">
+                                        <th class="text-xs font-bold text-gray-700">Title</th>
+                                        <th class="text-xs font-bold text-gray-700">Category</th>
+                                        <th class="text-xs font-bold text-gray-700">File Name</th>
+                                        <th class="text-xs font-bold text-gray-700">Uploaded By</th>
+                                        <th class="text-xs font-bold text-gray-700">Status</th>
+                                        <th class="text-xs font-bold text-gray-700">Internal</th>
+                                        <th class="text-xs font-bold text-gray-700">Created</th>
+                                        <th class="text-xs font-bold text-gray-700">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="documentsTableBody">
+                                    <tr>
+                                        <td colspan="8" class="text-center py-8 text-gray-500 text-sm">Loading documents...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logs Page -->
+    <div id="logsPage" class="page hidden">
+        <div class="w-full">
+            <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
+                            <i class="fas fa-list-alt text-white text-base"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900">System Logs</h1>
+                            <p class="text-gray-600 text-sm mt-0.5">View document upload and query logs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs tabs-boxed bg-white rounded-xl p-2 mb-6 border border-gray-200">
+                <a class="tab tab-active" data-tab="queries">
+                    <i class="fas fa-search mr-2"></i>
+                    Query Logs
+                </a>
+                <a class="tab" data-tab="uploads">
+                    <i class="fas fa-upload mr-2"></i>
+                    Upload Logs
+                </a>
+            </div>
+
+            <!-- Query Logs Tab -->
+            <div id="queryLogsTab" class="tab-content">
+                <div class="bg-white rounded-xl border border-gray-200 shadow-sm w-full overflow-hidden">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                            <i class="fas fa-search text-purple-600 text-base"></i>
+                            Query Logs
+                        </h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th class="text-xs font-bold text-gray-700">ID</th>
+                                    <th class="text-xs font-bold text-gray-700">User</th>
+                                    <th class="text-xs font-bold text-gray-700">Query</th>
+                                    <th class="text-xs font-bold text-gray-700">Time</th>
+                                    <th class="text-xs font-bold text-gray-700">Tokens</th>
+                                    <th class="text-xs font-bold text-gray-700">Sources</th>
+                                    <th class="text-xs font-bold text-gray-700">Date</th>
+                                    <th class="text-xs font-bold text-gray-700">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="queryLogsTableBody">
+                                <tr>
+                                    <td colspan="8" class="text-center py-8 text-gray-500 text-sm">Loading query logs...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Logs Tab -->
+            <div id="uploadLogsTab" class="tab-content hidden">
+                <div class="bg-white rounded-xl border border-gray-200 shadow-sm w-full overflow-hidden">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                            <i class="fas fa-upload text-green-600 text-base"></i>
+                            Upload Logs
+                        </h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th class="text-xs font-bold text-gray-700">ID</th>
+                                    <th class="text-xs font-bold text-gray-700">Document</th>
+                                    <th class="text-xs font-bold text-gray-700">Uploader</th>
+                                    <th class="text-xs font-bold text-gray-700">Category</th>
+                                    <th class="text-xs font-bold text-gray-700">Time</th>
+                                    <th class="text-xs font-bold text-gray-700">Tokens</th>
+                                    <th class="text-xs font-bold text-gray-700">Status</th>
+                                    <th class="text-xs font-bold text-gray-700">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="uploadLogsTableBody">
+                                <tr>
+                                    <td colspan="8" class="text-center py-8 text-gray-500 text-sm">Loading upload logs...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </main>
+    </div>
+
+    <!-- Upload Document Modal -->
+    <div id="uploadDocumentModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-3xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-gray-200">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Upload Document</h3>
+                    <p class="text-sm text-gray-500 mt-1">Upload a new document to the system</p>
+                </div>
+                <button id="closeUploadDocumentModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            <form id="uploadDocumentForm">
+                <div class="space-y-5">
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Document File <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="file" id="documentFile" accept=".pdf,.doc,.docx,.txt" class="file-input file-input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">Supported formats: PDF, DOC, DOCX, TXT</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Title <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="text" id="documentTitle" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" placeholder="Enter document title" required>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Category</span>
+                        </label>
+                        <select id="documentCategory" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500">
+                            <option value="">No Category</option>
+                        </select>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">Select a category for this document</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Internal Only</span>
+                        </label>
+                        <div class="form-control">
+                            <label class="label cursor-pointer justify-start gap-3">
+                                <input type="checkbox" id="documentInternalOnly" class="checkbox checkbox-primary">
+                                <span class="label-text text-sm text-gray-700">Mark as internal-only document</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="uploadDocumentErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                </div>
+                <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                    <button type="button" id="cancelUploadDocument" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                    <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">
+                        <i class="fas fa-upload mr-2"></i>
+                        Upload Document
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Query Log Details Modal -->
+    <div id="queryLogDetailsModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-5xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200 sticky top-0 bg-white z-10">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Query Log Details</h3>
+                    <p class="text-sm text-gray-500 mt-1">Complete information about this query</p>
+                </div>
+                <button id="closeQueryLogDetailsModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            
+            <div id="queryLogDetailsContent" class="space-y-6">
+                <!-- Content will be loaded here -->
+            </div>
+            
+            <div class="modal-action mt-6 pt-4 border-t border-gray-200 sticky bottom-0 bg-white">
+                <button type="button" id="closeQueryLogDetailsModalBtn" class="btn btn-ghost rounded-xl px-6">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Category Modal -->
+    <div id="createCategoryModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-2xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-gray-200">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Create New Category</h3>
+                    <p class="text-sm text-gray-500 mt-1">Add a new category for organizing documents</p>
+                </div>
+                <button id="closeCreateCategoryModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            <form id="createCategoryForm">
+                <div class="space-y-5">
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Category Name <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="text" id="createCategoryName" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" placeholder="e.g., Proposals, Contracts" required>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">This will be used as the display name</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Description</span>
+                        </label>
+                        <textarea id="createCategoryDescription" class="textarea textarea-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" rows="3" placeholder="Describe what documents belong to this category"></textarea>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Status</span>
+                        </label>
+                        <select id="createCategoryIsActive" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500">
+                            <option value="true">Active</option>
+                            <option value="false">Inactive</option>
+                        </select>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">Inactive categories won't appear in document upload options</span>
+                        </label>
+                    </div>
+                    <div id="createCategoryErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                </div>
+                <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                    <button type="button" id="cancelCreateCategory" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                    <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">Create Category</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Category Modal -->
+    <div id="editCategoryModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-2xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-gray-200">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Edit Category</h3>
+                    <p class="text-sm text-gray-500 mt-1">Update category information</p>
+                </div>
+                <button id="closeEditCategoryModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            <form id="editCategoryForm">
+                <input type="hidden" id="editCategoryId">
+                <div class="space-y-5">
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Category Name <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="text" id="editCategoryName" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Description</span>
+                        </label>
+                        <textarea id="editCategoryDescription" class="textarea textarea-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Collection Name</span>
+                        </label>
+                        <input type="text" id="editCategoryCollectionName" class="input input-bordered w-full rounded-xl bg-gray-50" readonly>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">Auto-generated from category name (read-only)</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Status</span>
+                        </label>
+                        <select id="editCategoryIsActive" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500">
+                            <option value="true">Active</option>
+                            <option value="false">Inactive</option>
+                        </select>
+                    </div>
+                    <div id="editCategoryErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                </div>
+                <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                    <button type="button" id="cancelEditCategory" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                    <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Create User Modal -->
+    <div id="createModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-2xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-gray-200">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Create New User</h3>
+                    <p class="text-sm text-gray-500 mt-1">Add a new user to the system</p>
+                </div>
+                <button id="closeCreateModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            <form id="createUserForm">
+                <div class="space-y-5">
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Name <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="text" id="createName" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Email <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="email" id="createEmail" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Role <span class="text-red-500">*</span></span>
+                            </label>
+                            <select id="createRole" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                                <option value="user">User</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Status <span class="text-red-500">*</span></span>
+                            </label>
+                            <select id="createIsActive" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                                <option value="true">Active</option>
+                                <option value="false">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Password <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="password" id="createPassword" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                        <label class="label">
+                            <span class="label-text-alt text-gray-500">Minimum 6 characters</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Confirm Password <span class="text-red-500">*</span></span>
+                        </label>
+                        <input type="password" id="createPasswordConfirm" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div id="createErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                </div>
+                <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                    <button type="button" id="cancelCreate" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                    <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">
+                        <i class="fas fa-user-plus mr-2"></i>Create User
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit User Modal -->
+    <div id="editModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+        <div class="modal-box bg-white max-w-2xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200" style="pointer-events: auto; position: relative; z-index: 10000;">
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-gray-200">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Edit User</h3>
+                    <p class="text-sm text-gray-500 mt-1">Update user information</p>
+                </div>
+                <button id="closeModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                    <i class="fas fa-times text-gray-600"></i>
+                </button>
+            </div>
+            <form id="editUserForm">
+                <input type="hidden" id="editUserId">
+                <div class="space-y-5">
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Name</span>
+                        </label>
+                        <input type="text" id="editName" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">Email</span>
+                        </label>
+                        <input type="email" id="editEmail" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Role</span>
+                            </label>
+                            <select id="editRole" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                                <option value="user">User</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Status</span>
+                            </label>
+                            <select id="editIsActive" class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500" required>
+                                <option value="true">Active</option>
+                                <option value="false">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label pb-2">
+                            <span class="label-text font-bold text-gray-700 text-sm">New Password</span>
+                            <span class="label-text-alt text-gray-500">(leave blank to keep current)</span>
+                        </label>
+                        <input type="password" id="editPassword" class="input input-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div id="editErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                </div>
+                <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                    <button type="button" id="cancelEdit" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                    <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+    
+    <script src="/static/js/auth.js?v=2.9"></script>
+    <script src="/static/js/api.js?v=3.0"></script>
+    <script src="/static/js/admin.js?v=2.9"></script>
+    <script src="/static/js/slack.js?v=3.0"></script>
+    <script src="/static/js/slack-users.js?v=3.1"></script>
+    <script src="/static/js/categories.js?v=2.9"></script>
+    <script src="/static/js/documents.js?v=2.9"></script>
+    <script src="/static/js/logs.js?v=3.0"></script>
+</body>
+</html>
