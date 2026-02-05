@@ -1,4 +1,4 @@
-# askmojo-slack
+# askmojo-slack || python version -- 3.13.5
 
 Slack bot for pre-sales and sales team. A FastAPI-based document Q&A backend with RAG (Retrieval Augmented Generation), Slack integration, and an admin panel. Users can upload documents, organize them by categories, and ask questions that are answered using AI-powered semantic search over the document corpus.
 
