@@ -29,6 +29,8 @@ class DocumentResponse(DocumentBase):
     processed: bool
     uploaded_by: int
     created_at: datetime
+    category_id: int | None = None
+    domain_id: int | None = None
 
     class Config:
         from_attributes = True
@@ -75,14 +77,14 @@ class AIDecisionResponse(BaseModel):
 
 
 class SourceChunk(BaseModel):
-    document_id: int
-    document_title: str
-    category: str | None
-    chunk_text: str
-    page_number: int | None
-    chunk_index: int | None
-    score: float
-
+    document_id: int        # Which document did this come from? (e.g., ID 42)
+    document_title: str     # Readable name (e.g., "Project Proposal.pdf")
+    category: str | None    # Context (e.g., "Legal" or "HR")
+    chunk_text: str         # The actual content/paragraph used as evidence.
+    page_number: int | None # Where to find it (e.g., "Page 5")
+    chunk_index: int | None # Technical index (e.g., "Chunk #12 of the file")
+    score: float            # Similarity Score: How relevant is this chunk? 
+                            # (Lower distance usually means better match in ChromaDB)
 
 class TokenUsage(BaseModel):
     """Token usage information for a single API call"""
@@ -110,4 +112,6 @@ class AskResponse(BaseModel):
     token_usage: dict | None = None  # Total token usage summary
     toon_savings: dict | None = None  # TOON savings breakdown
     api_calls: list[APICallResponse] | None = None  # Detailed response for each API call
+    followups: list[dict] | None = None  # Suggested follow-up prompts (text + type)
+    sources: list[str] | None = None  # List of source document titles used for the answer
 

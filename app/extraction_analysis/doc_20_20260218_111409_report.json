@@ -1,0 +1,191 @@
+{
+  "document": {
+    "id": 20,
+    "title": "Breathe-Again-Quality-Ownership-Proposal"
+  },
+  "extraction": {
+    "total_elements": 379,
+    "element_types_distribution": {
+      "Figure": 51,
+      "P": 74,
+      "P[2]": 13,
+      "Figure[2]": 1,
+      "P[3]": 5,
+      "Figure[3]": 1,
+      "Figure[4]": 1,
+      "H1": 1,
+      "P[4]": 3,
+      "P[5]": 3,
+      "Figure[5]": 1,
+      "Figure[6]": 1,
+      "H1[2]": 1,
+      "Figure[7]": 1,
+      "Figure[8]": 1,
+      "Figure[9]": 1,
+      "H1[3]": 1,
+      "Lbl": 12,
+      "LBody": 43,
+      "Figure[10]": 1,
+      "H1[4]": 1,
+      "P[6]": 2,
+      "H2": 1,
+      "Table": 1,
+      "TD": 20,
+      "TD[2]": 20,
+      "TD[3]": 5,
+      "Figure[11]": 1,
+      "H1[5]": 1,
+      "Figure[12]": 2,
+      "H1[6]": 1,
+      "Figure[13]": 1,
+      "H2[2]": 1,
+      "P[7]": 1,
+      "H1[7]": 1,
+      "H2[3]": 1,
+      "Table[2]": 1,
+      "TH": 21,
+      "TH[2]": 6,
+      "TH[3]": 6,
+      "Sub": 10,
+      "Sub[2]": 6,
+      "H2[4]": 1,
+      "Table[3]": 1,
+      "Sub[3]": 4,
+      "Sub[4]": 1,
+      "H2[5]": 1,
+      "Table[4]": 1,
+      "Figure[14]": 1,
+      "H1[8]": 1,
+      "Figure[15]": 1,
+      "Figure[16]": 1,
+      "H1[9]": 1,
+      "H2[6]": 1,
+      "H2[7]": 1,
+      "P[8]": 1,
+      "Figure[17]": 1,
+      "H1[10]": 1,
+      "Figure[18]": 1,
+      "Figure[19]": 1,
+      "H1[11]": 1,
+      "Figure[20]": 1,
+      "Figure[21]": 1,
+      "H1[12]": 1,
+      "Figure[22]": 1,
+      "H1[13]": 1,
+      "P[9]": 1,
+      "Table[5]": 1,
+      "Figure[23]": 1,
+      "H1[14]": 1,
+      "Figure[24]": 1,
+      "Figure[25]": 1,
+      "H1[15]": 1,
+      "H2[8]": 1,
+      "Table[6]": 1,
+      "H2[9]": 1,
+      "H3": 1,
+      "P[10]": 1,
+      "P[11]": 1,
+      "Figure[26]": 1,
+      "H1[16]": 1,
+      "Table[7]": 1,
+      "TH[4]": 1,
+      "TH[5]": 1,
+      "TD[4]": 2,
+      "TD[5]": 2,
+      "Figure[27]": 2,
+      "H1[17]": 1,
+      "Figure[28]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "Quality Ownership Proposal for ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "Breathe Again ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure[2]",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[3]",
+        "text": "Submitted by ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 18,
+    "total_characters": 10549,
+    "total_words": 1490,
+    "average_chunk_size": 586.0,
+    "chunk_type_distribution": {
+      "p": 17,
+      "list": 8,
+      "table": 123
+    },
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Quality Ownership Proposal for\n\nBreathe Again\n\nSubmitted by",
+        "char_count": 59,
+        "word_count": 8
+      },
+      {
+        "chunk_index": 2,
+        "section": "Executive Summary",
+        "page": 2,
+        "text": "Executive Summary\n\nNira Balance by Breathe Again is a data-driven wellness platform that uses real-time health insights, smart device integration, and expert guidance to prevent and reverse lifestyle ",
+        "char_count": 758,
+        "word_count": 108
+      },
+      {
+        "chunk_index": 3,
+        "section": "Nira Balance Product Overview",
+        "page": 3,
+        "text": "Nira Balance Product Overview",
+        "char_count": 29,
+        "word_count": 4
+      },
+      {
+        "chunk_index": 4,
+        "section": "Problem Statement",
+        "page": 4,
+        "text": "Problem Statement\n\n\u2022 1\n\u2022 As the Nira Balance application experiences rapid growth and expansion, a structured and systematic QA approach is essential.\n\u2022 2\n\u2022 Absence of a dedicated QA function - No for",
+        "char_count": 570,
+        "word_count": 93
+      },
+      {
+        "chunk_index": 5,
+        "section": "Objective > Key Focus Areas",
+        "page": 5,
+        "text": "Objective\n\nThe objective of this engagement is to partner with Breathe Again as an integrated extension of their team, implementing a structured QA strategy that enhances customer experience, ensures ",
+        "char_count": 663,
+        "word_count": 87
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 27.8,
+    "smallest_chunk": 10,
+    "largest_chunk": 2482,
+    "chunks_under_min_size": 6,
+    "chunks_over_max_size": 3
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H2', 'H1', 'H3'}"
+  ]
+}

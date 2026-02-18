@@ -35,6 +35,35 @@ function setupDocumentsEventListeners() {
     if (uploadDocumentForm) {
         uploadDocumentForm.addEventListener('submit', handleUploadDocument);
     }
+
+    // Domain select change: refilter categories
+    const domainSelect = document.getElementById('documentDomain');
+    if (domainSelect) {
+        domainSelect.addEventListener('change', () => {
+            loadCategoriesForDocument(domainSelect.value || null);
+        });
+    }
+
+    // Add Domain button
+    const addDomainBtn = document.getElementById('addDomainBtn');
+    if (addDomainBtn) {
+        addDomainBtn.addEventListener('click', async () => {
+            const newDomain = prompt('Enter new domain name (e.g., DevOps, Policies):', '');
+            if (!newDomain || !newDomain.trim()) return;
+            try {
+                const created = await apiClient.createDomain({ name: newDomain.trim(), description: null, is_active: true });
+                await loadDomainsAndCategories();
+                // Select the newly created domain
+                const select = document.getElementById('documentDomain');
+                select.value = String(created.id);
+                // Refilter categories
+                loadCategoriesForDocument(created.id);
+                showNotification(`Domain "${created.name}" created.`, 'success');
+            } catch (e) {
+                showNotification(e.message || 'Failed to create domain', 'error');
+            }
+        });
+    }
 }
 
 async function loadDocuments() {
@@ -54,6 +83,12 @@ async function loadDocuments() {
         tbody.innerHTML = `<tr><td colspan="8" class="text-center py-8 text-gray-500 text-sm"><i class="fas fa-spinner fa-spin mr-2"></i>Loading documents...</td></tr>`;
 
         const documents = await client.getDocuments(0, 100);
+        // Load domains for mapping
+        const domains = await client.getDomains(0, 100);
+        const domainMap = {};
+        if (domains && Array.isArray(domains)) {
+            domains.forEach(d => domainMap[d.id] = d.name);
+        }
         
         if (!documents || documents.length === 0) {
             tbody.innerHTML = `<tr><td colspan="8" class="text-center py-8 text-gray-500 text-sm">No documents found. Upload your first document to get started.</td></tr>`;
@@ -74,6 +109,7 @@ async function loadDocuments() {
             const categoryName = doc.category_id && categoryMap[doc.category_id] 
                 ? categoryMap[doc.category_id] 
                 : (doc.category || 'No Category');
+            const domainName = doc.domain_id ? (domainMap[doc.domain_id] || '—') : '—';
             
             const uploadedDate = doc.created_at 
                 ? new Date(doc.created_at).toLocaleDateString('en-US', { 
@@ -106,6 +142,9 @@ async function loadDocuments() {
                 </td>
                 <td>
                     <span class="px-2 py-1 text-xs font-semibold text-gray-700 bg-purple-50 rounded-lg">${escapeHtml(categoryName)}</span>
+                </td>
+                <td>
+                    <span class="px-2 py-1 text-xs font-semibold text-gray-700 bg-blue-50 rounded-lg">${escapeHtml(domainName)}</span>
                 </td>
                 <td class="text-sm text-gray-700">
                     <span class="font-mono text-xs">${escapeHtml(doc.file_name || 'N/A')}</span>
@@ -164,8 +203,8 @@ function openUploadDocumentModal() {
         errorDiv.classList.add('hidden');
     }
 
-    // Load categories into dropdown
-    loadCategoriesForDocument();
+    // Load domains and categories into dropdowns
+    loadDomainsAndCategories();
 
     // Show modal
     modal.classList.remove('hidden');
@@ -198,7 +237,51 @@ function closeUploadDocumentModal() {
     console.log('Upload document modal closed');
 }
 
-async function loadCategoriesForDocument() {
+async function loadDomainsAndCategories() {
+    const categorySelect = document.getElementById('documentCategory');
+    const domainSelect = document.getElementById('documentDomain');
+    if (!categorySelect || !domainSelect) return;
+
+    const client = window.apiClient;
+    if (!client) {
+        console.error('API client not available');
+        return;
+    }
+
+    try {
+        // Get all domains
+        const domains = await client.getDomains(0, 100);
+
+        // Populate domain select with domain objects
+        domainSelect.innerHTML = '';
+        const noDomainOpt = document.createElement('option');
+        noDomainOpt.value = '';
+        noDomainOpt.textContent = 'All Domains';
+        domainSelect.appendChild(noDomainOpt);
+        
+        if (domains && Array.isArray(domains)) {
+            domains.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d.id;  // Use domain ID
+                opt.textContent = d.name;
+                domainSelect.appendChild(opt);
+            });
+        }
+
+        // DEFAULT: Don't select any domain initially - show ALL categories
+        // This prevents the issue where selecting first domain hides most categories
+        domainSelect.value = '';
+
+        // Populate categories WITHOUT domain filter (show all active categories)
+        await loadCategoriesForDocument(null);
+    } catch (error) {
+        console.error('Failed to load domains/categories:', error);
+        // Fallback: at least try to load categories without domain filter
+        await loadCategoriesForDocument(null);
+    }
+}
+
+async function loadCategoriesForDocument(domain_id = null) {
     const categorySelect = document.getElementById('documentCategory');
     if (!categorySelect) return;
 
@@ -209,9 +292,11 @@ async function loadCategoriesForDocument() {
     }
 
     try {
-        const categories = await client.getCategories(0, 100);
+        // Pass domain_id (can be null for all categories)
+        const domain_id_param = domain_id ? parseInt(domain_id) : null;
+        const categories = await client.getCategories(0, 100, domain_id_param);
         
-        // Clear existing options except "No Category"
+        // Clear existing options except default
         categorySelect.innerHTML = '<option value="">No Category</option>';
         
         if (categories && Array.isArray(categories)) {
@@ -220,7 +305,11 @@ async function loadCategoriesForDocument() {
                 .forEach(category => {
                     const option = document.createElement('option');
                     option.value = category.id;
-                    option.textContent = category.name;
+                    // Display category name with domains if available
+                    const domainsList = category.domains && category.domains.length > 0
+                        ? `  ·  ${category.domains.map(d => d.name).join(', ')}`
+                        : '';
+                    option.textContent = category.name + domainsList;
                     categorySelect.appendChild(option);
                 });
         }
@@ -268,6 +357,11 @@ async function handleUploadDocument(event) {
     
     if (categorySelect.value) {
         formData.append('category_id', categorySelect.value);
+    }
+    // Append selected domain_id if any
+    const domainSelect = document.getElementById('documentDomain');
+    if (domainSelect && domainSelect.value) {
+        formData.append('domain_id', domainSelect.value);
     }
     
     // Description is now auto-generated from full PDF, no need to send it

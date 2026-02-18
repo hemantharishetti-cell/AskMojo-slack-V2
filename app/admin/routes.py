@@ -1,18 +1,23 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy import func
+from typing import Dict, Any
 
 from app.sqlite.database import get_db
 from app.sqlite.models import User, Document, QueryLog, Category, DocumentUploadLog, QuerySource
 from app.core.security import get_current_admin_user
 from app.admin.schemas import (
     AdminUserCreate, AdminUserUpdate, AdminUserResponse, AdminStatsResponse,
-    CategoryCreate, CategoryUpdate, CategoryResponse,
-    QueryLogResponse, DocumentUploadLogResponse
+    CategoryCreate, CategoryUpdate, CategoryResponse, DomainResponse,
+    QueryLogResponse, DocumentUploadLogResponse,
+    CategoryDomainBackfillRequest, CategoryDomainBackfillResponse
 )
 from sqlalchemy.orm import joinedload
 from app.core.security import get_password_hash
 from sqlalchemy import func
+
+# Concurrency management
+from app.pdf_extraction.concurrency_manager import ConcurrencyManager
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -38,6 +43,34 @@ def get_admin_stats(
         active_users=active_users,
         admin_users=admin_users
     )
+
+
+@router.get("/processing/concurrency")
+def get_processing_concurrency_stats(
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+) -> Dict[str, Any]:
+    """
+    Get document processing concurrency statistics for current admin.
+    
+    Shows:
+    - Current concurrent processing count (max 15 per admin)
+    - Queue length (documents waiting to be processed)
+    - Remaining capacity
+    - Utilization percentage
+    """
+    stats = ConcurrencyManager.get_stats(current_user.id, db)
+    
+    return {
+        "admin_id": stats["admin_id"],
+        "admin_name": current_user.name,
+        "concurrent_processing": stats["concurrent_processing"],
+        "queue_length": stats["queue_length"],
+        "remaining_capacity": stats["remaining_capacity"],
+        "max_capacity": stats["max_capacity"],
+        "utilization_percent": round(stats["utilization_percent"], 1),
+        "status": "At capacity" if stats["remaining_capacity"] == 0 else "Available",
+    }
 
 
 @router.post("/users", response_model=AdminUserResponse, status_code=status.HTTP_201_CREATED)
@@ -220,23 +253,36 @@ def toggle_user_active(
 def get_all_categories(
     skip: int = 0,
     limit: int = 100,
+    domain_id: int | None = None,
     current_user: User = Depends(get_current_admin_user),
     db: Session = Depends(get_db)
 ):
     """
     Get all categories (admin only).
     """
-    categories = db.query(Category).offset(skip).limit(limit).all()
+    from app.sqlite.models import Domain
+    
+    query = db.query(Category)
+    if domain_id:
+        # Filter categories that have the specified domain
+        query = query.join(Category.domains).filter(Domain.id == domain_id)
+    
+    categories = query.offset(skip).limit(limit).all()
     result = []
     for category in categories:
         # Count documents in this category
         doc_count = db.query(func.count(Document.id)).filter(
             Document.category_id == category.id
         ).scalar() or 0
+        
+        # Convert domains to response format
+        domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+        
         category_dict = {
             "id": category.id,
             "name": category.name,
             "description": category.description,
+            "domains": domain_responses,
             "collection_name": category.collection_name,
             "is_active": category.is_active,
             "created_at": category.created_at,
@@ -268,10 +314,14 @@ def get_category(
         Document.category_id == category.id
     ).scalar() or 0
     
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+    
     return CategoryResponse(
         id=category.id,
         name=category.name,
         description=category.description,
+        domains=domain_responses,
         collection_name=category.collection_name,
         is_active=category.is_active,
         created_at=category.created_at,
@@ -328,13 +378,25 @@ def create_category(
         is_active=category_data.is_active
     )
     db.add(new_category)
+    db.flush()  # Get the category ID
+    
+    # Add domains if provided
+    if category_data.domain_ids:
+        from app.sqlite.models import Domain
+        domains = db.query(Domain).filter(Domain.id.in_(category_data.domain_ids)).all()
+        new_category.domains = domains
+    
     db.commit()
     db.refresh(new_category)
+    
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in new_category.domains] if new_category.domains else []
     
     return CategoryResponse(
         id=new_category.id,
         name=new_category.name,
         description=new_category.description,
+        domains=domain_responses,
         collection_name=new_category.collection_name,
         is_active=new_category.is_active,
         created_at=new_category.created_at,
@@ -418,14 +480,20 @@ def update_category(
                 )
             print(f"Updated ChromaDB collection metadata for '{category.name}' with new description")
     
-    # Update only provided fields
-    update_data = category_update.model_dump(exclude_unset=True, exclude={"name"})
+    # Update only provided fields (excluding domain_ids)
+    update_data = category_update.model_dump(exclude_unset=True, exclude={"name", "domain_ids"})
     for field, value in update_data.items():
         setattr(category, field, value)
     
     # Handle name update separately (already handled above)
     if category_update.name:
         category.name = category_update.name
+    
+    # Handle domain_ids update
+    if category_update.domain_ids is not None:
+        from app.sqlite.models import Domain
+        domains = db.query(Domain).filter(Domain.id.in_(category_update.domain_ids)).all()
+        category.domains = domains
     
     db.commit()
     db.refresh(category)
@@ -435,10 +503,14 @@ def update_category(
         Document.category_id == category.id
     ).scalar() or 0
     
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+    
     return CategoryResponse(
         id=category.id,
         name=category.name,
         description=category.description,
+        domains=domain_responses,
         collection_name=category.collection_name,
         is_active=category.is_active,
         created_at=category.created_at,
@@ -507,6 +579,84 @@ def delete_category(
     return None
 
 
+    # ============================================================
+# GENERATE AI DESCRIPTION FOR CATEGORY
+# Analyzes all documents in category to create searchable description
+# ============================================================
+
+@router.post("/categories/{category_id}/generate-description")
+def generate_category_ai_description(
+    category_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Generate AI description for a category by analyzing all its documents.
+    Uses Few-Shot + Structured Output for optimal search matching.
+    """
+    # Import the category description generator
+    from app.vector_logic.description_generator import generate_category_description
+    from app.vector_logic.vector_store import update_collection_metadata
+    
+    # Step 1: Get category from database
+    category = db.query(Category).filter(Category.id == category_id).first()
+    if not category:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Category with id {category_id} not found"
+        )
+    
+    # Step 2: Get all documents in this category
+    documents = db.query(Document).filter(Document.category_id == category_id).all()
+    
+    if not documents:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No documents in this category to analyze"
+        )
+    
+    # Step 3: Collect all document descriptions
+    doc_summaries = []
+    for doc in documents:
+        if doc.description:
+            doc_summaries.append(f"Document: {doc.title}\n{doc.description}")
+    
+    if not doc_summaries:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No document descriptions available. Upload and process documents first."
+        )
+    
+    # Step 4: Generate category description using AI
+    try:
+        combined_content = "\n\n---\n\n".join(doc_summaries)
+        new_description = generate_category_description(
+            category_name=category.name,
+            document_summaries=combined_content
+        )
+        
+        # Step 5: Update category description in database
+        category.description = new_description
+        db.commit()
+        db.refresh(category)
+        
+        # Step 6: Update ChromaDB collection metadata
+        update_collection_metadata(category.collection_name, category_description=new_description)
+        
+        return {
+            "success": True,
+            "category_id": category_id,
+            "category_name": category.name,
+            "new_description": new_description,
+            "documents_analyzed": len(doc_summaries)
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to generate description: {str(e)}"
+        )
+
+
 # Logs Management Routes
 @router.get("/logs/queries", response_model=list[QueryLogResponse])
 def get_query_logs(
@@ -555,55 +705,77 @@ def get_query_logs(
     return result
 
 
-@router.get("/logs/uploads", response_model=list[DocumentUploadLogResponse])
-def get_upload_logs(
+# Domain Management Routes  
+@router.get("/domains", response_model=list[DomainResponse])
+def get_all_domains(
     skip: int = 0,
     limit: int = 100,
     current_user: User = Depends(get_current_admin_user),
     db: Session = Depends(get_db)
 ):
     """
-    Get document upload logs (admin only).
+    Get all domains (admin only).
     """
-    upload_logs = db.query(DocumentUploadLog).options(
-        joinedload(DocumentUploadLog.uploader),
-        joinedload(DocumentUploadLog.category_ref)
-    ).order_by(DocumentUploadLog.created_at.desc()).offset(skip).limit(limit).all()
+    from app.sqlite.models import Domain
+    domains = db.query(Domain).offset(skip).limit(limit).all()
+    return domains
+
+
+@router.post("/domains", response_model=DomainResponse, status_code=status.HTTP_201_CREATED)
+def create_domain(
+    domain_data: dict,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new domain (admin only).
+    """
+    from app.sqlite.models import Domain
     
-    result = []
-    for log in upload_logs:
-        # Get document title if document exists
-        document_title = None
-        if log.document_id:
-            document = db.query(Document).filter(Document.id == log.document_id).first()
-            if document:
-                document_title = document.title
-        
-            result.append(DocumentUploadLogResponse(
-                id=log.id,
-                document_id=log.document_id,
-                document_title=document_title,
-                uploaded_by=log.uploaded_by,
-                uploader_name=log.uploader.name if log.uploader else None,
-                uploader_email=log.uploader.email if log.uploader else None,
-                title=log.title,
-                file_name=log.file_name,
-                category_id=log.category_id,
-                category_name=log.category_ref.name if log.category_ref else None,
-                category=log.category,
-                description_generated=log.description_generated,
-                description_length=log.description_length,
-                processing_started=log.processing_started,
-                processing_completed=log.processing_completed,
-                processing_error=log.processing_error,
-                created_at=log.created_at,
-                processed_at=log.processed_at,
-                upload_time_seconds=log.upload_time_seconds,
-                description_generation_time_seconds=log.description_generation_time_seconds,
-                description_tokens_used=log.description_tokens_used,
-                description_tokens_prompt=log.description_tokens_prompt,
-                description_tokens_completion=log.description_tokens_completion
-            ))
+    # Check if domain name already exists
+    existing_domain = db.query(Domain).filter(Domain.name == domain_data.get("name")).first()
+    if existing_domain:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Domain name already exists"
+        )
     
-    return result
+    # Create new domain
+    new_domain = Domain(
+        name=domain_data.get("name").strip(),
+        description=domain_data.get("description"),
+        is_active=domain_data.get("is_active", True)
+    )
+    db.add(new_domain)
+    db.commit()
+    db.refresh(new_domain)
+    
+    return new_domain
+
+
+@router.delete("/domains/{domain_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_domain(
+    domain_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Delete a domain by ID (admin only).
+    Cascades: deletes associated documents, upload logs, and cleans metadata.
+    """
+    from app.sqlite.models import Domain, Document, DocumentUploadLog
+    domain = db.query(Domain).filter(Domain.id == domain_id).first()
+    if not domain:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Domain with id {domain_id} not found"
+        )
+    # Delete associated documents and upload logs
+    docs = db.query(Document).filter(Document.domain_id == domain_id).all()
+    for doc in docs:
+        db.query(DocumentUploadLog).filter(DocumentUploadLog.document_id == doc.id).delete()
+        db.delete(doc)
+    db.delete(domain)
+    db.commit()
+    return None
 

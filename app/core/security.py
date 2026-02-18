@@ -9,7 +9,19 @@ from sqlalchemy.orm import Session
 from app.core.config import settings
 from app.sqlite.database import get_db
 from app.sqlite.models import User
+from pydantic import BaseModel
 
+# Pydantic schema for user output
+class UserOut(BaseModel):
+    id: int
+    name: str
+    email: str
+    role: str
+    is_active: bool
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
 # OAuth2 scheme for token extraction
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 
@@ -88,7 +100,8 @@ def get_current_user(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Inactive user"
         )
-    return user
+    # Return as Pydantic schema to avoid session issues
+    return UserOut.from_orm(user)
 
 
 def get_current_admin_user(

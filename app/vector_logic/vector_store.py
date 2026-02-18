@@ -29,6 +29,8 @@ def _get_persist_directory(persist_directory: str | None = None) -> str:
 
 
 # Global ChromaDB client singleton (thread-safe)
+# We use a lock to ensure only one thread initializes the client at a time.
+# This prevents race conditions where multiple clients might try to open the same SQLite DB.
 _chroma_client_lock = threading.Lock()
 _chroma_client_instance = None
 _chroma_persist_path = None
@@ -47,6 +49,8 @@ def _get_chroma_client(persist_directory: str | None = None) -> chromadb.ClientA
     if not hasattr(_thread_local, 'chroma_client') or _thread_local.persist_path != path:
         with _chroma_client_lock:
             # Create thread-local client
+            # ChromaDB (via SQLite) can be sensitive to sharing connections across threads.
+            # Using thread-local storage ensures each request thread gets its own isolated connection.
             _thread_local.chroma_client = chromadb.PersistentClient(
                 path=path,
                 settings=chromadb.Settings(
@@ -77,10 +81,10 @@ def init_chromadb(persist_directory: str | None = None) -> bool:
         client = _get_chroma_client(persist_directory)
         # Test connection by listing collections
         _ = client.list_collections()
-        print("✓ ChromaDB connection initialized successfully")
+        print("[OK] ChromaDB connection initialized successfully")
         return True
     except Exception as e:
-        print(f"✗ ChromaDB connection failed: {e}")
+        print(f"[FAIL] ChromaDB connection failed: {e}")
         return False
 
 
@@ -92,17 +96,29 @@ def embed_worker(text: str) -> list:
     from sentence_transformers import SentenceTransformer
 
     model = SentenceTransformer("all-MiniLM-L6-v2")
-    return model.encode(text).tolist()
+    return model.encode(text, show_progress_bar=False).tolist()
+
+
+_embedding_model_instance = None
+
+def _get_embedding_model():
+    """Get or create cached SentenceTransformer model"""
+    global _embedding_model_instance
+    if _embedding_model_instance is None:
+        from sentence_transformers import SentenceTransformer
+        _embedding_model_instance = SentenceTransformer("all-MiniLM-L6-v2")
+    return _embedding_model_instance
 
 
 def _embed_query(text: str) -> list:
     """
     Generate embeddings for a query string (synchronous, single process).
     """
-    from sentence_transformers import SentenceTransformer
-
-    model = SentenceTransformer("all-MiniLM-L6-v2")
-    return model.encode(text).tolist()
+    model = _get_embedding_model()
+    # show_progress_bar=False prevents tqdm from touching sys.stderr,
+    # which avoids OSError [Errno 22] on Windows when stderr has been
+    # reconfigured or is captured by a process manager (e.g. uvicorn --reload).
+    return model.encode(text, show_progress_bar=False).tolist()
 
 
 def store_chunks_in_chromadb(
@@ -128,6 +144,8 @@ def store_chunks_in_chromadb(
     print(f"Generating embeddings using {num_workers} CPU processes...")
 
     with ProcessPoolExecutor(max_workers=num_workers) as executor:
+        # MAP: Distribute the list of text chunks across multiple CPU cores.
+        # This allows us to calculate embeddings (math heavy) in parallel, speeding up uploads by 4-8x.
         embeddings = list(executor.map(embed_worker, documents))
 
     # -----------------------------
@@ -152,7 +170,10 @@ def store_chunks_in_chromadb(
     metadatas: List[Dict[str, Any]] = []
 
     for idx, chunk in enumerate(chunks, start=1):
-        chunk_id = f"chunk_{idx}"
+        # Use document-scoped IDs to avoid collisions when multiple docs share a collection.
+        # ChromaDB overwrites on duplicate IDs, so chunk_1 from doc A was overwritten by doc B.
+        doc_id = chunk.get("document_id")
+        chunk_id = f"doc_{doc_id}_chunk_{idx}" if doc_id is not None else f"chunk_{idx}"
         ids.append(chunk_id)
 
         metadata: Dict[str, Any] = {
@@ -238,6 +259,50 @@ def query_collection(
 
     return results
 
+def query_collection_with_filter(
+    query_text: str,
+    collection_name: str,
+    n_results: int = 5,
+    where: Dict[str, Any] | None = None,
+    persist_directory: str | None = None,
+) -> Dict[str, Any]:
+    """
+    Query a ChromaDB collection with optional metadata filtering.
+    
+    Uses 'where' clause to filter chunks at query time instead of 
+    post-retrieval filtering. This is more efficient and accurate.
+    
+    Args:
+        query_text: Natural language query
+        collection_name: Name of the collection to search
+        n_results: Number of results to return
+        where: Optional filter dict, e.g., {"document_id": 123}
+        persist_directory: Path to ChromaDB storage
+    
+    Returns:
+        Dictionary with ids, documents, metadatas and distances.
+    """
+    persist_directory = _get_persist_directory(persist_directory)
+    client = _get_chroma_client(persist_directory)
+
+    try:
+        collection = client.get_collection(name=collection_name)
+    except Exception:
+        raise ValueError(f"Collection '{collection_name}' does not exist")
+
+    # Embed the query using the same model used for documents
+    query_embedding = _embed_query(query_text)
+
+    # Query with optional where filter
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=n_results,
+        include=["documents", "metadatas", "distances"],
+        where=where  # ChromaDB native filtering
+    )
+
+    return results
+
 
 def store_document_in_master_collection(
     document_id: int,
@@ -246,10 +311,19 @@ def store_document_in_master_collection(
     category: str | None = None,
     source_type: str = "pdf",
     persist_directory: str | None = None,
+    doc_type: str | None = None,
 ) -> None:
     """
     Store document metadata in the master_docs collection.
-    This collection is used to quickly find relevant documents before searching detailed chunks.
+    
+    ARCHITECTURE NOTE:
+    We use a "Two-Layer Search" strategy:
+    1. Layer 1 (Master Collection): Stores ONLY metadata (Title, Description, Category). 
+       We search this first to find *relevant documents*.
+    2. Layer 2 (Category Collections): Stores the actual *content chunks*.
+       We search the documents found in Layer 1 to find *specific answers*.
+    
+    This function handles Layer 1.
     
     Args:
         document_id: Document ID from SQLite
@@ -281,6 +355,11 @@ def store_document_in_master_collection(
     if category:
         doc_text_parts.append(f"Category: {category}")
     
+    # Logical content type (proposal / case_study / solution / other)
+    if doc_type:
+        doc_text_parts.append(f"DocType: {doc_type}")
+    
+    # Physical source type (pdf / docx / txt, etc.)
     doc_text_parts.append(f"Type: {source_type}")
     
     doc_text = "\n".join(doc_text_parts)
@@ -294,14 +373,17 @@ def store_document_in_master_collection(
         "title": title,
         "category": category or "uncategorized",
         "source_type": source_type,
+        "doc_type": doc_type or "other",
     }
     
-    # Upsert (update if exists, insert if not)
+    # Upsert (Update or Insert)
+    # If the document_id already exists, this overwrites it. 
+    # This acts as an "Auto-Update" if you re-upload the same file.
     master_collection.upsert(
         ids=[str(document_id)],
-        documents=[doc_text],
-        embeddings=[doc_embedding],
-        metadatas=[metadata]
+        documents=[doc_text],        # Ssearchable text (Title + Description)
+        embeddings=[doc_embedding],  # Vector representation of the text
+        metadatas=[metadata]         # Filtering fields (Category, Type)
     )
     
     print(f"Stored document {document_id} in master_docs collection")
@@ -341,7 +423,9 @@ def delete_document_from_chromadb(
         try:
             collection = client.get_collection(name=collection_name)
             # Delete chunks where metadata contains this document_id
-            # ChromaDB delete supports where clause for metadata filtering
+            # Delete chunks where metadata contains this document_id
+            # ChromaDB delete supports where clause for metadata filtering.
+            # This effectively performs a "Cascade Delete" of all chunks belonging to this file.
             collection.delete(where={"document_id": document_id})
             deleted_from_collections.append(collection_name)
             print(f"Deleted chunks from {collection_name} collection for document {document_id}")

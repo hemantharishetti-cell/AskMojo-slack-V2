@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, event, pool, Engine, text
-from sqlalchemy.orm import DeclarativeBase, sessionmaker, scoped_session
-from sqlalchemy.pool import StaticPool, QueuePool
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
+from sqlalchemy.pool import QueuePool
 import threading
 from contextlib import contextmanager
 
@@ -42,11 +42,13 @@ def set_sqlite_pragma(dbapi_conn, connection_record):
 # Create engine with optimized settings for multiprocessing
 # Use QueuePool for better connection management
 if settings.database_url.startswith("sqlite"):
-    # For SQLite, use StaticPool with WAL mode for better concurrency
+    # For SQLite file DB, use QueuePool to avoid sharing the same connection across threads
     engine = create_engine(
         settings.database_url,
         connect_args=connect_args,
-        poolclass=StaticPool,  # SQLite works better with StaticPool
+        poolclass=QueuePool,
+        pool_size=max(5, settings.pool_size or 5),
+        max_overflow=max(10, settings.max_overflow or 10),
         pool_pre_ping=settings.pool_pre_ping,
         echo=False,  # Set to True for SQL query logging in development
         future=True,  # Use 2.0 style
@@ -65,14 +67,12 @@ else:
         future=True,
     )
 
-# Use scoped_session for thread-local sessions (better for multiprocessing)
-SessionLocal = scoped_session(
-    sessionmaker(
-        autocommit=False,
-        autoflush=False,
-        bind=engine,
-        expire_on_commit=False,  # Don't expire objects after commit (better for async)
-    )
+# Plain session factory; create a new Session per request/task
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine,
+    expire_on_commit=False,  # Don't expire objects after commit (better for async)
 )
 
 
@@ -90,8 +90,6 @@ def get_db():
         raise
     finally:
         db.close()
-        # Remove thread-local session
-        SessionLocal.remove()
 
 
 @contextmanager
@@ -109,7 +107,6 @@ def get_db_context():
         raise
     finally:
         db.close()
-        SessionLocal.remove()
 
 
 def init_db():
@@ -122,10 +119,10 @@ def init_db():
         with engine.connect() as conn:
             conn.execute(text("SELECT 1"))
             conn.commit()
-        print("✓ Database connection initialized successfully")
+        print("[OK] Database connection initialized successfully")
         return True
     except Exception as e:
-        print(f"✗ Database connection failed: {e}")
+        print(f"[FAIL] Database connection failed: {e}")
         return False
 
 

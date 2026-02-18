@@ -36,6 +36,7 @@ class Document(Base):
     title = Column(String, nullable=False, index=True)
     category = Column(String, nullable=True)  # Legacy: kept for backward compatibility
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)  # Foreign key to categories table
+    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)  # Optional domain tag per document
     description = Column(String, nullable=True)
     source_type = Column(String, nullable=False)
     internal_only = Column(Boolean, default=False, nullable=False)
@@ -48,6 +49,7 @@ class Document(Base):
     # Relationships
     uploader = relationship("User", back_populates="documents")
     category_ref = relationship("Category", back_populates="documents")
+    domain_ref = relationship("Domain")
     versions = relationship("DocumentVersion", back_populates="document", cascade="all, delete-orphan")
     chunks = relationship("DocumentChunk", back_populates="document", cascade="all, delete-orphan")
     query_sources = relationship("QuerySource", back_populates="document")
@@ -138,6 +140,7 @@ class DocumentUploadLog(Base):
     file_name = Column(String, nullable=True)
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)
     category = Column(String, nullable=True)  # Legacy category name
+    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)
     description_generated = Column(Boolean, default=True, nullable=False)  # Whether description was auto-generated
     description_length = Column(Integer, nullable=True)  # Length of generated description
     processing_started = Column(Boolean, default=False, nullable=False)
@@ -202,6 +205,29 @@ class SlackUser(Base):
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
 
 
+class Domain(Base):
+    __tablename__ = "domains"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, nullable=False, index=True)  # Domain name (e.g., "DevOps", "Security", "Policies")
+    description = Column(String, nullable=True)  # Domain description
+    is_active = Column(Boolean, default=True, nullable=False)  # Whether domain is active
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+
+    # Relationships
+    categories = relationship("Category", secondary="category_domains", back_populates="domains")
+
+
+class CategoryDomain(Base):
+    __tablename__ = "category_domains"
+
+    id = Column(Integer, primary_key=True, index=True)
+    category_id = Column(Integer, ForeignKey("categories.id"), nullable=False)
+    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=False)
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+
+
 class Category(Base):
     __tablename__ = "categories"
 
@@ -215,3 +241,38 @@ class Category(Base):
 
     # Relationships
     documents = relationship("Document", back_populates="category_ref")
+    domains = relationship("Domain", secondary="category_domains", back_populates="categories")
+
+
+class PDFExtractionCache(Base):
+    """Cache extraction results to avoid reprocessing same PDFs"""
+    __tablename__ = "pdf_extraction_cache"
+
+    id = Column(Integer, primary_key=True, index=True)
+    document_id = Column(Integer, ForeignKey("documents.id"), nullable=False, index=True)
+    file_md5_hash = Column(String, unique=True, nullable=False, index=True)  # MD5 hash of file content
+    adobe_extraction_json = Column(String, nullable=True)  # Full Adobe API response (JSON)
+    extraction_method = Column(String, nullable=False, default="adobe_api")  # "adobe_api" or "pdfplumber_fallback"
+    cache_hits = Column(Integer, default=0, nullable=False)  # Number of times cache was used
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    expires_at = Column(DateTime, nullable=True)  # When cache expires (180 days)
+    
+    # Relationships
+    document = relationship("Document")
+
+
+class ExtractedContent(Base):
+    """Store rich structured data from Adobe PDF Extract API"""
+    __tablename__ = "extracted_content"
+
+    id = Column(Integer, primary_key=True, index=True)
+    document_id = Column(Integer, ForeignKey("documents.id"), nullable=False, index=True)
+    extraction_source = Column(String, nullable=False)  # "adobe_api" or "pdfplumber_fallback"
+    structured_json = Column(String, nullable=True)  # Full Adobe response or structured format
+    extraction_date = Column(DateTime, default=datetime.utcnow, nullable=False)
+    error_message = Column(String, nullable=True)  # Error if extraction failed
+    retry_count = Column(Integer, default=0, nullable=False)  # Track retries
+    extraction_time_seconds = Column(Float, nullable=True)  # Time taken for extraction
+    
+    # Relationships
+    document = relationship("Document")

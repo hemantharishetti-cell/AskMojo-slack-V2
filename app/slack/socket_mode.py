@@ -13,6 +13,7 @@ from sqlalchemy.orm import Session
 from app.sqlite.database import SessionLocal
 from app.sqlite.models import SlackIntegration, SlackUser
 from app.vector_logic.schemas import AskRequest
+from app.core.config import settings
 import httpx
 from datetime import datetime, timedelta
 import threading
@@ -281,7 +282,7 @@ async def handle_app_home_opened(event: dict, bot_token: str):
 async def process_slack_message(
     event: dict,
     bot_token: str,
-    base_url: str = "http://localhost:8001"
+    base_url: str = "http://127.0.0.1:8000"
 ) -> None:
     """
     Process a Slack message event following this flow:
@@ -428,10 +429,10 @@ async def process_slack_message(
         ).first()
         
         if slack_user:
-            logger.info(f"✓ User {user_id} is registered in database")
+            logger.info(f"[OK] User {user_id} is registered in database")
             slack_user_email = slack_user.email
         else:
-            logger.warning(f"✗ User {user_id} is NOT registered in database")
+            logger.warning(f"[FAIL] User {user_id} is NOT registered in database")
     except Exception as e:
         logger.error(f"Error checking user registration: {e}")
         if message_marked_processing and message_ts:
@@ -469,7 +470,7 @@ async def process_slack_message(
             if message_ts:
                 _mark_message_processed(message_ts)
             
-            logger.info(f"✓ Access denied message sent to unregistered user {user_id} in channel {channel_id}")
+            logger.info(f"[OK] Access denied message sent to unregistered user {user_id} in channel {channel_id}")
             return
             
         except Exception as e:
@@ -517,81 +518,106 @@ async def process_slack_message(
         logger.info(f"Calling /api/v1/ask with question and slack_user_email: {slack_user_email}")
     else:
         logger.info(f"Calling /api/v1/ask with question only (no email available)")
-    
+
+    # Post "Analysing your question..." so the user sees immediate feedback (like a typing/loading state)
+    loading_ts = None
+    try:
+        client = WebClient(token=bot_token)
+        loading_msg = {
+            "channel": channel_id,
+            "text": "Analysing your question...",
+            "blocks": [
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": ":mag: *Analysing your question...*\nSearching the knowledge base and preparing an answer."
+                    }
+                }
+            ]
+        }
+        if not is_dm and thread_ts and thread_ts != event.get("ts"):
+            loading_msg["thread_ts"] = thread_ts
+        resp = client.chat_postMessage(**loading_msg)
+        if resp.get("ok") and resp.get("ts"):
+            loading_ts = resp["ts"]
+            logger.info(f"Posted loading message (ts={loading_ts})")
+    except Exception as e:
+        logger.warning(f"Could not post loading message: {e}")
+
     # Call the /ask endpoint
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(
                 f"{base_url}/api/v1/ask",
                 json=request_data,
-                timeout=100.0
+                timeout=300.0
             )
             response.raise_for_status()
             ask_response = response.json()
-            logger.info(f"✓ Successfully received answer from /api/v1/ask endpoint")
+            logger.info(f"[OK] Successfully received answer from /api/v1/ask endpoint")
     except httpx.HTTPStatusError as e:
         logger.error(f"HTTP error calling /ask endpoint: {e.response.status_code} - {e.response.text}")
         ask_response = {"answer": f"Sorry, I encountered an error processing your question (HTTP {e.response.status_code}). Please try again."}
     except Exception as e:
         logger.error(f"Error calling /ask endpoint: {e}")
         ask_response = {"answer": f"Sorry, I encountered an error processing your question: {str(e)}"}
-    
+
     # Extract answer from response
     answer_text = ask_response.get("answer", "I couldn't process your question. Please try again.")
-    
+
     # ====================================================================
-    # STEP 5: Respond back to Slack
+    # STEP 5: Respond back to Slack (update loading message if we have one, else post new)
     # ====================================================================
     logger.info(f"Step 5: Sending response back to Slack")
-    
-    # Format the response for Slack with rich text support
     formatted_response = format_slack_message(answer_text)
-    
+
     try:
         client = WebClient(token=bot_token)
-        
-        message_kwargs = {
-            "channel": channel_id,
-            "text": answer_text,  # Fallback text for notifications
-            "blocks": formatted_response.get("blocks", []),  # Rich formatted blocks
-            "mrkdwn": True  # Enable markdown formatting
-        }
-        
-        # Only add thread_ts for channel messages (not DMs)
-        if not is_dm and thread_ts and thread_ts != event.get("ts"):
-            message_kwargs["thread_ts"] = thread_ts
-        
-        client.chat_postMessage(**message_kwargs)
-        
-        # Mark message as processed after successful response
-        if message_ts:
-            _mark_message_processed(message_ts)
-        
-        logger.info(f"✓ Response sent successfully to {'DM' if is_dm else 'channel'} {channel_id}")
-        
-    except Exception as e:
-        logger.error(f"Error sending formatted response to Slack: {e}")
-        # Fallback to plain text if Block Kit fails
-        try:
-            client = WebClient(token=bot_token)
+        if loading_ts:
+            # Replace the "Analysing..." message with the real answer (single message, better UX)
+            update_kwargs = {
+                "channel": channel_id,
+                "ts": loading_ts,
+                "text": answer_text,
+                "blocks": formatted_response.get("blocks", []),
+            }
+            client.chat_update(**update_kwargs)
+            logger.info(f"[OK] Updated loading message with answer in {'DM' if is_dm else 'channel'} {channel_id}")
+        else:
             message_kwargs = {
                 "channel": channel_id,
-                "text": answer_text
+                "text": answer_text,
+                "blocks": formatted_response.get("blocks", []),
+                "mrkdwn": True
             }
             if not is_dm and thread_ts and thread_ts != event.get("ts"):
                 message_kwargs["thread_ts"] = thread_ts
-            
             client.chat_postMessage(**message_kwargs)
-            
-            # Mark message as processed after fallback response
+            logger.info(f"[OK] Response sent successfully to {'DM' if is_dm else 'channel'} {channel_id}")
+
+        if message_ts:
+            _mark_message_processed(message_ts)
+
+    except Exception as e:
+        logger.error(f"Error sending formatted response to Slack: {e}")
+        try:
+            client = WebClient(token=bot_token)
+            if loading_ts:
+                client.chat_update(
+                    channel=channel_id,
+                    ts=loading_ts,
+                    text=answer_text,
+                )
+            else:
+                message_kwargs = {"channel": channel_id, "text": answer_text}
+                if not is_dm and thread_ts and thread_ts != event.get("ts"):
+                    message_kwargs["thread_ts"] = thread_ts
+                client.chat_postMessage(**message_kwargs)
             if message_ts:
                 _mark_message_processed(message_ts)
-            
-            logger.info(f"✓ Fallback response sent successfully to {'DM' if is_dm else 'channel'} {channel_id}")
-            
         except Exception as e2:
             logger.error(f"Error sending fallback message: {e2}")
-            # If both attempts failed, unmark processing so it can be retried
             if message_marked_processing and message_ts:
                 _unmark_message_processing(message_ts)
 
@@ -619,7 +645,8 @@ def process_socket_mode_request(client: SocketModeClient, req: SocketModeRequest
                 return
             
             # Get base URL (you may want to make this configurable)
-            base_url = "http://localhost:8001"  # Default, should be from config
+            # Use 127.0.0.1 for local connection regardless of bind address
+            base_url = f"http://127.0.0.1:{settings.port}"
             
             # Handle different event types
             if event_type == "message":
@@ -711,7 +738,7 @@ def start_socket_mode_client(app_token: str, bot_token: str):
         socket_thread = threading.Thread(target=run_socket_mode, daemon=True)
         socket_thread.start()
         
-        logger.info("✓ Slack Socket Mode client started successfully")
+        logger.info("[OK] Slack Socket Mode client started successfully")
         return True
         
     except Exception as e:

@@ -1,9 +1,24 @@
+import os
+import sys
+
+# Fix Windows console encoding BEFORE any other imports to prevent
+# UnicodeEncodeError when printing/logging Unicode.
+# IMPORTANT: only reconfigure stdout — stderr must remain untouched
+# because tqdm (used by sentence_transformers) calls sys.stderr.flush()
+# and a reconfigured stderr raises OSError [Errno 22] on Windows.
+if os.name == "nt":
+    os.environ["PYTHONIOENCODING"] = "utf-8"
+    if hasattr(sys.stdout, "reconfigure"):
+        try:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-import os
 
 from app.core.config import settings
 from app.sqlite.database import Base, engine, init_db
@@ -15,6 +30,10 @@ from app.vector_logic.routes import router as vector_router
 from app.auth.routes import router as auth_router
 from app.admin.routes import router as admin_router
 from app.slack.routes import router as slack_router
+
+# New pipeline routes (Phase 5+ — incremental migration)
+from app.api.ask import router as new_ask_router
+from app.api.health import router as health_router
 
 # Configure logging
 logging.basicConfig(
@@ -42,11 +61,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include routers (at module level for better performance)
-# Note: Tags are defined in each router, so we don't need to specify them here
+# ── New 3-stage pipeline — registered FIRST so it takes priority over
+#    the legacy /ask endpoint still sitting in vector_router. ────────
+app.include_router(new_ask_router, prefix="/api/v1")   # /api/v1/ask  (new pipeline)
+app.include_router(new_ask_router, prefix="/api/v2")   # /api/v2/ask  (alias)
+app.include_router(health_router, prefix="/api")        # /api/health
+
+# ── Existing routers (auth, CRUD, admin, slack) ────────────────────
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(user_router, prefix="/api/v1")
-app.include_router(vector_router, prefix="/api/v1")
+app.include_router(vector_router, prefix="/api/v1")   # Document CRUD (upload, list, delete, search)
 app.include_router(admin_router, prefix="/api/v1")
 app.include_router(slack_router, prefix="/api/v1")
 
@@ -62,6 +86,10 @@ async def on_startup():
     5. Lazy load routers
     """
     logger.info("Starting ASKMOJO Backend...")
+    
+    # Step 0: Initialize structured logging for the new pipeline
+    from app.utils.logging import setup_logging
+    setup_logging()
     
     # Step 1: Initialize SQLite database connection
     logger.info("Initializing SQLite database...")
@@ -84,7 +112,7 @@ async def on_startup():
         # Import models to register them with Base
         from app.sqlite import models  # noqa: F401
         Base.metadata.create_all(bind=engine)
-        logger.info("✓ Database tables ready")
+        logger.info("[OK] Database tables ready")
     except Exception as e:
         logger.error(f"Error creating tables: {e}")
         raise
@@ -94,7 +122,7 @@ async def on_startup():
     if not init_chromadb():
         logger.warning("ChromaDB initialization failed - vector operations may not work")
     else:
-        logger.info("✓ ChromaDB ready")
+        logger.info("[OK] ChromaDB ready")
     
     # Step 5: Initialize Slack Socket Mode (if configured)
     logger.info("Checking Slack Socket Mode configuration...")
@@ -112,7 +140,7 @@ async def on_startup():
             
             if config and config.app_token and config.bot_token:
                 if start_socket_mode_client(config.app_token, config.bot_token):
-                    logger.info("✓ Slack Socket Mode started")
+                    logger.info("[OK] Slack Socket Mode started")
                 else:
                     logger.warning("Failed to start Slack Socket Mode")
             else:
@@ -122,7 +150,7 @@ async def on_startup():
     except Exception as e:
         logger.warning(f"Error initializing Slack Socket Mode: {e}")
     
-    logger.info("✓ ASKMOJO Backend started successfully")
+    logger.info("[OK] ASKMOJO Backend started successfully")
 
 
 @app.on_event("shutdown")
@@ -131,7 +159,7 @@ async def on_shutdown():
     logger.info("Shutting down ASKMOJO Backend...")
     # Close database connections
     engine.dispose()
-    logger.info("✓ Shutdown complete")
+    logger.info("[OK] Shutdown complete")
 
 
 # Mount static files

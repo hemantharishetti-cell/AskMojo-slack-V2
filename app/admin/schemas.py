@@ -1,6 +1,14 @@
+from pydantic import BaseModel
+from typing import Optional
+
+class DomainCreate(BaseModel):
+    name: str
+    description: Optional[str] = None
+    is_active: bool = True
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from typing import Optional
+from typing import List
 
 
 class AdminUserCreate(BaseModel):
@@ -39,15 +47,29 @@ class AdminStatsResponse(BaseModel):
     admin_users: int
 
 
+class DomainResponse(BaseModel):
+    id: int
+    name: str
+    description: Optional[str] = None
+    is_active: bool
+    created_at: datetime
+    updated_at: datetime
+
+    class Config:
+        from_attributes = True
+
+
 class CategoryCreate(BaseModel):
     name: str
     description: Optional[str] = None
+    domain_ids: Optional[List[int]] = None  # List of domain IDs
     is_active: bool = True
 
 
 class CategoryUpdate(BaseModel):
     name: Optional[str] = None
     description: Optional[str] = None
+    domain_ids: Optional[List[int]] = None  # List of domain IDs
     is_active: Optional[bool] = None
 
 
@@ -55,6 +77,7 @@ class CategoryResponse(BaseModel):
     id: int
     name: str
     description: Optional[str]
+    domains: Optional[List[DomainResponse]] = []  # List of domains for this category
     collection_name: str
     is_active: bool
     created_at: datetime
@@ -120,4 +143,19 @@ class DocumentUploadLogResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+# Domain backfill schemas
+class CategoryDomainAssignment(BaseModel):
+    category_id: int
+    domain: str
+
+
+class CategoryDomainBackfillRequest(BaseModel):
+    default_domain: Optional[str] = None
+    assignments: Optional[List[CategoryDomainAssignment]] = None
+
+
+class CategoryDomainBackfillResponse(BaseModel):
+    updated: int
 

@@ -1,0 +1,1371 @@
+{
+  "version": "1.0",
+  "document_id": 20,
+  "created_at": "2026-02-18T05:44:09.732217Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Quality Ownership Proposal for",
+        "Breathe Again",
+        "Submitted by"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Quality Ownership Proposal for",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Breathe Again",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Submitted by",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Executive Summary"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Nira Balance by Breathe Again is a data-driven wellness platform that uses real-time health insights, smart device integration, and expert guidance to prevent and reverse lifestyle diseases. Backed by scientific evidence, it delivers personalized nutrition, fitness, and lifestyle plans, empowering users to achieve measurable health outcomes, improved energy, and long-term balance.",
+        "Moolya aims to be a strategic QA partner in this journey of Breathe Again by taking complete ownership of QA through a collaborative and structured approach to testing. We believe in a true partnership model, where Moolya integrates seamlessly with Breathe Again teams, contributing proactively at every stage rather than operating as an external vendor."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Executive Summary",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Nira Balance by Breathe Again is a data-driven wellness platform that uses real-time health insights, smart device integration, and expert guidance to prevent and reverse lifestyle diseases. Backed by scientific evidence, it delivers personalized nutrition, fitness, and lifestyle plans, empowering users to achieve measurable health outcomes, improved energy, and long-term balance.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya aims to be a strategic QA partner in this journey of Breathe Again by taking complete ownership of QA through a collaborative and structured approach to testing. We believe in a true partnership model, where Moolya integrates seamlessly with Breathe Again teams, contributing proactively at every stage rather than operating as an external vendor.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Nira Balance Product Overview"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Nira Balance Product Overview",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Problem Statement"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "1",
+          "As the Nira Balance application experiences rapid growth and expansion, a structured and systematic QA approach is essential.",
+          "2",
+          "Absence of a dedicated QA function - No formalized testing approach, practices, or processes in place.",
+          "3",
+          "Existing system stability must be preserved; changes should not disrupt current functionality.",
+          "4",
+          "Large feature set with high business value demands robust validation.",
+          "5",
+          "Need for a collaborative partner who can integrate seamlessly with the internal team rather than operate as an external vendor."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Problem Statement",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• 1\n• As the Nira Balance application experiences rapid growth and expansion, a structured and systematic QA approach is essential.\n• 2\n• Absence of a dedicated QA function - No formalized testing approach, practices, or processes in place.\n• 3\n• Existing system stability must be preserved; changes should not disrupt current functionality.\n• 4\n• Large feature set with high business value demands robust validation.\n• 5\n• Need for a collaborative partner who can integrate seamlessly with the internal team rather than operate as an external vendor.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Objective"
+      ],
+      "h2": [
+        "Key Focus Areas"
+      ],
+      "h3": [],
+      "p": [
+        "The objective of this engagement is to partner with Breathe Again as an integrated extension of their team, implementing a structured QA strategy that enhances customer experience, ensures release quality, progressively introduces test automation, and expands to include performance and security validations. Moolya will take ownership of releases and collaboratively address customer challenges, working seamlessly as part of the Breathe Again team."
+      ],
+      "list": [],
+      "table": [
+        "Integrated Team Collaboration",
+        "Structured QA & Release Ownership",
+        "Test Automation",
+        "Customer-Centric Validation",
+        "Process Alignment & Coaching",
+        "Metrics Tracking & Continuous Improvement"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Objective",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "The objective of this engagement is to partner with Breathe Again as an integrated extension of their team, implementing a structured QA strategy that enhances customer experience, ensures release quality, progressively introduces test automation, and expands to include performance and security validations. Moolya will take ownership of releases and collaboratively address customer challenges, working seamlessly as part of the Breathe Again team.",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Key Focus Areas",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Integrated Team Collaboration",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Structured QA & Release Ownership",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Test Automation",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Customer-Centric Validation",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Process Alignment & Coaching",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Metrics Tracking & Continuous Improvement",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Moolya's Approach"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya's Approach",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [
+        "Unified Expertise with Moolya9s 3-in-a-Box Model"
+      ],
+      "h2": [
+        "Combination of Expertise: Integrated Under One Roof"
+      ],
+      "h3": [],
+      "p": [
+        "By combining Delivery Engineering, Testing Experts, and Domain SMEs into one cohesive unit, Moolya offers a comprehensive, cost-efficient solution that drives faster delivery, higher quality, and scalable results",
+        "Delivery Engineering Team",
+        "Bringing Technical Excellence through Delivery Engineering",
+        "Testing Experts",
+        "Expert QA Testing to Ensure Compliance and Quality",
+        "Domain Subject Matter Expert (SME) Team",
+        "Domain Experts Ensuring Business and Project Alignment"
+      ],
+      "list": [
+        [
+          "Collaborative Development",
+          "Custom Integrations",
+          "Continuous Delivery Focus"
+        ],
+        [
+          "Context Driven Testing",
+          "Automated Testing Frameworks",
+          "End-to-End Testing"
+        ],
+        [
+          "Deep Domain Knowledge",
+          "Technical Guidance & Expertise",
+          "Collaboration"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Unified Expertise with Moolya9s 3-in-a-Box Model",
+          "page_number": 7
+        },
+        {
+          "type": "h2",
+          "text": "Combination of Expertise: Integrated Under One Roof",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "By combining Delivery Engineering, Testing Experts, and Domain SMEs into one cohesive unit, Moolya offers a comprehensive, cost-efficient solution that drives faster delivery, higher quality, and scalable results",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Delivery Engineering Team",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Bringing Technical Excellence through Delivery Engineering",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Collaborative Development\n• Custom Integrations\n• Continuous Delivery Focus",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Testing Experts",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Expert QA Testing to Ensure Compliance and Quality",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Context Driven Testing\n• Automated Testing Frameworks\n• End-to-End Testing",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Domain Subject Matter Expert (SME) Team",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Domain Experts Ensuring Business and Project Alignment",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Deep Domain Knowledge\n• Technical Guidance & Expertise\n• Collaboration",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Test Execution Plan"
+      ],
+      "h2": [
+        "Month 1: Application Discovery, Test Strategy Design and Early Execution"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Phase",
+        "Activities",
+        "Deliverables",
+        "Discovery, Test Strategy and Initial Execution",
+        "Understanding of the Nira Balance Application, Workflows,",
+        "Tech Stack and Architecture Align on processes, tools, and communication protocols for smooth execution.",
+        "Collaborate with Breathe Again Stakeholders to understand the priority platform and features to begin the testing",
+        "Create a Test Strategy and Planning Document Write Test Cases for Core Features and structure them in the standardized test management tool",
+        "Start building the Sanity, Regression and Feature Test Suites Test execution of release builds",
+        "Report Bugs in the tracking tool Collaboration with the development team and key stakeholders",
+        "Generate Test Summary Report",
+        "Product Understanding document and mind maps",
+        "Test Strategy and Planning Document Test Cases",
+        "Test Summary Report"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Test Execution Plan",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Month 1: Application Discovery, Test Strategy Design and Early Execution",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Phase",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Activities",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Deliverables",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Discovery, Test Strategy and Initial Execution",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Understanding of the Nira Balance Application, Workflows,",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Tech Stack and Architecture Align on processes, tools, and communication protocols for smooth execution.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Collaborate with Breathe Again Stakeholders to understand the priority platform and features to begin the testing",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Create a Test Strategy and Planning Document Write Test Cases for Core Features and structure them in the standardized test management tool",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Start building the Sanity, Regression and Feature Test Suites Test execution of release builds",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Report Bugs in the tracking tool Collaboration with the development team and key stakeholders",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Generate Test Summary Report",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Product Understanding document and mind maps",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Test Strategy and Planning Document Test Cases",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Test Summary Report",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [],
+      "h2": [
+        "Month 2: Enhanced Functional Testing & QA scaling"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Phase",
+        "Activities",
+        "Deliverables",
+        "QA Expansion & Maturity",
+        "Identify the new features and expand test coverage Prioritization of Test Cases Identify edge cases and error scenarios Structure the test cases as",
+        "Sanity/Regression/Feature test suite Test execution of release cycles Bug reporting and triaging Verification and Validation of Bugs Benchmark and measure the metrics Generate Test Summary Reports and",
+        "Documentation",
+        "A structured test case repository",
+        "Bug Report",
+        "Metrics",
+        "Test Summary Report"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 2: Enhanced Functional Testing & QA scaling",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Phase",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Activities",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Deliverables",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "QA Expansion & Maturity",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Identify the new features and expand test coverage Prioritization of Test Cases Identify edge cases and error scenarios Structure the test cases as",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Sanity/Regression/Feature test suite Test execution of release cycles Bug reporting and triaging Verification and Validation of Bugs Benchmark and measure the metrics Generate Test Summary Reports and",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Documentation",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "A structured test case repository",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Bug Report",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Metrics",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Test Summary Report",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [],
+      "h2": [
+        "Month 3 to Month n : Setup Ongoing Testing Process and Enable Test Automation"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Phase",
+        "Activities",
+        "Deliverables",
+        "Enable Continuous Testing Process",
+        "Identify additional features/modules and expand test coverage as a continuous test activity.",
+        "Proceed with executing tests, reporting bugs, verification, and validation.",
+        "Ongoing test execution of sprint cycles Setup continuous process for release testing",
+        "Implement the testing process and best practices. Track Metrics",
+        "Create comprehensive test reports",
+        "An expanded Functional, Regression and Sanity Test Suite Weekly and Monthly Status Reports throughout the period, ensuring continuous communication and transparency",
+        "Test Summary Report offering insights into the testing efforts and outcomes.",
+        "Enable Test Automation",
+        "Assess the application and perform a feasibility study for test automation. Define a structured automation strategy and roadmap.",
+        "Scale the QA team to include dedicated automation expertise.",
+        "Test Automation Proposal Document"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 3 to Month n : Setup Ongoing Testing Process and Enable Test Automation",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Phase",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Activities",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Deliverables",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Enable Continuous Testing Process",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Identify additional features/modules and expand test coverage as a continuous test activity.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Proceed with executing tests, reporting bugs, verification, and validation.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Ongoing test execution of sprint cycles Setup continuous process for release testing",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Implement the testing process and best practices. Track Metrics",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Create comprehensive test reports",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "An expanded Functional, Regression and Sanity Test Suite Weekly and Monthly Status Reports throughout the period, ensuring continuous communication and transparency",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Test Summary Report offering insights into the testing efforts and outcomes.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Enable Test Automation",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Assess the application and perform a feasibility study for test automation. Define a structured automation strategy and roadmap.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Scale the QA team to include dedicated automation expertise.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Test Automation Proposal Document",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Deliverables"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Test Plan and Strategy Document",
+          "Comprehensive Regression/Sanity/Smoke Test Suite in Bugasura",
+          "Traceability Metrix",
+          "Bug Report",
+          "Test Automation Framework",
+          "Automated Test Scripts-Sanity, Regression and Feature",
+          "Weekly Test Summary Report with execution status and insights",
+          "Comprehensive Test Summary Report",
+          "Governance Report"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Deliverables",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• Test Plan and Strategy Document\n• Comprehensive Regression/Sanity/Smoke Test Suite in Bugasura\n• Traceability Metrix\n• Bug Report\n• Test Automation Framework\n• Automated Test Scripts-Sanity, Regression and Feature\n• Weekly Test Summary Report with execution status and insights\n• Comprehensive Test Summary Report\n• Governance Report",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Future Scope"
+      ],
+      "h2": [
+        "Security Testing",
+        "Performance and Load Testing"
+      ],
+      "h3": [],
+      "p": [
+        "Once the Nira Balance application achieves functional stability, Performance and Security Testing will be introduced. The scope and timeline for these activities will be determined following an assessment at that stage."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Future Scope",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Security Testing",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Performance and Load Testing",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "Once the Nira Balance application achieves functional stability, Performance and Security Testing will be introduced. The scope and timeline for these activities will be determined following an assessment at that stage.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [
+        "Success Criteria"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Seamless Integration with the Breathe Again Team 3 Moolya works as an extension of Breathe Again, collaborating closely with developers taking ownership and ensure smooth operations.",
+          "Structured QA Processes 3 Adoption of standardized QA practices, with a centralized test case repository and supporting tools in place.",
+          "Proactive Bug Prevention & Automation 3 Early defect detection with progressive automation to maintain stability.",
+          "Metrics & Continuous Improvement 3 Track quality, monitor performance, and refine processes for ongoing improvement."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Success Criteria",
+          "page_number": 13
+        },
+        {
+          "type": "list",
+          "text": "• Seamless Integration with the Breathe Again Team 3 Moolya works as an extension of Breathe Again, collaborating closely with developers taking ownership and ensure smooth operations.\n• Structured QA Processes 3 Adoption of standardized QA practices, with a centralized test case repository and supporting tools in place.\n• Proactive Bug Prevention & Automation 3 Early defect detection with progressive automation to maintain stability.\n• Metrics & Continuous Improvement 3 Track quality, monitor performance, and refine processes for ongoing improvement.",
+          "page_number": 13
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Value Delivered"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Value Delivered",
+          "page_number": 14
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "h1": [
+        "Assumptions"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Feature Walkthrough: The Breathe Again team will provide application walkthrough",
+          "Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.",
+          "Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.",
+          "Environment Availability : A dedicated and stable testing environment will be available for Moolya Team.",
+          "Access to Test Data : Necessary test data will be provided by the Breathe Again team"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Assumptions",
+          "page_number": 15
+        },
+        {
+          "type": "list",
+          "text": "• Feature Walkthrough: The Breathe Again team will provide application walkthrough\n• Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.\n• Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.\n• Environment Availability : A dedicated and stable testing environment will be available for Moolya Team.\n• Access to Test Data : Necessary test data will be provided by the Breathe Again team",
+          "page_number": 15
+        }
+      ]
+    },
+    {
+      "page_number": 16,
+      "h1": [
+        "Quality Metrics"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Below are the primary metrics we measure in QA projects. As we progress in this project, evaluations will be conducted to track and assess the relevant metrics."
+      ],
+      "list": [],
+      "table": [
+        "Metric",
+        "Impact",
+        "Test Coverage (Percentage of tests covered by automation)",
+        "Highlights how much of the application is tested and ensures better regression testing and reduces production defects.",
+        "Defect Density",
+        "Measures code quality by tracking defects per module or release",
+        "Defect Severity & Priority",
+        "Helps focus on issues with the highest business impact",
+        "Test Case Effectiveness",
+        "Shows how well test cases detect actual defects.",
+        "Test Execution Time",
+        "Helps identify test bottlenecks, allowing teams to optimize test suites",
+        "Defect Resolution Time",
+        "Shorter resolution time reduces risk of defect leakage to production",
+        "Automation Pass Percentage (Percentage of tests passing)",
+        "-",
+        "High pass percentage indicates system stability.",
+        "-",
+        "Low percentage may signal frequent failures, requiring deeper analysis.",
+        "Flaky Tests (Percentage of unstable or inconsistent tests)",
+        "-",
+        "High flakiness reduces trust in automation.",
+        "-",
+        "Leads to manual verification efforts and increased debugging time.",
+        "-",
+        "Stable tests improve efficiency and confidence in results.",
+        "Defect Detection Rate (Rate at which automated tests identify defects)",
+        "-",
+        "High rate ensures early defect identification, improving software quality.",
+        "-",
+        "Reduces debugging efforts in later stages of development."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Quality Metrics",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Below are the primary metrics we measure in QA projects. As we progress in this project, evaluations will be conducted to track and assess the relevant metrics.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Metric",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Impact",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Test Coverage (Percentage of tests covered by automation)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Highlights how much of the application is tested and ensures better regression testing and reduces production defects.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Defect Density",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Measures code quality by tracking defects per module or release",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Defect Severity & Priority",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Helps focus on issues with the highest business impact",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Test Case Effectiveness",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Shows how well test cases detect actual defects.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Test Execution Time",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Helps identify test bottlenecks, allowing teams to optimize test suites",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Defect Resolution Time",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Shorter resolution time reduces risk of defect leakage to production",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Automation Pass Percentage (Percentage of tests passing)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "High pass percentage indicates system stability.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Low percentage may signal frequent failures, requiring deeper analysis.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Flaky Tests (Percentage of unstable or inconsistent tests)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "High flakiness reduces trust in automation.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Leads to manual verification efforts and increased debugging time.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Stable tests improve efficiency and confidence in results.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Defect Detection Rate (Rate at which automated tests identify defects)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "High rate ensures early defect identification, improving software quality.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Reduces debugging efforts in later stages of development.",
+          "page_number": 16
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "h1": [
+        "Communication and Collaboration"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Communication and Collaboration",
+          "page_number": 17
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "h1": [
+        "Team Structure and Pricing"
+      ],
+      "h2": [
+        "Engagement Model : Ongoing Ownership",
+        "Payment Terms"
+      ],
+      "h3": [
+        "Important Note: Preliminary Estimate and Scope Adaptability"
+      ],
+      "p": [
+        "This proposal has been prepared based on our current, understanding of the Breathe Again application and the outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+        "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with Breathe Again team."
+      ],
+      "list": [
+        [
+          "Payment to be done within 30 days of invoice generation",
+          "Any applicable taxes will be charged extra on the pricing mentioned",
+          "Invoice will be raised on the 25th of every month",
+          "As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense."
+        ]
+      ],
+      "table": [
+        "Timeline",
+        "Team Structure",
+        "Cost in INR per month",
+        "Month 1",
+        "Manual-Functional Testing:",
+        "1 Test Manager",
+        "1 Senior Exploratory Tester",
+        "1 Exploratory Tester",
+        "3,50,000",
+        "Month 2",
+        "Manual-Functional Testing:",
+        "1 Test Manager",
+        "1 Senior Exploratory Tester",
+        "1 Exploratory Tester",
+        "3,50,000",
+        "Month 3 to Month n",
+        "Manual-Functional Testing:",
+        "1 Test Manager",
+        "1 Senior Exploratory Tester",
+        "1 Exploratory Tester",
+        "Test Automation:",
+        "1 Sr SDET",
+        "1 SDET",
+        "7,50,000"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Team Structure and Pricing",
+          "page_number": 18
+        },
+        {
+          "type": "h2",
+          "text": "Engagement Model : Ongoing Ownership",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Timeline",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Team Structure",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Cost in INR per month",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Month 1",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Manual-Functional Testing:",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Test Manager",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Senior Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "3,50,000",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Month 2",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Manual-Functional Testing:",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Test Manager",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Senior Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "3,50,000",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Month 3 to Month n",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Manual-Functional Testing:",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Test Manager",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Senior Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Exploratory Tester",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Test Automation:",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 Sr SDET",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "1 SDET",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "7,50,000",
+          "page_number": 18
+        },
+        {
+          "type": "h2",
+          "text": "Payment Terms",
+          "page_number": 18
+        },
+        {
+          "type": "list",
+          "text": "• Payment to be done within 30 days of invoice generation\n• Any applicable taxes will be charged extra on the pricing mentioned\n• Invoice will be raised on the 25th of every month\n• As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense.",
+          "page_number": 18
+        },
+        {
+          "type": "h3",
+          "text": "Important Note: Preliminary Estimate and Scope Adaptability",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "This proposal has been prepared based on our current, understanding of the Breathe Again application and the outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with Breathe Again team.",
+          "page_number": 18
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "h1": [
+        "Bugasura Capabilities"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "(a",
+        "Test Management",
+        "@",
+        "Requirements",
+        "Management",
+        "O",
+        "Issue Tracker",
+        "(°b",
+        "Chrome Reporter",
+        "a",
+        "Bugasura Widget",
+        "Jira Sync",
+        "Slack Notify",
+        "••",
+        "Asana Sync",
+        "Sentry Sync",
+        "Github Connect",
+        "ClickUp Link",
+        "Zendesk Sync",
+        "GlitchTip Sync",
+        "Linear Sync",
+        "Zoho Projects"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Bugasura Capabilities",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "(a",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Test Management",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "@",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Requirements",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Management",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "O",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Issue Tracker",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "(°b",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Chrome Reporter",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "a",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Bugasura Widget",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Jira Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Slack Notify",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "••",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Asana Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Sentry Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Github Connect",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "ClickUp Link",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Zendesk Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "GlitchTip Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Linear Sync",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Zoho Projects",
+          "page_number": 19
+        }
+      ]
+    },
+    {
+      "page_number": 20,
+      "h1": [
+        "Thank You!"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Thank You!",
+          "page_number": 20
+        }
+      ]
+    }
+  ]
+}

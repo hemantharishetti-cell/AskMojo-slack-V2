@@ -6,6 +6,7 @@ import json
 
 from app.sqlite.database import get_db
 from app.sqlite.models import SlackIntegration, SlackUser
+from app.core.config import settings
 from app.core.security import get_current_admin_user
 from app.slack.schemas import (
     SlackConfigCreate,
@@ -311,7 +312,7 @@ async def slack_webhook(
             # Forward to questioning endpoint via HTTP
             # Get base URL from request
             scheme = request.url.scheme
-            host = request.headers.get("host", "localhost:8001")
+            host = request.headers.get("host", f"localhost:{settings.port}")
             base_url = f"{scheme}://{host}"
             
             async with httpx.AsyncClient() as client:

@@ -58,12 +58,17 @@ class ApiClient {
             }
 
             if (!response.ok) {
-                let errorDetail = 'An error occurred';
+                let errorDetail = `HTTP error! status: ${response.status}`;
                 try {
-                    const errorData = await response.json();
-                    errorDetail = errorData.detail || errorData.message || `HTTP error! status: ${response.status}`;
+                    const errorData = await response.clone().json();
+                    errorDetail = errorData.detail || errorData.message || errorDetail;
                 } catch (e) {
-                    errorDetail = `HTTP error! status: ${response.status}`;
+                    try {
+                        const txt = await response.text();
+                        errorDetail = txt || errorDetail;
+                    } catch (_) {
+                        // ignore
+                    }
                 }
                 console.error(`API Error: ${errorDetail} for ${url}`);
                 throw new Error(errorDetail);
@@ -215,8 +220,10 @@ class ApiClient {
     }
 
     // Category management endpoints
-    async getCategories(skip = 0, limit = 100) {
-        return this.request(`/api/v1/admin/categories?skip=${skip}&limit=${limit}`);
+    async getCategories(skip = 0, limit = 100, domain_id = null) {
+        const params = new URLSearchParams({ skip: String(skip), limit: String(limit) });
+        if (domain_id) params.append('domain_id', String(domain_id));
+        return this.request(`/api/v1/admin/categories?${params.toString()}`);
     }
 
     async getCategory(categoryId) {
@@ -234,6 +241,35 @@ class ApiClient {
         return this.request(`/api/v1/admin/categories/${categoryId}`, {
             method: 'PUT',
             body: JSON.stringify(data)
+        });
+    }
+
+    // Domain management endpoints
+    async getDomains(skip = 0, limit = 100) {
+        return this.request(`/api/v1/admin/domains?skip=${skip}&limit=${limit}`);
+    }
+
+    async createDomain(data) {
+        return this.request('/api/v1/admin/domains', {
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+    }
+
+    async deleteDomain(domainId) {
+        return this.request(`/api/v1/admin/domains/${domainId}`, {
+            method: 'DELETE'
+        });
+    }
+
+    async getCategoryDomains() {
+        return this.request('/api/v1/admin/category-domains');
+    }
+
+    async backfillCategoryDomains(payload) {
+        return this.request('/api/v1/admin/category-domains/backfill', {
+            method: 'POST',
+            body: JSON.stringify(payload || {})
         });
     }
 
@@ -281,7 +317,14 @@ class ApiClient {
                 const errorData = await response.json();
                 errorDetail = errorData.detail || errorData.message || errorDetail;
             } catch (e) {
-                errorDetail = await response.text() || errorDetail;
+                // If JSON parsing fails, try to get text
+                try {
+                    const txt = await response.text();
+                    errorDetail = txt || errorDetail;
+                } catch (_) {
+                    // If text parsing also fails, use status code description
+                    errorDetail = `HTTP ${response.status}: ${response.statusText}`;
+                }
             }
             throw new Error(errorDetail);
         }
