@@ -1,0 +1,8042 @@
+{
+  "version": {
+    "json_export": "226",
+    "page_segmentation": "55",
+    "schema": "1.1.0",
+    "structure": "1.1183.0",
+    "table_structure": "5"
+  },
+  "extended_metadata": {
+    "ID_instance": "99 33 AD 8A EF BE B2 11 0A 00 CB 45 14 71 28 10 ",
+    "ID_permanent": "31 3A 31 34 33 ",
+    "has_acroform": false,
+    "has_embedded_files": false,
+    "is_XFA": false,
+    "is_certified": false,
+    "is_encrypted": false,
+    "is_digitally_signed": false,
+    "language": "en",
+    "page_count": 12,
+    "pdf_version": "1.7",
+    "pdfa_compliance_level": "",
+    "pdfua_compliance_level": ""
+  },
+  "elements": [
+    {
+      "Bounds": [
+        165.0,
+        -32768.0,
+        1587.057601928711,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5344,
+      "Page": 0,
+      "Path": "//Document/P",
+      "Text": "Moolya MoolyAImpact: Governing Quality for AI Systems ",
+      "TextSize": 96.0,
+      "attributes": {
+        "LineHeight": 147.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29806.0,
+        1758.2030029296875,
+        32767.99998474121
+      ],
+      "ObjectID": 5345,
+      "Page": 0,
+      "Path": "//Document/Table",
+      "attributes": {
+        "BBox": [
+          172.07299999999668,
+          121.47899999999936,
+          1750.609999999986,
+          260.79299999999057
+        ],
+        "NumCol": 4,
+        "NumRow": 2,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart0.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29806.0,
+        322.1000061035156,
+        32767.99998474121
+      ],
+      "ObjectID": 5347,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH",
+      "attributes": {
+        "BBox": [
+          150.71399999999994,
+          172.47699999999895,
+          578.1359999999986,
+          260.79299999999057
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "BorderColor": [
+          null,
+          null,
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ],
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ]
+        ],
+        "BorderStyle": [
+          "None",
+          "None",
+          "Solid",
+          "Solid"
+        ],
+        "BorderThickness": [
+          0,
+          0,
+          14.25,
+          7.125
+        ],
+        "ColIndex": 0,
+        "Height": 88.375,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 427.25
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29806.0,
+        322.1000061035156,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5348,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH/P",
+      "Text": "14+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -29806.0,
+        779.6300048828125,
+        32767.99998474121
+      ],
+      "ObjectID": 5349,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          563.8569999999891,
+          172.47699999999895,
+          851.8449999999721,
+          260.79299999999057
+        ],
+        "BlockAlign": "Middle",
+        "BorderColor": [
+          null,
+          null,
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ],
+          null
+        ],
+        "BorderStyle": [
+          "None",
+          "None",
+          "Solid",
+          "None"
+        ],
+        "BorderThickness": [
+          0,
+          0,
+          7.125,
+          0
+        ],
+        "ColIndex": 1,
+        "Height": 88.375,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 288
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -29806.0,
+        779.6300048828125,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5350,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[2]/P",
+      "Text": "200+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -29806.0,
+        1136.3899993896484,
+        32767.99998474121
+      ],
+      "ObjectID": 5351,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[3]",
+      "attributes": {
+        "BBox": [
+          851.8449999999721,
+          172.47699999999895,
+          1244.2299999999814,
+          260.79299999999057
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 88.375,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 392.375
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -29806.0,
+        1136.3899993896484,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5352,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[3]/P",
+      "Text": "20+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -29806.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "ObjectID": 5353,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[4]",
+      "attributes": {
+        "BBox": [
+          1244.2299999999814,
+          172.47699999999895,
+          1750.4899999999907,
+          260.79299999999057
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 88.375,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 506.375
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -29806.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5354,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[4]/P",
+      "Text": "80% ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -14871.0,
+        435.4459991455078,
+        30129.0
+      ],
+      "ObjectID": 5356,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TH",
+      "attributes": {
+        "BBox": [
+          172.07299999999668,
+          121.47899999999936,
+          571.0569999999716,
+          172.47699999999895
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 0,
+        "Height": 51,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 399
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -14871.0,
+        435.4459991455078,
+        30129.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5357,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TH/P",
+      "Text": "Years in Business ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -14871.0,
+        758.5070037841797,
+        30129.0
+      ],
+      "ObjectID": 5358,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          571.0569999999716,
+          121.47899999999936,
+          851.8449999999721,
+          172.47699999999895
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 1,
+        "Height": 51,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 280.75
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -14871.0,
+        758.5070037841797,
+        30129.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5359,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD/P",
+      "Text": "Customers ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -14871.0,
+        1140.1009979248047,
+        30129.0
+      ],
+      "ObjectID": 5360,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          851.8449999999721,
+          121.47899999999936,
+          1244.2299999999814,
+          172.47699999999895
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 2,
+        "Height": 51,
+        "InlineAlign": "Center",
+        "RowIndex": 1,
+        "Width": 392.375
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -14871.0,
+        1140.1009979248047,
+        30129.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5361,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[2]/P",
+      "Text": "Countries ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -14871.0,
+        1758.2030029296875,
+        30129.0
+      ],
+      "ObjectID": 5362,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1244.2299999999814,
+          121.47899999999936,
+          1750.4899999999907,
+          172.47699999999895
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 3,
+        "Height": 51,
+        "InlineAlign": "End",
+        "RowIndex": 1,
+        "Width": 506.375
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -14871.0,
+        1758.2030029296875,
+        30129.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5363,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[3]/P",
+      "Text": "Industry leaders choose us ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        615.2653961181641,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5364,
+      "Page": 1,
+      "Path": "//Document/H1",
+      "Text": "Who we are ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.947998046875,
+        -12287.979995727539,
+        1721.3099975585938,
+        26796.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5365,
+      "Page": 1,
+      "Path": "//Document/P[2]",
+      "Text": "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        755.3235931396484,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5366,
+      "Page": 1,
+      "Path": "//Document/H1[2]",
+      "Text": "Why Choose us ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -15695.0,
+        1514.0648803710938,
+        32305.0
+      ],
+      "ObjectID": 5367,
+      "Page": 1,
+      "Path": "//Document/Table[2]",
+      "attributes": {
+        "BBox": [
+          146.03399999999965,
+          180.03699999999662,
+          1513.859999999986,
+          459.2649999999994
+        ],
+        "NumCol": 4,
+        "NumRow": 3,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart1.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        156.29933166503906,
+        361.72845458984375,
+        228.6998291015625,
+        439.42356872558594
+      ],
+      "ObjectID": 5369,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          351.1499999999942,
+          546.2179999999935,
+          459.2649999999994
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 108.125,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 396.25
+      }
+    },
+    {
+      "Bounds": [
+        156.29933166503906,
+        361.72845458984375,
+        228.6998291015625,
+        439.42356872558594
+      ],
+      "ObjectID": 5370,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TH/Figure",
+      "attributes": {
+        "BBox": [
+          156.59399999999732,
+          361.8289999999979,
+          228.59099999999307,
+          439.2259999999951
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "ObjectID": 5371,
+      "Path": "//Document/Table[2]/TR/TD",
+      "attributes": {
+        "BBox": [
+          546.2179999999935,
+          351.1499999999942,
+          1008.3199999999779,
+          459.2649999999994
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 108.125,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 462.125
+      }
+    },
+    {
+      "Bounds": [
+        1039.247329711914,
+        373.1685028076172,
+        1115.756332397461,
+        428.83050537109375
+      ],
+      "ObjectID": 5372,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TD[2]",
+      "attributes": {
+        "BBox": [
+          1008.3199999999779,
+          351.1499999999942,
+          1413.7799999999697,
+          459.2649999999994
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 108.125,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        1039.247329711914,
+        373.1685028076172,
+        1115.756332397461,
+        428.83050537109375
+      ],
+      "ObjectID": 5373,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1039.399999999965,
+          373.3489999999874,
+          1115.5899999999674,
+          428.66699999998673
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1447.9373931884766,
+        372.4373779296875,
+        1514.0648803710938,
+        438.5626220703125
+      ],
+      "ObjectID": 5374,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TD[3]",
+      "attributes": {
+        "BBox": [
+          1413.7799999999697,
+          351.1499999999942,
+          1513.7399999999907,
+          459.2649999999994
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 3,
+        "Height": 108.125,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 100.125
+      }
+    },
+    {
+      "Bounds": [
+        1447.9373931884766,
+        372.4373779296875,
+        1514.0648803710938,
+        438.5626220703125
+      ],
+      "ObjectID": 5375,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR/TD[3]/Figure",
+      "attributes": {
+        "BBox": [
+          1448.0999999999767,
+          372.62899999998626,
+          1513.859999999986,
+          438.3859999999986
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -15695.0,
+        410.6112060546875,
+        32305.0
+      ],
+      "ObjectID": 5377,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TH",
+      "attributes": {
+        "BBox": [
+          146.03399999999965,
+          289.59199999998964,
+          546.2179999999935,
+          351.1499999999942
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 61.5,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 400.125
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        304.42002868652344,
+        214.66500854492188,
+        329.8520202636719
+      ],
+      "ObjectID": 5378,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          304.59199999998964,
+          401.50399999998626,
+          329.67099999998754
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -15695.0,
+        410.6112060546875,
+        32305.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5379,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TH/P",
+      "Text": "Skin in the Game ",
+      "TextSize": 32.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        585.75,
+        -15695.0,
+        803.9360046386719,
+        32305.0
+      ],
+      "ObjectID": 5380,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          546.2179999999935,
+          289.59199999998964,
+          1008.3199999999779,
+          351.1499999999942
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 61.5,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 462.125
+      }
+    },
+    {
+      "Bounds": [
+        585.75,
+        304.40904235839844,
+        704.9739990234375,
+        328.8410339355469
+      ],
+      "ObjectID": 5381,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          585.935999999987,
+          304.59199999998964,
+          794.8479999999981,
+          328.5909999999858
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        586.0,
+        -15695.0,
+        803.9360046386719,
+        32305.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5382,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD/P",
+      "Text": "Culture Focus ",
+      "TextSize": 32.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1034.75,
+        -15695.0,
+        1341.2848052978516,
+        32305.0
+      ],
+      "ObjectID": 5383,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1008.3199999999779,
+          287.43199999998615,
+          1413.7799999999697,
+          351.1499999999942
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 63.75,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        1034.75,
+        304.4090270996094,
+        1183.4510040283203,
+        329.85203552246094
+      ],
+      "ObjectID": 5384,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1034.9599999999627,
+          298.35199999999895,
+          1332.789999999979,
+          329.67099999998754
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1035.0,
+        -15695.0,
+        1341.2848052978516,
+        32305.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5385,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/P",
+      "Text": "Leadership Friendly ",
+      "TextSize": 32.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "ObjectID": 5386,
+      "Path": "//Document/Table[2]/TR[2]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1413.7799999999697,
+          289.59199999998964,
+          1513.7399999999907,
+          351.1499999999942
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 3,
+        "Height": 61.5,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 100.125
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -11814.016006469727,
+        477.61680603027344,
+        24254.0
+      ],
+      "ObjectID": 5388,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TH",
+      "attributes": {
+        "BBox": [
+          146.03399999999965,
+          180.03699999999662,
+          546.2179999999935,
+          289.59199999998964
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 0,
+        "Height": 109.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 400.125
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        248.56800842285156,
+        241.4530029296875,
+        271.7050018310547
+      ],
+      "ObjectID": 5389,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          185.67599999999948,
+          470.5009999999893,
+          271.47299999999814
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11814.016006469727,
+        477.61680603027344,
+        24254.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5390,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TH/P",
+      "Text": "We go beyond vendor roles, fostering deep co-ownership with customers. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 34
+      }
+    },
+    {
+      "Bounds": [
+        585.75,
+        -11814.016006469727,
+        919.9528045654297,
+        24254.0
+      ],
+      "ObjectID": 5391,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          546.2179999999935,
+          180.03699999999662,
+          1008.3199999999779,
+          289.59199999998964
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 1,
+        "Height": 109.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 462.125
+      }
+    },
+    {
+      "Bounds": [
+        585.75,
+        253.4770050048828,
+        655.4800109863281,
+        271.7050018310547
+      ],
+      "ObjectID": 5392,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          585.935999999987,
+          185.67599999999948,
+          912.2029999999795,
+          271.47299999999814
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        586.0,
+        -11814.016006469727,
+        919.9528045654297,
+        24254.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5393,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD/P",
+      "Text": "We help customers address issues by focusing on cultural fixes. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 34
+      }
+    },
+    {
+      "Bounds": [
+        1034.75,
+        -11814.016006469727,
+        1323.9024047851562,
+        24254.0
+      ],
+      "ObjectID": 5394,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1008.3199999999779,
+          180.03699999999662,
+          1413.7799999999697,
+          287.43199999998615
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 2,
+        "Height": 107.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        1034.75,
+        253.75,
+        1054.4770050048828,
+        271.7050018310547
+      ],
+      "ObjectID": 5395,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1034.9599999999627,
+          180.7569999999978,
+          1316.109999999986,
+          271.7129999999888
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1034.9759979248047,
+        -11780.007995605469,
+        1323.9024047851562,
+        24254.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5396,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]/P",
+      "Text": "Moolya empowers C-, V-, and D-level leaders with ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 34.125,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1035.0,
+        -11814.016006469727,
+        1133.5007934570312,
+        24185.983993530273
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5397,
+      "Page": 1,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]/P[2]",
+      "Text": "insights. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "ObjectID": 5398,
+      "Path": "//Document/Table[2]/TR[3]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1413.7799999999697,
+          180.03699999999662,
+          1513.7399999999907,
+          289.59199999998964
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 3,
+        "Height": 109.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 100.125
+      }
+    },
+    {
+      "Bounds": [
+        1441.0,
+        -15695.0,
+        1652.942398071289,
+        32305.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5399,
+      "Page": 1,
+      "Path": "//Document/P[3]",
+      "Text": "Scaling Value ",
+      "TextSize": 32.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 17
+      }
+    },
+    {
+      "Bounds": [
+        1440.9759979248047,
+        -11814.016006469727,
+        1783.3791961669922,
+        24254.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5400,
+      "Page": 1,
+      "Path": "//Document/P[4]",
+      "Text": "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 34
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        578.8352966308594,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5401,
+      "Page": 2,
+      "Path": "//Document/H1[3]",
+      "Text": "Why Now? ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.94400024414062,
+        -13283.218795776367,
+        1052.098403930664,
+        28800.781204223633
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5404,
+      "Page": 2,
+      "Path": "//Document/L/LI/LBody",
+      "Text": "AI adoption is accelerating across large language models, computer vision, and recommendation systems. Unlike traditional software, outputs are non-deterministic, creating new challenges for testing. ",
+      "TextSize": 28.0
+    },
+    {
+      "Bounds": [
+        165.58348083496094,
+        597.421875,
+        220.0841827392578,
+        651.921875
+      ],
+      "ObjectID": 5407,
+      "Page": 2,
+      "Path": "//Document/L/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          165.83299999999872,
+          597.6199999999953,
+          219.95099999999366,
+          651.7369999999937
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        250.73779296875,
+        -14369.328094482422,
+        974.0838012695312,
+        30630.671905517578
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5408,
+      "Page": 2,
+      "Path": "//Document/L/LI[2]/LBody",
+      "Text": "Emerging AI Quality Challenges These challenges surface as hallucinations, bias, drift, and gaps in audit readiness. ",
+      "TextSize": 26.0
+    },
+    {
+      "Bounds": [
+        169.76463317871094,
+        420.7274627685547,
+        216.3466339111328,
+        478.6644592285156
+      ],
+      "ObjectID": 5411,
+      "Page": 2,
+      "Path": "//Document/L/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          170.0329999999958,
+          420.86699999999837,
+          216.23099999999977,
+          477.8649999999907
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        250.71180725097656,
+        -14539.328094482422,
+        986.1555938720703,
+        30460.671905517578
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5412,
+      "Page": 2,
+      "Path": "//Document/L/LI[3]/LBody",
+      "Text": "Rising Regulatory Pressure Regulators such as the EU AI Act, DPDP, and ISO 42001 are making evidence-driven quality assurance mandatory. ",
+      "TextSize": 26.0
+    },
+    {
+      "Bounds": [
+        167.25079345703125,
+        251.42442321777344,
+        218.4167938232422,
+        307.8670654296875
+      ],
+      "ObjectID": 5415,
+      "Page": 2,
+      "Path": "//Document/L/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          167.512999999999,
+          251.55399999999645,
+          218.27099999999336,
+          307.5909999999858
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        250.68580627441406,
+        -14709.328094482422,
+        990.2557983398438,
+        30290.671905517578
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5416,
+      "Page": 2,
+      "Path": "//Document/L/LI[4]/LBody",
+      "Text": "Expanding Market Demand Industry forecasts estimate that the AI market will grow at a CAGR of nearly 37% between 2024 and 2030, creating a significant demand for structured QA governance. ",
+      "TextSize": 26.0
+    },
+    {
+      "Bounds": [
+        1620.8327026367188,
+        534.7743682861328,
+        1676.127700805664,
+        607.860107421875
+      ],
+      "ObjectID": 5417,
+      "Page": 2,
+      "Path": "//Document/Figure",
+      "attributes": {
+        "BBox": [
+          1621.009999999951,
+          534.8619999999937,
+          1675.969999999972,
+          607.5789999999979
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        689.8504028320312,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5418,
+      "Page": 3,
+      "Path": "//Document/H1[4]",
+      "Text": "The Challenge ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -13243.75,
+        1651.6959991455078,
+        28798.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5419,
+      "Page": 3,
+      "Path": "//Document/P[5]",
+      "Text": "Traditional QA approaches do not fully apply to AI systems. There is no fixed \u201cexpected versus actual\u201d truth, and quality risks tend to emerge gradually rather than immediately. ",
+      "TextSize": 28.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1266.25,
+        628.3525390625,
+        1331.7630004882812,
+        688.2365417480469
+      ],
+      "ObjectID": 5420,
+      "Page": 3,
+      "Path": "//Document/Figure[2]",
+      "attributes": {
+        "BBox": [
+          1266.429999999993,
+          628.4579999999842,
+          1331.5899999999674,
+          687.9759999999951
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14430.0,
+        383.9429931640625,
+        30570.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5421,
+      "Page": 3,
+      "Path": "//Document/H2",
+      "Text": "Hidden Bias Risk ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11509.992004394531,
+        629.3975982666016,
+        24522.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5422,
+      "Page": 3,
+      "Path": "//Document/P[6]",
+      "Text": "Bias can remain hidden, affecting fairness and decision-making. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -14430.0,
+        1025.8110046386719,
+        30570.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5423,
+      "Page": 3,
+      "Path": "//Document/H2[2]",
+      "Text": "Model Drift Challenges ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -11509.992004394531,
+        1151.6448059082031,
+        24522.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5424,
+      "Page": 3,
+      "Path": "//Document/P[7]",
+      "Text": "Model drift leads to silent performance degradation over time. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        1260.0,
+        -14430.0,
+        1537.0859985351562,
+        30570.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5425,
+      "Page": 3,
+      "Path": "//Document/H2[3]",
+      "Text": "Fragmented Tooling ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        1259.9759979248047,
+        -11509.992004394531,
+        1721.419204711914,
+        24522.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5426,
+      "Page": 3,
+      "Path": "//Document/P[8]",
+      "Text": "Fragmented tools across the ecosystem reduce release velocity. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        154.60450744628906,
+        356.67506408691406,
+        223.38241577148438,
+        412.02818298339844
+      ],
+      "ObjectID": 5427,
+      "Page": 3,
+      "Path": "//Document/Figure[3]",
+      "attributes": {
+        "BBox": [
+          154.7939999999944,
+          356.78899999998976,
+          223.1909999999989,
+          408.7469999999885
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        710.6219940185547,
+        349.62660217285156,
+        780.1650390625,
+        413.94000244140625
+      ],
+      "ObjectID": 5428,
+      "Page": 3,
+      "Path": "//Document/Figure[4]",
+      "attributes": {
+        "BBox": [
+          710.8509999999951,
+          349.8299999999872,
+          779.9679999999935,
+          413.66699999998673
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14705.0,
+        435.6029968261719,
+        30295.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5429,
+      "Page": 3,
+      "Path": "//Document/H2[4]",
+      "Text": "Talent Gaps in AI QA ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16.125
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11784.992004394531,
+        574.5599975585938,
+        24247.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5430,
+      "Page": 3,
+      "Path": "//Document/P[9]",
+      "Text": "Specialized QA talent for AI testing is still limited in availability. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 31.875
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -14705.0,
+        1044.1199951171875,
+        30295.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5431,
+      "Page": 3,
+      "Path": "//Document/H2[5]",
+      "Text": "Quality Assurance Gaps ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        704.9759979248047,
+        -11816.983993530273,
+        1212.1199951171875,
+        24247.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_3",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5432,
+      "Page": 3,
+      "Path": "//Document/P[10]",
+      "Text": "Studies show that nearly 60% of reported AI issues are linked to insufficient or incomplete quality assurance practices. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        730.5715026855469,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5433,
+      "Page": 4,
+      "Path": "//Document/H1[5]",
+      "Text": "Our Philosophy ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -13243.75,
+        1584.6024017333984,
+        28798.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5434,
+      "Page": 4,
+      "Path": "//Document/P[11]",
+      "Text": "We believe innovation and trust must grow hand-in-hand, with quality in AI defined not by perfection, but by making risks visible, measurable, and governable. ",
+      "TextSize": 28.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        334.36000061035156,
+        -32768.0,
+        1619.7839965820312,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5435,
+      "Page": 4,
+      "Path": "//Document/P[12]",
+      "Text": "\u201cDon\u2019t become AI rich and trust poor.\u201d ",
+      "TextSize": 70.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        709.75,
+        346.3840789794922,
+        774.25,
+        371.3897705078125
+      ],
+      "ObjectID": 5436,
+      "Page": 4,
+      "Path": "//Document/Figure[5]",
+      "attributes": {
+        "BBox": [
+          710.0109999999986,
+          346.5899999999965,
+          774.0889999999781,
+          371.1889999999985
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14719.796905517578,
+        386.9880065917969,
+        30280.203094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5437,
+      "Page": 4,
+      "Path": "//Document/H2[6]",
+      "Text": "Clarity in Quality ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 13.5
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11797.28889465332,
+        607.656005859375,
+        24234.703094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5438,
+      "Page": 4,
+      "Path": "//Document/P[13]",
+      "Text": "Use AI only where quality can be clearly measured and governed. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -14719.796905517578,
+        984.927001953125,
+        30280.203094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5439,
+      "Page": 4,
+      "Path": "//Document/H2[7]",
+      "Text": "Balanced Innovation ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 13.5
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -11797.28889465332,
+        1188.8399963378906,
+        24234.703094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5440,
+      "Page": 4,
+      "Path": "//Document/P[14]",
+      "Text": "Focus on innovation with responsibility, so adoption scales safely. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        1260.0,
+        -14719.796905517578,
+        1546.5659942626953,
+        30280.203094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5441,
+      "Page": 4,
+      "Path": "//Document/P[15]",
+      "Text": "Proven Acceleration ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 13.5
+      }
+    },
+    {
+      "Bounds": [
+        1259.9759979248047,
+        -11797.28889465332,
+        1739.688003540039,
+        24234.703094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5442,
+      "Page": 4,
+      "Path": "//Document/P[16]",
+      "Text": "Structured QA governance drives 25\u201335% faster AI adoption. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        1129.4972076416016,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5443,
+      "Page": 5,
+      "Path": "//Document/H1[6]",
+      "Text": "Introducing MoolyAImpact ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        149.94400024414062,
+        -13243.75,
+        1689.2243957519531,
+        28798.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5444,
+      "Page": 5,
+      "Path": "//Document/P[17]",
+      "Text": "MoolyAImpact environments. Delivered is a productised as a ready QA service servicethat pod, spans it eliminates the full the AI lifecycle need for \u2014 internal from clean talent data ramp-up. to monitored production ",
+      "TextSize": 28.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        152.5900421142578,
+        575.7571716308594,
+        225.41152954101562,
+        648.2636260986328
+      ],
+      "ObjectID": 5455,
+      "Page": 5,
+      "Path": "//Document/Figure[6]",
+      "attributes": {
+        "BBox": [
+          153.11399999999412,
+          575.9009999999835,
+          224.99099999999453,
+          648.0179999999818
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        943.0628051757812,
+        579.4763488769531,
+        1012.9375610351562,
+        644.4892272949219
+      ],
+      "ObjectID": 5456,
+      "Page": 5,
+      "Path": "//Document/Figure[7]",
+      "attributes": {
+        "BBox": [
+          943.2819999999774,
+          579.6199999999953,
+          1012.7599999999802,
+          644.2979999999807
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14476.0,
+        431.61900329589844,
+        30524.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5457,
+      "Page": 5,
+      "Path": "//Document/H2[8]",
+      "Text": "Lifecycle Coverage ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11555.992004394531,
+        774.7920074462891,
+        24476.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5458,
+      "Page": 5,
+      "Path": "//Document/P[18]",
+      "Text": "The lifecycle coverage includes Data, Model, Scenario, and Production. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        939.0,
+        -14476.0,
+        1196.8350067138672,
+        30524.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5459,
+      "Page": 5,
+      "Path": "//Document/H2[9]",
+      "Text": "Service Pod Team ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        939.0,
+        -11524.0,
+        1547.0639953613281,
+        24476.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5461,
+      "Page": 5,
+      "Path": "//Document/P[19]/Sub",
+      "Text": "Each client receives a service pod that includes an AI ",
+      "TextSize": 24.0,
+      "attributes": {
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        939.0240020751953,
+        -11555.992004394531,
+        1569.5135955810547,
+        24444.00799560547
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5462,
+      "Page": 5,
+      "Path": "//Document/P[19]/Sub[2]",
+      "Text": "QA Lead, SDETs, an Analyst, and a Red-Team Engineer. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14794.0,
+        445.2209930419922,
+        30206.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5463,
+      "Page": 5,
+      "Path": "//Document/H2[10]",
+      "Text": "Seamless Integration ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -11873.992004394531,
+        692.3280029296875,
+        24158.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5464,
+      "Page": 5,
+      "Path": "//Document/P[20]",
+      "Text": "The solution integrates seamlessly into existing pipelines and workflows. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        939.0,
+        -14794.0,
+        1190.8320007324219,
+        30206.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5465,
+      "Page": 5,
+      "Path": "//Document/H2[11]",
+      "Text": "Rapid Onboarding ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 16
+      }
+    },
+    {
+      "Bounds": [
+        939.0,
+        -11873.992004394531,
+        1566.083999633789,
+        24158.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5466,
+      "Page": 5,
+      "Path": "//Document/P[21]",
+      "Text": "On average, clients are able to integrate MoolyAImpact within two to four weeks. ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        1302.014404296875,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5467,
+      "Page": 6,
+      "Path": "//Document/H1[7]",
+      "Text": "Service Stack (How We Do It) ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -13243.75,
+        1678.9344024658203,
+        28798.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5468,
+      "Page": 6,
+      "Path": "//Document/P[22]",
+      "Text": "Our service stack transforms theory into execution. It combines risk discovery, automated gates, advanced testing, and governance frameworks into one unified pipeline. ",
+      "TextSize": 28.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        148.9449462890625,
+        -11788.5,
+        1772.8979034423828,
+        24671.25
+      ],
+      "ObjectID": 5469,
+      "Page": 6,
+      "Path": "//Document/Table[3]",
+      "attributes": {
+        "BBox": [
+          149.153999999995,
+          180.87699999999313,
+          1772.6899999999441,
+          717.0149999999849
+        ],
+        "NumCol": 3,
+        "NumRow": 7,
+        "Placement": "Block",
+        "SpaceAfter": 9.25
+      },
+      "filePaths": [
+        "tables/fileoutpart2.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        -11329.023895263672,
+        255.66940307617188,
+        24670.976104736328
+      ],
+      "ObjectID": 5471,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.153999999995,
+          651.9769999999844,
+          296.627999999997,
+          717.0149999999849
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 65,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 147.5
+      }
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        670.4451141357422,
+        210.46336364746094,
+        689.0851135253906
+      ],
+      "ObjectID": 5472,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.71199999999953,
+          670.5769999999902,
+          248.75,
+          688.8159999999916
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        195.6934051513672,
+        -11329.023895263672,
+        255.66940307617188,
+        24670.976104736328
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5473,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH/P",
+      "Text": "S:No ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        367.75,
+        -11328.75,
+        437.22320556640625,
+        24671.25
+      ],
+      "ObjectID": 5474,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          651.9769999999844,
+          676.1719999999914,
+          716.054999999993
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 65,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        367.75,
+        670.9999694824219,
+        381.375,
+        689.0779724121094
+      ],
+      "ObjectID": 5475,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[2]/Figure",
+      "attributes": {
+        "BBox": [
+          368.0249999999942,
+          666.3769999999786,
+          430.30199999999604,
+          688.8159999999916
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        368.0,
+        -11328.75,
+        437.22320556640625,
+        24671.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5476,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[2]/P",
+      "Text": "Layer ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11328.75,
+        946.7171936035156,
+        24671.25
+      ],
+      "ObjectID": 5477,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[3]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          651.9769999999844,
+          1772.5699999999488,
+          716.054999999993
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 65,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        671.0000305175781,
+        781.4819946289062,
+        689.0780181884766
+      ],
+      "ObjectID": 5478,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[3]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          670.8169999999809,
+          939.6819999999716,
+          688.8159999999916
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11328.75,
+        946.7171936035156,
+        24671.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5479,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR/TH[3]/P",
+      "Text": "What We Deliver ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11413.5,
+        229.38400268554688,
+        24586.5
+      ],
+      "ObjectID": 5481,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          562.7009999999718,
+          296.627999999997,
+          651.9769999999844
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 89.25,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        585.9800109863281,
+        211.9770050048828,
+        604.4100189208984
+      ],
+      "ObjectID": 5482,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          586.0999999999767,
+          219.95099999999366,
+          604.2189999999828
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11413.5,
+        229.38400268554688,
+        24586.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5483,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TH/P",
+      "Text": "01 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11413.0,
+        552.2704010009766,
+        24587.0
+      ],
+      "ObjectID": 5484,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          562.7009999999718,
+          676.1719999999914,
+          651.9769999999844
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 89.25,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        581.7340087890625,
+        519.3589935302734,
+        604.8520050048828
+      ],
+      "ObjectID": 5485,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          581.8999999999942,
+          545.377999999997,
+          604.5789999999979
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11413.0,
+        552.2704010009766,
+        24587.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5486,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD/P",
+      "Text": "Discovery & Risk ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11413.0,
+        1337.2044067382812,
+        24587.0
+      ],
+      "ObjectID": 5487,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          562.7009999999718,
+          1772.5699999999488,
+          651.9769999999844
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 89.25,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        581.7340393066406,
+        1083.8309936523438,
+        604.7110443115234
+      ],
+      "ObjectID": 5488,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          581.8999999999942,
+          1330.6299999999464,
+          604.4589999999735
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11413.0,
+        1337.2044067382812,
+        24587.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5489,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/P",
+      "Text": "A comprehensive risk register and compliance mapping ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11488.5,
+        233.96800231933594,
+        24511.5
+      ],
+      "ObjectID": 5491,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          485.42399999999907,
+          296.627999999997,
+          562.7009999999718
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 77.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        510.9800109863281,
+        213.61700439453125,
+        529.4100189208984
+      ],
+      "ObjectID": 5492,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          511.10299999998824,
+          226.67099999999482,
+          529.2219999999797
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11488.5,
+        233.96800231933594,
+        24511.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5493,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TH/P",
+      "Text": "02 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11488.0,
+        420.9591979980469,
+        24512.0
+      ],
+      "ObjectID": 5494,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          485.42399999999907,
+          676.1719999999914,
+          562.7009999999718
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 77.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        511.72703552246094,
+        383.23399353027344,
+        529.7110290527344
+      ],
+      "ObjectID": 5495,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          511.5829999999987,
+          413.9829999999929,
+          529.4619999999995
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11488.0,
+        420.9591979980469,
+        24512.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5496,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD/P",
+      "Text": "Data ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11488.0,
+        1476.7380065917969,
+        24512.0
+      ],
+      "ObjectID": 5497,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          485.42399999999907,
+          1772.5699999999488,
+          562.7009999999718
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 77.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        506.73399353027344,
+        1470.3510131835938,
+        529.9919891357422
+      ],
+      "ObjectID": 5498,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          506.90299999999115,
+          1470.179999999993,
+          529.8219999999856
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11488.0,
+        1476.7380065917969,
+        24512.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5499,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/P",
+      "Text": "Schema checks, bias analysis, and drift gates embedded into CI/CD ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11563.5,
+        234.06399536132812,
+        24436.5
+      ],
+      "ObjectID": 5501,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          407.90699999999197,
+          296.627999999997,
+          485.42399999999907
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 77.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        435.9800109863281,
+        213.61700439453125,
+        454.41001892089844
+      ],
+      "ObjectID": 5502,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          436.10599999999977,
+          226.79099999999744,
+          454.22499999999127
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11563.5,
+        234.06399536132812,
+        24436.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5503,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TH/P",
+      "Text": "03 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11563.0,
+        437.1063995361328,
+        24437.0
+      ],
+      "ObjectID": 5504,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          407.90699999999197,
+          676.1719999999914,
+          485.42399999999907
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 77.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        436.7499694824219,
+        384.875,
+        454.7109680175781
+      ],
+      "ObjectID": 5505,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          436.5859999999957,
+          430.18199999998615,
+          454.4649999999965
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11563.0,
+        437.1063995361328,
+        24437.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5506,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD/P",
+      "Text": "Model ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11563.0,
+        1488.7115936279297,
+        24437.0
+      ],
+      "ObjectID": 5507,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          407.90699999999197,
+          1772.5699999999488,
+          485.42399999999907
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 77.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        431.7340393066406,
+        1011.6789855957031,
+        454.71104431152344
+      ],
+      "ObjectID": 5508,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          431.9059999999881,
+          1482.0599999999977,
+          454.4649999999965
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11563.0,
+        1488.7115936279297,
+        24437.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5509,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[4]/TD[2]/P",
+      "Text": "Property-based testing, metamorphic testing, and adversarial testing ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11638.5,
+        234.80799865722656,
+        24361.5
+      ],
+      "ObjectID": 5511,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          330.27099999999336,
+          296.627999999997,
+          407.90699999999197
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 77.625,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        360.9800109863281,
+        211.9770050048828,
+        379.41001892089844
+      ],
+      "ObjectID": 5512,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          361.10899999999674,
+          227.75099999999657,
+          379.2289999999921
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11638.5,
+        234.80799865722656,
+        24361.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5513,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TH/P",
+      "Text": "04 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11638.0,
+        465.9904022216797,
+        24362.0
+      ],
+      "ObjectID": 5514,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          330.27099999999336,
+          676.1719999999914,
+          407.90699999999197
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 77.625,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        361.4450225830078,
+        432.59400939941406,
+        379.9920196533203
+      ],
+      "ObjectID": 5515,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          361.58899999999267,
+          459.1009999999951,
+          379.82799999999406
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11638.0,
+        465.9904022216797,
+        24362.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5516,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD/P",
+      "Text": "Scenario ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11638.0,
+        1419.5316009521484,
+        24362.0
+      ],
+      "ObjectID": 5517,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          330.27099999999336,
+          1772.5699999999488,
+          407.90699999999197
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 77.625,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        356.73399353027344,
+        1318.510986328125,
+        379.9919891357422
+      ],
+      "ObjectID": 5518,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          356.90899999999965,
+          1412.9399999999441,
+          379.82799999999406
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11638.0,
+        1419.5316009521484,
+        24362.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5519,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[5]/TD[2]/P",
+      "Text": "Synthetic flows, replay validations, and operational dashboards ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11713.5,
+        234.39999389648438,
+        24286.5
+      ],
+      "ObjectID": 5521,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          252.2739999999976,
+          296.627999999997,
+          330.27099999999336
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 78,
+        "InlineAlign": "Start",
+        "RowIndex": 5,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        285.9800109863281,
+        213.61700439453125,
+        304.41001892089844
+      ],
+      "ObjectID": 5522,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          286.1119999999937,
+          227.15099999999802,
+          304.23199999998906
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11713.5,
+        234.39999389648438,
+        24286.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5523,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TH/P",
+      "Text": "05 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11713.0,
+        486.51759338378906,
+        24287.0
+      ],
+      "ObjectID": 5524,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          252.2739999999976,
+          676.1719999999914,
+          330.27099999999336
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 78,
+        "InlineAlign": "Start",
+        "RowIndex": 5,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        286.4449768066406,
+        414.8160095214844,
+        304.7109680175781
+      ],
+      "ObjectID": 5525,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          286.59199999998964,
+          479.61999999999534,
+          304.4719999999943
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11713.0,
+        486.51759338378906,
+        24287.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5526,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD/P",
+      "Text": "Production ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11713.0,
+        1366.1723937988281,
+        24287.0
+      ],
+      "ObjectID": 5527,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          252.2739999999976,
+          1772.5699999999488,
+          330.27099999999336
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 78,
+        "InlineAlign": "Start",
+        "RowIndex": 5,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        286.4450225830078,
+        928.6279907226562,
+        304.9690246582031
+      ],
+      "ObjectID": 5528,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          281.9119999999966,
+          1359.6599999999744,
+          304.71199999999953
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11713.0,
+        1366.1723937988281,
+        24287.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5529,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[6]/TD[2]/P",
+      "Text": "Continuous monitoring for drift, hallucinations, and latency ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11788.5,
+        233.3679962158203,
+        24211.5
+      ],
+      "ObjectID": 5531,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TH",
+      "attributes": {
+        "BBox": [
+          150.35399999999936,
+          180.87699999999313,
+          296.627999999997,
+          252.2739999999976
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 71.375,
+        "InlineAlign": "Start",
+        "RowIndex": 6,
+        "Width": 146.25
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        210.98001098632812,
+        211.9770050048828,
+        229.41001892089844
+      ],
+      "ObjectID": 5532,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          211.11499999999796,
+          226.31099999999424,
+          229.2349999999933
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11788.5,
+        233.3679962158203,
+        24211.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5533,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TH/P",
+      "Text": "06 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        -11788.0,
+        501.26080322265625,
+        24212.0
+      ],
+      "ObjectID": 5534,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD",
+      "attributes": {
+        "BBox": [
+          296.627999999997,
+          180.87699999999313,
+          676.1719999999914,
+          252.2739999999976
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 71.375,
+        "InlineAlign": "Start",
+        "RowIndex": 6,
+        "Width": 379.375
+      }
+    },
+    {
+      "Bounds": [
+        366.75,
+        211.46896362304688,
+        385.25,
+        229.96896362304688
+      ],
+      "ObjectID": 5535,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          366.94499999999243,
+          211.5949999999939,
+          494.3799999999901,
+          229.7149999999965
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        367.0,
+        -11788.0,
+        501.26080322265625,
+        24212.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5536,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD/P",
+      "Text": "Governance ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        -11788.0,
+        1283.4635925292969,
+        24212.0
+      ],
+      "ObjectID": 5537,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD[2]",
+      "attributes": {
+        "BBox": [
+          676.1719999999914,
+          180.87699999999313,
+          1772.5699999999488,
+          252.2739999999976
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 71.375,
+        "InlineAlign": "Start",
+        "RowIndex": 6,
+        "Width": 1096.3799999999464
+      }
+    },
+    {
+      "Bounds": [
+        755.7919921875,
+        206.73403930664062,
+        1201.97900390625,
+        229.71104431152344
+      ],
+      "ObjectID": 5538,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          755.9689999999828,
+          206.91599999999744,
+          1276.8699999999953,
+          229.47499999999854
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 11.5
+      }
+    },
+    {
+      "Bounds": [
+        756.0420074462891,
+        -11788.0,
+        1283.4635925292969,
+        24212.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5539,
+      "Page": 6,
+      "Path": "//Document/Table[3]/TR[7]/TD[2]/P",
+      "Text": "Audit-ready dossiers and traceability frameworks ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14879.75,
+        1347.2519989013672,
+        30120.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5540,
+      "Page": 6,
+      "Path": "//Document/P[23]",
+      "Text": "More than 90% of compliance controls can be auto-validated in each release cycle. ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        149.9499969482422,
+        -32768.0,
+        1668.0059967041016,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5541,
+      "Page": 7,
+      "Path": "//Document/H1[8]",
+      "Text": "MoolyAImpact \u2014 Practical Assurance for AI-Powered Platforms ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 96,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -12319.779098510742,
+        1702.1739959716797,
+        26722.210906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5542,
+      "Page": 7,
+      "Path": "//Document/P[24]",
+      "Text": "Modern AI-driven platforms leverage intelligent search, automation, and analytics to enhance support efficiency and user experience. As these systems grow in complexity, ensuring reliability, performance, and AI accuracy becomes mission-critical. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": 12
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -12373.789093017578,
+        1745.906005859375,
+        26626.210906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5544,
+      "Page": 7,
+      "Path": "//Document/P[25]/Sub",
+      "Text": "MoolyAImpact\u2019s Quality Framework delivers assurance across these dimensions through a dual-layer model that unifies functional ",
+      "TextSize": 26.0,
+      "attributes": {
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        149.9739990234375,
+        -12415.779098510742,
+        1549.9700012207031,
+        26584.220901489258
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5545,
+      "Page": 7,
+      "Path": "//Document/P[25]/Sub[2]",
+      "Text": "testing, API validation, and AI behaviour evaluation \u2014 enabling measurable reliability, accuracy, and transparency. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.6842803955078,
+        456.6001739501953,
+        223.3182830810547,
+        529.411376953125
+      ],
+      "ObjectID": 5546,
+      "Page": 7,
+      "Path": "//Document/Figure[8]",
+      "attributes": {
+        "BBox": [
+          150.9539999999979,
+          456.74499999999534,
+          223.1909999999989,
+          529.2219999999797
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        152.50390625,
+        -14591.789093017578,
+        338.4169006347656,
+        30408.210906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5547,
+      "Page": 7,
+      "Path": "//Document/H2[12]",
+      "Text": "Technical QA ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        175.00390625,
+        -11637.289093017578,
+        495.027099609375,
+        24362.710906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5550,
+      "Page": 7,
+      "Path": "//Document/L[2]/LI/LBody",
+      "Text": "Validate APIs and data flow.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        188.51589965820312,
+        -11672.28109741211,
+        525.6246948242188,
+        24327.71890258789
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5552,
+      "Page": 7,
+      "Path": "//Document/L[2]/LI[2]/LBody",
+      "Text": "Measure latency and failover.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        188.51589965820312,
+        -11707.27310180664,
+        526.6519012451172,
+        24292.72689819336
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5554,
+      "Page": 7,
+      "Path": "//Document/L[2]/LI[3]/LBody",
+      "Text": "Automate repeatable checks. ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        722.1464080810547,
+        461.6206512451172,
+        780.7721557617188,
+        524.4801177978516
+      ],
+      "ObjectID": 5555,
+      "Page": 7,
+      "Path": "//Document/Figure[9]",
+      "attributes": {
+        "BBox": [
+          722.3709999999846,
+          461.78499999998894,
+          780.5679999999993,
+          524.3029999999853
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        714.50390625,
+        -14591.789093017578,
+        913.4969024658203,
+        30408.210906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5556,
+      "Page": 7,
+      "Path": "//Document/H2[13]",
+      "Text": "Functional QA ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        737.00390625,
+        -11637.289093017578,
+        1009.8383026123047,
+        24362.710906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5559,
+      "Page": 7,
+      "Path": "//Document/L[3]/LI/LBody",
+      "Text": "Run real query variants.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        750.5158996582031,
+        -11672.28109741211,
+        1111.0583038330078,
+        24327.71890258789
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5561,
+      "Page": 7,
+      "Path": "//Document/L[3]/LI[2]/LBody",
+      "Text": "Check accuracy and relevance.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        750.5158996582031,
+        -11707.27310180664,
+        1009.69189453125,
+        24292.72689819336
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5563,
+      "Page": 7,
+      "Path": "//Document/L[3]/LI[3]/LBody",
+      "Text": "Find model/data gaps. ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        1278.5662078857422,
+        458.08819580078125,
+        1348.4412078857422,
+        527.9361877441406
+      ],
+      "ObjectID": 5564,
+      "Page": 7,
+      "Path": "//Document/Figure[10]",
+      "attributes": {
+        "BBox": [
+          1278.789999999979,
+          458.1849999999977,
+          1348.2699999999604,
+          527.6619999999821
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1276.50390625,
+        -14591.789093017578,
+        1523.5718994140625,
+        30408.210906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5565,
+      "Page": 7,
+      "Path": "//Document/H2[14]",
+      "Text": "AI Quality Signals ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1299.00390625,
+        -11637.289093017578,
+        1543.827896118164,
+        24362.710906982422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5568,
+      "Page": 7,
+      "Path": "//Document/L[4]/LI/LBody",
+      "Text": "Detect bias and drift.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        1312.5158996582031,
+        -11672.28109741211,
+        1658.0870971679688,
+        24327.71890258789
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5570,
+      "Page": 7,
+      "Path": "//Document/L[4]/LI[2]/LBody",
+      "Text": "Recheck after model updates.\n ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        1312.5399017333984,
+        -11707.27310180664,
+        1636.093505859375,
+        24292.72689819336
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5572,
+      "Page": 7,
+      "Path": "//Document/L[4]/LI[3]/LBody",
+      "Text": "Track accuracy and latency. ",
+      "TextSize": 24.0
+    },
+    {
+      "Bounds": [
+        181.0,
+        -12817.5,
+        1440.6921997070312,
+        26182.5
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_7",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5574,
+      "Page": 7,
+      "Path": "//Document/Aside/P",
+      "Text": "Expected Outcomes : Consistent AI response accuracy, Strong system reliability, Lower production risks. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        181.0,
+        -12867.046905517578,
+        921.1342010498047,
+        26132.953094482422
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_8",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5575,
+      "Page": 7,
+      "Path": "//Document/Aside/P[2]",
+      "Text": "Deliverables: Defect Matrix, Accuracy Dashboard, Test Suites ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        -0.25,
+        -32768.0,
+        1920.25,
+        32767.99998474121
+      ],
+      "ObjectID": 5576,
+      "Page": 8,
+      "Path": "//Document/Figure[11]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          0.0439452999999989,
+          1919.9199999999837,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.25,
+        -32768.0,
+        1920.25,
+        32767.99998474121
+      ],
+      "ObjectID": 5576,
+      "Page": 8,
+      "Path": "//Document/Figure[11]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          0.0439452999999989,
+          1919.9199999999837,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        1372.4797058105469,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5577,
+      "Page": 9,
+      "Path": "//Document/H1[9]",
+      "Text": "Metrics, Impact, and Next Steps ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -146.5
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -15598.0,
+        1053.5415954589844,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5578,
+      "Page": 9,
+      "Path": "//Document/P[26]",
+      "Text": "Success Metrics Strategic Value Proposition MoolyAImpact\u2019s Framework ensures technical precision and AI integrity by: ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 230.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        148.9469757080078,
+        -11482.375,
+        1590.9179992675781,
+        24734.0
+      ],
+      "ObjectID": 5579,
+      "Page": 9,
+      "Path": "//Document/Table[4]",
+      "attributes": {
+        "BBox": [
+          149.153999999995,
+          480.86399999998685,
+          1590.7799999999697,
+          779.7719999999972
+        ],
+        "NumCol": 2,
+        "NumRow": 4,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart3.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        -11266.275497436523,
+        270.7342071533203,
+        24733.724502563477
+      ],
+      "ObjectID": 5581,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.153999999995,
+          714.6149999999907,
+          556.176999999996,
+          777.9719999999797
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 63.375,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 407
+      }
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        733.1935729980469,
+        263.8483581542969,
+        751.5525665283203
+      ],
+      "ObjectID": 5582,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.71199999999953,
+          733.3339999999735,
+          263.74899999999616,
+          751.3329999999842
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        195.6934051513672,
+        -11266.275497436523,
+        270.7342071533203,
+        24733.724502563477
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5583,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH/P",
+      "Text": "Metric ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        682.5546875,
+        -11266.0,
+        779.9855041503906,
+        24734.0
+      ],
+      "ObjectID": 5584,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          556.176999999996,
+          714.6149999999907,
+          1590.6599999999744,
+          777.9719999999797
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 63.375,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 1034.6199999999953
+      }
+    },
+    {
+      "Bounds": [
+        682.5546875,
+        728.9690246582031,
+        747.3156890869141,
+        751.8280181884766
+      ],
+      "ObjectID": 5585,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH[2]/Figure",
+      "attributes": {
+        "BBox": [
+          682.7719999999972,
+          729.1339999999909,
+          773.0089999999909,
+          751.5729999999749
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        682.8047027587891,
+        -11266.0,
+        779.9855041503906,
+        24734.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5586,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR/TH[2]/P",
+      "Text": "Purpose ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11350.0,
+        346.5711975097656,
+        24650.0
+      ],
+      "ObjectID": 5588,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TH",
+      "attributes": {
+        "BBox": [
+          150.71399999999994,
+          621.0189999999711,
+          556.176999999996,
+          714.6149999999907
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 93.625,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        649.7500152587891,
+        232.13299560546875,
+        667.77001953125
+      ],
+      "ObjectID": 5589,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          645.0179999999818,
+          339.70599999999104,
+          667.5769999999902
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11350.0,
+        346.5711975097656,
+        24650.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5590,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TH/P",
+      "Text": "API Reliability ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        682.25,
+        -11349.265594482422,
+        1044.1679992675781,
+        24650.734405517578
+      ],
+      "ObjectID": 5591,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          556.176999999996,
+          621.0189999999711,
+          1590.6599999999744,
+          714.6149999999907
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 93.625,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 1034.6199999999953
+      }
+    },
+    {
+      "Bounds": [
+        682.25,
+        650.4844055175781,
+        707.1840057373047,
+        668.4454193115234
+      ],
+      "ObjectID": 5592,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          682.4119999999821,
+          645.6179999999877,
+          1037.359999999986,
+          668.176999999996
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        682.5,
+        -11349.265594482422,
+        1044.1679992675781,
+        24650.734405517578
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5593,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[2]/TD/P",
+      "Text": "Ensures stability and data integrity ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.4453125,
+        -11414.093795776367,
+        418.63609313964844,
+        24585.906204223633
+      ],
+      "ObjectID": 5595,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TH",
+      "attributes": {
+        "BBox": [
+          150.71399999999994,
+          556.3409999999858,
+          556.176999999996,
+          621.0189999999711
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 64.625,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        195.4453125,
+        580.7812652587891,
+        302.22230529785156,
+        603.67626953125
+      ],
+      "ObjectID": 5596,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.71199999999953,
+          580.9399999999732,
+          411.70299999999406,
+          603.4989999999816
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        195.69529724121094,
+        -11414.093795776367,
+        418.63609313964844,
+        24585.906204223633
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5597,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TH/P",
+      "Text": "Response Accuracy ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        681.25,
+        -11415.093795776367,
+        1034.8040008544922,
+        24584.906204223633
+      ],
+      "ObjectID": 5598,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          556.176999999996,
+          556.3409999999858,
+          1590.6599999999744,
+          621.0189999999711
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 64.625,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 1034.6199999999953
+      }
+    },
+    {
+      "Bounds": [
+        681.25,
+        584.3512420654297,
+        751.4880065917969,
+        602.6172485351562
+      ],
+      "ObjectID": 5599,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          681.4519999999902,
+          579.859999999986,
+          1028.0,
+          602.4189999999944
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        681.5,
+        -11415.093795776367,
+        1034.8040008544922,
+        24584.906204223633
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5600,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[3]/TD/P",
+      "Text": "Proves AI precision and relevance ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.4453125,
+        -11481.375,
+        361.048095703125,
+        24518.625
+      ],
+      "ObjectID": 5602,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TH",
+      "attributes": {
+        "BBox": [
+          150.71399999999994,
+          481.2239999999874,
+          556.176999999996,
+          556.3409999999858
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 75.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 405.5
+      }
+    },
+    {
+      "Bounds": [
+        195.4453125,
+        518.3750152587891,
+        217.2973175048828,
+        536.39501953125
+      ],
+      "ObjectID": 5603,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.71199999999953,
+          513.6229999999923,
+          354.10599999999977,
+          536.1819999999716
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        195.69529724121094,
+        -11481.375,
+        361.048095703125,
+        24518.625
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5604,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TH/P",
+      "Text": "AI Regressions ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        681.25,
+        -11482.375,
+        954.8648071289062,
+        24517.625
+      ],
+      "ObjectID": 5605,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TD",
+      "attributes": {
+        "BBox": [
+          556.176999999996,
+          481.2239999999874,
+          1590.6599999999744,
+          556.3409999999858
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 75.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 1034.6199999999953
+      }
+    },
+    {
+      "Bounds": [
+        681.25,
+        517.1050415039062,
+        774.1520080566406,
+        535.3360443115234
+      ],
+      "ObjectID": 5606,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          681.4519999999902,
+          512.542999999976,
+          948.0809999999765,
+          535.1019999999844
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        681.5,
+        -11482.375,
+        954.8648071289062,
+        24517.625
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5607,
+      "Page": 9,
+      "Path": "//Document/Table[4]/TR[4]/TD/P",
+      "Text": "Maintains quality and trust ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        161.9375,
+        -12798.979995727539,
+        787.860595703125,
+        26285.0
+      ],
+      "ObjectID": 5608,
+      "Page": 9,
+      "Path": "//Document/Figure[12]",
+      "attributes": {
+        "BBox": [
+          162.2329999999929,
+          194.55599999999686,
+          779.487999999983,
+          305.19199999999546
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        161.9375,
+        -12798.979995727539,
+        787.860595703125,
+        26285.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 5608,
+      "Page": 9,
+      "Path": "//Document/Figure[12]",
+      "Text": "Keeping APIs and data pipelines reliable. Ensuring AI responses are factual and consistent.\n Applying verifiable QA for every release. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "BBox": [
+          162.2329999999929,
+          194.55599999999686,
+          779.487999999983,
+          305.19199999999546
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        153.0,
+        -12863.195297241211,
+        1345.7760009765625,
+        26136.80470275879
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_11",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5609,
+      "Page": 9,
+      "Path": "//Document/P[27]",
+      "Text": "This delivers practical assurance that AI in Service Cloud and KSP is reliable and production-ready. ",
+      "TextSize": 26.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        162.8800048828125,
+        -32768.0,
+        1603.7135925292969,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5610,
+      "Page": 10,
+      "Path": "//Document/H1[10]",
+      "Text": "Outcomes (Pain \u2192 Change \u2192 KPI Lift) ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.9720001220703,
+        -13243.75,
+        1679.0771942138672,
+        28798.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5611,
+      "Page": 10,
+      "Path": "//Document/P[28]",
+      "Text": "MoolyAImpact converts QA challenges into measurable business improvements by accelerating releases, improving resilience, and simplifying compliance preparation. ",
+      "TextSize": 28.0,
+      "attributes": {
+        "LineHeight": 42,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        -11751.804504394531,
+        1709.2424011230469,
+        24649.0
+      ],
+      "ObjectID": 5612,
+      "Page": 10,
+      "Path": "//Document/Table[5]",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          212.9149999999936,
+          1772.0899999999674,
+          694.0959999999905
+        ],
+        "NumCol": 4,
+        "NumRow": 5,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart4.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        -11351.275497436523,
+        255.66940307617188,
+        24648.724502563477
+      ],
+      "ObjectID": 5614,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          629.417999999976,
+          278.028999999995,
+          694.0959999999905
+        ],
+        "BackgroundColor": [
+          0.4666599999999903,
+          0.3607789999999937,
+          0.9843139999999835
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 64.625,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 128
+      }
+    },
+    {
+      "Bounds": [
+        195.443359375,
+        648.1935272216797,
+        210.46336364746094,
+        666.8335266113281
+      ],
+      "ObjectID": 5615,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.71199999999953,
+          648.377999999997,
+          248.75,
+          666.6169999999984
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        195.6934051513672,
+        -11351.275497436523,
+        255.66940307617188,
+        24648.724502563477
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5616,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH/P",
+      "Text": "S:No ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        386.75,
+        -11351.0,
+        436.6463928222656,
+        24649.0
+      ],
+      "ObjectID": 5617,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          278.028999999995,
+          629.417999999976,
+          646.2939999999944,
+          694.0959999999905
+        ],
+        "BackgroundColor": [
+          0.4666599999999903,
+          0.3607789999999937,
+          0.9843139999999835
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 64.625,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 368.25
+      }
+    },
+    {
+      "Bounds": [
+        386.75,
+        648.4800415039062,
+        417.2969970703125,
+        666.8280487060547
+      ],
+      "ObjectID": 5618,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[2]/Figure",
+      "attributes": {
+        "BBox": [
+          386.98399999999674,
+          648.6179999999877,
+          429.70299999999406,
+          666.6169999999984
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        387.0,
+        -11351.0,
+        436.6463928222656,
+        24649.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5619,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[2]/P",
+      "Text": "Pain ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        794.25,
+        -11351.0,
+        1047.222396850586,
+        24649.0
+      ],
+      "ObjectID": 5620,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[3]",
+      "attributes": {
+        "BBox": [
+          646.2939999999944,
+          629.417999999976,
+          1190.109999999986,
+          694.0959999999905
+        ],
+        "BackgroundColor": [
+          0.4666599999999903,
+          0.3607789999999937,
+          0.9843139999999835
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 64.625,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 543.875
+      }
+    },
+    {
+      "Bounds": [
+        794.25,
+        648.7499542236328,
+        811.9409942626953,
+        666.8279571533203
+      ],
+      "ObjectID": 5621,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[3]/Figure",
+      "attributes": {
+        "BBox": [
+          794.487999999983,
+          644.05799999999,
+          1040.2399999999907,
+          666.8569999999891
+        ],
+        "BackgroundColor": [
+          0.0666655999999967,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        794.5,
+        -11351.0,
+        1047.222396850586,
+        24649.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5622,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[3]/P",
+      "Text": "MoolyAImpact Change ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1422.75,
+        -11351.0,
+        1508.7183990478516,
+        24649.0
+      ],
+      "ObjectID": 5623,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[4]",
+      "attributes": {
+        "BBox": [
+          1190.109999999986,
+          629.417999999976,
+          1771.969999999972,
+          694.0959999999905
+        ],
+        "BackgroundColor": [
+          0.4666599999999903,
+          0.3607789999999937,
+          0.9843139999999835
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 64.625,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 582
+      }
+    },
+    {
+      "Bounds": [
+        1422.75,
+        648.7500457763672,
+        1439.2760009765625,
+        666.8280487060547
+      ],
+      "ObjectID": 5624,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[4]/Figure",
+      "attributes": {
+        "BBox": [
+          1422.899999999965,
+          648.737999999983,
+          1501.7399999999907,
+          666.6169999999984
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1423.0,
+        -11351.0,
+        1508.7183990478516,
+        24649.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5625,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR/TH[4]/P",
+      "Text": "KPI Lift ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -10680.3125,
+        227.2710723876953,
+        23041.1875
+      ],
+      "ObjectID": 5627,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          521.6629999999714,
+          278.028999999995,
+          629.417999999976
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 107.75,
+        "InlineAlign": "Center",
+        "RowIndex": 1,
+        "Width": 128
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        559.6855316162109,
+        210.9810028076172,
+        576.9795379638672
+      ],
+      "ObjectID": 5628,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          559.8209999999963,
+          218.5109999999986,
+          576.7399999999907
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -10680.3125,
+        227.2710723876953,
+        23041.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5629,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TH/P",
+      "Text": "01 ",
+      "TextSize": 22.481002807617188,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        -10452.816497802734,
+        496.7171936035156,
+        22573.1875
+      ],
+      "ObjectID": 5630,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          278.028999999995,
+          521.6629999999714,
+          646.2939999999944,
+          629.417999999976
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 107.75,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 368.25
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        568.5224761962891,
+        409.9040069580078,
+        589.5504760742188
+      ],
+      "ObjectID": 5631,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          314.5069999999978,
+          542.6619999999821,
+          490.41999999999825,
+          589.3399999999965
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -10452.816497802734,
+        496.7171936035156,
+        22573.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5632,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD/P",
+      "Text": "Difficulty proving model safety ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 26
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        -10439.8125,
+        1137.0086059570312,
+        22560.1875
+      ],
+      "ObjectID": 5633,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          646.2939999999944,
+          521.6629999999714,
+          1190.109999999986,
+          629.417999999976
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 107.75,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 543.875
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        555.3394622802734,
+        836.4880065917969,
+        576.6794586181641
+      ],
+      "ObjectID": 5634,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          672.93299999999,
+          555.5009999999893,
+          1130.829999999958,
+          576.5
+        ],
+        "BackgroundColor": [
+          0.0666655999999967,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        673.0,
+        -10439.8125,
+        1137.0086059570312,
+        22560.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5635,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[2]/P",
+      "Text": "Compliance gates validate builds at every stage ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        -10439.8125,
+        1471.6511993408203,
+        22560.1875
+      ],
+      "ObjectID": 5636,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1190.109999999986,
+          521.6629999999714,
+          1771.969999999972,
+          629.417999999976
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 107.75,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 582
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        559.6905364990234,
+        1265.0749969482422,
+        576.5725402832031
+      ],
+      "ObjectID": 5637,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[3]/Figure",
+      "attributes": {
+        "BBox": [
+          1217.9499999999534,
+          559.8209999999963,
+          1465.5,
+          576.3799999999756
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1218.0,
+        -10439.8125,
+        1471.6511993408203,
+        22560.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5638,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[2]/TD[3]/P",
+      "Text": "70% reduction in hotfixes ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11537.8125,
+        233.96800231933594,
+        24462.1875
+      ],
+      "ObjectID": 5640,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          421.46699999998964,
+          278.028999999995,
+          521.6629999999714
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 100.25,
+        "InlineAlign": "Center",
+        "RowIndex": 2,
+        "Width": 128
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        461.6675109863281,
+        213.61700439453125,
+        480.09751892089844
+      ],
+      "ObjectID": 5641,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          461.78499999998894,
+          226.67099999999482,
+          479.903999999995
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11537.8125,
+        233.96800231933594,
+        24462.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5642,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TH/P",
+      "Text": "02 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        -11551.804504394531,
+        576.1407928466797,
+        24477.1875
+      ],
+      "ObjectID": 5643,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          278.028999999995,
+          421.46699999998964,
+          646.2939999999944,
+          521.6629999999714
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 100.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 368.25
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        476.9375305175781,
+        331.9409942626953,
+        495.01551818847656
+      ],
+      "ObjectID": 5644,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          314.5069999999978,
+          447.86599999999453,
+          569.2569999999832,
+          494.78399999999965
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -11522.8125,
+        576.1407928466797,
+        24477.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5645,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD/P",
+      "Text": "Manual evaluations that ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -11551.804504394531,
+        448.39599609375,
+        24448.19549560547
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5646,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD/P[2]",
+      "Text": "take weeks ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        -10549.816497802734,
+        1132.0959930419922,
+        22476.1875
+      ],
+      "ObjectID": 5647,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[2]",
+      "attributes": {
+        "BBox": [
+          646.2939999999944,
+          421.46699999998964,
+          1190.109999999986,
+          521.6629999999714
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 100.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 543.875
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        475.65850830078125,
+        737.531005859375,
+        492.4435119628906
+      ],
+      "ObjectID": 5648,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          672.93299999999,
+          445.5859999999957,
+          1125.6699999999837,
+          492.2639999999956
+        ],
+        "BackgroundColor": [
+          0.0666655999999967,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        672.9779968261719,
+        -10549.816497802734,
+        1132.0959930419922,
+        22476.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5649,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[2]/P",
+      "Text": "Automated evaluations complete in less than 15 minutes per PR ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 25.875
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        -10536.8125,
+        1497.8267974853516,
+        22463.1875
+      ],
+      "ObjectID": 5650,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1190.109999999986,
+          421.46699999998964,
+          1771.969999999972,
+          521.6629999999714
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 100.25,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 582
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        462.93748474121094,
+        1257.1900024414062,
+        479.5724792480469
+      ],
+      "ObjectID": 5651,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[3]/Figure",
+      "attributes": {
+        "BBox": [
+          1217.9499999999534,
+          458.54499999999825,
+          1491.539999999979,
+          479.3039999999892
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1218.0,
+        -10536.8125,
+        1497.8267974853516,
+        22463.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5652,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[3]/TD[3]/P",
+      "Text": "2\u20134\u00d7 faster release velocity ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11637.8125,
+        234.06399536132812,
+        24362.1875
+      ],
+      "ObjectID": 5654,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          321.3909999999887,
+          278.028999999995,
+          421.46699999998964
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 100.125,
+        "InlineAlign": "Center",
+        "RowIndex": 3,
+        "Width": 128
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        361.6675109863281,
+        213.61700439453125,
+        380.09751892089844
+      ],
+      "ObjectID": 5655,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          361.8289999999979,
+          226.79099999999744,
+          379.82799999999406
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11637.8125,
+        234.06399536132812,
+        24362.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5656,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TH/P",
+      "Text": "03 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        -11651.804504394531,
+        520.1967926025391,
+        24377.1875
+      ],
+      "ObjectID": 5657,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD",
+      "attributes": {
+        "BBox": [
+          278.028999999995,
+          321.3909999999887,
+          646.2939999999944,
+          421.46699999998964
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 100.125,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 368.25
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        376.6565246582031,
+        380.77301025390625,
+        395.01551818847656
+      ],
+      "ObjectID": 5658,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          314.5069999999978,
+          347.7899999999936,
+          513.3389999999781,
+          394.82799999999406
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -11622.8125,
+        520.1967926025391,
+        24377.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_13",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5659,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD/P",
+      "Text": "Errors that impact ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -11651.804504394531,
+        439.4656066894531,
+        24348.19549560547
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5660,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD/P[2]",
+      "Text": "customers ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        -10636.8125,
+        1159.2814025878906,
+        22363.1875
+      ],
+      "ObjectID": 5661,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[2]",
+      "attributes": {
+        "BBox": [
+          646.2939999999944,
+          321.3909999999887,
+          1190.109999999986,
+          421.46699999998964
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 100.125,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 543.875
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        362.91648864746094,
+        707.0879974365234,
+        379.4434814453125
+      ],
+      "ObjectID": 5662,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          672.93299999999,
+          358.4689999999973,
+          1153.149999999965,
+          379.2289999999921
+        ],
+        "BackgroundColor": [
+          0.0666655999999967,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        673.0,
+        -10636.8125,
+        1159.2814025878906,
+        22363.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5663,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[2]/P",
+      "Text": "Drift monitors automatically raise tickets for issues ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        -10636.8125,
+        1709.2424011230469,
+        22363.1875
+      ],
+      "ObjectID": 5664,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1190.109999999986,
+          321.3909999999887,
+          1771.969999999972,
+          421.46699999998964
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 100.125,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 582
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        362.6585388183594,
+        1356.458999633789,
+        379.5725402832031
+      ],
+      "ObjectID": 5665,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[3]/Figure",
+      "attributes": {
+        "BBox": [
+          1217.9499999999534,
+          362.78899999998976,
+          1702.969999999972,
+          379.3489999999874
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1218.0,
+        -10636.8125,
+        1709.2424011230469,
+        22363.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_13",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5666,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[4]/TD[3]/P",
+      "Text": "60% fewer user-raised issues within three months ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        -11737.8125,
+        234.83200073242188,
+        24262.1875
+      ],
+      "ObjectID": 5668,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          212.9149999999936,
+          278.028999999995,
+          321.3909999999887
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 0,
+        "Height": 108.5,
+        "InlineAlign": "Center",
+        "RowIndex": 4,
+        "Width": 128
+      }
+    },
+    {
+      "Bounds": [
+        195.75,
+        261.6675109863281,
+        211.9770050048828,
+        280.09751892089844
+      ],
+      "ObjectID": 5669,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TH/Figure",
+      "attributes": {
+        "BBox": [
+          195.9519999999975,
+          261.8729999999923,
+          227.75099999999657,
+          279.8729999999923
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        196.0,
+        -11737.8125,
+        234.83200073242188,
+        24262.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5670,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TH/P",
+      "Text": "04 ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        -11751.804504394531,
+        570.2848052978516,
+        24277.1875
+      ],
+      "ObjectID": 5671,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD",
+      "attributes": {
+        "BBox": [
+          278.028999999995,
+          212.9149999999936,
+          646.2939999999944,
+          321.3909999999887
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 1,
+        "Height": 108.5,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 368.25
+      }
+    },
+    {
+      "Bounds": [
+        314.25,
+        272.12147521972656,
+        420.5820007324219,
+        295.0154724121094
+      ],
+      "ObjectID": 5672,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          314.5069999999978,
+          243.2739999999976,
+          563.4969999999739,
+          294.75199999999313
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        314.5,
+        -11751.804504394531,
+        570.2848052978516,
+        24277.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5673,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD/P",
+      "Text": "Long audit preparation cycles ",
+      "TextSize": 24.0,
+      "attributes": {
+        "LineHeight": 29
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        -10736.8125,
+        1166.5106048583984,
+        22263.1875
+      ],
+      "ObjectID": 5674,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[2]",
+      "attributes": {
+        "BBox": [
+          646.2939999999944,
+          212.9149999999936,
+          1190.109999999986,
+          321.3909999999887
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 108.5,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 543.875
+      }
+    },
+    {
+      "Bounds": [
+        672.75,
+        262.65846252441406,
+        742.5590057373047,
+        279.67945861816406
+      ],
+      "ObjectID": 5675,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          672.93299999999,
+          258.51299999999173,
+          1160.2299999999814,
+          279.51299999999173
+        ],
+        "BackgroundColor": [
+          0.0666655999999967,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        673.0,
+        -10736.8125,
+        1166.5106048583984,
+        22263.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5676,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[2]/P",
+      "Text": "Conformity dossiers generated with every release ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        -10736.8125,
+        1655.639404296875,
+        22263.1875
+      ],
+      "ObjectID": 5677,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[3]",
+      "attributes": {
+        "BBox": [
+          1190.109999999986,
+          212.9149999999936,
+          1771.969999999972,
+          321.3909999999887
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 108.5,
+        "InlineAlign": "Start",
+        "RowIndex": 4,
+        "Width": 582
+      }
+    },
+    {
+      "Bounds": [
+        1217.75,
+        258.3724822998047,
+        1366.8040008544922,
+        279.4434814453125
+      ],
+      "ObjectID": 5678,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[3]/Figure",
+      "attributes": {
+        "BBox": [
+          1217.9499999999534,
+          258.51299999999173,
+          1649.329999999958,
+          279.2729999999865
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1218.0,
+        -10736.8125,
+        1655.639404296875,
+        22263.1875
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5679,
+      "Page": 10,
+      "Path": "//Document/Table[5]/TR[5]/TD[3]/P",
+      "Text": "Audit prep time reduced from weeks to days ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14862.75,
+        1724.7899932861328,
+        30137.25
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_12",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5680,
+      "Page": 10,
+      "Path": "//Document/P[29]",
+      "Text": "Teams using MoolyAImpact have reported 30\u201340% cost savings in QA cycles within the first year of adoption. ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        658.0,
+        -32768.0,
+        1291.6959991455078,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_14",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 5681,
+      "Page": 11,
+      "Path": "//Document/P[30]",
+      "Text": "Thank You! ",
+      "TextSize": 120.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "TextAlign": "Center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 0,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 1,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 2,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 3,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 4,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 5,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 6,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 7,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 8,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 9,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 10,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 11,
+      "rotation": 0,
+      "width": 1920.0
+    }
+  ]
+}

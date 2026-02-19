@@ -1,0 +1,311 @@
+{
+  "version": "1.0",
+  "document_id": 25,
+  "created_at": "2026-02-19T05:24:16.924250Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya Testing Excellence",
+        "20+"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Moolya Testing Excellence",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "20+",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Case Study 1"
+      ],
+      "h2": [
+        "Enhancing Banking Stability with Functional and Automated Testing"
+      ],
+      "h3": [
+        "Services and Solutions",
+        "Challenges Faced",
+        "Benefits"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Functional Testing, Test Automation, and Performance Testing to ensure seamless banking operations and superior user experience.",
+          "•",
+          "Automated end-to-end testing covering 250+ critical banking workflows to minimize manual errors.",
+          "•",
+          "Load testing with l00,000+ concurrent users to validate system resilience under peak loads."
+        ],
+        [
+          "•",
+          "37% defects detected in production, causing service disruptions.",
+          "•",
+          "15% rise in customer complaints due to frequent issues.",
+          "•",
+          "Slow release cycles delaying updates by 3-4 weeks."
+        ],
+        [
+          "•",
+          "Improved release quality by reducing defects by 28%.",
+          "•",
+          "Increased test automation coverage by 35%, accelerating release.",
+          "•",
+          "Reduced production incidents by 20%, enhancing platform stability."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 1",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Enhancing Banking Stability with Functional and Automated Testing",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Services and Solutions",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Functional Testing, Test Automation, and Performance Testing to ensure seamless banking operations and superior user experience.\n• •\n• Automated end-to-end testing covering 250+ critical banking workflows to minimize manual errors.\n• •\n• Load testing with l00,000+ concurrent users to validate system resilience under peak loads.",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Challenges Faced",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• 37% defects detected in production, causing service disruptions.\n• •\n• 15% rise in customer complaints due to frequent issues.\n• •\n• Slow release cycles delaying updates by 3-4 weeks.",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Benefits",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Improved release quality by reducing defects by 28%.\n• •\n• Increased test automation coverage by 35%, accelerating release.\n• •\n• Reduced production incidents by 20%, enhancing platform stability.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Case Study 2"
+      ],
+      "h2": [
+        "Strengthening Security and Compliance in Financial Services"
+      ],
+      "h3": [
+        "Services and Solutions",
+        "Challenges Faced",
+        "Benefits"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Performed Security Testing, Compliance Testing, and Functional Testing to align with regulatory requirements and protect sensitive financial data.",
+          "•",
+          "Risk Assessment & Mitigation: Comprehensive risk analysis to identify vulnerabilities and improve risk management strategies."
+        ],
+        [
+          "•",
+          "45% of audits flagged security risks, potentially impacting up to $5M in compliance costs.",
+          "•",
+          "Need for stronger compliance to protect 1.2M+ customer records"
+        ],
+        [
+          "•",
+          "Enhanced security protocols reduced vulnerabilities by 30%.",
+          "•",
+          "Achieved a 25% improvement in compliance audit success rates.",
+          "•",
+          "Reduced time-to-market by 22% due to optimized testing processes."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 2",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Strengthening Security and Compliance in Financial Services",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Services and Solutions",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Performed Security Testing, Compliance Testing, and Functional Testing to align with regulatory requirements and protect sensitive financial data.\n• •\n• Risk Assessment & Mitigation: Comprehensive risk analysis to identify vulnerabilities and improve risk management strategies.",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Challenges Faced",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• 45% of audits flagged security risks, potentially impacting up to $5M in compliance costs.\n• •\n• Need for stronger compliance to protect 1.2M+ customer records",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Benefits",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Enhanced security protocols reduced vulnerabilities by 30%.\n• •\n• Achieved a 25% improvement in compliance audit success rates.\n• •\n• Reduced time-to-market by 22% due to optimized testing processes.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Case Study 3"
+      ],
+      "h2": [
+        "Optimizing Performance and User Experience in High-Traffic Banking Operations"
+      ],
+      "h3": [
+        "Services and Solutions",
+        "Challenges Faced",
+        "Benefits"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Usability Testing, Performance Testing, and Regression Testing to support rapid iterations of new features.",
+          "•",
+          "Performance Benchmarking: Setting performance baselines and conducting regular benchmarks to track improvements and system capabilities."
+        ],
+        [
+          "•",
+          "24% failed transactions during peak hours.",
+          "•",
+          "21 % higher user drop-off rates due to performance lags."
+        ],
+        [
+          "•",
+          "Achieved a 35% increase in feature deployment speed.",
+          "•",
+          "Reduced downtime during high traffic events by 27%.",
+          "•",
+          "Improved user satisfaction scores by 32%"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 3",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Optimizing Performance and User Experience in High-Traffic Banking Operations",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Services and Solutions",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Usability Testing, Performance Testing, and Regression Testing to support rapid iterations of new features.\n• •\n• Performance Benchmarking: Setting performance baselines and conducting regular benchmarks to track improvements and system capabilities.",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Challenges Faced",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• 24% failed transactions during peak hours.\n• •\n• 21 % higher user drop-off rates due to performance lags.",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Benefits",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Achieved a 35% increase in feature deployment speed.\n• •\n• Reduced downtime during high traffic events by 27%.\n• •\n• Improved user satisfaction scores by 32%",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Our Customers Who Have Experienced the Moolya Values"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Customers Who Have Experienced the Moolya Values",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2427 @@
+{
+  "version": {
+    "json_export": "226",
+    "page_segmentation": "55",
+    "schema": "1.1.0",
+    "structure": "1.1183.0",
+    "table_structure": "5"
+  },
+  "extended_metadata": {
+    "ID_instance": "69 70 14 87 EF BE B2 11 0A 00 49 48 AA 40 93 83 ",
+    "ID_permanent": "31 3A 31 32 39 ",
+    "has_acroform": false,
+    "has_embedded_files": false,
+    "is_XFA": false,
+    "is_certified": false,
+    "is_encrypted": false,
+    "is_digitally_signed": false,
+    "language": "en",
+    "page_count": 6,
+    "pdf_version": "1.7",
+    "pdfa_compliance_level": "",
+    "pdfua_compliance_level": ""
+  },
+  "elements": [
+    {
+      "Bounds": [
+        165.0,
+        -32768.0,
+        1287.6623992919922,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1594,
+      "Page": 0,
+      "Path": "//Document/P",
+      "Text": "Moolya Testing Excellence ",
+      "TextSize": 96.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        164.75,
+        451.16595458984375,
+        682.6829833984375,
+        486.2559509277344
+      ],
+      "ObjectID": 1595,
+      "Page": 0,
+      "Path": "//Document/Figure",
+      "attributes": {
+        "BBox": [
+          164.99299999999494,
+          -88.65439999999944,
+          682.5319999999774,
+          -53.975799999998344
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -29746.0,
+        1136.3899993896484,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1596,
+      "Page": 0,
+      "Path": "//Document/P[2]",
+      "Text": "20+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        1006.75,
+        -14811.0,
+        1140.1009979248047,
+        30189.0
+      ],
+      "ObjectID": 1597,
+      "Page": 0,
+      "Path": "//Document/Figure[2]",
+      "attributes": {
+        "BBox": [
+          1007.0,
+          -351.4439999999886,
+          1132.509999999951,
+          -327.6849999999977
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1006.75,
+        -14811.0,
+        1140.1009979248047,
+        30189.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1597,
+      "Page": 0,
+      "Path": "//Document/Figure[2]",
+      "Text": "Countries ",
+      "TextSize": 30.0,
+      "attributes": {
+        "BBox": [
+          1007.0,
+          -351.4439999999886,
+          1132.509999999951,
+          -327.6849999999977
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1361.75,
+        -29746.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "ObjectID": 1598,
+      "Page": 0,
+      "Path": "//Document/Figure[3]",
+      "attributes": {
+        "BBox": [
+          1361.9399999999441,
+          -286.7659999999887,
+          1545.7799999999697,
+          -239.48799999999756
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1361.75,
+        -29746.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1598,
+      "Page": 0,
+      "Path": "//Document/Figure[3]",
+      "Text": "80% ",
+      "TextSize": 60.0,
+      "attributes": {
+        "BBox": [
+          1361.9399999999441,
+          -286.7659999999887,
+          1545.7799999999697,
+          -239.48799999999756
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        486.3679962158203,
+        153.59799194335938,
+        502.19500732421875
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-1641",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1599,
+      "Page": 1,
+      "Path": "//Document/H1",
+      "Text": "Case Study 1 ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 8.5
+      }
+    },
+    {
+      "Bounds": [
+        50.85699462890625,
+        428.9196014404297,
+        471.71971130371094,
+        471.88360595703125
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-1642",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1600,
+      "Page": 1,
+      "Path": "//Document/H2",
+      "Text": "Enhancing Banking Stability with Functional and Automated Testing ",
+      "TextSize": 23.0,
+      "attributes": {
+        "LineHeight": 24,
+        "SpaceAfter": 16.125
+      }
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        393.3437042236328,
+        216.2699737548828,
+        409.1707000732422
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-1641",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1601,
+      "Page": 1,
+      "Path": "//Document/H3",
+      "Text": "Services and Solutions ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 4.25
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        367.01629638671875,
+        63.368499755859375,
+        378.9788055419922
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1604,
+      "Page": 1,
+      "Path": "//Document/L/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        344.4512939453125,
+        471.08526611328125,
+        379.03880310058594
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1605,
+      "Page": 1,
+      "Path": "//Document/L/LI/LBody",
+      "Text": "Functional Testing, Test Automation, and Performance Testing to ensure seamless banking operations and superior user experience. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        322.0036926269531,
+        63.368499755859375,
+        333.96620178222656
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1607,
+      "Page": 1,
+      "Path": "//Document/L/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        68.89849853515625,
+        299.54119873046875,
+        495.69830322265625,
+        333.96620178222656
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1608,
+      "Page": 1,
+      "Path": "//Document/L/LI[2]/LBody",
+      "Text": "Automated end-to-end testing covering 250+ critical banking workflows to minimize manual errors. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        277.0561981201172,
+        63.368499755859375,
+        289.0187072753906
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1610,
+      "Page": 1,
+      "Path": "//Document/L/LI[3]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        254.42120361328125,
+        495.02500915527344,
+        289.0187072753906
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1611,
+      "Page": 1,
+      "Path": "//Document/L/LI[3]/LBody",
+      "Text": "Load testing with l00,000+ concurrent users to validate system resilience under peak loads. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        216.4364013671875,
+        179.4994659423828,
+        232.26339721679688
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-1641",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1612,
+      "Page": 1,
+      "Path": "//Document/H3[2]",
+      "Text": "Challenges Faced ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 12.125
+      }
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        190.11019897460938,
+        63.668304443359375,
+        202.07269287109375
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1615,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        189.99020385742188,
+        439.2030334472656,
+        201.95269775390625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1616,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI/LBody",
+      "Text": "37% defects detected in production, causing service disruptions. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        167.53250122070312,
+        63.668304443359375,
+        179.4949951171875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1618,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.1199951171875,
+        167.53250122070312,
+        384.45716857910156,
+        179.4949951171875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1619,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI[2]/LBody",
+      "Text": "15% rise in customer complaints due to frequent issues. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        144.87620544433594,
+        63.668304443359375,
+        156.8386993408203
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1621,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI[3]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        144.99620056152344,
+        370.80995178222656,
+        156.9586944580078
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1622,
+      "Page": 1,
+      "Path": "//Document/L[2]/LI[3]/LBody",
+      "Text": "Slow release cycles delaying updates by 3-4 weeks. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        106.92799377441406,
+        113.70622253417969,
+        122.7550048828125
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-1641",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1623,
+      "Page": 1,
+      "Path": "//Document/H3[3]",
+      "Text": "Benefits ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 12.125
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        80.44039916992188,
+        63.368499755859375,
+        92.40289306640625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1626,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        80.44039916992188,
+        376.797119140625,
+        92.40289306640625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1627,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI/LBody",
+      "Text": "Improved release quality by reducing defects by 28%. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        58.05650329589844,
+        63.368499755859375,
+        70.01899719238281
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1629,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        57.99650573730469,
+        446.1356506347656,
+        69.95899963378906
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1630,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI[2]/LBody",
+      "Text": "Increased test automation coverage by 35%, accelerating release. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        35.592498779296875,
+        63.368499755859375,
+        47.55499267578125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1632,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI[3]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        35.532501220703125,
+        453.8049621582031,
+        47.55499267578125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-1643",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1633,
+      "Page": 1,
+      "Path": "//Document/L[3]/LI[3]/LBody",
+      "Text": "Reduced production incidents by 20%, enhancing platform stability. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1312.0000610351562,
+        16384.0
+      ],
+      "ClipBounds": [
+        593.9660034179688,
+        111.00700378417969,
+        894.573974609375,
+        435.614013671875
+      ],
+      "ObjectID": 1634,
+      "Page": 1,
+      "Path": "//Document/Figure[4]",
+      "attributes": {
+        "BBox": [
+          594.2159999999858,
+          111.25699999999779,
+          894.3239999999932,
+          435.36399999998685
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1312.0000610351562,
+        16384.0
+      ],
+      "ClipBounds": [
+        593.9660034179688,
+        111.00700378417969,
+        894.573974609375,
+        435.614013671875
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-1640",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1634,
+      "Page": 1,
+      "Path": "//Document/Figure[4]",
+      "Text": "---",
+      "TextSize": 60.0,
+      "attributes": {
+        "BBox": [
+          594.2159999999858,
+          111.25699999999779,
+          894.3239999999932,
+          435.36399999998685
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        486.31689453125,
+        158.3386993408203,
+        502.2799072265625
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-3459",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1635,
+      "Page": 2,
+      "Path": "//Document/H1[2]",
+      "Text": "Case Study 2 ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 9.5
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1226.3578491210938,
+        16384.0
+      ],
+      "ClipBounds": [
+        892.7540283203125,
+        485.75201416015625,
+        935.9720458984375,
+        521.291015625
+      ],
+      "ObjectID": 1636,
+      "Page": 2,
+      "Path": "//Document/Figure[5]",
+      "attributes": {
+        "BBox": [
+          893.0039999999863,
+          1026.0,
+          935.7219999999797,
+          1061.039999999979
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1226.3578491210938,
+        16384.0
+      ],
+      "ClipBounds": [
+        892.7540283203125,
+        485.75201416015625,
+        935.9720458984375,
+        521.291015625
+      ],
+      "ObjectID": 1636,
+      "Page": 2,
+      "Path": "//Document/Figure[5]",
+      "attributes": {
+        "BBox": [
+          893.0039999999863,
+          1026.0,
+          935.7219999999797,
+          1061.039999999979
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        50.8800048828125,
+        428.85780334472656,
+        429.6000061035156,
+        471.91380310058594
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-3455",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1637,
+      "Page": 2,
+      "Path": "//Document/H2[2]",
+      "Text": "Strengthening Security and Compliance in Financial Services ",
+      "TextSize": 23.0,
+      "attributes": {
+        "LineHeight": 24.125,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        51.01139831542969,
+        387.7346954345703,
+        215.91122436523438,
+        401.8786926269531
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-3457",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1638,
+      "Page": 2,
+      "Path": "//Document/H3[4]",
+      "Text": "Services and Solutions ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 4.5
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        361.0471954345703,
+        63.368499755859375,
+        373.9971923828125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1641,
+      "Page": 2,
+      "Path": "//Document/L[4]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        338.44970703125,
+        514.5599517822266,
+        373.93719482421875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1642,
+      "Page": 2,
+      "Path": "//Document/L[4]/LI/LBody",
+      "Text": "Performed Security Testing, Compliance Testing, and Functional Testing to align with regulatory requirements and protect sensitive financial data. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        316.0144958496094,
+        63.368499755859375,
+        328.96449279785156
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1644,
+      "Page": 2,
+      "Path": "//Document/L[4]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.34500122070312,
+        293.55450439453125,
+        461.1575927734375,
+        328.9044952392578
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1645,
+      "Page": 2,
+      "Path": "//Document/L[4]/LI[2]/LBody",
+      "Text": "Risk Assessment & Mitigation: Comprehensive risk analysis to identify vulnerabilities and improve risk management strategies. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        255.7073974609375,
+        179.4828643798828,
+        269.8513946533203
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-3457",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1646,
+      "Page": 2,
+      "Path": "//Document/H3[5]",
+      "Text": "Challenges Faced ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 4.375
+      }
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        228.96470642089844,
+        63.668304443359375,
+        241.91470336914062
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1649,
+      "Page": 2,
+      "Path": "//Document/L[5]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.1199951171875,
+        206.44720458984375,
+        470.3397674560547,
+        242.03469848632812
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1650,
+      "Page": 2,
+      "Path": "//Document/L[5]/LI/LBody",
+      "Text": "45% of audits flagged security risks, potentially impacting up to $5M in compliance costs. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        184.00250244140625,
+        63.668304443359375,
+        196.95249938964844
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1652,
+      "Page": 2,
+      "Path": "//Document/L[5]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        183.9425048828125,
+        448.7093505859375,
+        196.8925018310547
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1653,
+      "Page": 2,
+      "Path": "//Document/L[5]/LI[2]/LBody",
+      "Text": "Need for stronger compliance to protect 1.2M+ customer records ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        146.3256072998047,
+        113.65538024902344,
+        160.4696044921875
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-3457",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1654,
+      "Page": 2,
+      "Path": "//Document/H3[6]",
+      "Text": "Benefits ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 12
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        119.61500549316406,
+        63.368499755859375,
+        132.56500244140625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1657,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        119.4949951171875,
+        412.55332946777344,
+        132.44500732421875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1658,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI/LBody",
+      "Text": "Enhanced security protocols reduced vulnerabilities by 30%. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        96.96620178222656,
+        63.368499755859375,
+        109.91619873046875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1660,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        96.96620178222656,
+        435.07102966308594,
+        109.91619873046875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1661,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI[2]/LBody",
+      "Text": "Achieved a 25% improvement in compliance audit success rates. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        74.481201171875,
+        63.368499755859375,
+        87.43119812011719
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1663,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI[3]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        74.481201171875,
+        466.3736572265625,
+        87.43119812011719
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-3456",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1664,
+      "Page": 2,
+      "Path": "//Document/L[6]/LI[3]/LBody",
+      "Text": "Reduced time-to-market by 22% due to optimized testing processes. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1226.3578491210938,
+        16384.0
+      ],
+      "ClipBounds": [
+        532.0479736328125,
+        53.410003662109375,
+        960.2109375,
+        410.7749938964844
+      ],
+      "ObjectID": 1665,
+      "Page": 2,
+      "Path": "//Document/Figure[6]",
+      "attributes": {
+        "BBox": [
+          532.2979999999807,
+          593.6599999999744,
+          959.9609999999811,
+          950.5249999999942
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1226.3578491210938,
+        16384.0
+      ],
+      "ClipBounds": [
+        532.0479736328125,
+        53.410003662109375,
+        960.2109375,
+        410.7749938964844
+      ],
+      "ObjectID": 1665,
+      "Page": 2,
+      "Path": "//Document/Figure[6]",
+      "attributes": {
+        "BBox": [
+          532.2979999999807,
+          593.6599999999744,
+          959.9609999999811,
+          950.5249999999942
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        486.3679962158203,
+        158.59860229492188,
+        502.19500732421875
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-5035",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1666,
+      "Page": 3,
+      "Path": "//Document/H1[3]",
+      "Text": "Case Study 3 ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 8.5
+      }
+    },
+    {
+      "Bounds": [
+        50.8800048828125,
+        428.9470977783203,
+        479.0436553955078,
+        471.93409729003906
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-5032",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1667,
+      "Page": 3,
+      "Path": "//Document/H2[3]",
+      "Text": "Optimizing Performance and User Experience in High-Traffic Banking Operations ",
+      "TextSize": 23.0,
+      "attributes": {
+        "LineHeight": 24,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        387.7346954345703,
+        215.9477996826172,
+        401.8786926269531
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-5034",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1668,
+      "Page": 3,
+      "Path": "//Document/H3[7]",
+      "Text": "Services and Solutions ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 4.5
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        360.96510314941406,
+        63.368499755859375,
+        372.97760009765625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1671,
+      "Page": 3,
+      "Path": "//Document/L[7]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.35560607910156,
+        338.46510314941406,
+        482.1302490234375,
+        372.97760009765625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1672,
+      "Page": 3,
+      "Path": "//Document/L[7]/LI/LBody",
+      "Text": "Usability Testing, Performance Testing, and Regression Testing to support rapid iterations of new features. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        315.94200134277344,
+        63.368499755859375,
+        327.9544982910156
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1674,
+      "Page": 3,
+      "Path": "//Document/L[7]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.37559509277344,
+        293.47950744628906,
+        493.25933837890625,
+        327.9544982910156
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1675,
+      "Page": 3,
+      "Path": "//Document/L[7]/LI[2]/LBody",
+      "Text": "Performance Benchmarking: Setting performance baselines and conducting regular benchmarks to track improvements and system capabilities. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.35029602050781,
+        255.7073974609375,
+        179.1864013671875,
+        269.8513946533203
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-5034",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1676,
+      "Page": 3,
+      "Path": "//Document/H3[8]",
+      "Text": "Challenges Faced ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 11.875
+      }
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        229.02479553222656,
+        63.668304443359375,
+        241.03729248046875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1679,
+      "Page": 3,
+      "Path": "//Document/L[8]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        229.02479553222656,
+        311.0546417236328,
+        241.03729248046875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1680,
+      "Page": 3,
+      "Path": "//Document/L[8]/LI/LBody",
+      "Text": "24% failed transactions during peak hours. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        57.839996337890625,
+        206.4752960205078,
+        63.668304443359375,
+        218.48779296875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1682,
+      "Page": 3,
+      "Path": "//Document/L[8]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        206.3553009033203,
+        391.78277587890625,
+        218.42779541015625
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1683,
+      "Page": 3,
+      "Path": "//Document/L[8]/LI[2]/LBody",
+      "Text": "21 % higher user drop-off rates due to performance lags. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        50.63999938964844,
+        168.8852996826172,
+        113.99882507324219,
+        183.029296875
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-5034",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1684,
+      "Page": 3,
+      "Path": "//Document/H3[9]",
+      "Text": "Benefits ",
+      "TextSize": 17.0,
+      "attributes": {
+        "LineHeight": 20.375,
+        "SpaceAfter": 12.125
+      }
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        141.94439697265625,
+        63.368499755859375,
+        153.95689392089844
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1687,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        141.94439697265625,
+        383.6625518798828,
+        154.01690673828125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1688,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI/LBody",
+      "Text": "Achieved a 35% increase in feature deployment speed. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        119.54249572753906,
+        63.368499755859375,
+        131.55499267578125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1690,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI[2]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        119.54249572753906,
+        374.64764404296875,
+        131.55499267578125
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1691,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI[2]/LBody",
+      "Text": "Reduced downtime during high traffic events by 27%. ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        58.08000183105469,
+        96.9197998046875,
+        63.368499755859375,
+        108.93229675292969
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1693,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI[3]/Lbl",
+      "Text": "\u2022 ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        69.36000061035156,
+        96.97979736328125,
+        308.76515197753906,
+        108.99229431152344
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-5033",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1694,
+      "Page": 3,
+      "Path": "//Document/L[9]/LI[3]/LBody",
+      "Text": "Improved user satisfaction scores by 32% ",
+      "TextSize": 12.5
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1199.0,
+        16384.0
+      ],
+      "ClipBounds": [
+        530.968017578125,
+        -0.2400054931640625,
+        960.2110595703125,
+        540.25
+      ],
+      "ObjectID": 1695,
+      "Page": 3,
+      "Path": "//Document/Figure[7]",
+      "attributes": {
+        "BBox": [
+          531.2179999999935,
+          540.0219999999972,
+          959.9609999999811,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -9567.0,
+        1199.0,
+        16384.0
+      ],
+      "ClipBounds": [
+        530.968017578125,
+        -0.2400054931640625,
+        960.2110595703125,
+        540.25
+      ],
+      "ObjectID": 1695,
+      "Page": 3,
+      "Path": "//Document/Figure[7]",
+      "attributes": {
+        "BBox": [
+          531.2179999999935,
+          540.0219999999972,
+          959.9609999999811,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -16384.0,
+        960.125,
+        16384.0
+      ],
+      "ClipBounds": [
+        892.1539916992188,
+        486.11199951171875,
+        935.011962890625,
+        521.1710205078125
+      ],
+      "ObjectID": 1696,
+      "Page": 4,
+      "Path": "//Document/Figure[8]",
+      "attributes": {
+        "BBox": [
+          892.4039999999804,
+          1026.359999999986,
+          934.7619999999879,
+          1060.9199999999837
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -16384.0,
+        960.125,
+        16384.0
+      ],
+      "ClipBounds": [
+        892.1539916992188,
+        486.11199951171875,
+        935.011962890625,
+        521.1710205078125
+      ],
+      "ObjectID": 1696,
+      "Page": 4,
+      "Path": "//Document/Figure[8]",
+      "attributes": {
+        "BBox": [
+          892.4039999999804,
+          1026.359999999986,
+          934.7619999999879,
+          1060.9199999999837
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        76.80000305175781,
+        390.0314025878906,
+        815.4556884765625,
+        475.80340576171875
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-Bold-6378",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1697,
+      "Page": 4,
+      "Path": "//Document/H1[4]",
+      "Text": "Our Customers Who Have Experienced the Moolya Values ",
+      "TextSize": 41.0,
+      "attributes": {
+        "LineHeight": 48,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -16384.0,
+        960.125,
+        16384.0
+      ],
+      "ClipBounds": [
+        59.75999450683594,
+        61.08900451660156,
+        900.7199859619141,
+        356.7769775390625
+      ],
+      "ObjectID": 1698,
+      "Page": 4,
+      "Path": "//Document/Figure[9]",
+      "attributes": {
+        "BBox": [
+          67.55729999999676,
+          601.3389999999781,
+          876.4439999999886,
+          896.5269999999728
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.125,
+        -16384.0,
+        960.125,
+        16384.0
+      ],
+      "ClipBounds": [
+        59.75999450683594,
+        61.08900451660156,
+        900.7199859619141,
+        356.7769775390625
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-6373",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 1698,
+      "Page": 4,
+      "Path": "//Document/Figure[9]",
+      "Text": "KUVERA ,s\u00bbbosank \u00a9 cRED Network[[) BHIM\u00bb ICICILombard \u00a7FNibhaye Vaade \u0141 \u0141 Jupiter inovopay < kaleidofin OpTaMix \u0141\u0141 Bandhan \u0141 Bank Pay Payim ADIA ",
+      "TextSize": 26.5,
+      "attributes": {
+        "BBox": [
+          67.55729999999676,
+          601.3389999999781,
+          876.4439999999886,
+          896.5269999999728
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        658.0,
+        -32768.0,
+        1291.6959991455078,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 1699,
+      "Page": 5,
+      "Path": "//Document/P[3]",
+      "Text": "Thank You! ",
+      "TextSize": 120.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "TextAlign": "Center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 0,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ]
+      },
+      "height": 540.0,
+      "is_scanned": true,
+      "page_number": 1,
+      "rotation": 0,
+      "width": 960.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ]
+      },
+      "height": 540.0,
+      "is_scanned": true,
+      "page_number": 2,
+      "rotation": 0,
+      "width": 960.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ]
+      },
+      "height": 540.0,
+      "is_scanned": true,
+      "page_number": 3,
+      "rotation": 0,
+      "width": 960.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          960.0,
+          540.0
+        ]
+      },
+      "height": 540.0,
+      "is_scanned": true,
+      "page_number": 4,
+      "rotation": 0,
+      "width": 960.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 5,
+      "rotation": 0,
+      "width": 1920.0
+    }
+  ]
+}

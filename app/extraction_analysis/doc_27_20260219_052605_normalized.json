@@ -1,0 +1,2571 @@
+{
+  "version": "1.0",
+  "document_id": 27,
+  "created_at": "2026-02-19T05:26:05.898023Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya Testing",
+        "Test Automation for Industrial Automation Systems"
+      ],
+      "list": [],
+      "table": [
+        "14+",
+        "200+",
+        "20+",
+        "80%",
+        "Years in Business",
+        "Customers",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Moolya Testing",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Test Automation for Industrial Automation Systems",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Years in Business",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Customers",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Who we are",
+        "Why Choose us"
+      ],
+      "h2": [
+        "Skin in the Game",
+        "Culture Focus",
+        "Leadership Friendly",
+        "Scaling Value"
+      ],
+      "h3": [],
+      "p": [
+        "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+        "We go beyond vendor roles, fostering deep co-ownership with customers.",
+        "We help customers address issues by focusing on cultural fixes.",
+        "Moolya empowers C-, V-, and D-level leaders with insights.",
+        "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Who we are",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+          "page_number": 2
+        },
+        {
+          "type": "h1",
+          "text": "Why Choose us",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Skin in the Game",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "We go beyond vendor roles, fostering deep co-ownership with customers.",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Culture Focus",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "We help customers address issues by focusing on cultural fixes.",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Leadership Friendly",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya empowers C-, V-, and D-level leaders with insights.",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Scaling Value",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Moolya Growth Driven Testing framework"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "S:No",
+        "Aspect",
+        "Growth Driven Testing",
+        "Regular Testing",
+        "01",
+        "Approach",
+        "Adapts methodologies based on project context.",
+        "Follows predefined testing processes agnostic to projects.",
+        "02",
+        "Flexibility",
+        "Flexible in choosing techniques and approaches.",
+        "Testing procedures are not changed and are prefixed.",
+        "03",
+        "Emphasis",
+        "Focuses on critical thinking and exploration.",
+        "Emphasizes adherence to test plans.",
+        "04",
+        "Testing Goals",
+        "Prioritizes on testing being aligned to",
+        "Business goals and moving from Bug finding to prevention of bugs.",
+        "Aims to verify compliance with requirements.",
+        "05",
+        "Mindset",
+        "Encourages creativity and adaptability.",
+        "Emphasizes structured and procedural approaches."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya Growth Driven Testing framework",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Aspect",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Growth Driven Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Regular Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Approach",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Adapts methodologies based on project context.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Follows predefined testing processes agnostic to projects.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Flexibility",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Flexible in choosing techniques and approaches.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Testing procedures are not changed and are prefixed.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Emphasis",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Focuses on critical thinking and exploration.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Emphasizes adherence to test plans.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "04",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Testing Goals",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Prioritizes on testing being aligned to",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Business goals and moving from Bug finding to prevention of bugs.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Aims to verify compliance with requirements.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "05",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Mindset",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Encourages creativity and adaptability.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Emphasizes structured and procedural approaches.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Solutions Led Delivery"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Advantages of Solution-Led Delivery"
+      ],
+      "list": [],
+      "table": [
+        "360°",
+        "Testing Solution",
+        "Fastrack",
+        "Automation",
+        "Rapid Deployment",
+        "Testing Solution",
+        "SpeedMaster",
+        "Optimization Solution",
+        "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction.",
+        "Dynamic, tool-agnostic automation to reduce",
+        "time-to-market and ensure",
+        "thorough test coverage.",
+        "Streamlined testing for faster release cycles and confident, quality product delivery.",
+        "Performance optimization to boost application speed, responsiveness, and scalability.",
+        "Alignment with Customer’s",
+        "Digital transformation goals",
+        "Testing Solutions",
+        "Address unique challenges & requirements",
+        "Accelerated",
+        "Time to Market & Reduced Cost"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Solutions Led Delivery",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "360°",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Testing Solution",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Fastrack",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Automation",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Rapid Deployment",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Testing Solution",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "SpeedMaster",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Optimization Solution",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Dynamic, tool-agnostic automation to reduce",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "time-to-market and ensure",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "thorough test coverage.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Streamlined testing for faster release cycles and confident, quality product delivery.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Performance optimization to boost application speed, responsiveness, and scalability.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Alignment with Customer’s",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Digital transformation goals",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Testing Solutions",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Address unique challenges & requirements",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Accelerated",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Time to Market & Reduced Cost",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Advantages of Solution-Led Delivery",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Fastrack Automation What is it?"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Fastrack Automation, an advanced solution from Moolya, employs intelligent techniques to expedite your automation process in the existing environment without any platform lock in half the time.",
+        "Fastrack Automation optimizes test case design, execution, and maintenance. The service dynamically adapts to changing application landscapes, ensuring sustained efficiency gains."
+      ],
+      "list": [],
+      "table": [
+        "Significantly reduce",
+        "Time-to-Market",
+        "Enhance Efficiency",
+        "Ensure Robust Test",
+        "Coverage"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Fastrack Automation What is it?",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Fastrack Automation, an advanced solution from Moolya, employs intelligent techniques to expedite your automation process in the existing environment without any platform lock in half the time.",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Fastrack Automation optimizes test case design, execution, and maintenance. The service dynamically adapts to changing application landscapes, ensuring sustained efficiency gains.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Significantly reduce",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Time-to-Market",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Enhance Efficiency",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Ensure Robust Test",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Coverage",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Fastrack Automation"
+      ],
+      "h2": [
+        "Leveraging Technology Platform and Expert Human Insight for Intelligent Automation"
+      ],
+      "h3": [],
+      "p": [
+        "Publish Reports & Dashboard."
+      ],
+      "list": [],
+      "table": [
+        "Profile",
+        "Feature Files",
+        "Auto-generation of optimal number of",
+        "along with datasets.",
+        "Drag & Drop, Wizard driven, Easy-to-use, Domain-Intuitive Application Profiling. Moolyan - Experienced software tester skilled in crafting robust test automation scripts. test cases written in Gherkin language, Schedule Design Sch Test Execution, Collect Results, Auto-Generation of production-grade test scripts. Tests edule & Execute Auto-Code"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Fastrack Automation",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Leveraging Technology Platform and Expert Human Insight for Intelligent Automation",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Profile",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Feature Files",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Auto-generation of optimal number of",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "along with datasets.",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Drag & Drop, Wizard driven, Easy-to-use, Domain-Intuitive Application Profiling. Moolyan - Experienced software tester skilled in crafting robust test automation scripts. test cases written in Gherkin language, Schedule Design Sch Test Execution, Collect Results, Auto-Generation of production-grade test scripts. Tests edule & Execute Auto-Code",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "Publish Reports & Dashboard.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 8,
+      "h1": [],
+      "h2": [],
+      "h3": [
+        "Fastrack Automation -Platforms & Tools supported for Web, Mobile and Desktop"
+      ],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h3",
+          "text": "Fastrack Automation -Platforms & Tools supported for Web, Mobile and Desktop",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Why Fastrack Automation"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "S:No",
+        "Aspect",
+        "Fastrack Automation",
+        "Regular Automation",
+        "01",
+        "Scripting",
+        "Fastrack Automation utilizes intelligent techniques such as AI and ML to automate test case creation, execution, and maintenance.",
+        "Traditional test automation often involves manual scripting of test cases using programming languages or automation tools.",
+        "02",
+        "Platform",
+        "Fastrack Automation is designed to be platform-agnostic, allowing testing across a wide range of technologies and environments without lock-in.",
+        "Automation scripts may be specific to certain platforms or technologies, leading to platform lock-in.",
+        "03",
+        "Maintenance",
+        "such as updating test scripts in response to",
+        "Fastrack changes in Automation the application, automates – Self reducing Healing. maintenance manual effort tasks, and improving reliability",
+        "Maintenance of automation scripts requires continuous effort, especially when dealing with changes in the application under test.",
+        "04",
+        "Scalability",
+        "Fastrack Automation offers a scalable architecture that can handle large-scale test automation efforts with ease, enabling teams to efficiently test complex applications.",
+        "Scaling automation efforts to handle large test suites or complex applications can be challenging and may require additional resources.",
+        "05",
+        "Setup",
+        "Fastrack Automation provides a quick and easy setup process, allowing teams to start automating tests rapidly without extensive configuration.",
+        "Setting up automation frameworks and environments can be time-consuming and requires technical expertise."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Why Fastrack Automation",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Aspect",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack Automation",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Regular Automation",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Scripting",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack Automation utilizes intelligent techniques such as AI and ML to automate test case creation, execution, and maintenance.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Traditional test automation often involves manual scripting of test cases using programming languages or automation tools.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Platform",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack Automation is designed to be platform-agnostic, allowing testing across a wide range of technologies and environments without lock-in.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Automation scripts may be specific to certain platforms or technologies, leading to platform lock-in.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Maintenance",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "such as updating test scripts in response to",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack changes in Automation the application, automates – Self reducing Healing. maintenance manual effort tasks, and improving reliability",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Maintenance of automation scripts requires continuous effort, especially when dealing with changes in the application under test.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "04",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Scalability",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack Automation offers a scalable architecture that can handle large-scale test automation efforts with ease, enabling teams to efficiently test complex applications.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Scaling automation efforts to handle large test suites or complex applications can be challenging and may require additional resources.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "05",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Setup",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Fastrack Automation provides a quick and easy setup process, allowing teams to start automating tests rapidly without extensive configuration.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Setting up automation frameworks and environments can be time-consuming and requires technical expertise.",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Moolya’s Scaffolding Framework"
+      ],
+      "h2": [
+        "Context Understanding",
+        "Influencing",
+        "Strategising",
+        "Performing"
+      ],
+      "h3": [],
+      "p": [
+        "Understanding How automation. are you managing the requirements now without with this Business requirement, impact, ,Technical implementation, Why implement it now Existing automation approach, Current challenges in",
+        "Focus on user scenarios and functionality during testing. Manual testing of complex workflows is time-consuming. Build a scalable, maintainable automation framework to cut down manual effort, saving time and cost by choosing the right tools.\""
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya’s Scaffolding Framework",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Context Understanding",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "Understanding How automation. are you managing the requirements now without with this Business requirement, impact, ,Technical implementation, Why implement it now Existing automation approach, Current challenges in",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Influencing",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Strategising",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "Focus on user scenarios and functionality during testing. Manual testing of complex workflows is time-consuming. Build a scalable, maintainable automation framework to cut down manual effort, saving time and cost by choosing the right tools.\"",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Performing",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Fastrack Automation - Fitment"
+      ],
+      "h2": [
+        "Greenfield Situation",
+        "Legacy Applications",
+        "Brownfield Situation",
+        "Distributed Testing"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "",
+          "New product implementation",
+          "",
+          "Testing is predominantly manual",
+          "",
+          "SAASification or going mobile."
+        ],
+        [
+          "",
+          "Applications that have not had testability considerations ."
+        ],
+        [
+          "",
+          "Replace deprecated/slow tools (e.g., Protractor) with faster, scalable alternatives",
+          "",
+          "Move from proprietary to open, cost-effective frameworks",
+          "",
+          "Enhance existing frameworks to accelerate automation and reduce flakiness."
+        ],
+        [
+          "",
+          "Parallel Execution",
+          "",
+          "Coordinated Parallel Workflows",
+          "",
+          "Workflow cuts across Multiple Applications."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Fastrack Automation - Fitment",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Greenfield Situation",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• \n• New product implementation\n• \n• Testing is predominantly manual\n• \n• SAASification or going mobile.",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Legacy Applications",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• \n• Applications that have not had testability considerations .",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Brownfield Situation",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• \n• Replace deprecated/slow tools (e.g., Protractor) with faster, scalable alternatives\n• \n• Move from proprietary to open, cost-effective frameworks\n• \n• Enhance existing frameworks to accelerate automation and reduce flakiness.",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Distributed Testing",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• \n• Parallel Execution\n• \n• Coordinated Parallel Workflows\n• \n• Workflow cuts across Multiple Applications.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Case through Study Scalable – Enhancing Test Automation Reliability"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "The customer operates in the Industrial Automation / DCS domain where system stability and reliability are paramount.",
+        "They had a basic automation setup using TestComplete with VBScript.",
+        "Their primary goal was to establish a structured and scalable Smoke and Regression test suite to support their frequent software updates and configurations."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case through Study Scalable – Enhancing Test Automation Reliability",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "The customer operates in the Industrial Automation / DCS domain where system stability and reliability are paramount.",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "They had a basic automation setup using TestComplete with VBScript.",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "Their primary goal was to establish a structured and scalable Smoke and Regression test suite to support their frequent software updates and configurations.",
+          "page_number": 14
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "h1": [
+        "Challenges Faced by the Customer"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Delays in Releases",
+        "High Cost of Maintenance",
+        "Legacy VBScript framework required high manual effort for script updates.",
+        "People Dependency",
+        "Only a few individuals understood the legacy framework. Risk of knowledge silos and lack of continuity.",
+        "Manual and slow testing cycles delayed product releases and upgrades.",
+        "Poor Visibility and Coverage",
+        "No Scalable Execution",
+        "Test runs not aligned to schedules; no ability to run in parallel or at scale.",
+        "Inconsistent Reporting",
+        "Lack of actionable, detailed test reports delayed defect triage.",
+        "No clear mapping between manual test cases and automation. Gaps in coverage led to production defects."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Challenges Faced by the Customer",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Delays in Releases",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "High Cost of Maintenance",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Legacy VBScript framework required high manual effort for script updates.",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "People Dependency",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Only a few individuals understood the legacy framework. Risk of knowledge silos and lack of continuity.",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Manual and slow testing cycles delayed product releases and upgrades.",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Poor Visibility and Coverage",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "No Scalable Execution",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Test runs not aligned to schedules; no ability to run in parallel or at scale.",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Inconsistent Reporting",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "Lack of actionable, detailed test reports delayed defect triage.",
+          "page_number": 15
+        },
+        {
+          "type": "table",
+          "text": "No clear mapping between manual test cases and automation. Gaps in coverage led to production defects.",
+          "page_number": 15
+        }
+      ]
+    },
+    {
+      "page_number": 16,
+      "h1": [
+        "Our Solution Overview"
+      ],
+      "h2": [
+        "Addressing Delays in Releases",
+        "Limiting People Dependency",
+        "Enabling Scalable Execution",
+        "Delivering Actionable Reporting"
+      ],
+      "h3": [],
+      "p": [
+        "Prioritized automation of smoke test cases to enable early validation of critical workflows, providing faster feedback and reducing release cycle time.",
+        "Reducing High Cost of Maintenance",
+        "Replaced the legacy VBScript-based framework with a modern TestComplete + Python solution that is easier to maintain and enhances scripting efficiency.",
+        "Designed a simplified, modular framework and provided a low-code/no-code interface that allowed a small team to contribute to automation, reducing reliance on a large scale team.",
+        "Improving Visibility and Coverage Established traceability between manual test cases and automated scripts to ensure better coverage and reduce the risk of production defects.",
+        "Set up distributed, multi-system execution for daily test runs, allowing the framework to scale with application complexity and testing demand."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Solution Overview",
+          "page_number": 16
+        },
+        {
+          "type": "h2",
+          "text": "Addressing Delays in Releases",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Prioritized automation of smoke test cases to enable early validation of critical workflows, providing faster feedback and reducing release cycle time.",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Reducing High Cost of Maintenance",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Replaced the legacy VBScript-based framework with a modern TestComplete + Python solution that is easier to maintain and enhances scripting efficiency.",
+          "page_number": 16
+        },
+        {
+          "type": "h2",
+          "text": "Limiting People Dependency",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Designed a simplified, modular framework and provided a low-code/no-code interface that allowed a small team to contribute to automation, reducing reliance on a large scale team.",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Improving Visibility and Coverage Established traceability between manual test cases and automated scripts to ensure better coverage and reduce the risk of production defects.",
+          "page_number": 16
+        },
+        {
+          "type": "h2",
+          "text": "Enabling Scalable Execution",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Set up distributed, multi-system execution for daily test runs, allowing the framework to scale with application complexity and testing demand.",
+          "page_number": 16
+        },
+        {
+          "type": "h2",
+          "text": "Delivering Actionable Reporting",
+          "page_number": 16
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "h1": [
+        "Framework Architecture"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Developed a modular and layered architecture using TestComplete as the core tool with Python for scripting.",
+        "Added a low-code interface on top for ease of test creation (e.g., form-based input, test case importers).",
+        "Designed the framework to support mapping between manual test cases and automated scripts via test case IDs.",
+        "Configured multi-system execution setup for parallel and distributed test runs.",
+        "Prepared the framework to integrate with CI/CD systems (Jenkins, Github",
+        "Actions, etc.) when required in the future."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Framework Architecture",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Developed a modular and layered architecture using TestComplete as the core tool with Python for scripting.",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Added a low-code interface on top for ease of test creation (e.g., form-based input, test case importers).",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Designed the framework to support mapping between manual test cases and automated scripts via test case IDs.",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Configured multi-system execution setup for parallel and distributed test runs.",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Prepared the framework to integrate with CI/CD systems (Jenkins, Github",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Actions, etc.) when required in the future.",
+          "page_number": 17
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "h1": [],
+      "h2": [
+        "Execution & Reporting Strategy"
+      ],
+      "h3": [],
+      "p": [
+        "Sample Test Report in TestComplete",
+        "Set up daily scheduled test executions across multiple virtual machines or test beds to ensure consistent validation.",
+        "□ □ □ □ □ □ �",
+        "Created an execution matrix that allows running specific suites (Smoke, Regression, Feature-wise)."
+      ],
+      "list": [
+        [
+          "Conducted weekly demos and review sessions with stakeholders to showcase progress and gather feedback."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Execution & Reporting Strategy",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "Sample Test Report in TestComplete",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "Set up daily scheduled test executions across multiple virtual machines or test beds to ensure consistent validation.",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "□ □ □ □ □ □ �",
+          "page_number": 18
+        },
+        {
+          "type": "p",
+          "text": "Created an execution matrix that allows running specific suites (Smoke, Regression, Feature-wise).",
+          "page_number": 18
+        },
+        {
+          "type": "list",
+          "text": "• Conducted weekly demos and review sessions with stakeholders to showcase progress and gather feedback.",
+          "page_number": 18
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "h1": [],
+      "h2": [],
+      "h3": [
+        "Sample PDF Report"
+      ],
+      "p": [
+        "Test Execution Summary",
+        "TestComplete: EX-1",
+        "• Test Cases Run: 257 • Failed: 0 • Warnings: 1 (0%)",
+        "• Passed: 256 (100%)",
+        "Execution duration: 01:59:26",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/"
+      ],
+      "list": [],
+      "table": [
+        "Test Case",
+        "Start Time Ł",
+        "Duration",
+        "/ System Server Launch",
+        "04-03-2025 10:17:31",
+        "00:00:05",
+        "/ Enter Valid password and Login in SS",
+        "04-03-2025 10:17:37",
+        "00:00:30",
+        "/ click on Basic Settings in SS Console",
+        "04-03-2025 10:18:07",
+        "00:00:01",
+        "/ Open hosting in basic settings in SS",
+        "04-03-2025 10:18:08",
+        "00:00:03",
+        "/ CE tool slot management -Enter 4 Instance of CE and start the system server",
+        "04-03-2025 10:18:11",
+        "00:01:23",
+        "/ Launch Engineering Client",
+        "04-03-2025 10:19:34",
+        "00:01:05",
+        "/ Logout -click under dropdown in EC",
+        "04-03-2025 10:20:40",
+        "00:00:05",
+        "/ Click -Login -from dropdown and enter valid usemame, password and dick login",
+        "04-03-2025 10:20:45",
+        "00:00:26",
+        "/ Creation of System -By Right clicking on System",
+        "Explorer",
+        "04-03-2025 10:21:12",
+        "00:00:13",
+        "/ Rename of System as Control_Test",
+        "04-03-2025 10:21:25",
+        "00:00:05",
+        "/ Creation of System -By Right clicking on System",
+        "Explorer",
+        "04-03-2025 10:21:30",
+        "00:00:14",
+        "/ Navigation To Application Explorer(AE)",
+        "04-03-2025 10:21:45",
+        "00:00:14",
+        "✓ Expand all Hirarchy of AE Panes",
+        "04-03-2025 10:21:59",
+        "00:05:02",
+        "/ Search Template in Template browser and Drag and drop from template browser to application browser",
+        "04-03-2025 10:27:01",
+        "00:02:57",
+        "/ Expand Asset workspace",
+        "04-03-2025 10:29:59",
+        "00:01:07",
+        "/ Replace template -Select template to replace template from Application browser",
+        "04-03-2025 10:31:06",
+        "00:00:22",
+        "/ Replace template -Click on OK in replace template window",
+        "04-03-2025 10:31:28",
+        "00:00:13",
+        "/ Import -RightClick on the system_1 and select Import from the context menu",
+        "04-03-2025 10:31:42",
+        "00:00:10",
+        "✓ import -Enter the filelocation and select the one",
+        "instances file to be imported click on OK in popup",
+        "04-03-2025 10:31:59",
+        "00:00:33",
+        "/",
+        "import -Click on Update all button from resolve conflict pop up and ok",
+        "04-03-2025 10:32:38",
+        "00:00:16",
+        "/",
+        "import -Verify Template added in AE",
+        "04-03-2025 10:32:54",
+        "00:00:03",
+        "/",
+        "Rename instance -invalid 1234",
+        "04-03-2025 10:32:57",
+        "00:00:14",
+        "Delete instance -from context Menu",
+        "04-03-2025 10:33:17",
+        "00:00:21",
+        "✓",
+        "Search MotorGP in Template browser and Drag and drop from template browser to application browser",
+        "04-03-2025 10:33:44",
+        "00:00:40",
+        "Modify the properties of Instances -Edit Instance",
+        "04-03-2025 10:34:24",
+        "00:00:31",
+        "/",
+        "Modify the properties of Instances -Save",
+        "04-03-2025 10:34:56",
+        "00:00:01",
+        "/",
+        "Modify the properties of Instances -Close Instance",
+        "04-03-2025 10:34:57",
+        "00:00:31",
+        "/",
+        "Inspect instance -Rclick on the inspect instance and verify the tab and click on ok",
+        "04-03-2025 10:35:29",
+        "00:00:11",
+        "/",
+        "Create 2 folders in Application browser",
+        "04-03-2025 10:35:41",
+        "00:00:10",
+        "Create 2 folders in Application browser",
+        "04-03-2025 10:35:51",
+        "00:00:11",
+        "/",
+        "Create 2 folders in Application browser",
+        "04-03-2025 10:36:03",
+        "00:00:11 Ł",
+        "/",
+        "Copy and paste the Instance -copy instance from context menu and paste",
+        "04-03-2025 10:36:14",
+        "00:00:24",
+        "/",
+        "Export instance -Rclick root node ( folder ), Export as",
+        "XML, verify XML file",
+        "04-03-2025 10:36:39",
+        "00:00:24",
+        "/",
+        "/",
+        "Navigation To Topology Explorer(TE) -Main Tool Bar",
+        "04-03-2025 10:37:04",
+        "00:00:18",
+        "Navigate to Project Explorer by shortcut (ALT+ P)",
+        "04-03-2025 10:37:22",
+        "00:00:06",
+        "/",
+        "Navigate to System Explorer (SE)",
+        "04-03-2025 10:37:28",
+        "00:00:09",
+        "Navigation to Global template Explorer(GTE)",
+        "04-03-2025 10:37:37",
+        "00:00:12",
+        "Navigation to Content Repository(CR)",
+        "04-03-2025 10:37:50",
+        "00:00:10",
+        "/",
+        "Navigate to System Explorer (SE)",
+        "04-03-2025 10:38:00",
+        "00:00:09",
+        "Navigation To Project Explorer(PE) -Main Tool Bar by selecting system",
+        "04-03-2025 10:38:09",
+        "00:00:09",
+        "/",
+        "Create a Control Project for M580_Standalone",
+        "04-03-2025 10:38:23",
+        "00:00:11",
+        "/",
+        "Double Click on Container sections",
+        "04-03-2025 10:38:44",
+        "00:00:04",
+        "/",
+        "Assign Instance from system to different Containers in",
+        "PE",
+        "04-03-2025 10:38:58",
+        "00:00:25",
+        "/",
+        "Trying to Unassign Before Generating",
+        "04-03-2025 10:39:27",
+        "00:00:23",
+        "Creating Multiple section and verify",
+        "04-03-2025 10:39:51",
+        "00:01:57",
+        "/",
+        "Delete two Sections",
+        "04-03-2025 10:41:48",
+        "00:00:50",
+        "/",
+        "/",
+        "Moving the Instance from One section to Another without Generating",
+        "04-03-2025 10:42:39",
+        "00:00:42",
+        "Generate from Containers pane",
+        "04-03-2025 10:43:21",
+        "00:00:30"
+      ],
+      "blocks": [
+        {
+          "type": "h3",
+          "text": "Sample PDF Report",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "Test Execution Summary",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "TestComplete: EX-1",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "• Test Cases Run: 257 • Failed: 0 • Warnings: 1 (0%)",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "• Passed: 256 (100%)",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "Execution duration: 01:59:26",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Test Case",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Start Time Ł",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Duration",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ System Server Launch",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:17:31",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:05",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Enter Valid password and Login in SS",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:17:37",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:30",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ click on Basic Settings in SS Console",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:18:07",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:01",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Open hosting in basic settings in SS",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:18:08",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:03",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ CE tool slot management -Enter 4 Instance of CE and start the system server",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:18:11",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:01:23",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Launch Engineering Client",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:19:34",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:01:05",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Logout -click under dropdown in EC",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:20:40",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:05",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Click -Login -from dropdown and enter valid usemame, password and dick login",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:20:45",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:26",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Creation of System -By Right clicking on System",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Explorer",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:21:12",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:13",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Rename of System as Control_Test",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:21:25",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:05",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Creation of System -By Right clicking on System",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Explorer",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:21:30",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:14",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Navigation To Application Explorer(AE)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:21:45",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:14",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "✓ Expand all Hirarchy of AE Panes",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:21:59",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:05:02",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Search Template in Template browser and Drag and drop from template browser to application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:27:01",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:02:57",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Expand Asset workspace",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:29:59",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:01:07",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Replace template -Select template to replace template from Application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:31:06",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:22",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Replace template -Click on OK in replace template window",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:31:28",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:13",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/ Import -RightClick on the system_1 and select Import from the context menu",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:31:42",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:10",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "✓ import -Enter the filelocation and select the one",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "instances file to be imported click on OK in popup",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:31:59",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:33",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "import -Click on Update all button from resolve conflict pop up and ok",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:32:38",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:16",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "import -Verify Template added in AE",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:32:54",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:03",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Rename instance -invalid 1234",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:32:57",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:14",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Delete instance -from context Menu",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:33:17",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:21",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "✓",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Search MotorGP in Template browser and Drag and drop from template browser to application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:33:44",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:40",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Modify the properties of Instances -Edit Instance",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:34:24",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:31",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Modify the properties of Instances -Save",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:34:56",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:01",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Modify the properties of Instances -Close Instance",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:34:57",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:31",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Inspect instance -Rclick on the inspect instance and verify the tab and click on ok",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:35:29",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:11",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Create 2 folders in Application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:35:41",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:10",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Create 2 folders in Application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:35:51",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:11",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Create 2 folders in Application browser",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:36:03",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:11 Ł",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Copy and paste the Instance -copy instance from context menu and paste",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:36:14",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:24",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Export instance -Rclick root node ( folder ), Export as",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "XML, verify XML file",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:36:39",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:24",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigation To Topology Explorer(TE) -Main Tool Bar",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:37:04",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:18",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigate to Project Explorer by shortcut (ALT+ P)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:37:22",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:06",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigate to System Explorer (SE)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:37:28",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:09",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigation to Global template Explorer(GTE)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:37:37",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:12",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigation to Content Repository(CR)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:37:50",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:10",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigate to System Explorer (SE)",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:38:00",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:09",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Navigation To Project Explorer(PE) -Main Tool Bar by selecting system",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:38:09",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:09",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Create a Control Project for M580_Standalone",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:38:23",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:11",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Double Click on Container sections",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:38:44",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:04",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Assign Instance from system to different Containers in",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "PE",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:38:58",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:25",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Trying to Unassign Before Generating",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:39:27",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:23",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Creating Multiple section and verify",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:39:51",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:01:57",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Delete two Sections",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:41:48",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:50",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Moving the Instance from One section to Another without Generating",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:42:39",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:42",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Generate from Containers pane",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "04-03-2025 10:43:21",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "00:00:30",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        },
+        {
+          "type": "p",
+          "text": "/",
+          "page_number": 19
+        }
+      ]
+    },
+    {
+      "page_number": 20,
+      "h1": [
+        "Business Impact Delivered"
+      ],
+      "h2": [
+        "Accelerated Time-to-Market",
+        "Reduced Testing Costs",
+        "Decreased People Dependency",
+        "Improved Quality & Coverage",
+        "Actionable Feedback Loop"
+      ],
+      "h3": [],
+      "p": [
+        " Automation of critical smoke tests enabled daily confidence builds",
+        " Simplified scripting and reusable components democratized automation.",
+        " End-to-end mapping of test cases to scripts ensured better coverage.  Achieved 40% code coverage in Phase 1  Early defect detection through multi-system execution."
+      ],
+      "list": [
+        [
+          " Reduced regression test cycle from 3 weeks to 4.5 hours with automation and distributed execution."
+        ],
+        [
+          " Python-based automation and low-code tools cut scripting and maintenance effort by 50%."
+        ],
+        [
+          " Integrated dashboards and detailed reports led to faster issue resolution",
+          " Enabled data-driven decision-making for QA and release teams."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Business Impact Delivered",
+          "page_number": 20
+        },
+        {
+          "type": "h2",
+          "text": "Accelerated Time-to-Market",
+          "page_number": 20
+        },
+        {
+          "type": "p",
+          "text": " Automation of critical smoke tests enabled daily confidence builds",
+          "page_number": 20
+        },
+        {
+          "type": "list",
+          "text": "•  Reduced regression test cycle from 3 weeks to 4.5 hours with automation and distributed execution.",
+          "page_number": 20
+        },
+        {
+          "type": "h2",
+          "text": "Reduced Testing Costs",
+          "page_number": 20
+        },
+        {
+          "type": "list",
+          "text": "•  Python-based automation and low-code tools cut scripting and maintenance effort by 50%.",
+          "page_number": 20
+        },
+        {
+          "type": "h2",
+          "text": "Decreased People Dependency",
+          "page_number": 20
+        },
+        {
+          "type": "p",
+          "text": " Simplified scripting and reusable components democratized automation.",
+          "page_number": 20
+        },
+        {
+          "type": "h2",
+          "text": "Improved Quality & Coverage",
+          "page_number": 20
+        },
+        {
+          "type": "p",
+          "text": " End-to-end mapping of test cases to scripts ensured better coverage.  Achieved 40% code coverage in Phase 1  Early defect detection through multi-system execution.",
+          "page_number": 20
+        },
+        {
+          "type": "h2",
+          "text": "Actionable Feedback Loop",
+          "page_number": 20
+        },
+        {
+          "type": "list",
+          "text": "•  Integrated dashboards and detailed reports led to faster issue resolution\n•  Enabled data-driven decision-making for QA and release teams.",
+          "page_number": 20
+        }
+      ]
+    },
+    {
+      "page_number": 21,
+      "h1": [
+        "Why This Matters to You"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "We have domain experience and understand the specific needs of Industrial Automation and DCS systems, such as real-time responsiveness, hardware-software interactions, and safety validation.",
+        "Our solution is not just technical— it’s tailored to your business context.",
+        "By replicating our proven strategy, we can help you achieve faster automation ROI, better release predictability, and higher system reliability.",
+        "Our modular, maintainable framework can be adapted to your current tools and teams with minimal disruption."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Why This Matters to You",
+          "page_number": 21
+        },
+        {
+          "type": "p",
+          "text": "We have domain experience and understand the specific needs of Industrial Automation and DCS systems, such as real-time responsiveness, hardware-software interactions, and safety validation.",
+          "page_number": 21
+        },
+        {
+          "type": "p",
+          "text": "Our solution is not just technical— it’s tailored to your business context.",
+          "page_number": 21
+        },
+        {
+          "type": "p",
+          "text": "By replicating our proven strategy, we can help you achieve faster automation ROI, better release predictability, and higher system reliability.",
+          "page_number": 21
+        },
+        {
+          "type": "p",
+          "text": "Our modular, maintainable framework can be adapted to your current tools and teams with minimal disruption.",
+          "page_number": 21
+        }
+      ]
+    },
+    {
+      "page_number": 22,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 22
+        }
+      ]
+    }
+  ]
+}

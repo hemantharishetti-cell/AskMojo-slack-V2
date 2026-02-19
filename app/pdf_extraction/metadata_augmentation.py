@@ -69,15 +69,21 @@ class MetadataAugmentation:
             augmented_chunk["extraction_date"] = datetime.utcnow().isoformat()
             augmented_chunk["extraction_version"] = 1
             
-            # Add retrievability flags
-            augmented_chunk["is_heading"] = chunk.get("element_type", "").startswith("heading")
-            augmented_chunk["is_table"] = chunk.get("is_table", False)
-            augmented_chunk["is_list"] = "list" in chunk.get("element_type", "").lower()
+            # Add retrievability flags without relying on element_type
+            is_heading = bool(
+                chunk.get("heading_level_1") or chunk.get("heading_level_2") or chunk.get("heading_level_3")
+            )
+            is_table = chunk.get("is_table", False)
+            # Heuristic list detection based on bullet markers in text
+            text_val = (chunk.get("text") or "").lstrip()
+            is_list = text_val.startswith("• ") or "\n• " in text_val
+
+            augmented_chunk["is_heading"] = is_heading
+            augmented_chunk["is_table"] = is_table
+            augmented_chunk["is_list"] = is_list
             
             # Add readability score (tables/lists might need special handling)
-            augmented_chunk["readability_score"] = MetadataAugmentation._calculate_readability(
-                chunk.get("text", "")
-            )
+            augmented_chunk["readability_score"] = MetadataAugmentation._calculate_readability(chunk.get("text", ""))
             
             augmented.append(augmented_chunk)
         

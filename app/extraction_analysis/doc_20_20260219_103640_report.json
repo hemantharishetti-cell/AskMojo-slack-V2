@@ -1,0 +1,142 @@
+{
+  "document": {
+    "id": 20,
+    "title": "AI Product Engineering For Jagrut Motors"
+  },
+  "extraction": {
+    "total_elements": 235,
+    "element_types_distribution": {
+      "P": 46,
+      "Title": 1,
+      "P[2]": 15,
+      "Figure": 34,
+      "P[3]": 8,
+      "Figure[2]": 2,
+      "Figure[3]": 2,
+      "Figure[4]": 2,
+      "H1": 1,
+      "P[4]": 2,
+      "H1[2]": 1,
+      "Table": 1,
+      "TH": 14,
+      "TD": 16,
+      "TD[2]": 14,
+      "TD[3]": 7,
+      "P[5]": 1,
+      "P[6]": 1,
+      "H2": 1,
+      "P[7]": 1,
+      "Figure[5]": 2,
+      "H2[2]": 1,
+      "P[8]": 1,
+      "Figure[6]": 2,
+      "H2[3]": 1,
+      "P[9]": 1,
+      "Figure[7]": 2,
+      "H2[4]": 1,
+      "P[10]": 1,
+      "Figure[8]": 2,
+      "H1[3]": 1,
+      "P[11]": 1,
+      "P[12]": 1,
+      "P[13]": 1,
+      "H1[4]": 1,
+      "Table[2]": 1,
+      "TH[2]": 4,
+      "TH[3]": 4,
+      "Figure[9]": 2,
+      "H1[5]": 1,
+      "Table[3]": 1,
+      "Table[4]": 1,
+      "Figure[10]": 2,
+      "Figure[11]": 2,
+      "H2[5]": 1,
+      "Lbl": 9,
+      "LBody": 9,
+      "H1[6]": 1,
+      "Figure[12]": 1,
+      "P[14]": 1,
+      "P[15]": 1,
+      "Figure[13]": 2,
+      "Table[5]": 1,
+      "P[16]": 1,
+      "P[17]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/P",
+        "text": "Moolya Engineering ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Title",
+        "text": "AI Product Engineering For\n Jagrut Motors ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "Years in Business ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 7,
+    "total_characters": 5856,
+    "total_words": 801,
+    "average_chunk_size": 837.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Moolya Engineering\n\n14+\n\n200+"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Who we are",
+        "page": 2,
+        "text": "Who we are\n\nAt Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our service"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Why Choose us",
+        "page": 2,
+        "text": "Why Choose us\n\nSkin in the Game\n\nCulture Focus\n\nLeadership Friendly\n\nWe go beyond vendor roles, fostering deep co-ownership with customers.\n\nWe help customers address issues by focusing on cultural fi"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Executive Summary",
+        "page": 7,
+        "text": "Executive Summary\n\nThe rapid rise of short-form video platforms like Instagram and TikTok has transformed the way creators engage their audiences. For many, the process of transforming long talking-he"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Our Solution Overview",
+        "page": 8,
+        "text": "Our Solution Overview\n\nAutomated Reel Generation\n\nTransform raw talking-head content into styled, vertical reels with minimal manual effort.\n\nStyle Adaptation\n\nExtract visual elements (fonts, colors, "
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 24.9,
+    "smallest_chunk": 29,
+    "largest_chunk": 1960,
+    "chunks_under_min_size": 1,
+    "chunks_over_max_size": 3
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

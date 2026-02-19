@@ -1,0 +1,142 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "Test Automation Proposal for\n\nSubmitted by",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": false
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Project Overview\n\nDimagi is seeking to establish a Test Automation Solution for one of its key product lines - CommCare Connect across web and mobile which currently has no automation in place. Primary focus areas are:\n\n\u2022 Asses Automation Feasibility\n\u2022 Design and Implement a robust Test Automation Framework\n\u2022 CI/CD Integration\n\u2022 Define an automation roadmap covering functional, regression, and smoke testing\n\u2022 Enable the internal QA team to maintain and scale automation effectively over time",
+    "heading_level_1": "Project Overview",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Project Overview",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "Objective\n\nThe objective of this proposal is to establish a strategic QA partnership between Dimagi and Moolya Software Testing to ensure comprehensive quality ownership and implement a robust test automation solution.\n\nMoolya will leverage its expertise in test automation and quality engineering to enhance product stability, improve testing efficiency, and minimize manual testing efforts. The engagement will focus on:\n\n\u2022 Establish a scalable automation framework for both web and mobile platforms.\n\u2022 Ensure CI/CD readiness through integration with build pipelines.\n\u2022 Reduce manual effort by automating test flows.\n\u2022 Deliver measurable outcomes in terms of test coverage, execution efficiency, and release confidence.\n\u2022 Build automation competency within Dimagi9s QA team through knowledge transfer and enablement sessions.",
+    "heading_level_1": "Objective",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Objective",
+    "is_table": false
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 4,
+    "text": "Testing Scope\n\n\u2022 Design and implement a scalable automation framework for Dimagi's CommCare Connect product covering both Web and Mobile platforms.\n\u2022 Collaborate with Dimagi team to prioritize modules and features\n\u2022 Develop a Test Automation Roadmap defining smoke, feature, and regression test packs, with provisions for future expansion\n\u2022 Integrate automation with CI/CD pipelines to enable continuous testing\n\u2022 Implement best practices for framework optimization and long-term sustainability\n\u2022 Define and track key automation metrics to measure effectiveness\n\u2022 Upskill the Dimagi QA team to independently maintain, enhance, and scale automation efforts.",
+    "heading_level_1": "Testing Scope",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Testing Scope",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 5,
+    "text": "Test Automation - Moolya's Approach",
+    "heading_level_1": "Test Automation - Moolya's Approach",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Test Automation - Moolya's Approach",
+    "is_table": false
+  },
+  {
+    "chunk_index": 6,
+    "page_number": 6,
+    "text": "Test Execution Plan : 2-month Automation Foundation plan\n\nMonth 1 : Discovery, Feasibility & Framework Design\n\nPhase\n\nActivities\n\nDeliverables\n\nDiscovery\n\nCommCare Connect Application Understanding\n\nAssessment & Audit\n\nReview existing system, process and test environments Evaluate tools, frameworks, and integration feasibility Identify automation-ready scenarios for Web and Mobile\n\nAutomation Feasibility Report\n\nTest Automation Setup\n\nDesign and implement automation framework Plan CI/CD integration approach. Outline roadmap for smoke, regression, and functional\n\nautomation\n\nTest Automation Framework Automation Roadmap\n\nPilot Automation\n\nPrioritize key modules Develop and execute smoke test scripts for key modules Demonstration of the automated scripts to Dimagi\n\nstakeholders\n\nTest Scripts\n\nTest Execution and Summary Report\n\nMonth 2 : Automation Framework Optimization, Best Practices and Knowledge Transfer\n\nPhase\n\nActivities\n\nDeliverables\n\nContinued Automation Execution\n\nDevelop and execute next set of smoke test scripts Integration with CI/CD pipeline Refine the roadmap and strategy for smoke,\n\nregression, and functional automation\n\nAutomated Smoke Test Scripts (Web and Mobile)\n\nCI/CD-enabled test execution setup Test Execution and Summary Report\n\nOptimization and Best Practices\n\nOptimization of the test automation framework Refine scripts for maintainability and modularity Finalize metrics to track automation efficiency Documentation of automation process and\n\nmaintenance guide\n\nDemonstration of the automated scripts to stakeholders\n\nOptimized Automation Framework Test Scripts\n\nAutomation Metrics Defined\n\nKnowledge Transfer and Handover\n\nConduct QA enablement and training sessions to\n\nDimagi team Share automation process and maintenance document\n\nHandover framework ownership\n\nKnowledge transfer completion\n\nAutomation documentation and maintenance guide QA team ready for independent\n\nownership",
+    "heading_level_1": "Test Execution Plan : 2-month Automation Foundation plan",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Test Execution Plan : 2-month Automation Foundation plan",
+    "is_table": true
+  },
+  {
+    "chunk_index": 7,
+    "page_number": 8,
+    "text": "Deliverables\n\n\u2022 Test Plan and Strategy Document with Automation Roadmap\n\u2022 Test Automation Framework\n\u2022 Automated Test Scripts\n\u2022 Test Summary Report with execution status and insights\n\u2022 Script Maintenance Document\n\u2022 Knowledge Transfer and Training Document",
+    "heading_level_1": "Deliverables",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Deliverables",
+    "is_table": false
+  },
+  {
+    "chunk_index": 8,
+    "page_number": 9,
+    "text": "Value Delivered",
+    "heading_level_1": "Value Delivered",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Value Delivered",
+    "is_table": false
+  },
+  {
+    "chunk_index": 9,
+    "page_number": 10,
+    "text": "Our Commitment\n\nWe will setup a dedicated testing team supported by Domain expert and UX experts, to conduct comprehensive end-to-end testing of Instacoins9 web application across both Flights and Stays modules.\n\nUnified Expertise with Moolya9s 3-in-a-Box Model\n\nCombination of Expertise: Integrated Under One Roof\n\nBy combining Delivery Engineering, Testing Experts, and Domain SMEs into one cohesive unit, Moolya offers a comprehensive, cost-efficient solution that drives faster delivery, higher quality, and scalable results\n\nDelivery Engineering Team\n\nBringing Technical Excellence through Delivery Engineering\n\n\u2022 Collaborative Development\n\u2022 Custom Integrations\n\u2022 Continuous Delivery Focus\n\nTesting Experts\n\nExpert QA Testing to Ensure Compliance and Quality\n\n\u2022 Context Driven Testing\n\u2022 Automated Testing Frameworks\n\u2022 End-to-End Testing\n\nDomain Subject Matter Expert (SME) Team\n\nDomain Experts Ensuring Business and Project Alignment\n\n\u2022 Deep Domain Knowledge\n\u2022 Technical Guidance & Expertise\n\u2022 Collaboration",
+    "heading_level_1": "Our Commitment",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Our Commitment",
+    "is_table": false
+  },
+  {
+    "chunk_index": 10,
+    "page_number": 11,
+    "text": "Assumptions\n\n\u2022 Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework.\n\u2022 Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.\n\u2022 Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.\n\u2022 Environment Availability : A dedicated and stable testing environment will be available for the Moolya team.\n\u2022 Access to Test Data : Necessary test data will be provided by the Dimagi team.\n\u2022 Documents : Dimagi will provide the necessary documents required for the engagement.",
+    "heading_level_1": "Assumptions",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Assumptions",
+    "is_table": false
+  },
+  {
+    "chunk_index": 11,
+    "page_number": 12,
+    "text": "Quality Metrics\n\nMetric\n\nImpact\n\nTest Coverage (Percentage of tests covered by automation)\n\n- Ensures better regression testing and reduces production defects.\n\nDefect Detection Rate (Rate at which automated tests identify defects)\n\n-\n\nHigh rate ensures early defect identification, improving software quality.\n\n-\n\nReduces debugging efforts in later stages of development.\n\nTest Execution Time (Average time taken for automated test suites to run)\n\n-\n\nFaster execution speeds up feedback loops, reducing development cycle time.\n\n-\n\nLong execution times slow down releases and CI/CD processes.\n\nAutomation Pass Percentage (Percentage of tests passing)\n\n-\n\nHigh pass percentage indicates system stability.\n\n-\n\nLow percentage may signal frequent failures, requiring deeper analysis.\n\nFlaky Tests (Percentage of unstable or inconsistent tests)\n\n-\n\nHigh flakiness reduces trust in automation.\n\n-\n\nLeads to manual verification efforts and increased debugging time.\n\n-\n\nStable tests improve efficiency and confidence in results.\n\nStability Index Percentage (Percentage of builds passing)\n\n-\n\nHigh stability index indicates a reliable and stable system.\n\n-\n\nFrequent build failures disrupt development and delay releases.",
+    "heading_level_1": "Quality Metrics",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Quality Metrics",
+    "is_table": true
+  },
+  {
+    "chunk_index": 12,
+    "page_number": 13,
+    "text": "Pricing\n\nEngagement Plan\n\nDuration\n\nMonthly Cost (INR)\n\nAutomation Foundation Plan\n\n2 Months\n\n\u00b94,00,000 / month\n\nPayment Terms\n\n\u2022 Payment to be done within 30 days of invoice generation\n\u2022 Any applicable taxes will be charged extra on the pricing mentioned\n\u2022 Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation.\n\u2022 Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier.\n\u2022 As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense\n\nImportant Note: Preliminary Estimate and Scope Adaptability\n\nThis proposal has been prepared based on our current, high-level understanding of Dimagi's outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.\n\nWe acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team.",
+    "heading_level_1": "Pricing",
+    "heading_level_2": "Payment Terms",
+    "heading_level_3": "Important Note: Preliminary Estimate and Scope Adaptability",
+    "section": "Pricing > Payment Terms",
+    "is_table": true
+  },
+  {
+    "chunk_index": 13,
+    "page_number": 14,
+    "text": "Bugasura Capabilities\n\n(a\n\nTest Management\n\n@\n\nRequirements\n\nManagement\n\nO\n\nIssue Tracker\n\n(\u00b0b\n\nChrome Reporter\n\na\n\nBugasura Widget\n\nJira Sync\n\nSlack Notify\n\n\u2022\u2022\n\nAsana Sync\n\nSentry Sync\n\nGithub Connect\n\nClickUp Link\n\nZendesk Sync\n\nGlitchTip Sync\n\nLinear Sync\n\nZoho Projects",
+    "heading_level_1": "Bugasura Capabilities",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Bugasura Capabilities",
+    "is_table": true
+  },
+  {
+    "chunk_index": 14,
+    "page_number": 15,
+    "text": "Thank You!",
+    "heading_level_1": "Thank You!",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Thank You!",
+    "is_table": false
+  }
+]

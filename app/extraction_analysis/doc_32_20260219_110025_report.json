@@ -1,0 +1,114 @@
+{
+  "document": {
+    "id": 32,
+    "title": "BugBuster_Solutions"
+  },
+  "extraction": {
+    "total_elements": 99,
+    "element_types_distribution": {
+      "Title": 1,
+      "H1": 1,
+      "Table": 1,
+      "TH": 3,
+      "P": 22,
+      "TH[2]": 3,
+      "TH[3]": 1,
+      "TH[4]": 1,
+      "TD": 10,
+      "TD[2]": 8,
+      "TD[3]": 1,
+      "TD[4]": 1,
+      "H1[2]": 1,
+      "Figure": 18,
+      "P[2]": 11,
+      "P[3]": 4,
+      "Figure[2]": 1,
+      "P[4]": 1,
+      "P[5]": 1,
+      "H1[3]": 1,
+      "Table[2]": 1,
+      "Figure[3]": 2,
+      "H1[4]": 1,
+      "Table[3]": 1,
+      "H1[5]": 1,
+      "Table[4]": 1,
+      "P[6]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Title",
+        "text": "Moolya Engineering ",
+        "page": 0
+      },
+      {
+        "path": "//Document/H1",
+        "text": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table/TR/TH",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table/TR/TH/P",
+        "text": "14+ ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 5,
+    "total_characters": 1697,
+    "total_words": 215,
+    "average_chunk_size": 339.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs",
+        "page": 1,
+        "text": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs\n\n14+\n\n200+\n\n20+\n\n80%\n\nYears in Business\n\nCustomers\n\nCountries\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 2,
+        "section": "The Challenge",
+        "page": 2,
+        "text": "The Challenge\n\nGrowing Defect Pile-Up\n\nDefect backlogs grow while development sprints continue.\n\nManual Processes Drain Productivity High defect leakage into production increases costs and customer di"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Moolya's Solution \u2013 BugBuster",
+        "page": 3,
+        "text": "Moolya's Solution \u2013 BugBuster\n\nFocused Backlog Resolution\n\nDedicated engineering teams focusing solely on backlog clearance.\n\nDual-Track Execution \u2013 backlog fixes while\n\nParallel execution\n\ndevelopmen"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Business Impact",
+        "page": 5,
+        "text": "Business Impact\n\nLower Production Defects\n\nReduced defect leakage to production by 20%-40%.\n\nRapid Backlog Impact \u2013 up\n\nAccelerated backlog clearance to 50% reduction within 3 months.\n\nCleaner, Faster"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Why Moolya?",
+        "page": 6,
+        "text": "Why Moolya?\n\nProven expertise in QA and engineering for complex systems.\n\nHybrid approach combining engineering, automation, and testing.\n\nSeamless integration with your existing tools\n\n(Jira, Jenkins"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 17.1,
+    "smallest_chunk": 154,
+    "largest_chunk": 428,
+    "chunks_under_min_size": 0,
+    "chunks_over_max_size": 0
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

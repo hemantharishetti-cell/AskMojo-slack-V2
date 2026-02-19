@@ -1,0 +1,511 @@
+{
+  "version": "1.0",
+  "document_id": 19,
+  "created_at": "2026-02-19T05:05:33.107403Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Test Automation Proposal",
+        "DIMAGI"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Test Automation Proposal",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "DIMAGI",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Project Overview"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Dimagi seeks to optimize its QA automation suite to achieve higher efficiency, reduce maintenance effort, and improve the scalability of its testing framework.",
+        "Moolya, with its strong expertise in automation strategy and framework design, proposes to act as Dimagi9s strategic partner to assess, optimize, and future-proof the existing automation setup. This engagement will focus on:",
+        "Moolya9s automation-first approach will ensure that Dimagi achieves faster release cycles, more stable automation suites, and a lower long-term cost of quality."
+      ],
+      "list": [
+        [
+          "Comprehensive audit of the existing framework and test scripts.",
+          "Recommending best practices and design improvements.",
+          "Sharing documentation and training the QA team for sustained success."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Project Overview",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Dimagi seeks to optimize its QA automation suite to achieve higher efficiency, reduce maintenance effort, and improve the scalability of its testing framework.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya, with its strong expertise in automation strategy and framework design, proposes to act as Dimagi9s strategic partner to assess, optimize, and future-proof the existing automation setup. This engagement will focus on:",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• Comprehensive audit of the existing framework and test scripts.\n• Recommending best practices and design improvements.\n• Sharing documentation and training the QA team for sustained success.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya9s automation-first approach will ensure that Dimagi achieves faster release cycles, more stable automation suites, and a lower long-term cost of quality.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Problem Statement"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Dimagi9s current automation framework has grown organically and now faces challenges with:",
+        "Without intervention, automation effectiveness may decrease over time, impacting release velocity and reliability."
+      ],
+      "list": [
+        [
+          "Redundant, flaky, or hard-to-maintain tests.",
+          "Increased maintenance effort and reduced scalability.",
+          "Lack of alignment with future QA strategy and CI/CD needs."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Problem Statement",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Dimagi9s current automation framework has grown organically and now faces challenges with:",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• Redundant, flaky, or hard-to-maintain tests.\n• Increased maintenance effort and reduced scalability.\n• Lack of alignment with future QA strategy and CI/CD needs.",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Without intervention, automation effectiveness may decrease over time, impacting release velocity and reliability.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Objective"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "The primary objective of this engagement is to:"
+      ],
+      "list": [
+        [
+          "Audit & Optimize: Review framework architecture, CI/CD integration, and test coverage; identify inefficiencies and redundancies.",
+          "Recommend & Strategize: Propose a roadmap for improving test stability, maintainability, and coverage across functional, regression, and smoke testing.",
+          "Enable & Empower: Provide documentation, training, and knowledge transfer to upskill Dimagi9s QA team for sustainable maintenance."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Objective",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "The primary objective of this engagement is to:",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• Audit & Optimize: Review framework architecture, CI/CD integration, and test coverage; identify inefficiencies and redundancies.\n• Recommend & Strategize: Propose a roadmap for improving test stability, maintainability, and coverage across functional, regression, and smoke testing.\n• Enable & Empower: Provide documentation, training, and knowledge transfer to upskill Dimagi9s QA team for sustainable maintenance.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Testing Scope"
+      ],
+      "h2": [
+        "Assessment & Audit",
+        "Recommendations & Strategy",
+        "Documentation & Knowledge Transfer"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Review existing framework (tools, structure, CI/CD integration).",
+          "Analyze test coverage, design, reusability, maintainability.",
+          "Identify flaky/redundant scripts and gaps.",
+          "Prepare Automation Audit Report with risks and improvement areas."
+        ],
+        [
+          "Suggest architectural upgrades (design patterns, libraries, POM refactor).",
+          "Recommend improvements to reduce fragility and maintenance effort.",
+          "Provide a prioritized roadmap for optimization and coverage expansion.",
+          "Define key metrics (automation ROI, stability index, coverage %)."
+        ],
+        [
+          "Prepare documentation on coding standards, implementation best practices, CI/CD guidelines.",
+          "Conduct enablement workshops with QA team for smooth adoption."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Testing Scope",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Assessment & Audit",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• Review existing framework (tools, structure, CI/CD integration).\n• Analyze test coverage, design, reusability, maintainability.\n• Identify flaky/redundant scripts and gaps.\n• Prepare Automation Audit Report with risks and improvement areas.",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Recommendations & Strategy",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• Suggest architectural upgrades (design patterns, libraries, POM refactor).\n• Recommend improvements to reduce fragility and maintenance effort.\n• Provide a prioritized roadmap for optimization and coverage expansion.\n• Define key metrics (automation ROI, stability index, coverage %).",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Documentation & Knowledge Transfer",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• Prepare documentation on coding standards, implementation best practices, CI/CD guidelines.\n• Conduct enablement workshops with QA team for smooth adoption.",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Test Execution Plan"
+      ],
+      "h2": [
+        "Week 1 : Kickoff and Discovery",
+        "Week 2 - 3 : Framework & Script Audit"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Review project scope, repo access, CI/CD pipelines, and documentation.",
+          "Begin high-level audit of automation framework, tools, and integration.",
+          "Deliverable: Engagement plan & access checklist."
+        ],
+        [
+          "Deep dive into automation framework design (tools, architecture, coding standards).",
+          "Review CI/CD integration and execution logs.",
+          "Analyze test scripts for design quality, maintainability, and reusability.",
+          "Identify flaky, redundant, or fragile tests.",
+          "Evaluate coverage (functional, regression, smoke) vs. QA strategy.",
+          "Assess scalability, error handling, and reporting practices.",
+          "Deliverable: Automation Audit Report (draft in Week 2, finalized in Week 3 after stakeholder review)."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Test Execution Plan",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Week 1 : Kickoff and Discovery",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Review project scope, repo access, CI/CD pipelines, and documentation.\n• Begin high-level audit of automation framework, tools, and integration.\n• Deliverable: Engagement plan & access checklist.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Week 2 - 3 : Framework & Script Audit",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Deep dive into automation framework design (tools, architecture, coding standards).\n• Review CI/CD integration and execution logs.\n• Analyze test scripts for design quality, maintainability, and reusability.\n• Identify flaky, redundant, or fragile tests.\n• Evaluate coverage (functional, regression, smoke) vs. QA strategy.\n• Assess scalability, error handling, and reporting practices.\n• Deliverable: Automation Audit Report (draft in Week 2, finalized in Week 3 after stakeholder review).",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [
+        "Week 4 : Recommendations & Roadmap",
+        "Week 5 - 6 : Documentation Development",
+        "Week 7 - 8 : Knowledge Transfer & Closure"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Propose framework improvements (design patterns, tool/library upgrades, reporting).",
+          "Suggest optimization techniques (modularization, error handling, version control).",
+          "Provide best practice guidelines for CI/CD integration.",
+          "Define success metrics (stability, coverage, ROI).",
+          "Recommend training/upskilling needs for QA team.",
+          "Finalize roadmap for framework upgrades and script refactoring.",
+          "Deliverable: Improvement Plan & Prioritized Roadmap."
+        ],
+        [
+          "Prepare documentation covering:",
+          "Recommended framework improvements.",
+          "Coding standards & best practices.",
+          "Guidelines for test design, reporting, error handling.",
+          "Training & implementation practices.",
+          "Share draft with stakeholders, refine based on feedback.",
+          "Deliverable: Documentation Pack (processes, standards, practices)."
+        ],
+        [
+          "Conduct walkthrough sessions with QA team (framework + scripts).",
+          "Present improvement plan and roadmap.",
+          "Mentor QA team on implementation approach.",
+          "Address final Q&A.",
+          "Handover documentation and formally close engagement.",
+          "Deliverable: Knowledge Transfer Session(s) + Final Handover"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Week 4 : Recommendations & Roadmap",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Propose framework improvements (design patterns, tool/library upgrades, reporting).\n• Suggest optimization techniques (modularization, error handling, version control).\n• Provide best practice guidelines for CI/CD integration.\n• Define success metrics (stability, coverage, ROI).\n• Recommend training/upskilling needs for QA team.\n• Finalize roadmap for framework upgrades and script refactoring.\n• Deliverable: Improvement Plan & Prioritized Roadmap.",
+          "page_number": 7
+        },
+        {
+          "type": "h2",
+          "text": "Week 5 - 6 : Documentation Development",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Prepare documentation covering:\n• Recommended framework improvements.\n• Coding standards & best practices.\n• Guidelines for test design, reporting, error handling.\n• Training & implementation practices.\n• Share draft with stakeholders, refine based on feedback.\n• Deliverable: Documentation Pack (processes, standards, practices).",
+          "page_number": 7
+        },
+        {
+          "type": "h2",
+          "text": "Week 7 - 8 : Knowledge Transfer & Closure",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Conduct walkthrough sessions with QA team (framework + scripts).\n• Present improvement plan and roadmap.\n• Mentor QA team on implementation approach.\n• Address final Q&A.\n• Handover documentation and formally close engagement.\n• Deliverable: Knowledge Transfer Session(s) + Final Handover",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Assumptions"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework.",
+          "Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.",
+          "Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.",
+          "Environment Availability : A dedicated and stable testing environment will be available for the Moolya team.",
+          "Access to Test Data : Necessary test data will be provided by the Dimagi team.",
+          "Documents : Dimagi will provide the necessary documents required for the engagement."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Assumptions",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework.\n• Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.\n• Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.\n• Environment Availability : A dedicated and stable testing environment will be available for the Moolya team.\n• Access to Test Data : Necessary test data will be provided by the Dimagi team.\n• Documents : Dimagi will provide the necessary documents required for the engagement.",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [
+        "Total Cost in INR"
+      ],
+      "h3": [
+        "Payment Terms"
+      ],
+      "p": [
+        "4,50,000",
+        "This proposal has been prepared based on our current, high-level understanding of Dimagi's Web Extension and the outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+        "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team."
+      ],
+      "list": [
+        [
+          "Payment to be done within 30 days of invoice generation",
+          "Any applicable taxes will be charged extra on the pricing mentioned",
+          "Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation.",
+          "Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier.",
+          "As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Pricing",
+          "page_number": 9
+        },
+        {
+          "type": "h2",
+          "text": "Total Cost in INR",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "4,50,000",
+          "page_number": 9
+        },
+        {
+          "type": "h3",
+          "text": "Payment Terms",
+          "page_number": 9
+        },
+        {
+          "type": "list",
+          "text": "• Payment to be done within 30 days of invoice generation\n• Any applicable taxes will be charged extra on the pricing mentioned\n• Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation.\n• Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier.\n• As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "This proposal has been prepared based on our current, high-level understanding of Dimagi's Web Extension and the outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team.",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Bugasura Testpert"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Bugasura Testpert",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Testpert is"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Testpert is",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Thank You!"
+      ],
+      "h2": [
+        "Moolya is excited to collaborate with Dimagi on this exciting project."
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Thank You!",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Moolya is excited to collaborate with Dimagi on this exciting project.",
+          "page_number": 12
+        }
+      ]
+    }
+  ]
+}

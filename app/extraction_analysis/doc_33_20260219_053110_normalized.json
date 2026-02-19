@@ -1,0 +1,388 @@
+{
+  "version": "1.0",
+  "document_id": 33,
+  "created_at": "2026-02-19T05:31:10.021211Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [
+        "CodeProbe – Unit Testing Reimagined"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "14+",
+        "200+",
+        "20+",
+        "80%",
+        "Years in Business",
+        "Customers",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "CodeProbe – Unit Testing Reimagined",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Years in Business",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Customers",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Market Need for CodeProbe"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Rising Expectations in",
+        "Software Delivery",
+        "Current Gaps in Unit",
+        "Testing Practice",
+        "The Shift-Left",
+        "Advantage",
+        "Demand for high-quality software delivery with zero regressions.",
+        "Traditional unit testing is under-prioritized and inefficient.",
+        "Shift-left testing improves code quality from the first line.",
+        "Key Needs:",
+        "Faster defect-free releases, early defect detection, actionable insights"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Market Need for CodeProbe",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Rising Expectations in",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Software Delivery",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Current Gaps in Unit",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Testing Practice",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "The Shift-Left",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Advantage",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Demand for high-quality software delivery with zero regressions.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Traditional unit testing is under-prioritized and inefficient.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Shift-left testing improves code quality from the first line.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Key Needs:",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Faster defect-free releases, early defect detection, actionable insights",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Service Overview"
+      ],
+      "h2": [
+        "Assess",
+        "Adopt",
+        "Rollout & Scale"
+      ],
+      "h3": [],
+      "p": [
+        " Code Complexity & Dependency Analysis",
+        "Pilot Unit Testing Framework (2-4 weeks)",
+        "End-to-End Unit Test Coverage (3-6 months)"
+      ],
+      "list": [
+        [
+          " Reusable Test Assets & Ongoing Optimization"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Service Overview",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Assess",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": " Code Complexity & Dependency Analysis",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Adopt",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Pilot Unit Testing Framework (2-4 weeks)",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Rollout & Scale",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "End-to-End Unit Test Coverage (3-6 months)",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "•  Reusable Test Assets & Ongoing Optimization",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Quantifiable Value Propositions"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Faster Bug Detection",
+        "Cuts resolution costs by 40%-60%",
+        "Higher Code Coverage",
+        "Reduces post-release defects by 20%-40%",
+        "CI/CD Ready Testing",
+        "Accelerates releases by 40%-60%",
+        "Reduced Maintenance Costs:",
+        "Saves $200k-$600k annually"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Quantifiable Value Propositions",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Faster Bug Detection",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Cuts resolution costs by 40%-60%",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Higher Code Coverage",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Reduces post-release defects by 20%-40%",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "CI/CD Ready Testing",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Accelerates releases by 40%-60%",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Reduced Maintenance Costs:",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Saves $200k-$600k annually",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "ROI & Components"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Faster Releases & Reduced",
+        "QA Costs",
+        "Improved Team Productivity &",
+        "Customer Satisfaction",
+        "Unit Test Harness for Java,",
+        "Python, JS, .NET",
+        "CI/CD Integration, Flaky Test",
+        "Detection & Analytics",
+        "Reusable Test Modules for",
+        "faster creation"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "ROI & Components",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Faster Releases & Reduced",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "QA Costs",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Improved Team Productivity &",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Customer Satisfaction",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Unit Test Harness for Java,",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Python, JS, .NET",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "CI/CD Integration, Flaky Test",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Detection & Analytics",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Reusable Test Modules for",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "faster creation",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 6
+        }
+      ]
+    }
+  ]
+}

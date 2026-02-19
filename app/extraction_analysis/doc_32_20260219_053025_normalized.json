@@ -1,0 +1,364 @@
+{
+  "version": "1.0",
+  "document_id": 32,
+  "created_at": "2026-02-19T05:30:25.873768Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [
+        "BugBuster Without Slowing – Tackling Development Defect Backlogs"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "14+",
+        "200+",
+        "20+",
+        "80%",
+        "Years in Business",
+        "Customers",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "BugBuster Without Slowing – Tackling Development Defect Backlogs",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Years in Business",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Customers",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "The Challenge"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Growing Defect Pile-Up",
+        "Defect backlogs grow while development sprints continue.",
+        "Manual Processes Drain Productivity High defect leakage into production increases costs and customer dissatisfaction.",
+        "Delivery Delays from Legacy Issues Feature delivery often gets delayed due to old unresolved bugs.",
+        "Impact of Defect Leakage Manual defect resolution and validation consumes valuable engineering time."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "The Challenge",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Growing Defect Pile-Up",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Defect backlogs grow while development sprints continue.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Manual Processes Drain Productivity High defect leakage into production increases costs and customer dissatisfaction.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Delivery Delays from Legacy Issues Feature delivery often gets delayed due to old unresolved bugs.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Impact of Defect Leakage Manual defect resolution and validation consumes valuable engineering time.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Moolya's Solution – BugBuster"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Focused Backlog Resolution",
+        "Dedicated engineering teams focusing solely on backlog clearance.",
+        "Dual-Track Execution – backlog fixes while",
+        "Parallel execution",
+        "development sprints continue.",
+        "Automation-Led Validation",
+        "Automation-first validation of bug fixes with minimal manual intervention.",
+        "Preventive Quality Insights",
+        "Root cause analysis to prevent recurring defects and reduce future backlog."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya's Solution – BugBuster",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Focused Backlog Resolution",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Dedicated engineering teams focusing solely on backlog clearance.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Dual-Track Execution – backlog fixes while",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Parallel execution",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "development sprints continue.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Automation-Led Validation",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Automation-first validation of bug fixes with minimal manual intervention.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Preventive Quality Insights",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Root cause analysis to prevent recurring defects and reduce future backlog.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Business Impact"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Lower Production Defects",
+        "Reduced defect leakage to production by 20%-40%.",
+        "Rapid Backlog Impact – up",
+        "Accelerated backlog clearance to 50% reduction within 3 months.",
+        "Cleaner, Faster Releases",
+        "Faster release readiness with",
+        "cleaner builds.",
+        "Happier End Users",
+        "Increased customer satisfaction with",
+        "stable releases.",
+        "Developer Productivity Boost",
+        "Improved developer focus on new features, boosting productivity."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Business Impact",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Lower Production Defects",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Reduced defect leakage to production by 20%-40%.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Rapid Backlog Impact – up",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Accelerated backlog clearance to 50% reduction within 3 months.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Cleaner, Faster Releases",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Faster release readiness with",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "cleaner builds.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Happier End Users",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Increased customer satisfaction with",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "stable releases.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Developer Productivity Boost",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Improved developer focus on new features, boosting productivity.",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Why Moolya?"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Proven expertise in QA and engineering for complex systems.",
+        "Hybrid approach combining engineering, automation, and testing.",
+        "Seamless integration with your existing tools",
+        "(Jira, Jenkins, GitHub).",
+        "Data-driven defect analysis and prioritization."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Why Moolya?",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Proven expertise in QA and engineering for complex systems.",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Hybrid approach combining engineering, automation, and testing.",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Seamless integration with your existing tools",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "(Jira, Jenkins, GitHub).",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Data-driven defect analysis and prioritization.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 7
+        }
+      ]
+    }
+  ]
+}

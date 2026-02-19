@@ -258,23 +258,19 @@ class StructuredChunkerV2:
                         text_parts.append(b.get("text", ""))
                 full_text = "\n\n".join([p for p in text_parts if p])
 
+                # Minimal, LLM-friendly chunk: exclude start_page, end_page, char_count,
+                # word_count, element_type, element_types, extraction_source, hierarchy_depth.
+                is_table = any(b.get("type") == "table" for sub in subsections for b in sub.get("blocks", []))
+                first_page = subsections[0].get("start_page") if subsections else hnode.get("start_page")
                 chunk = {
                     "chunk_index": chunk_idx,
-                    "page_number": subsections[0].get("start_page") if subsections else hnode.get("start_page"),
-                    "start_page": hnode.get("start_page"),
-                    "end_page": hnode.get("end_page"),
+                    "page_number": first_page,
                     "text": full_text,
-                    "char_count": len(full_text),
-                    "word_count": len(full_text.split()),
                     "heading_level_1": h1_title,
                     "heading_level_2": None,
                     "heading_level_3": None,
-                    "element_types": [b.get("type") for sub in subsections for b in sub.get("blocks", [])],
-                    "element_type": subsections[0].get("blocks", [])[0].get("type") if subsections and subsections[0].get("blocks") else "paragraph",
                     "section": h1_title or None,
-                    "hierarchy_depth": 1,
-                    "extraction_source": "adobe_api",
-                    "is_table": any(b.get("type") == "table" for sub in subsections for b in sub.get("blocks", [])),
+                    "is_table": is_table,
                 }
                 chunks.append(chunk)
                 chunk_idx += 1
@@ -292,10 +288,9 @@ class StructuredChunkerV2:
                 # Add H1 title as first line
                 if h1_title:
                     text_list.append(h1_title)
-                elem_types = []
+                elem_types = []  # used only to compute is_table
                 pages_start = None
                 pages_end = None
-                depths = set()
                 h2_titles = set()
                 h3_titles = set()
 
@@ -308,7 +303,6 @@ class StructuredChunkerV2:
                         if not pages_start:
                             pages_start = b.get("page_number")
                         pages_end = b.get("page_number")
-                    depths.add(sub.get("depth", 1))
                     if sub.get("type") == "h2" and sub.get("title"):
                         h2_titles.add(sub.get("title"))
                     if sub.get("type") == "h3" and sub.get("title"):
@@ -326,19 +320,11 @@ class StructuredChunkerV2:
                 chunk = {
                     "chunk_index": chunk_idx,
                     "page_number": pages_start,
-                    "start_page": pages_start,
-                    "end_page": pages_end,
                     "text": full_text,
-                    "char_count": len(full_text),
-                    "word_count": len(full_text.split()),
                     "heading_level_1": h1_title,
                     "heading_level_2": heading_l2,
                     "heading_level_3": heading_l3,
-                    "element_types": elem_types,
-                    "element_type": elem_types[0] if elem_types else "paragraph",
                     "section": (h1_title + (" > " + heading_l2 if heading_l2 else "")) if h1_title else None,
-                    "hierarchy_depth": max(depths) if depths else 1,
-                    "extraction_source": "adobe_api",
                     "is_table": any(t == "table" for t in elem_types),
                 }
 

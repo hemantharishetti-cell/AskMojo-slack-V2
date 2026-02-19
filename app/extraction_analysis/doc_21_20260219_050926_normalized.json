@@ -1,0 +1,2307 @@
+{
+  "version": "1.0",
+  "document_id": 21,
+  "created_at": "2026-02-19T05:09:26.410764Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "14+",
+        "200+",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Who we are",
+        "Why Choose us"
+      ],
+      "h2": [
+        "Skin in the Game",
+        "Scaling Value"
+      ],
+      "h3": [],
+      "p": [
+        "At Moolya Software Testing Private Limited, we are a global leader in AI-driven engineering solutions, specializing in creating scalable, secure, and intelligent platforms that transform business outcomes. We collaborate with forward-thinking organizations to build high-impact products that leverage cutting-edge technologies such as Natural Language Processing (NLP), Generative AI, and advanced data analytics. Our expertise spans across AI platform engineering, software development, and quality assurance, ensuring measurable success for our clients.",
+        "We go beyond vendor roles, fostering deep co-ownership with customers.",
+        "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value."
+      ],
+      "list": [],
+      "table": [
+        "Culture Focus",
+        "Leadership Friendly",
+        "We help customers address issues by focusing on cultural fixes.",
+        "Moolya empowers C-, V-, and D-level leaders with",
+        "insights."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Who we are",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "At Moolya Software Testing Private Limited, we are a global leader in AI-driven engineering solutions, specializing in creating scalable, secure, and intelligent platforms that transform business outcomes. We collaborate with forward-thinking organizations to build high-impact products that leverage cutting-edge technologies such as Natural Language Processing (NLP), Generative AI, and advanced data analytics. Our expertise spans across AI platform engineering, software development, and quality assurance, ensuring measurable success for our clients.",
+          "page_number": 2
+        },
+        {
+          "type": "h1",
+          "text": "Why Choose us",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Skin in the Game",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "We go beyond vendor roles, fostering deep co-ownership with customers.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Culture Focus",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Leadership Friendly",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We help customers address issues by focusing on cultural fixes.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Moolya empowers C-, V-, and D-level leaders with",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "insights.",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Scaling Value",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Executive Summary"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Keysight Technologies empowers innovators to design and deliver next-generation solutions with precision, speed, and confidence.",
+        "Moolya proposes a DevOps Implementation and Managed Operations solution to strengthen Keysight’s software delivery ecosystem through a self-managed Kubernetes platform on AWS, integrated with your existing toolchain Jenkins, Polaris, Black Duck, and Vault.",
+        "This initiative will:",
+        "Together, we’ll enable Keysight to deliver faster, operate securely, and scale seamlessly, supporting your vision of engineering excellence."
+      ],
+      "list": [
+        [
+          "Accelerate deployment cycles through automated CI/CD and secure pipelines.",
+          "Enhance governance and compliance via Polaris and Black Duck integration.",
+          "Ensure continuous reliability with Vault-based secrets, ACM certificates, and AWS observability."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Executive Summary",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Keysight Technologies empowers innovators to design and deliver next-generation solutions with precision, speed, and confidence.",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Moolya proposes a DevOps Implementation and Managed Operations solution to strengthen Keysight’s software delivery ecosystem through a self-managed Kubernetes platform on AWS, integrated with your existing toolchain Jenkins, Polaris, Black Duck, and Vault.",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "This initiative will:",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• Accelerate deployment cycles through automated CI/CD and secure pipelines.\n• Enhance governance and compliance via Polaris and Black Duck integration.\n• Ensure continuous reliability with Vault-based secrets, ACM certificates, and AWS observability.",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Together, we’ll enable Keysight to deliver faster, operate securely, and scale seamlessly, supporting your vision of engineering excellence.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Engagement Objectives"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Drive continuous improvement and governance through measurable KPIs.",
+        "Implement and manage Kubernetes-based DevOps platform on AWS.",
+        "Integrate Jenkins pipelines with Polaris and Black Duck for compliance enforcement.",
+        "Automate certificate and secret lifecycle via Vault + AWS ACM.",
+        "Establish observability using Prometheus,Grafana,CloudWatch.",
+        "Provide executive visibility through reports, dashboards, and audits."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Engagement Objectives",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Drive continuous improvement and governance through measurable KPIs.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Implement and manage Kubernetes-based DevOps platform on AWS.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Integrate Jenkins pipelines with Polaris and Black Duck for compliance enforcement.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Automate certificate and secret lifecycle via Vault + AWS ACM.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Establish observability using Prometheus,Grafana,CloudWatch.",
+          "page_number": 4
+        },
+        {
+          "type": "table",
+          "text": "Provide executive visibility through reports, dashboards, and audits.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Current State vs. Moolya Value Delivered"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Current State vs. Moolya Value Delivered",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [],
+      "h2": [
+        "From Maintenance Mode to Modern DevOps Excellence"
+      ],
+      "h3": [],
+      "p": [
+        "Immediate operational continuity with parallel modernization — not a handoff, but a scale-up."
+      ],
+      "list": [],
+      "table": [
+        "Area",
+        "Current",
+        "With Moolya Engagement",
+        "Value Delivered",
+        "Resourcing",
+        "1 Onshore DevOps engineer managing operations",
+        "3 Offshore DevOps engineers: architecture, automation, security",
+        "3× capability uplift with cross-domain expertise",
+        "Environment",
+        "Management",
+        "Container operations managed manually on EC2/VMs",
+        "Kubernetes-based orchestration with automated scaling and rollback",
+        "Zero-downtime, predictable releases",
+        "CCD Process",
+        "--",
+        "Jenkins-based automated pipelines integrated with Polaris & Black Duck",
+        "60–70% faster build cycles; improved compliance",
+        "Security &",
+        "Compliance",
+        "--",
+        "Integrated SAST/SCA gates, secrets rotation, certificate automation",
+        "Continuous compliance, reduced audit risk"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "From Maintenance Mode to Modern DevOps Excellence",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "Immediate operational continuity with parallel modernization — not a handoff, but a scale-up.",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Area",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Current",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "With Moolya Engagement",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Value Delivered",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Resourcing",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "1 Onshore DevOps engineer managing operations",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "3 Offshore DevOps engineers: architecture, automation, security",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "3× capability uplift with cross-domain expertise",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Environment",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Management",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Container operations managed manually on EC2/VMs",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Kubernetes-based orchestration with automated scaling and rollback",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Zero-downtime, predictable releases",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "CCD Process",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "--",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Jenkins-based automated pipelines integrated with Polaris & Black Duck",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "60–70% faster build cycles; improved compliance",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Security &",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Compliance",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "--",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Integrated SAST/SCA gates, secrets rotation, certificate automation",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Continuous compliance, reduced audit risk",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Immediate operational continuity with parallel modernization — not a handoff, but a scale-up."
+      ],
+      "list": [],
+      "table": [
+        "Area",
+        "Current",
+        "With Moolya Engagement",
+        "Value Delivered",
+        "Monitoring & Reporting",
+        "--",
+        "Prometheus + Grafana dashboards + SLA/",
+        "SLO reporting",
+        "Real-time observability and proactive issue management",
+        "Operational Continuity",
+        "Dependency on a single resource",
+        "Dedicated Moolya team ensures 16×5",
+        "(US Timezone) continuity & governance",
+        "Risk-free transition and stable support",
+        "Governance &",
+        "Optimization",
+        "--",
+        "Weekly + Monthly governance reviews with measurable KPIs",
+        "Transparent accountability and measurable ROI"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Immediate operational continuity with parallel modernization — not a handoff, but a scale-up.",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Area",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Current",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "With Moolya Engagement",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Value Delivered",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Monitoring & Reporting",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "--",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Prometheus + Grafana dashboards + SLA/",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "SLO reporting",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Real-time observability and proactive issue management",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Operational Continuity",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Dependency on a single resource",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Dedicated Moolya team ensures 16×5",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "(US Timezone) continuity & governance",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Risk-free transition and stable support",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Governance &",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Optimization",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "--",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Weekly + Monthly governance reviews with measurable KPIs",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Transparent accountability and measurable ROI",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Ensuring Zero Disruption During Transition"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Stage 1",
+        "Stage 2",
+        "Stage 3",
+        "Knowledge Transition",
+        "(Weeks 1–2)",
+        "Shadow existing DevOps engineer for full knowledge capture.",
+        "Baseline current infrastructure, pipelines, and access controls.",
+        "Identify quick wins and automation opportunities (no disruption to operations).",
+        "Deliver Transition Plan & Operations",
+        "Runbook v1.",
+        "Parallel Execution",
+        "(Weeks 3–4)",
+        "Moolya engineers start managing daily operations alongside existing resource.",
+        "Implement improvements in observability, alerts, and deployment hygiene.",
+        "Deliver stabili zation report and first compliance dashboard.",
+        "Full Ownership",
+        "(Week 5 onward)",
+        "Moolya assumes end-to-end DevOps ownership.",
+        "Continuous CI/CD delivery, automated releases, and governance cadence established.",
+        "Deliver Operations Ownership Handover",
+        "Report."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Ensuring Zero Disruption During Transition",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Stage 1",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Stage 2",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Stage 3",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Knowledge Transition",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "(Weeks 1–2)",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Shadow existing DevOps engineer for full knowledge capture.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Baseline current infrastructure, pipelines, and access controls.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Identify quick wins and automation opportunities (no disruption to operations).",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Deliver Transition Plan & Operations",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Runbook v1.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Parallel Execution",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "(Weeks 3–4)",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Moolya engineers start managing daily operations alongside existing resource.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Implement improvements in observability, alerts, and deployment hygiene.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Deliver stabili zation report and first compliance dashboard.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Full Ownership",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "(Week 5 onward)",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Moolya assumes end-to-end DevOps ownership.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Continuous CI/CD delivery, automated releases, and governance cadence established.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Deliver Operations Ownership Handover",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Report.",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Implementing Kubernetes and CI/CD Enhancements Alongside Existing Workloads"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Implementing Kubernetes and CI/CD Enhancements Alongside Existing Workloads",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [],
+      "h2": [
+        "Month 1 – Environment Design & Foundation Setup"
+      ],
+      "h3": [],
+      "p": [
+        "Goal: Build AWS infrastructure, implement Kubernetes cluster, and establish the security foundation. Deliverables: Implement Kubernetes clusters (Dev/Staging/Prod). Vault integration and initial secret policies. Terraform IaC modules and state management repository. Security and access governance documentation. ACM-based SSL/TLS automation."
+      ],
+      "list": [],
+      "table": [
+        "Week",
+        "Focus",
+        "Key Activities",
+        "Task Type",
+        "Week 1",
+        "Discovery & Assessment",
+        "Shadow existing DevOps engineer; assess current workload configurations while maintaining daily operations",
+        "One Time Task",
+        "Week 2",
+        "Architecture Design",
+        "Define AWS architecture (VPC, subnets, IAM), cluster node design, and RBAC model.",
+        "One Time Task",
+        "Week 3",
+        "Infrastructure Provisioning",
+        "Implement a self-managed Kubernetes cluster on AWS EC2 using Terraform, configuring networking, storage, and monitoring for operational readiness.",
+        "One Time Task",
+        "Week 4",
+        "Security & Certificates",
+        "Configure ACM, Vault, and namespace isolation; enforce Pod",
+        "Security Standards and IAM policies.",
+        "Recurring Task"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 1 – Environment Design & Foundation Setup",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "Goal: Build AWS infrastructure, implement Kubernetes cluster, and establish the security foundation. Deliverables: Implement Kubernetes clusters (Dev/Staging/Prod). Vault integration and initial secret policies. Terraform IaC modules and state management repository. Security and access governance documentation. ACM-based SSL/TLS automation.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Week",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Focus",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Key Activities",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Task Type",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Week 1",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Discovery & Assessment",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Shadow existing DevOps engineer; assess current workload configurations while maintaining daily operations",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Week 2",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Architecture Design",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Define AWS architecture (VPC, subnets, IAM), cluster node design, and RBAC model.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Week 3",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Infrastructure Provisioning",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Implement a self-managed Kubernetes cluster on AWS EC2 using Terraform, configuring networking, storage, and monitoring for operational readiness.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Week 4",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Security & Certificates",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Configure ACM, Vault, and namespace isolation; enforce Pod",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Security Standards and IAM policies.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Recurring Task",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [],
+      "h2": [
+        "Month 2 – Application Implementation & CI/CD Integration"
+      ],
+      "h3": [],
+      "p": [
+        "Goal: Containerize workloads, automate CI/CD, and standardize secure deployment practices.",
+        "Deliverables:",
+        "Jenkins pipelines with security gates (Polaris, Black Duck)."
+      ],
+      "list": [
+        [
+          "Helm-based deployment automation.",
+          "Blue-Green and Canary rollout playbooks.",
+          "Rollback and release validation runbooks",
+          "CI/CD and compliance workflow documentation."
+        ]
+      ],
+      "table": [
+        "Week",
+        "Focus",
+        "Key Activities",
+        "Task Type",
+        "Week 5",
+        "Application Containerization",
+        "Refactor Dockerfiles, integrate Polaris (SAST) and",
+        "Black Duck (SCA) scans in builds.",
+        "One Time Task",
+        "Week 6",
+        "Kubernetes Deployment",
+        "Deploy workloads to Kubernetes using Helm; configure Ingress and TLS with ACM.",
+        "One Time Task",
+        "Week 7",
+        "Jenkins Pipeline Setup",
+        "Implement CI/CD pipelines with build → scan → deploy → rollback flow; enforce Polaris & Black Duck gates.",
+        "Recurring Task",
+        "Week 8",
+        "Deployment Strategy Enablement",
+        "Implement Blue-Green and Canary deployments; integrate",
+        "Prometheus-based health checks and rollback automation.",
+        "Recurring Task"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 2 – Application Implementation & CI/CD Integration",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "Goal: Containerize workloads, automate CI/CD, and standardize secure deployment practices.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Week",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Focus",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Key Activities",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Task Type",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Week 5",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Application Containerization",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Refactor Dockerfiles, integrate Polaris (SAST) and",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Black Duck (SCA) scans in builds.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Week 6",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Kubernetes Deployment",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Deploy workloads to Kubernetes using Helm; configure Ingress and TLS with ACM.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Week 7",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Jenkins Pipeline Setup",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Implement CI/CD pipelines with build → scan → deploy → rollback flow; enforce Polaris & Black Duck gates.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Recurring Task",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Week 8",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Deployment Strategy Enablement",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Implement Blue-Green and Canary deployments; integrate",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Prometheus-based health checks and rollback automation.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Recurring Task",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "Deliverables:",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "Jenkins pipelines with security gates (Polaris, Black Duck).",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• Helm-based deployment automation.\n• Blue-Green and Canary rollout playbooks.\n• Rollback and release validation runbooks\n• CI/CD and compliance workflow documentation.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [],
+      "h2": [
+        "Month 3 – Observability, Validation & Operational Readiness"
+      ],
+      "h3": [],
+      "p": [
+        "Goal: Final validation, observability setup, and knowledge transfer for operations.",
+        "Deliverables:",
+        "Grafana dashboards and CloudWatch integrations",
+        "Final security & compliance validation reports"
+      ],
+      "list": [
+        [
+          "Centralized Kubernetes log forwarding (CloudWatch)",
+          "Handover documentation with operational SOPs"
+        ]
+      ],
+      "table": [
+        "Week",
+        "Focus",
+        "Key Activities",
+        "Task Type",
+        "Week 9",
+        "Observability Setup",
+        "Implement Prometheus, Grafana, and CloudWatch.",
+        "One Time Task",
+        "Week 10",
+        "Validation & Testing",
+        "Execute controlled Blue-Green and Canary deployments; validate SSL renewal and pipeline rollbacks.",
+        "One Time Task",
+        "Week 11",
+        "Compliance & Security Validation",
+        "Run full Polaris + Black Duck scans; verify secret rotation and certificate renewal.",
+        "Recurring Task",
+        "Week 12",
+        "Optimization & Knowledge Transfer",
+        "Optimize node sizing, finalize cost tuning, and conduct KT sessions with client team.",
+        "Recurring Task"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 3 – Observability, Validation & Operational Readiness",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "Goal: Final validation, observability setup, and knowledge transfer for operations.",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Week",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Focus",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Key Activities",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Task Type",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Week 9",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Observability Setup",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Implement Prometheus, Grafana, and CloudWatch.",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Week 10",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Validation & Testing",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Execute controlled Blue-Green and Canary deployments; validate SSL renewal and pipeline rollbacks.",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "One Time Task",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Week 11",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Compliance & Security Validation",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Run full Polaris + Black Duck scans; verify secret rotation and certificate renewal.",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Recurring Task",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Week 12",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Optimization & Knowledge Transfer",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Optimize node sizing, finalize cost tuning, and conduct KT sessions with client team.",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Recurring Task",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "Deliverables:",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "Grafana dashboards and CloudWatch integrations",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "Final security & compliance validation reports",
+          "page_number": 13
+        },
+        {
+          "type": "list",
+          "text": "• Centralized Kubernetes log forwarding (CloudWatch)\n• Handover documentation with operational SOPs",
+          "page_number": 13
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Certificate & Security Automation Framework"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Layer",
+        "Tool",
+        "Description",
+        "Certificate Management",
+        "AWS ACM",
+        "Automated certificate issuance and renewal.",
+        "Secrets Management",
+        "Vault",
+        "Dynamic secret injection and rotation.",
+        "Ingress Management",
+        "NGINX",
+        "TLS termination, Blue-Green routing.",
+        "Static Code Analysis",
+        "Polaris",
+        "SAST integration in Jenkins pipeline.",
+        "Dependency Governance",
+        "Black Duck",
+        "SCA/BOM validation and license compliance.",
+        "Monitoring & Alerts",
+        "Prometheus + CloudWatch",
+        "Metrics and alerting for cert expiry & resource health.",
+        "Pipeline Enforcement",
+        "Jenkins",
+        "Build & deploy stage gating with audit trails."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Certificate & Security Automation Framework",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Layer",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Tool",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Description",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Certificate Management",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "AWS ACM",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Automated certificate issuance and renewal.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Secrets Management",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Vault",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Dynamic secret injection and rotation.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Ingress Management",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "NGINX",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "TLS termination, Blue-Green routing.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Static Code Analysis",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Polaris",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "SAST integration in Jenkins pipeline.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Dependency Governance",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Black Duck",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "SCA/BOM validation and license compliance.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Monitoring & Alerts",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Prometheus + CloudWatch",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Metrics and alerting for cert expiry & resource health.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Pipeline Enforcement",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Jenkins",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Build & deploy stage gating with audit trails.",
+          "page_number": 14
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "h1": [
+        "Evolving to a Fully Automated, Secure, and Always-On DevOps Ecosystem"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Evolving to a Fully Automated, Secure, and Always-On DevOps Ecosystem",
+          "page_number": 15
+        }
+      ]
+    },
+    {
+      "page_number": 16,
+      "h1": [
+        "Year Managed Operations & Optimization Plan"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Quarterly Roadmap"
+      ],
+      "list": [],
+      "table": [
+        "Quarter",
+        "Objective",
+        "Refined Focus Areas (Clear, Outcome-Oriented)",
+        "Q1 (Months 1–3)",
+        "Establish and Operationalize Core",
+        "DevOps Foundation",
+        "Implement Kubernetes environment on AWS EC2 using Terraform; implement CI/CD pipelines in Jenkins with integrated Polaris & Black Duck scans; enable Vault-based secrets and certificate automation.",
+        "Q2 (Months 4–6)",
+        "Stabilize Operations and",
+        "Strengthen Compliance",
+        "Enhance observability through Prometheus, Grafana, and CloudWatch; automate compliance reporting; validate continuous certificate renewals and security posture.",
+        "Q3 (Months 7–9)",
+        "Optimize Performance and",
+        "Scale Automation",
+        "Improve cost efficiency and resource utilization; enhance Jenkins pipeline performance; implement automated configuration drift detection and remediation.",
+        "Q4 (Months 10–12)",
+        "Institutionalize",
+        "Governance and Drive",
+        "Innovation",
+        "Establish DevOps governance KPIs and SLA dashboards; conduct resilience and reliability drills; introduce predictive observability and proactive alerting."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Year Managed Operations & Optimization Plan",
+          "page_number": 16
+        },
+        {
+          "type": "p",
+          "text": "Quarterly Roadmap",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Quarter",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Objective",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Refined Focus Areas (Clear, Outcome-Oriented)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Q1 (Months 1–3)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Establish and Operationalize Core",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "DevOps Foundation",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Implement Kubernetes environment on AWS EC2 using Terraform; implement CI/CD pipelines in Jenkins with integrated Polaris & Black Duck scans; enable Vault-based secrets and certificate automation.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Q2 (Months 4–6)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Stabilize Operations and",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Strengthen Compliance",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Enhance observability through Prometheus, Grafana, and CloudWatch; automate compliance reporting; validate continuous certificate renewals and security posture.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Q3 (Months 7–9)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Optimize Performance and",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Scale Automation",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Improve cost efficiency and resource utilization; enhance Jenkins pipeline performance; implement automated configuration drift detection and remediation.",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Q4 (Months 10–12)",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Institutionalize",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Governance and Drive",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Innovation",
+          "page_number": 16
+        },
+        {
+          "type": "table",
+          "text": "Establish DevOps governance KPIs and SLA dashboards; conduct resilience and reliability drills; introduce predictive observability and proactive alerting.",
+          "page_number": 16
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "h1": [
+        "Ongoing Operations"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Category",
+        "Activity",
+        "Frequency",
+        "Tool",
+        "Monitoring & Alerts",
+        "Infrastructure and cluster health monitoring",
+        "Continuous",
+        "Prometheus + CloudWatch",
+        "Code & Dependency Scanning",
+        "Jenkins integrated Polaris & Black",
+        "Duck validation",
+        "Continuous",
+        "Jenkins",
+        "Secrets & Certificates",
+        "Validation and renewal",
+        "Continuous",
+        "Vault + ACM",
+        "Cost & Performance Optimization",
+        "Node pool right-sizing, resource scaling",
+        "Quarterly",
+        "AWS",
+        "Compliance Reporting",
+        "Security and compliance dashboards",
+        "Monthly",
+        "Grafana + Jenkins Reports",
+        "Disaster Recovery Simulation",
+        "Rollback, failover testing",
+        "Quarterly",
+        "Jenkins Automation",
+        "Governance Review",
+        "SLA/SLO health checks",
+        "Quarterly",
+        "Governance Dashboard"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Ongoing Operations",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Category",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Activity",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Frequency",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Tool",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Monitoring & Alerts",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Infrastructure and cluster health monitoring",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Continuous",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Prometheus + CloudWatch",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Code & Dependency Scanning",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Jenkins integrated Polaris & Black",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Duck validation",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Continuous",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Jenkins",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Secrets & Certificates",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Validation and renewal",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Continuous",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Vault + ACM",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Cost & Performance Optimization",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Node pool right-sizing, resource scaling",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Quarterly",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "AWS",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Compliance Reporting",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Security and compliance dashboards",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Monthly",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Grafana + Jenkins Reports",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Disaster Recovery Simulation",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Rollback, failover testing",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Quarterly",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Jenkins Automation",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Governance Review",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "SLA/SLO health checks",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Quarterly",
+          "page_number": 17
+        },
+        {
+          "type": "table",
+          "text": "Governance Dashboard",
+          "page_number": 17
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "h1": [
+        "Technology Stack"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Category",
+        "Tools",
+        "Cloud Infrastructure",
+        "AWS (EC2, VPC, IAM, ACM, Route 53)",
+        "Container Orchestration",
+        "Kubernetes (Self-managed)",
+        "Pipeline Management",
+        "Jenkins",
+        "Static Code Analysis",
+        "Polaris",
+        "BOM / Dependency Management",
+        "Black Duck",
+        "Secrets & Certificates",
+        "Vault + AWS ACM",
+        "IaC & Configuration",
+        "Terraform, Helm",
+        "Monitoring & Observability",
+        "Prometheus, Grafana, CloudWatch"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Technology Stack",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Category",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Tools",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Cloud Infrastructure",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "AWS (EC2, VPC, IAM, ACM, Route 53)",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Container Orchestration",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Kubernetes (Self-managed)",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Pipeline Management",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Jenkins",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Static Code Analysis",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Polaris",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "BOM / Dependency Management",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Black Duck",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Secrets & Certificates",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Vault + AWS ACM",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "IaC & Configuration",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Terraform, Helm",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Monitoring & Observability",
+          "page_number": 18
+        },
+        {
+          "type": "table",
+          "text": "Prometheus, Grafana, CloudWatch",
+          "page_number": 18
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Team Composition The combined team replaces the dependency on a single operator with an accountable, measurable, and outcome-driven function."
+      ],
+      "list": [],
+      "table": [
+        "Role",
+        "Focus Area",
+        "Values Delivered",
+        "DevOps Lead",
+        "Solution design, infrastructure governance, automation strategy",
+        "Accelerates maturity; ensures long-term scalability",
+        "DevOps Engineer",
+        "Pipeline implementation, observability, deployment reliability",
+        "Delivers 70% faster releases; reduces incident volume",
+        "Security & Compliance Engineer",
+        "Polaris/Black Duck integration, vault management, audits",
+        "Continuous compliance; eliminates vulnerability backlogs"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Team Composition The combined team replaces the dependency on a single operator with an accountable, measurable, and outcome-driven function.",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Role",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Focus Area",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Values Delivered",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "DevOps Lead",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Solution design, infrastructure governance, automation strategy",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Accelerates maturity; ensures long-term scalability",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "DevOps Engineer",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Pipeline implementation, observability, deployment reliability",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Delivers 70% faster releases; reduces incident volume",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Security & Compliance Engineer",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Polaris/Black Duck integration, vault management, audits",
+          "page_number": 19
+        },
+        {
+          "type": "table",
+          "text": "Continuous compliance; eliminates vulnerability backlogs",
+          "page_number": 19
+        }
+      ]
+    },
+    {
+      "page_number": 20,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 21,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 22,
+      "h1": [],
+      "h2": [
+        "Case Study 1",
+        "Leading eCommerce Enterprise -DevOps Modernization and Continuous Delivery Excellence"
+      ],
+      "h3": [
+        "About",
+        "DevOps Value Delivered",
+        "Business Impact"
+      ],
+      "p": [],
+      "list": [
+        [
+          "A",
+          "leading global e-commerce platform serving millions of daily active users with peak-scale traffic during major shopping events.",
+          "•",
+          "The engagement involved establishing a scalable, self-managed Kubernetes platform on AWS while maintaining full control of live workloads."
+        ],
+        [
+          "•",
+          "Took full DevOps ownership from Day l while implementing a self-managed Kubernetes platform on AWS EC2 using Terraform with zero downtime.",
+          "•",
+          "Re-engineered Jenkins pipelines with automated build-test-deploy flow, integrated SonarQube for quality gates, and improved release reliability.",
+          "•",
+          "Embedded OWASP Dependency-Check for open-source risk validation and baseline vulnerability scoring across all builds.",
+          "•",
+          "Implemented HashiCorp Vault and AWS Certificate Manager (ACM) for dynamic secrets rotation and automated SSL renewals."
+        ],
+        [
+          "•",
+          "SonarQube integration lowered high-severity issues by 70% and improved maintainability across key services.",
+          "•",
+          "Terraform automation and AWS resource optimization reduced infrastructure costs by -22%",
+          "•",
+          "OWASP Dependency-Check, Vault. and governance dashboards ensured continuous compliance and transparent reporting."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study 1",
+          "page_number": 22
+        },
+        {
+          "type": "h2",
+          "text": "Leading eCommerce Enterprise -DevOps Modernization and Continuous Delivery Excellence",
+          "page_number": 22
+        },
+        {
+          "type": "h3",
+          "text": "About",
+          "page_number": 22
+        },
+        {
+          "type": "list",
+          "text": "• A\n• leading global e-commerce platform serving millions of daily active users with peak-scale traffic during major shopping events.\n• •\n• The engagement involved establishing a scalable, self-managed Kubernetes platform on AWS while maintaining full control of live workloads.",
+          "page_number": 22
+        },
+        {
+          "type": "h3",
+          "text": "DevOps Value Delivered",
+          "page_number": 22
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Took full DevOps ownership from Day l while implementing a self-managed Kubernetes platform on AWS EC2 using Terraform with zero downtime.\n• •\n• Re-engineered Jenkins pipelines with automated build-test-deploy flow, integrated SonarQube for quality gates, and improved release reliability.\n• •\n• Embedded OWASP Dependency-Check for open-source risk validation and baseline vulnerability scoring across all builds.\n• •\n• Implemented HashiCorp Vault and AWS Certificate Manager (ACM) for dynamic secrets rotation and automated SSL renewals.",
+          "page_number": 22
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 22
+        },
+        {
+          "type": "list",
+          "text": "• •\n• SonarQube integration lowered high-severity issues by 70% and improved maintainability across key services.\n• •\n• Terraform automation and AWS resource optimization reduced infrastructure costs by -22%\n• •\n• OWASP Dependency-Check, Vault. and governance dashboards ensured continuous compliance and transparent reporting.",
+          "page_number": 22
+        }
+      ]
+    },
+    {
+      "page_number": 23,
+      "h1": [],
+      "h2": [
+        "Case Study 2",
+        "Leading Supply Chain Management Platform"
+      ],
+      "h3": [
+        "About the Platform",
+        "DevOps Transformation",
+        "Business Impact"
+      ],
+      "p": [
+        "A supply chain and sustainability management platform designed for fashion brands across the European Union (EU), empowering them to manage operations and compliance efficiently using AWS."
+      ],
+      "list": [
+        [
+          "•",
+          "Streamlined CI/CD Pipelines: Implemented end-to-end continuous integration and deployment pipelines using Cloudbees to ensure faster, automated, and error-free releases.",
+          "•",
+          "Containerization & Infrastructure as Code (laC): Migrated services to containerized environments and adopted laC (Terraform + Kubernetes) for scalable and consistent infrastructure management.",
+          "•",
+          "Automated Monitoring & Alerts: Set up real-time monitoring, logging, and alerting systems using Prometheus and Grafana to improve observability and system reliability,",
+          "•",
+          "Environment Standardization: Unified staging, QA, and production environments to eliminate configuration drift and reduce deployment risks."
+        ],
+        [
+          "•",
+          "Operational Agility: Enhanced platform reliability and enabled faster, more predictable releases.",
+          "•",
+          "Cost Optimization: Reduced infrastructure overhead through automated scaling and resource utilization monitoring."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study 2",
+          "page_number": 23
+        },
+        {
+          "type": "h2",
+          "text": "Leading Supply Chain Management Platform",
+          "page_number": 23
+        },
+        {
+          "type": "h3",
+          "text": "About the Platform",
+          "page_number": 23
+        },
+        {
+          "type": "p",
+          "text": "A supply chain and sustainability management platform designed for fashion brands across the European Union (EU), empowering them to manage operations and compliance efficiently using AWS.",
+          "page_number": 23
+        },
+        {
+          "type": "h3",
+          "text": "DevOps Transformation",
+          "page_number": 23
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Streamlined CI/CD Pipelines: Implemented end-to-end continuous integration and deployment pipelines using Cloudbees to ensure faster, automated, and error-free releases.\n• •\n• Containerization & Infrastructure as Code (laC): Migrated services to containerized environments and adopted laC (Terraform + Kubernetes) for scalable and consistent infrastructure management.\n• •\n• Automated Monitoring & Alerts: Set up real-time monitoring, logging, and alerting systems using Prometheus and Grafana to improve observability and system reliability,\n• •\n• Environment Standardization: Unified staging, QA, and production environments to eliminate configuration drift and reduce deployment risks.",
+          "page_number": 23
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 23
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Operational Agility: Enhanced platform reliability and enabled faster, more predictable releases.\n• •\n• Cost Optimization: Reduced infrastructure overhead through automated scaling and resource utilization monitoring.",
+          "page_number": 23
+        }
+      ]
+    },
+    {
+      "page_number": 24,
+      "h1": [],
+      "h2": [
+        "Case Study 3",
+        "Kubernetes-driven Delivery Transformation UsingAWS"
+      ],
+      "h3": [
+        "About the Platform",
+        "Moolya's Role:",
+        "Results:"
+      ],
+      "p": [
+        "Enterprise SaaS client operating legacy EC2 deployments with manual release cycles and inconsistent configuration."
+      ],
+      "list": [
+        [
+          "•",
+          "Designed AWS multi-account strategy with centralized IAM and GuardDuty.",
+          "•",
+          "Containerized 40+ microservices and deployed to EKS clusters.",
+          "•",
+          "Implemented Terraform modules for provisioning. networking. and IAM roles.",
+          "•",
+          "Established Grafana dashboards for SLO tracking."
+        ],
+        [
+          "•",
+          "Deployment frequency increased from bi-weekly to daily.",
+          "•",
+          "Infrastructure drift reduced to near zero with laC adoption.",
+          "•",
+          "35% cost optimization through right-sized autoscaling.",
+          "•",
+          "Security exposure window reduced by 60% via automated scans."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study 3",
+          "page_number": 24
+        },
+        {
+          "type": "h2",
+          "text": "Kubernetes-driven Delivery Transformation UsingAWS",
+          "page_number": 24
+        },
+        {
+          "type": "h3",
+          "text": "About the Platform",
+          "page_number": 24
+        },
+        {
+          "type": "p",
+          "text": "Enterprise SaaS client operating legacy EC2 deployments with manual release cycles and inconsistent configuration.",
+          "page_number": 24
+        },
+        {
+          "type": "h3",
+          "text": "Moolya's Role:",
+          "page_number": 24
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Designed AWS multi-account strategy with centralized IAM and GuardDuty.\n• •\n• Containerized 40+ microservices and deployed to EKS clusters.\n• •\n• Implemented Terraform modules for provisioning. networking. and IAM roles.\n• •\n• Established Grafana dashboards for SLO tracking.",
+          "page_number": 24
+        },
+        {
+          "type": "h3",
+          "text": "Results:",
+          "page_number": 24
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Deployment frequency increased from bi-weekly to daily.\n• •\n• Infrastructure drift reduced to near zero with laC adoption.\n• •\n• 35% cost optimization through right-sized autoscaling.\n• •\n• Security exposure window reduced by 60% via automated scans.",
+          "page_number": 24
+        }
+      ]
+    },
+    {
+      "page_number": 25,
+      "h1": [
+        "Conclusion"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya’s DevOps Implementation and Managed Operations program establishes a secure, compliant, and fully automated DevOps ecosystem on AWS powered by Kubernetes, Jenkins, Polaris, and Black Duck.",
+        "Our deliverables provide not just automation, but visibility, governance, and confidence ensuring your infrastructure and pipelines remain continuously optimized, secure, and aligned with enterprise expectations.",
+        "This is not a one-time setup it’s a sustained evolution of your DevOps maturity model, backed by transparent reporting and measurable results."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Conclusion",
+          "page_number": 25
+        },
+        {
+          "type": "p",
+          "text": "Moolya’s DevOps Implementation and Managed Operations program establishes a secure, compliant, and fully automated DevOps ecosystem on AWS powered by Kubernetes, Jenkins, Polaris, and Black Duck.",
+          "page_number": 25
+        },
+        {
+          "type": "p",
+          "text": "Our deliverables provide not just automation, but visibility, governance, and confidence ensuring your infrastructure and pipelines remain continuously optimized, secure, and aligned with enterprise expectations.",
+          "page_number": 25
+        },
+        {
+          "type": "p",
+          "text": "This is not a one-time setup it’s a sustained evolution of your DevOps maturity model, backed by transparent reporting and measurable results.",
+          "page_number": 25
+        }
+      ]
+    },
+    {
+      "page_number": 26,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 26
+        }
+      ]
+    }
+  ]
+}

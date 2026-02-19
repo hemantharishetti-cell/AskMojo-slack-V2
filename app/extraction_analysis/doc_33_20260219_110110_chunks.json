@@ -1,0 +1,52 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "CodeProbe \u2013 Unit Testing Reimagined\n\n14+\n\n200+\n\n20+\n\n80%\n\nYears in Business\n\nCustomers\n\nCountries\n\nIndustry leaders choose us",
+    "heading_level_1": "CodeProbe \u2013 Unit Testing Reimagined",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "CodeProbe \u2013 Unit Testing Reimagined",
+    "is_table": true
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Market Need for CodeProbe\n\nRising Expectations in\n\nSoftware Delivery\n\nCurrent Gaps in Unit\n\nTesting Practice\n\nThe Shift-Left\n\nAdvantage\n\nDemand for high-quality software delivery with zero regressions.\n\nTraditional unit testing is under-prioritized and inefficient.\n\nShift-left testing improves code quality from the first line.\n\nKey Needs:\n\nFaster defect-free releases, early defect detection, actionable insights",
+    "heading_level_1": "Market Need for CodeProbe",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Market Need for CodeProbe",
+    "is_table": true
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "Service Overview\n\nAssess\n\n\ue023 Code Complexity & Dependency Analysis\n\nAdopt\n\nPilot Unit Testing Framework (2-4 weeks)\n\nRollout & Scale\n\nEnd-to-End Unit Test Coverage (3-6 months)\n\n\u2022 \ue023 Reusable Test Assets & Ongoing Optimization",
+    "heading_level_1": "Service Overview",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Service Overview",
+    "is_table": false
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 4,
+    "text": "Quantifiable Value Propositions\n\nFaster Bug Detection\n\nCuts resolution costs by 40%-60%\n\nHigher Code Coverage\n\nReduces post-release defects by 20%-40%\n\nCI/CD Ready Testing\n\nAccelerates releases by 40%-60%\n\nReduced Maintenance Costs:\n\nSaves $200k-$600k annually",
+    "heading_level_1": "Quantifiable Value Propositions",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Quantifiable Value Propositions",
+    "is_table": true
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 5,
+    "text": "ROI & Components\n\nFaster Releases & Reduced\n\nQA Costs\n\nImproved Team Productivity &\n\nCustomer Satisfaction\n\nUnit Test Harness for Java,\n\nPython, JS, .NET\n\nCI/CD Integration, Flaky Test\n\nDetection & Analytics\n\nReusable Test Modules for\n\nfaster creation\n\nThank You!",
+    "heading_level_1": "ROI & Components",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "ROI & Components",
+    "is_table": true
+  }
+]

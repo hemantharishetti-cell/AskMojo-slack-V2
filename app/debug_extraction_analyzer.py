@@ -109,17 +109,17 @@ class ExtractionAnalyzer:
                 elem_type = path.split("/")[-1]
                 element_types[elem_type] = element_types.get(elem_type, 0) + 1
         
-        # Chunk statistics
-        total_chars = sum(c.get("char_count", 0) for c in chunks)
-        total_words = sum(c.get("word_count", 0) for c in chunks)
+        # Chunk statistics (derive from text to handle minimal chunks)
+        def _lens(c):
+            t = c.get("text", "")
+            return len(t), len(t.split()) if t else 0
+        totals = [ _lens(c) for c in chunks ]
+        total_chars = sum(tc for tc, _ in totals)
+        total_words = sum(tw for _, tw in totals)
         avg_chars = total_chars / len(chunks) if chunks else 0
         
-        # Chunk type distribution
-        chunk_types = {}
-        for chunk in chunks:
-            types = chunk.get("element_types", [])
-            for t in types:
-                chunk_types[t] = chunk_types.get(t, 0) + 1
+        # Chunk type distribution (removed element_types)
+        chunk_types = {}  # No longer used, but kept for compatibility
         
         # Element samples
         element_samples = []
@@ -130,16 +130,14 @@ class ExtractionAnalyzer:
                 "page": elem.get("Page")
             })
         
-        # Chunk samples
+        # Chunk samples (minimal fields only)
         chunk_samples = []
         for chunk in chunks[:5]:
             chunk_samples.append({
                 "chunk_index": chunk.get("chunk_index"),
                 "section": chunk.get("section"),
                 "page": chunk.get("page_number"),
-                "text": chunk.get("text", "")[:200],
-                "char_count": chunk.get("char_count"),
-                "word_count": chunk.get("word_count")
+                "text": chunk.get("text", "")[:200]
             })
         
         return {
@@ -157,15 +155,15 @@ class ExtractionAnalyzer:
                 "total_characters": total_chars,
                 "total_words": total_words,
                 "average_chunk_size": round(avg_chars, 0),
-                "chunk_type_distribution": chunk_types,
+                # "chunk_type_distribution": chunk_types,  # Removed, as element_types are not present
                 "chunk_samples": chunk_samples
             },
             "quality_metrics": {
                 "utilization_rate": round((total_chars / (len(elements) * 100)) * 100, 1) if elements else 0,
-                "smallest_chunk": min((c.get("char_count", 0) for c in chunks), default=0),
-                "largest_chunk": max((c.get("char_count", 0) for c in chunks), default=0),
-                "chunks_under_min_size": len([c for c in chunks if c.get("char_count", 0) < 100]),
-                "chunks_over_max_size": len([c for c in chunks if c.get("char_count", 0) > 1000])
+                "smallest_chunk": min((len((c.get("text") or "")) for c in chunks), default=0),
+                "largest_chunk": max((len((c.get("text") or "")) for c in chunks), default=0),
+                "chunks_under_min_size": len([c for c in chunks if len((c.get("text") or "")) < 100]),
+                "chunks_over_max_size": len([c for c in chunks if len((c.get("text") or "")) > 1000])
             },
             "recommendations": ExtractionAnalyzer._generate_recommendations(
                 len(elements), len(chunks), total_chars, chunk_types

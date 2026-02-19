@@ -1,0 +1,132 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "14+\n\n200+\n\nCountries\n\nIndustry leaders choose us",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": false
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Who we are\n\nAt Moolya Software Testing Private Limited, we are a global leader in AI-driven engineering solutions, specializing in creating scalable, secure, and intelligent platforms that transform business outcomes. We collaborate with forward-thinking organizations to build high-impact products that leverage cutting-edge technologies such as Natural Language Processing (NLP), Generative AI, and advanced data analytics. Our expertise spans across AI platform engineering, software development, and quality assurance, ensuring measurable success for our clients.",
+    "heading_level_1": "Who we are",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Who we are",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 2,
+    "text": "Why Choose us\n\nSkin in the Game\n\nWe go beyond vendor roles, fostering deep co-ownership with customers.\n\nCulture Focus\n\nLeadership Friendly\n\nWe help customers address issues by focusing on cultural fixes.\n\nMoolya empowers C-, V-, and D-level leaders with\n\ninsights.\n\nScaling Value\n\nMoolya unifies Tech, Test, Product, Customer & Business insights to scale value.",
+    "heading_level_1": "Why Choose us",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Why Choose us",
+    "is_table": true
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 3,
+    "text": "Executive Summary\n\nKeysight Technologies empowers innovators to design and deliver next-generation solutions with precision, speed, and confidence.\n\nMoolya proposes a DevOps Implementation and Managed Operations solution to strengthen Keysight\u2019s software delivery ecosystem through a self-managed Kubernetes platform on AWS, integrated with your existing toolchain Jenkins, Polaris, Black Duck, and Vault.\n\nThis initiative will:\n\n\u2022 Accelerate deployment cycles through automated CI/CD and secure pipelines.\n\u2022 Enhance governance and compliance via Polaris and Black Duck integration.\n\u2022 Ensure continuous reliability with Vault-based secrets, ACM certificates, and AWS observability.\n\nTogether, we\u2019ll enable Keysight to deliver faster, operate securely, and scale seamlessly, supporting your vision of engineering excellence.",
+    "heading_level_1": "Executive Summary",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Executive Summary",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 4,
+    "text": "Engagement Objectives\n\nDrive continuous improvement and governance through measurable KPIs.\n\nImplement and manage Kubernetes-based DevOps platform on AWS.\n\nIntegrate Jenkins pipelines with Polaris and Black Duck for compliance enforcement.\n\nAutomate certificate and secret lifecycle via Vault + AWS ACM.\n\nEstablish observability using Prometheus,Grafana,CloudWatch.\n\nProvide executive visibility through reports, dashboards, and audits.\n\nCurrent State vs. Moolya Value Delivered\n\nFrom Maintenance Mode to Modern DevOps Excellence\n\nImmediate operational continuity with parallel modernization \u2014 not a handoff, but a scale-up.\n\nArea\n\nCurrent\n\nWith Moolya Engagement\n\nValue Delivered\n\nResourcing\n\n1 Onshore DevOps engineer managing operations\n\n3 Offshore DevOps engineers: architecture, automation, security\n\n3\u00d7 capability uplift with cross-domain expertise\n\nEnvironment\n\nManagement\n\nContainer operations managed manually on EC2/VMs\n\nKubernetes-based orchestration with automated scaling and rollback\n\nZero-downtime, predictable releases\n\nCCD Process\n\n--\n\nJenkins-based automated pipelines integrated with Polaris & Black Duck\n\n60\u201370% faster build cycles; improved compliance\n\nSecurity &\n\nCompliance\n\n--\n\nIntegrated SAST/SCA gates, secrets rotation, certificate automation\n\nContinuous compliance, reduced audit risk\n\nImmediate operational continuity with parallel modernization \u2014 not a handoff, but a scale-up.\n\nArea\n\nCurrent\n\nWith Moolya Engagement\n\nValue Delivered\n\nMonitoring & Reporting\n\n--\n\nPrometheus + Grafana dashboards + SLA/\n\nSLO reporting\n\nReal-time observability and proactive issue management\n\nOperational Continuity\n\nDependency on a single resource\n\nDedicated Moolya team ensures 16\u00d75\n\n(US Timezone) continuity & governance\n\nRisk-free transition and stable support\n\nGovernance &\n\nOptimization\n\n--\n\nWeekly + Monthly governance reviews with measurable KPIs\n\nTransparent accountability and measurable ROI",
+    "heading_level_1": "Engagement Objectives",
+    "heading_level_2": "From Maintenance Mode to Modern DevOps Excellence",
+    "heading_level_3": null,
+    "section": "Engagement Objectives > From Maintenance Mode to Modern DevOps Excellence",
+    "is_table": true
+  },
+  {
+    "chunk_index": 6,
+    "page_number": 9,
+    "text": "Ensuring Zero Disruption During Transition\n\nStage 1\n\nStage 2\n\nStage 3\n\nKnowledge Transition\n\n(Weeks 1\u20132)\n\nShadow existing DevOps engineer for full knowledge capture.\n\nBaseline current infrastructure, pipelines, and access controls.\n\nIdentify quick wins and automation opportunities (no disruption to operations).\n\nDeliver Transition Plan & Operations\n\nRunbook v1.\n\nParallel Execution\n\n(Weeks 3\u20134)\n\nMoolya engineers start managing daily operations alongside existing resource.\n\nImplement improvements in observability, alerts, and deployment hygiene.\n\nDeliver stabili zation report and first compliance dashboard.\n\nFull Ownership\n\n(Week 5 onward)\n\nMoolya assumes end-to-end DevOps ownership.\n\nContinuous CI/CD delivery, automated releases, and governance cadence established.\n\nDeliver Operations Ownership Handover\n\nReport.",
+    "heading_level_1": "Ensuring Zero Disruption During Transition",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Ensuring Zero Disruption During Transition",
+    "is_table": true
+  },
+  {
+    "chunk_index": 7,
+    "page_number": 11,
+    "text": "Implementing Kubernetes and CI/CD Enhancements Alongside Existing Workloads\n\nMonth 1 \u2013 Environment Design & Foundation Setup\n\nGoal: Build AWS infrastructure, implement Kubernetes cluster, and establish the security foundation. Deliverables: Implement Kubernetes clusters (Dev/Staging/Prod). Vault integration and initial secret policies. Terraform IaC modules and state management repository. Security and access governance documentation. ACM-based SSL/TLS automation.\n\nWeek\n\nFocus\n\nKey Activities\n\nTask Type\n\nWeek 1\n\nDiscovery & Assessment\n\nShadow existing DevOps engineer; assess current workload configurations while maintaining daily operations\n\nOne Time Task\n\nWeek 2\n\nArchitecture Design\n\nDefine AWS architecture (VPC, subnets, IAM), cluster node design, and RBAC model.\n\nOne Time Task\n\nWeek 3\n\nInfrastructure Provisioning\n\nImplement a self-managed Kubernetes cluster on AWS EC2 using Terraform, configuring networking, storage, and monitoring for operational readiness.\n\nOne Time Task\n\nWeek 4\n\nSecurity & Certificates\n\nConfigure ACM, Vault, and namespace isolation; enforce Pod\n\nSecurity Standards and IAM policies.\n\nRecurring Task\n\nMonth 2 \u2013 Application Implementation & CI/CD Integration\n\nGoal: Containerize workloads, automate CI/CD, and standardize secure deployment practices.\n\nWeek\n\nFocus\n\nKey Activities\n\nTask Type\n\nWeek 5\n\nApplication Containerization\n\nRefactor Dockerfiles, integrate Polaris (SAST) and\n\nBlack Duck (SCA) scans in builds.\n\nOne Time Task\n\nWeek 6\n\nKubernetes Deployment\n\nDeploy workloads to Kubernetes using Helm; configure Ingress and TLS with ACM.\n\nOne Time Task\n\nWeek 7\n\nJenkins Pipeline Setup\n\nImplement CI/CD pipelines with build \u2192 scan \u2192 deploy \u2192 rollback flow; enforce Polaris & Black Duck gates.\n\nRecurring Task\n\nWeek 8\n\nDeployment Strategy Enablement\n\nImplement Blue-Green and Canary deployments; integrate\n\nPrometheus-based health checks and rollback automation.\n\nRecurring Task\n\nDeliverables:\n\nJenkins pipelines with security gates (Polaris, Black Duck).\n\n\u2022 Helm-based deployment automation.\n\u2022 Blue-Green and Canary rollout playbooks.\n\u2022 Rollback and release validation runbooks\n\u2022 CI/CD and compliance workflow documentation.\n\nMonth 3 \u2013 Observability, Validation & Operational Readiness\n\nGoal: Final validation, observability setup, and knowledge transfer for operations.\n\nWeek\n\nFocus\n\nKey Activities\n\nTask Type\n\nWeek 9\n\nObservability Setup\n\nImplement Prometheus, Grafana, and CloudWatch.\n\nOne Time Task\n\nWeek 10\n\nValidation & Testing\n\nExecute controlled Blue-Green and Canary deployments; validate SSL renewal and pipeline rollbacks.\n\nOne Time Task\n\nWeek 11\n\nCompliance & Security Validation\n\nRun full Polaris + Black Duck scans; verify secret rotation and certificate renewal.\n\nRecurring Task\n\nWeek 12\n\nOptimization & Knowledge Transfer\n\nOptimize node sizing, finalize cost tuning, and conduct KT sessions with client team.\n\nRecurring Task\n\nDeliverables:\n\nGrafana dashboards and CloudWatch integrations\n\nFinal security & compliance validation reports\n\n\u2022 Centralized Kubernetes log forwarding (CloudWatch)\n\u2022 Handover documentation with operational SOPs",
+    "heading_level_1": "Implementing Kubernetes and CI/CD Enhancements Alongside Existing Workloads",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Implementing Kubernetes and CI/CD Enhancements Alongside Existing Workloads",
+    "is_table": true
+  },
+  {
+    "chunk_index": 8,
+    "page_number": 14,
+    "text": "Certificate & Security Automation Framework\n\nLayer\n\nTool\n\nDescription\n\nCertificate Management\n\nAWS ACM\n\nAutomated certificate issuance and renewal.\n\nSecrets Management\n\nVault\n\nDynamic secret injection and rotation.\n\nIngress Management\n\nNGINX\n\nTLS termination, Blue-Green routing.\n\nStatic Code Analysis\n\nPolaris\n\nSAST integration in Jenkins pipeline.\n\nDependency Governance\n\nBlack Duck\n\nSCA/BOM validation and license compliance.\n\nMonitoring & Alerts\n\nPrometheus + CloudWatch\n\nMetrics and alerting for cert expiry & resource health.\n\nPipeline Enforcement\n\nJenkins\n\nBuild & deploy stage gating with audit trails.",
+    "heading_level_1": "Certificate & Security Automation Framework",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Certificate & Security Automation Framework",
+    "is_table": true
+  },
+  {
+    "chunk_index": 9,
+    "page_number": 15,
+    "text": "Evolving to a Fully Automated, Secure, and Always-On DevOps Ecosystem",
+    "heading_level_1": "Evolving to a Fully Automated, Secure, and Always-On DevOps Ecosystem",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Evolving to a Fully Automated, Secure, and Always-On DevOps Ecosystem",
+    "is_table": false
+  },
+  {
+    "chunk_index": 10,
+    "page_number": 16,
+    "text": "Year Managed Operations & Optimization Plan\n\nQuarterly Roadmap\n\nQuarter\n\nObjective\n\nRefined Focus Areas (Clear, Outcome-Oriented)\n\nQ1 (Months 1\u20133)\n\nEstablish and Operationalize Core\n\nDevOps Foundation\n\nImplement Kubernetes environment on AWS EC2 using Terraform; implement CI/CD pipelines in Jenkins with integrated Polaris & Black Duck scans; enable Vault-based secrets and certificate automation.\n\nQ2 (Months 4\u20136)\n\nStabilize Operations and\n\nStrengthen Compliance\n\nEnhance observability through Prometheus, Grafana, and CloudWatch; automate compliance reporting; validate continuous certificate renewals and security posture.\n\nQ3 (Months 7\u20139)\n\nOptimize Performance and\n\nScale Automation\n\nImprove cost efficiency and resource utilization; enhance Jenkins pipeline performance; implement automated configuration drift detection and remediation.\n\nQ4 (Months 10\u201312)\n\nInstitutionalize\n\nGovernance and Drive\n\nInnovation\n\nEstablish DevOps governance KPIs and SLA dashboards; conduct resilience and reliability drills; introduce predictive observability and proactive alerting.",
+    "heading_level_1": "Year Managed Operations & Optimization Plan",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Year Managed Operations & Optimization Plan",
+    "is_table": true
+  },
+  {
+    "chunk_index": 11,
+    "page_number": 17,
+    "text": "Ongoing Operations\n\nCategory\n\nActivity\n\nFrequency\n\nTool\n\nMonitoring & Alerts\n\nInfrastructure and cluster health monitoring\n\nContinuous\n\nPrometheus + CloudWatch\n\nCode & Dependency Scanning\n\nJenkins integrated Polaris & Black\n\nDuck validation\n\nContinuous\n\nJenkins\n\nSecrets & Certificates\n\nValidation and renewal\n\nContinuous\n\nVault + ACM\n\nCost & Performance Optimization\n\nNode pool right-sizing, resource scaling\n\nQuarterly\n\nAWS\n\nCompliance Reporting\n\nSecurity and compliance dashboards\n\nMonthly\n\nGrafana + Jenkins Reports\n\nDisaster Recovery Simulation\n\nRollback, failover testing\n\nQuarterly\n\nJenkins Automation\n\nGovernance Review\n\nSLA/SLO health checks\n\nQuarterly\n\nGovernance Dashboard",
+    "heading_level_1": "Ongoing Operations",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Ongoing Operations",
+    "is_table": true
+  },
+  {
+    "chunk_index": 12,
+    "page_number": 18,
+    "text": "Technology Stack\n\nCategory\n\nTools\n\nCloud Infrastructure\n\nAWS (EC2, VPC, IAM, ACM, Route 53)\n\nContainer Orchestration\n\nKubernetes (Self-managed)\n\nPipeline Management\n\nJenkins\n\nStatic Code Analysis\n\nPolaris\n\nBOM / Dependency Management\n\nBlack Duck\n\nSecrets & Certificates\n\nVault + AWS ACM\n\nIaC & Configuration\n\nTerraform, Helm\n\nMonitoring & Observability\n\nPrometheus, Grafana, CloudWatch\n\nTeam Composition The combined team replaces the dependency on a single operator with an accountable, measurable, and outcome-driven function.\n\nRole\n\nFocus Area\n\nValues Delivered\n\nDevOps Lead\n\nSolution design, infrastructure governance, automation strategy\n\nAccelerates maturity; ensures long-term scalability\n\nDevOps Engineer\n\nPipeline implementation, observability, deployment reliability\n\nDelivers 70% faster releases; reduces incident volume\n\nSecurity & Compliance Engineer\n\nPolaris/Black Duck integration, vault management, audits\n\nContinuous compliance; eliminates vulnerability backlogs\n\nCase Study 1\n\nLeading eCommerce Enterprise -DevOps Modernization and Continuous Delivery Excellence\n\nAbout\n\n\u2022 A\n\u2022 leading global e-commerce platform serving millions of daily active users with peak-scale traffic during major shopping events.\n\u2022 \u2022\n\u2022 The engagement involved establishing a scalable, self-managed Kubernetes platform on AWS while maintaining full control of live workloads.\n\nDevOps Value Delivered\n\n\u2022 \u2022\n\u2022 Took full DevOps ownership from Day l while implementing a self-managed Kubernetes platform on AWS EC2 using Terraform with zero downtime.\n\u2022 \u2022\n\u2022 Re-engineered Jenkins pipelines with automated build-test-deploy flow, integrated SonarQube for quality gates, and improved release reliability.\n\u2022 \u2022\n\u2022 Embedded OWASP Dependency-Check for open-source risk validation and baseline vulnerability scoring across all builds.\n\u2022 \u2022\n\u2022 Implemented HashiCorp Vault and AWS Certificate Manager (ACM) for dynamic secrets rotation and automated SSL renewals.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 SonarQube integration lowered high-severity issues by 70% and improved maintainability across key services.\n\u2022 \u2022\n\u2022 Terraform automation and AWS resource optimization reduced infrastructure costs by -22%\n\u2022 \u2022\n\u2022 OWASP Dependency-Check, Vault. and governance dashboards ensured continuous compliance and transparent reporting.\n\nCase Study 2\n\nLeading Supply Chain Management Platform\n\nAbout the Platform\n\nA supply chain and sustainability management platform designed for fashion brands across the European Union (EU), empowering them to manage operations and compliance efficiently using AWS.\n\nDevOps Transformation\n\n\u2022 \u2022\n\u2022 Streamlined CI/CD Pipelines: Implemented end-to-end continuous integration and deployment pipelines using Cloudbees to ensure faster, automated, and error-free releases.\n\u2022 \u2022\n\u2022 Containerization & Infrastructure as Code (laC): Migrated services to containerized environments and adopted laC (Terraform + Kubernetes) for scalable and consistent infrastructure management.\n\u2022 \u2022\n\u2022 Automated Monitoring & Alerts: Set up real-time monitoring, logging, and alerting systems using Prometheus and Grafana to improve observability and system reliability,\n\u2022 \u2022\n\u2022 Environment Standardization: Unified staging, QA, and production environments to eliminate configuration drift and reduce deployment risks.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 Operational Agility: Enhanced platform reliability and enabled faster, more predictable releases.\n\u2022 \u2022\n\u2022 Cost Optimization: Reduced infrastructure overhead through automated scaling and resource utilization monitoring.\n\nCase Study 3\n\nKubernetes-driven Delivery Transformation UsingAWS\n\nAbout the Platform\n\nEnterprise SaaS client operating legacy EC2 deployments with manual release cycles and inconsistent configuration.\n\nMoolya's Role:\n\n\u2022 \u2022\n\u2022 Designed AWS multi-account strategy with centralized IAM and GuardDuty.\n\u2022 \u2022\n\u2022 Containerized 40+ microservices and deployed to EKS clusters.\n\u2022 \u2022\n\u2022 Implemented Terraform modules for provisioning. networking. and IAM roles.\n\u2022 \u2022\n\u2022 Established Grafana dashboards for SLO tracking.\n\nResults:\n\n\u2022 \u2022\n\u2022 Deployment frequency increased from bi-weekly to daily.\n\u2022 \u2022\n\u2022 Infrastructure drift reduced to near zero with laC adoption.\n\u2022 \u2022\n\u2022 35% cost optimization through right-sized autoscaling.\n\u2022 \u2022\n\u2022 Security exposure window reduced by 60% via automated scans.",
+    "heading_level_1": "Technology Stack",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Technology Stack",
+    "is_table": true
+  },
+  {
+    "chunk_index": 13,
+    "page_number": 25,
+    "text": "Conclusion\n\nMoolya\u2019s DevOps Implementation and Managed Operations program establishes a secure, compliant, and fully automated DevOps ecosystem on AWS powered by Kubernetes, Jenkins, Polaris, and Black Duck.\n\nOur deliverables provide not just automation, but visibility, governance, and confidence ensuring your infrastructure and pipelines remain continuously optimized, secure, and aligned with enterprise expectations.\n\nThis is not a one-time setup it\u2019s a sustained evolution of your DevOps maturity model, backed by transparent reporting and measurable results.\n\nThank You!",
+    "heading_level_1": "Conclusion",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Conclusion",
+    "is_table": false
+  }
+]

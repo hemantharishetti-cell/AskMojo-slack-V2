@@ -1,0 +1,126 @@
+{
+  "document": {
+    "id": 29,
+    "title": "Proven Casestudies"
+  },
+  "extraction": {
+    "total_elements": 113,
+    "element_types_distribution": {
+      "Title": 1,
+      "P": 1,
+      "P[2]": 1,
+      "P[3]": 1,
+      "P[4]": 1,
+      "Figure": 2,
+      "P[5]": 1,
+      "Figure[2]": 2,
+      "P[6]": 1,
+      "P[7]": 1,
+      "H1": 1,
+      "H2": 1,
+      "H3": 1,
+      "Lbl": 35,
+      "LBody": 35,
+      "H3[2]": 1,
+      "H3[3]": 1,
+      "Figure[3]": 2,
+      "H1[2]": 1,
+      "H2[2]": 1,
+      "H3[4]": 1,
+      "H3[5]": 1,
+      "H3[6]": 1,
+      "Figure[4]": 2,
+      "H1[3]": 1,
+      "H2[3]": 1,
+      "H3[7]": 1,
+      "H3[8]": 1,
+      "H3[9]": 1,
+      "Figure[5]": 2,
+      "H1[4]": 1,
+      "H2[4]": 1,
+      "H3[10]": 1,
+      "H3[11]": 1,
+      "H3[12]": 1,
+      "Figure[6]": 2,
+      "P[8]": 1,
+      "H1[5]": 1,
+      "P[9]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Title",
+        "text": "Moolya Testing Excellence ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "Proven Casestudies ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "I 14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[3]",
+        "text": "200+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[4]",
+        "text": "20+ ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 6,
+    "total_characters": 3620,
+    "total_words": 538,
+    "average_chunk_size": 603.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Proven Casestudies\n\nI 14+\n\n200+\n\n20+\n\nCountries\n\n80%\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Case Study 1 > Comprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company",
+        "page": 2,
+        "text": "Case Study 1\n\nComprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Significant daily orders faced issues, impacting operations.\n\u2022 \u2022\n\u2022 Users"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Case Study 2 > Transforming Financial Services Through Test Automation",
+        "page": 3,
+        "text": "Case Study 2\n\nTransforming Financial Services Through Test Automation\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Regression testing covered 5,000+ cases per release, ensuring quality,\n\u2022 \u2022\n\u2022 Automation framework proces"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Case Study 3 > Performance Testing for a Leading Customer Communication Solutions Provider",
+        "page": 4,
+        "text": "Case Study 3\n\nPerformance Testing for a Leading Customer Communication Solutions Provider\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Optimized resources for lM+ concurrent users without interruptions.\n\u2022 \u2022\n\u2022 Assessed s"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Case Study 4 > Driving User Experiance Engagement for a Leading E-commerce Company in India",
+        "page": 5,
+        "text": "Case Study 4\n\nDriving User Experiance Engagement for a Leading E-commerce Company in India\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 High cart abandonment, resulting in a low cart-to-checkout conversion rate.\n\u2022 \u2022\n\u2022 I"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 32.0,
+    "smallest_chunk": 47,
+    "largest_chunk": 943,
+    "chunks_under_min_size": 2,
+    "chunks_over_max_size": 0
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

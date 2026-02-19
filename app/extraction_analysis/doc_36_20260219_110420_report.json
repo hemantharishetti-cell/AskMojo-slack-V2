@@ -1,0 +1,166 @@
+{
+  "document": {
+    "id": 36,
+    "title": "MoolyAImpact - Updated (1)"
+  },
+  "extraction": {
+    "total_elements": 286,
+    "element_types_distribution": {
+      "P": 65,
+      "Table": 1,
+      "TH": 21,
+      "TH[2]": 4,
+      "TH[3]": 3,
+      "TH[4]": 2,
+      "TD": 17,
+      "TD[2]": 14,
+      "TD[3]": 8,
+      "H1": 1,
+      "P[2]": 5,
+      "H1[2]": 1,
+      "Table[2]": 1,
+      "Figure": 62,
+      "P[3]": 1,
+      "P[4]": 1,
+      "H1[3]": 1,
+      "LBody": 13,
+      "H1[4]": 1,
+      "P[5]": 1,
+      "Figure[2]": 1,
+      "H2": 1,
+      "P[6]": 1,
+      "H2[2]": 1,
+      "P[7]": 1,
+      "H2[3]": 1,
+      "P[8]": 1,
+      "Figure[3]": 1,
+      "Figure[4]": 1,
+      "H2[4]": 1,
+      "P[9]": 1,
+      "H2[5]": 1,
+      "P[10]": 1,
+      "H1[5]": 1,
+      "P[11]": 1,
+      "P[12]": 1,
+      "Figure[5]": 1,
+      "H2[6]": 1,
+      "P[13]": 1,
+      "H2[7]": 1,
+      "P[14]": 1,
+      "P[15]": 1,
+      "P[16]": 1,
+      "H1[6]": 1,
+      "P[17]": 1,
+      "Figure[6]": 1,
+      "Figure[7]": 1,
+      "H2[8]": 1,
+      "P[18]": 1,
+      "H2[9]": 1,
+      "Sub": 2,
+      "Sub[2]": 2,
+      "H2[10]": 1,
+      "P[20]": 1,
+      "H2[11]": 1,
+      "P[21]": 1,
+      "H1[7]": 1,
+      "P[22]": 1,
+      "Table[3]": 1,
+      "P[23]": 1,
+      "H1[8]": 1,
+      "P[24]": 1,
+      "Figure[8]": 1,
+      "H2[12]": 1,
+      "Figure[9]": 1,
+      "H2[13]": 1,
+      "Figure[10]": 1,
+      "H2[14]": 1,
+      "Figure[11]": 2,
+      "H1[9]": 1,
+      "P[26]": 1,
+      "Table[4]": 1,
+      "Figure[12]": 2,
+      "P[27]": 1,
+      "H1[10]": 1,
+      "P[28]": 1,
+      "Table[5]": 1,
+      "P[29]": 1,
+      "P[30]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/P",
+        "text": "Moolya MoolyAImpact: Governing Quality for AI Systems ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table/TR/TH",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table/TR/TH/P",
+        "text": "14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Table/TR/TH[2]",
+        "text": "",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 11,
+    "total_characters": 6468,
+    "total_words": 904,
+    "average_chunk_size": 588.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Moolya MoolyAImpact: Governing Quality for AI Systems\n\n14+\n\n200+\n\n20+\n\n80%\n\nYears in Business\n\nCustomers\n\nCountries\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Who we are",
+        "page": 2,
+        "text": "Who we are\n\nAt Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our service"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Why Choose us",
+        "page": 2,
+        "text": "Why Choose us\n\nSkin in the Game\n\nCulture Focus\n\nLeadership Friendly\n\nWe go beyond vendor roles, fostering deep co-ownership with customers.\n\nWe help customers address issues by focusing on cultural fi"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Why Now?",
+        "page": 3,
+        "text": "Why Now?\n\n\u2022 AI adoption is accelerating across large language models, computer vision, and recommendation systems. Unlike traditional software, outputs are non-deterministic, creating new challenges f"
+      },
+      {
+        "chunk_index": 5,
+        "section": "The Challenge",
+        "page": 4,
+        "text": "The Challenge\n\nTraditional QA approaches do not fully apply to AI systems. There is no fixed \u201cexpected versus actual\u201d truth, and quality risks tend to emerge gradually rather than immediately.\n\nHidden"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 22.6,
+    "smallest_chunk": 143,
+    "largest_chunk": 1033,
+    "chunks_under_min_size": 0,
+    "chunks_over_max_size": 1
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

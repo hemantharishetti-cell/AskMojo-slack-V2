@@ -1,0 +1,625 @@
+{
+  "version": "1.0",
+  "document_id": 22,
+  "created_at": "2026-02-19T05:09:57.961552Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Disaster Recovery Readiness Testing Proposal for",
+        "Submitted By"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Disaster Recovery Readiness Testing Proposal for",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Submitted By",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Executive Summary"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Benow platform enables offline digital payments and affordability solutions for merchants selling mobile phones and CDIT products. The platform collaborates with leading OEMs and banks to provide offers such as Full Swipe Cashback, No Cost EMI, Low Cost EMI, and Customer Interest Bearing (CIB) schemes.",
+        "Benow would like to partner with Moolya to conduct a Disaster Recovery (DR) Readiness Testing to ensure seamless business continuity by validating its DR environment as a failover for its primary infrastructure."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Executive Summary",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Benow platform enables offline digital payments and affordability solutions for merchants selling mobile phones and CDIT products. The platform collaborates with leading OEMs and banks to provide offers such as Full Swipe Cashback, No Cost EMI, Low Cost EMI, and Customer Interest Bearing (CIB) schemes.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Benow would like to partner with Moolya to conduct a Disaster Recovery (DR) Readiness Testing to ensure seamless business continuity by validating its DR environment as a failover for its primary infrastructure.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Problem Statement"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Benow9s current DR setup is designed to handle failover scenarios between its Mumbai (active) and Hyderabad (DR) regions, but the readiness and reliability of the DR environment have not been fully validated from an independent QA perspective. The key risks include:"
+      ],
+      "list": [
+        [
+          "Potential downtime or transaction disruption during failover.",
+          "Limited validation of critical transaction flows post-switch."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Problem Statement",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Benow9s current DR setup is designed to handle failover scenarios between its Mumbai (active) and Hyderabad (DR) regions, but the readiness and reliability of the DR environment have not been fully validated from an independent QA perspective. The key risks include:",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• Potential downtime or transaction disruption during failover.\n• Limited validation of critical transaction flows post-switch.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Product Overview"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Product Overview",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Moolya's Solution : Rapid Deployment Testing"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya's Solution : Rapid Deployment Testing",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Objective"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "The primary objective of this engagement is to conduct a DR readiness validation ensuring that:"
+      ],
+      "list": [
+        [
+          "Failover from Active to DR environment is seamless to merchants.",
+          "Critical transaction journeys continue to operate without disruption in the DR environment.",
+          "Ensure that all critical business workflows for Benow function seamlessly following the DR switch."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Objective",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "The primary objective of this engagement is to conduct a DR readiness validation ensuring that:",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Failover from Active to DR environment is seamless to merchants.\n• Critical transaction journeys continue to operate without disruption in the DR environment.\n• Ensure that all critical business workflows for Benow function seamlessly following the DR switch.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [
+        "Testing Scope"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Platform : Mobile-Android"
+      ],
+      "list": [
+        [
+          "Critical Transaction Journey Validation in DR Environment. Examples includes:",
+          "Full Swipe Transactions (Instant & Deferred Cashback).",
+          "EMI Transactions (No Cost, Low Cost, CIB).",
+          "End-to-End transaction flows works as expected.",
+          "DR Switch Validation: Failover from Active (Mumbai AWS) to DR (Hyderabad AWS) environment.",
+          "Reporting issues identified during the testing"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Testing Scope",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Critical Transaction Journey Validation in DR Environment. Examples includes:\n• Full Swipe Transactions (Instant & Deferred Cashback).\n• EMI Transactions (No Cost, Low Cost, CIB).\n• End-to-End transaction flows works as expected.\n• DR Switch Validation: Failover from Active (Mumbai AWS) to DR (Hyderabad AWS) environment.\n• Reporting issues identified during the testing",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Platform : Mobile-Android",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Test Approach and Execution Plan"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Preparation Phase",
+        "Execution Phase",
+        "Analysis & Reporting Phase"
+      ],
+      "list": [
+        [
+          "Product understanding",
+          "Understand infra setup and failover mechanism.",
+          "Review and understand the existing test cases.",
+          "Add any missed test cases."
+        ],
+        [
+          "Execution of test cases in the DR environment.",
+          "Coordinate with Benow9s Infra/DevOps team to ensure DR switch.",
+          "Verification and validation of Bugs.",
+          "Validate Data consistency post switch to DR."
+        ],
+        [
+          "Identify issues and report them in Bugasura (Moolya's in-house tool)",
+          "Document readiness report with Go/No-Go recommendation."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Test Approach and Execution Plan",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Preparation Phase",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Product understanding\n• Understand infra setup and failover mechanism.\n• Review and understand the existing test cases.\n• Add any missed test cases.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Execution Phase",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Execution of test cases in the DR environment.\n• Coordinate with Benow9s Infra/DevOps team to ensure DR switch.\n• Verification and validation of Bugs.\n• Validate Data consistency post switch to DR.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Analysis & Reporting Phase",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Identify issues and report them in Bugasura (Moolya's in-house tool)\n• Document readiness report with Go/No-Go recommendation.",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Deliverables"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Issues and Gaps reported in Bugasura",
+          "DR Readiness Summary Report"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Deliverables",
+          "page_number": 9
+        },
+        {
+          "type": "list",
+          "text": "• Issues and Gaps reported in Bugasura\n• DR Readiness Summary Report",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Value Delivered"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Value Delivered",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Preconditions"
+      ],
+      "h2": [
+        "Out of Scope for Moolya"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "DR switch initiation and management will be performed by Benow9s Infra/DevOps team.",
+          "Access to the Active environment, DR environment, relevant test data, and APIs will be provisioned by Benow prior to the commencement of testing.",
+          "All required third-party dependencies (e.g., banks, OEMs, brand integrations) will remain available and functional during the DR testing window.",
+          "A designated point of contact (POC) from Benow will be assigned to coordinate and provide necessary support to the Moolya team throughout the engagement.",
+          "Testing will focus exclusively on validating core transaction flows for DR readiness and will not encompass a full functional regression.",
+          "Test cases essential for DR testing will be shared by Benow prior to execution."
+        ],
+        [
+          "Switching of infrastructure from Active to DR will be performed by Benow.",
+          "Network configuration and setup are not within Moolya9s responsibilities.",
+          "Provisioning and maintenance of environments will remain under Benow9s purview."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Preconditions",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• DR switch initiation and management will be performed by Benow9s Infra/DevOps team.\n• Access to the Active environment, DR environment, relevant test data, and APIs will be provisioned by Benow prior to the commencement of testing.\n• All required third-party dependencies (e.g., banks, OEMs, brand integrations) will remain available and functional during the DR testing window.\n• A designated point of contact (POC) from Benow will be assigned to coordinate and provide necessary support to the Moolya team throughout the engagement.\n• Testing will focus exclusively on validating core transaction flows for DR readiness and will not encompass a full functional regression.\n• Test cases essential for DR testing will be shared by Benow prior to execution.",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Out of Scope for Moolya",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• Switching of infrastructure from Active to DR will be performed by Benow.\n• Network configuration and setup are not within Moolya9s responsibilities.\n• Provisioning and maintenance of environments will remain under Benow9s purview.",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [
+        "Payment Terms"
+      ],
+      "h3": [
+        "Important Note: Preliminary Estimate and Scope Adaptability"
+      ],
+      "p": [
+        "This proposal has been prepared based on our current, high-level understanding of Benow platform and the outlined requirements. It serves as an initial estimate, designed to provide a foundational overview of the proposed strategy, phases, and deliverables.",
+        "We recognize that the complexities of the application along with specific testing needs, may evolve as we delve deeper into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives driven by our collaborative engagement with the Benow team."
+      ],
+      "list": [
+        [
+          "An advance payment of 50% of the total project cost shall be made prior to project commencement",
+          "The remaining 50% shall be payable upon the project completion",
+          "All payments shall be settled within 30 days from the date of invoice issuance",
+          "Any applicable taxes will be charged extra on the pricing mentioned",
+          "Invoice will be raised on the 25th of every month",
+          "As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense"
+        ]
+      ],
+      "table": [
+        "Timeline",
+        "Cost in INR",
+        "3 weeks",
+        "2,40,000"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Pricing",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Timeline",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Cost in INR",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "3 weeks",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "2,40,000",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Payment Terms",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• An advance payment of 50% of the total project cost shall be made prior to project commencement\n• The remaining 50% shall be payable upon the project completion\n• All payments shall be settled within 30 days from the date of invoice issuance\n• Any applicable taxes will be charged extra on the pricing mentioned\n• Invoice will be raised on the 25th of every month\n• As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense",
+          "page_number": 12
+        },
+        {
+          "type": "h3",
+          "text": "Important Note: Preliminary Estimate and Scope Adaptability",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "This proposal has been prepared based on our current, high-level understanding of Benow platform and the outlined requirements. It serves as an initial estimate, designed to provide a foundational overview of the proposed strategy, phases, and deliverables.",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "We recognize that the complexities of the application along with specific testing needs, may evolve as we delve deeper into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives driven by our collaborative engagement with the Benow team.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [
+        "Bugasura Capabilities"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "(a",
+        "Test Management",
+        "@",
+        "Requirements",
+        "Management",
+        "O",
+        "Issue Tracker",
+        "(°b",
+        "Chrome Reporter",
+        "a",
+        "Bugasura Widget",
+        "Jira Sync",
+        "Slack Notify",
+        "••",
+        "Asana Sync",
+        "Sentry Sync",
+        "Github Connect",
+        "ClickUp Link",
+        "Zendesk Sync",
+        "GlitchTip Sync",
+        "Linear Sync",
+        "Zoho Projects"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Bugasura Capabilities",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "(a",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Test Management",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "@",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Requirements",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Management",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "O",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Issue Tracker",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "(°b",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Chrome Reporter",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "a",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Bugasura Widget",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Jira Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Slack Notify",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "••",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Asana Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Sentry Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Github Connect",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "ClickUp Link",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Zendesk Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "GlitchTip Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Linear Sync",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Zoho Projects",
+          "page_number": 13
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Thank You!"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Thank You!",
+          "page_number": 14
+        }
+      ]
+    }
+  ]
+}

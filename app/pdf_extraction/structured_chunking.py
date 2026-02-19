@@ -83,24 +83,14 @@ class StructuredChunker:
         
         # Log chunk statistics
         if chunks:
-            total_chars = sum(c["char_count"] for c in chunks)
+            total_chars = sum(len(c.get("text", "")) for c in chunks)
             avg_chars = total_chars / len(chunks)
-            total_words = sum(c["word_count"] for c in chunks)
+            total_words = sum(len(c.get("text", "").split()) for c in chunks)
             
             logger.info(f"[CHUNKER] Chunk statistics:")
             logger.info(f"  - Total characters: {total_chars}")
             logger.info(f"  - Average chunk size: {avg_chars:.0f} chars")
             logger.info(f"  - Total words: {total_words}")
-            
-            # Log chunk type breakdown
-            chunk_types = {}
-            for chunk in chunks:
-                types = chunk.get("element_types", [])
-                for t in types:
-                    chunk_types[t] = chunk_types.get(t, 0) + 1
-            
-            if chunk_types:
-                logger.info(f"[CHUNKER] Chunk composition: {chunk_types}")
             
             # Log first 3 chunks as samples
             logger.info("[CHUNKER] Sample chunks:")
@@ -108,7 +98,7 @@ class StructuredChunker:
                 text_preview = chunk["text"][:80].replace("\n", " ")
                 section = chunk.get("section", "N/A")
                 page = chunk.get("page_number", "N/A")
-                logger.info(f"  Chunk #{chunk['chunk_index']} (Page {page}, {chunk['char_count']} chars): {text_preview}...")
+                logger.info(f"  Chunk #{chunk['chunk_index']} (Page {page}, {len(chunk.get('text',''))} chars): {text_preview}...")
         
         return chunks
     
@@ -343,18 +333,16 @@ class StructuredChunker:
         """
         text = chunk_buffer["text"].strip()
         
+        # Return a minimal, LLM-friendly chunk payload.
+        # Intentionally exclude: start_page, end_page, char_count, word_count,
+        # element_type, extraction_source to reduce token footprint downstream.
         return {
             "chunk_index": chunk_index,
             "page_number": chunk_buffer.get("page_number"),
             "section": chunk_buffer.get("section"),
             "text": text,
-            "char_count": len(text),
-            "word_count": len(text.split()),
             "heading_level_1": chunk_buffer.get("heading_1"),
             "heading_level_2": chunk_buffer.get("heading_2"),
             "heading_level_3": chunk_buffer.get("heading_3"),
-            "element_type": chunk_buffer.get("element_types")[0] if chunk_buffer.get("element_types") else "paragraph",
-            "extraction_source": "adobe_api",
-            "confidence_score": 0.95,  # Adobe extractions are generally high confidence
             "is_table": chunk_buffer.get("is_table", False),
         }

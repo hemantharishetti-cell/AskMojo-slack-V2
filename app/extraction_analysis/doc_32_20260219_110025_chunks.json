@@ -1,0 +1,52 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs\n\n14+\n\n200+\n\n20+\n\n80%\n\nYears in Business\n\nCustomers\n\nCountries\n\nIndustry leaders choose us",
+    "heading_level_1": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs",
+    "is_table": true
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "The Challenge\n\nGrowing Defect Pile-Up\n\nDefect backlogs grow while development sprints continue.\n\nManual Processes Drain Productivity High defect leakage into production increases costs and customer dissatisfaction.\n\nDelivery Delays from Legacy Issues Feature delivery often gets delayed due to old unresolved bugs.\n\nImpact of Defect Leakage Manual defect resolution and validation consumes valuable engineering time.",
+    "heading_level_1": "The Challenge",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "The Challenge",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "Moolya's Solution \u2013 BugBuster\n\nFocused Backlog Resolution\n\nDedicated engineering teams focusing solely on backlog clearance.\n\nDual-Track Execution \u2013 backlog fixes while\n\nParallel execution\n\ndevelopment sprints continue.\n\nAutomation-Led Validation\n\nAutomation-first validation of bug fixes with minimal manual intervention.\n\nPreventive Quality Insights\n\nRoot cause analysis to prevent recurring defects and reduce future backlog.",
+    "heading_level_1": "Moolya's Solution \u2013 BugBuster",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Moolya's Solution \u2013 BugBuster",
+    "is_table": true
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 5,
+    "text": "Business Impact\n\nLower Production Defects\n\nReduced defect leakage to production by 20%-40%.\n\nRapid Backlog Impact \u2013 up\n\nAccelerated backlog clearance to 50% reduction within 3 months.\n\nCleaner, Faster Releases\n\nFaster release readiness with\n\ncleaner builds.\n\nHappier End Users\n\nIncreased customer satisfaction with\n\nstable releases.\n\nDeveloper Productivity Boost\n\nImproved developer focus on new features, boosting productivity.",
+    "heading_level_1": "Business Impact",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Business Impact",
+    "is_table": true
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 6,
+    "text": "Why Moolya?\n\nProven expertise in QA and engineering for complex systems.\n\nHybrid approach combining engineering, automation, and testing.\n\nSeamless integration with your existing tools\n\n(Jira, Jenkins, GitHub).\n\nData-driven defect analysis and prioritization.\n\nThank You!",
+    "heading_level_1": "Why Moolya?",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Why Moolya?",
+    "is_table": true
+  }
+]

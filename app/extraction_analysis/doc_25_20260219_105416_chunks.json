@@ -1,0 +1,52 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "Moolya Testing Excellence\n\n20+",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": false
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Case Study 1\n\nEnhancing Banking Stability with Functional and Automated Testing\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Functional Testing, Test Automation, and Performance Testing to ensure seamless banking operations and superior user experience.\n\u2022 \u2022\n\u2022 Automated end-to-end testing covering 250+ critical banking workflows to minimize manual errors.\n\u2022 \u2022\n\u2022 Load testing with l00,000+ concurrent users to validate system resilience under peak loads.\n\nChallenges Faced\n\n\u2022 \u2022\n\u2022 37% defects detected in production, causing service disruptions.\n\u2022 \u2022\n\u2022 15% rise in customer complaints due to frequent issues.\n\u2022 \u2022\n\u2022 Slow release cycles delaying updates by 3-4 weeks.\n\nBenefits\n\n\u2022 \u2022\n\u2022 Improved release quality by reducing defects by 28%.\n\u2022 \u2022\n\u2022 Increased test automation coverage by 35%, accelerating release.\n\u2022 \u2022\n\u2022 Reduced production incidents by 20%, enhancing platform stability.",
+    "heading_level_1": "Case Study 1",
+    "heading_level_2": "Enhancing Banking Stability with Functional and Automated Testing",
+    "heading_level_3": null,
+    "section": "Case Study 1 > Enhancing Banking Stability with Functional and Automated Testing",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "Case Study 2\n\nStrengthening Security and Compliance in Financial Services\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Performed Security Testing, Compliance Testing, and Functional Testing to align with regulatory requirements and protect sensitive financial data.\n\u2022 \u2022\n\u2022 Risk Assessment & Mitigation: Comprehensive risk analysis to identify vulnerabilities and improve risk management strategies.\n\nChallenges Faced\n\n\u2022 \u2022\n\u2022 45% of audits flagged security risks, potentially impacting up to $5M in compliance costs.\n\u2022 \u2022\n\u2022 Need for stronger compliance to protect 1.2M+ customer records\n\nBenefits\n\n\u2022 \u2022\n\u2022 Enhanced security protocols reduced vulnerabilities by 30%.\n\u2022 \u2022\n\u2022 Achieved a 25% improvement in compliance audit success rates.\n\u2022 \u2022\n\u2022 Reduced time-to-market by 22% due to optimized testing processes.",
+    "heading_level_1": "Case Study 2",
+    "heading_level_2": "Strengthening Security and Compliance in Financial Services",
+    "heading_level_3": null,
+    "section": "Case Study 2 > Strengthening Security and Compliance in Financial Services",
+    "is_table": false
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 4,
+    "text": "Case Study 3\n\nOptimizing Performance and User Experience in High-Traffic Banking Operations\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Usability Testing, Performance Testing, and Regression Testing to support rapid iterations of new features.\n\u2022 \u2022\n\u2022 Performance Benchmarking: Setting performance baselines and conducting regular benchmarks to track improvements and system capabilities.\n\nChallenges Faced\n\n\u2022 \u2022\n\u2022 24% failed transactions during peak hours.\n\u2022 \u2022\n\u2022 21 % higher user drop-off rates due to performance lags.\n\nBenefits\n\n\u2022 \u2022\n\u2022 Achieved a 35% increase in feature deployment speed.\n\u2022 \u2022\n\u2022 Reduced downtime during high traffic events by 27%.\n\u2022 \u2022\n\u2022 Improved user satisfaction scores by 32%",
+    "heading_level_1": "Case Study 3",
+    "heading_level_2": "Optimizing Performance and User Experience in High-Traffic Banking Operations",
+    "heading_level_3": null,
+    "section": "Case Study 3 > Optimizing Performance and User Experience in High-Traffic Banking Operations",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 5,
+    "text": "Our Customers Who Have Experienced the Moolya Values\n\nThank You!",
+    "heading_level_1": "Our Customers Who Have Experienced the Moolya Values",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Our Customers Who Have Experienced the Moolya Values",
+    "is_table": false
+  }
+]

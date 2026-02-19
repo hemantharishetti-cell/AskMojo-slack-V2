@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "document_id": 28,
+  "created_at": "2026-02-19T05:26:58.782304Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Comprehensive Quality Engineering and Testing Services designed to help product and engineering teams build reliable, high-performing, and user-centric applications."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprehensive Quality Engineering and Testing Services designed to help product and engineering teams build reliable, high-performing, and user-centric applications.",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Flexible Engagement Models"
+      ],
+      "h2": [
+        "Full Ownership",
+        "Co-Ownership",
+        "Staff Augmentation"
+      ],
+      "h3": [],
+      "p": [
+        "Our engagement models range from full QA ownership to staff augmentation, enabling clients to scale quality operations with speed, efficiency, and measurable outcomes.",
+        "End-to-end QA governance with complete accountability",
+        "Shared responsibility between Moolya and client QA teams",
+        "Skilled QA professionals integrate seamlessly into your ongoing projects"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Flexible Engagement Models",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Our engagement models range from full QA ownership to staff augmentation, enabling clients to scale quality operations with speed, efficiency, and measurable outcomes.",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Full Ownership",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "End-to-end QA governance with complete accountability",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Co-Ownership",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Shared responsibility between Moolya and client QA teams",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Staff Augmentation",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Skilled QA professionals integrate seamlessly into your ongoing projects",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "QA Ownership Model"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "When quality assurance needs to deliver tangible outcomes, Moolya takes full ownership of the QA process. We define, execute, and continuously improve test strategies to ensure product reliability, user satisfaction, and faster go-to-market."
+      ],
+      "list": [],
+      "table": [
+        "Functional Testing",
+        "End-to-end test ownership across functional, regression, exploratory, and usability areas",
+        "Automation Testing",
+        "Scalable automation frameworks with CI/CD integration for faster feedback",
+        "Performance Testing",
+        "Load, stress, and scalability validation for server and client-side performance",
+        "Security Testing",
+        "Comprehensive VAPT aligned to OWASP Top 10 and compliance frameworks"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "QA Ownership Model",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "When quality assurance needs to deliver tangible outcomes, Moolya takes full ownership of the QA process. We define, execute, and continuously improve test strategies to ensure product reliability, user satisfaction, and faster go-to-market.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Functional Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "End-to-end test ownership across functional, regression, exploratory, and usability areas",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Automation Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Scalable automation frameworks with CI/CD integration for faster feedback",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Performance Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Load, stress, and scalability validation for server and client-side performance",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Security Testing",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Comprehensive VAPT aligned to OWASP Top 10 and compliance frameworks",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Functional Testing Ownership"
+      ],
+      "h2": [
+        "Challenges We Address"
+      ],
+      "h3": [
+        "Moolya's Approach",
+        "Risk-Based Testing",
+        "Dedicated QA Pods",
+        "Proactive Quality Monitoring"
+      ],
+      "p": [
+        "Context-driven and Growth-driven testing aligned to product goals",
+        "Agile alignment with client delivery teams",
+        "Continuous visibility into defects, trends, metrics, and release readiness"
+      ],
+      "list": [
+        [
+          "Testing handled by developers with limited QA focus",
+          "QA bandwidth consumed by release testing, leaving regression untested",
+          "High production defect rate despite internal QA",
+          "Pre-launch app readiness validation required",
+          "Crowd-sourced testing for real-world conditions",
+          "Inefficient QA processes lacking structure",
+          "Need for usability and UX validation"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Functional Testing Ownership",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Challenges We Address",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• Testing handled by developers with limited QA focus\n• QA bandwidth consumed by release testing, leaving regression untested\n• High production defect rate despite internal QA\n• Pre-launch app readiness validation required\n• Crowd-sourced testing for real-world conditions\n• Inefficient QA processes lacking structure\n• Need for usability and UX validation",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Moolya's Approach",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Risk-Based Testing",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Context-driven and Growth-driven testing aligned to product goals",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Dedicated QA Pods",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Agile alignment with client delivery teams",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Proactive Quality Monitoring",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Continuous visibility into defects, trends, metrics, and release readiness",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Automation Testing Ownership"
+      ],
+      "h2": [
+        "Challenges We Address",
+        "Moolya's Approach",
+        "Framework Design",
+        "Regression Automation",
+        "CI/CD Integration",
+        "Full-Stack Coverage"
+      ],
+      "h3": [],
+      "p": [
+        "Modular, scalable automation frameworks",
+        "Accelerate recurring release validation",
+        "Faster feedback loops",
+        "API, UI, backend, database",
+        "Tools/Frameworks: Playwright, Cypress, Selenium, Appium, WebdriverIO, Robot Framework",
+        "Languages: Java, JavaScript, Python, TypeScript, C Sharp",
+        "BDD Tools: Cucumber, Behave, SpecFlow",
+        "API Automation: Postman, REST Assured, Karate, Playwright, Requests library"
+      ],
+      "list": [
+        [
+          "Lengthy manual regression cycles",
+          "Limited or no automation framework",
+          "Growing automation backlog without governance",
+          "Lack of in-sprint automation and CI/CD integration",
+          "API and backend automation gaps",
+          "Lack of a scalable automation foundation",
+          "Unstructured and inefficient existing automation"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Automation Testing Ownership",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Challenges We Address",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• Lengthy manual regression cycles\n• Limited or no automation framework\n• Growing automation backlog without governance\n• Lack of in-sprint automation and CI/CD integration\n• API and backend automation gaps\n• Lack of a scalable automation foundation\n• Unstructured and inefficient existing automation",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Moolya's Approach",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Framework Design",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Modular, scalable automation frameworks",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Regression Automation",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Accelerate recurring release validation",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "CI/CD Integration",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Faster feedback loops",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Full-Stack Coverage",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "API, UI, backend, database",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Tools/Frameworks: Playwright, Cypress, Selenium, Appium, WebdriverIO, Robot Framework",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Languages: Java, JavaScript, Python, TypeScript, C Sharp",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "BDD Tools: Cucumber, Behave, SpecFlow",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "API Automation: Postman, REST Assured, Karate, Playwright, Requests library",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Performance Testing"
+      ],
+      "h2": [
+        "Performance & Load Testing",
+        "Server-Side Testing",
+        "Client-Side Testing"
+      ],
+      "h3": [],
+      "p": [
+        "Comprehensive validation for both server-side and client-side performance to ensure reliability and optimal user experience under real-world conditions."
+      ],
+      "list": [
+        [
+          "Load, Stress, Endurance testing",
+          "Scalability validation",
+          "CPU and Memory Utilization",
+          "Micro Services Capacity Testing",
+          "Kafka Message Capacity Testing",
+          "Webhook Performance Testing"
+        ],
+        [
+          "Real-device performance analysis",
+          "Page load time and rendering",
+          "Front-end resource profiling",
+          "Response time measurement",
+          "UX impact under varying networks"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Performance Testing",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Performance & Load Testing",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "Comprehensive validation for both server-side and client-side performance to ensure reliability and optimal user experience under real-world conditions.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Server-Side Testing",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Load, Stress, Endurance testing\n• Scalability validation\n• CPU and Memory Utilization\n• Micro Services Capacity Testing\n• Kafka Message Capacity Testing\n• Webhook Performance Testing",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Client-Side Testing",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Real-device performance analysis\n• Page load time and rendering\n• Front-end resource profiling\n• Response time measurement\n• UX impact under varying networks",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [
+        "Security & VAPT Testing"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Comprehensive security assessments for web, mobile, and APIs aligned to OWASP Top 10 with compliance validation for data protection and regulatory frameworks."
+      ],
+      "list": [
+        [
+          "Web & Mobile Application Vulnerabilities",
+          "API Security",
+          "Network & Infrastructure Security",
+          "Cloud & Configuration Security",
+          "Penetration Testing"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Security & VAPT Testing",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Comprehensive security assessments for web, mobile, and APIs aligned to OWASP Top 10 with compliance validation for data protection and regulatory frameworks.",
+          "page_number": 7
+        },
+        {
+          "type": "list",
+          "text": "• Web & Mobile Application Vulnerabilities\n• API Security\n• Network & Infrastructure Security\n• Cloud & Configuration Security\n• Penetration Testing",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Staff Augmentation"
+      ],
+      "h2": [
+        "Engagement Model",
+        "Core Capabilities",
+        "Value Proposition"
+      ],
+      "h3": [],
+      "p": [
+        "Moolya augments client teams with skilled QA professionals who bring proven experience across domains and technologies, ensuring immediate value and delivery continuity.",
+        "Outcome: Rapid scaling of QA capacity with domain-aligned and project-ready engineers"
+      ],
+      "list": [],
+      "table": [
+        "01",
+        "02",
+        "03",
+        "Requirements Sharing",
+        "Testers Deployment",
+        "Seamless Integration",
+        "Clients share project scope and job description requirements",
+        "Moolya identifies and deploys the right-fit Testers",
+        "Testers align with client workflows, tools, and methodologies",
+        "Manual & functional testing",
+        "Rapid ramp-up of QA capacity with vetted experts.",
+        "Automation scripting and maintenance",
+        "Flexible engagement models (onsite/offshore/hybrid).",
+        "Performance, API, and security testing",
+        "Domain-aligned testers (Healthcare, PharmaTech, SaaS, Life",
+        "Test consultancy and QA process setup",
+        "Sciences).",
+        "Transparent rate card and governance."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Staff Augmentation",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Moolya augments client teams with skilled QA professionals who bring proven experience across domains and technologies, ensuring immediate value and delivery continuity.",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Engagement Model",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Requirements Sharing",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Testers Deployment",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Seamless Integration",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Clients share project scope and job description requirements",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Moolya identifies and deploys the right-fit Testers",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Testers align with client workflows, tools, and methodologies",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Core Capabilities",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Value Proposition",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Manual & functional testing",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Rapid ramp-up of QA capacity with vetted experts.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Automation scripting and maintenance",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Flexible engagement models (onsite/offshore/hybrid).",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Performance, API, and security testing",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Domain-aligned testers (Healthcare, PharmaTech, SaaS, Life",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Test consultancy and QA process setup",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Sciences).",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Transparent rate card and governance.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Outcome: Rapid scaling of QA capacity with domain-aligned and project-ready engineers",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Moolya's QA Maturity Framework"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Transforming industry challenges into competitive advantages through comprehensive quality engineering solutions."
+      ],
+      "list": [],
+      "table": [
+        "QA Dimension",
+        "Industry Challenge",
+        "Moolya's Value Proposition",
+        "Functional Testing",
+        "High defect leakage",
+        "Context-driven, risk-based testing",
+        "Automation",
+        "Slow release cycles",
+        "Scalable frameworks and CI/CD integration",
+        "Performance",
+        "Bottlenecks discovered late",
+        "Continuous performance benchmarking",
+        "Security",
+        "Vulnerability exposure",
+        "Proactive VAPT and compliance checks",
+        "Staffing",
+        "Lack of Specialized QA Skills",
+        "Rapid ramp-up of QA capacity with vetted experts"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya's QA Maturity Framework",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Transforming industry challenges into competitive advantages through comprehensive quality engineering solutions.",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "QA Dimension",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Industry Challenge",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Moolya's Value Proposition",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Functional Testing",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "High defect leakage",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Context-driven, risk-based testing",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Automation",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Slow release cycles",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Scalable frameworks and CI/CD integration",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Performance",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Bottlenecks discovered late",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Continuous performance benchmarking",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Security",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Vulnerability exposure",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Proactive VAPT and compliance checks",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Staffing",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Lack of Specialized QA Skills",
+          "page_number": 9
+        },
+        {
+          "type": "table",
+          "text": "Rapid ramp-up of QA capacity with vetted experts",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Moolya's Solution-led Delivery"
+      ],
+      "h2": [
+        "360° Testing Solution",
+        "Fastrack Automation",
+        "Rapid Deployment Testing Solution",
+        "SpeedMaster Optimization Solution",
+        "Bugasura",
+        "Secure Shield",
+        "SREngine",
+        "MoolyaWave"
+      ],
+      "h3": [],
+      "p": [
+        "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction",
+        "Dynamic, tool-agnostic automation to reduce time- to-market and ensure thorough test coverage",
+        "Streamlined testing for faster release cycles and confident, quality product delivery",
+        "Performance optimization to boost application speed, responsiveness, and scalability",
+        "Bug management tool, that helps you Report, track, and resolve issues efficiently with Al-enabled bug reporting and issue tracking",
+        "Comprehensive security testing solution designed to protect your digital assets from vulnerabilities and threats",
+        "Advanced solution for Service Reliability Engineering (SRE), ensuring highest levels of reliability, availability, and performance",
+        "DevOps services tailored to the unique needs of organizations developing web and mobile applications"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Moolya's Solution-led Delivery",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "360° Testing Solution",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Fastrack Automation",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Dynamic, tool-agnostic automation to reduce time- to-market and ensure thorough test coverage",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Rapid Deployment Testing Solution",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Streamlined testing for faster release cycles and confident, quality product delivery",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "SpeedMaster Optimization Solution",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Performance optimization to boost application speed, responsiveness, and scalability",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Bugasura",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Bug management tool, that helps you Report, track, and resolve issues efficiently with Al-enabled bug reporting and issue tracking",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Secure Shield",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Comprehensive security testing solution designed to protect your digital assets from vulnerabilities and threats",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "SREngine",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Advanced solution for Service Reliability Engineering (SRE), ensuring highest levels of reliability, availability, and performance",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "MoolyaWave",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "DevOps services tailored to the unique needs of organizations developing web and mobile applications",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Case Study 1"
+      ],
+      "h2": [
+        "Leading Life Sciences Data Management Platform"
+      ],
+      "h3": [
+        "About the Platform",
+        "Test Value Delivered",
+        "Business Impact"
+      ],
+      "p": [
+        "A cloud-based life sciences data management platform built for global pharmaceutical enterprises to streamline multi-country clinical operations. The platform centralizes data collection, regulatory tracking, and analytics across study sites."
+      ],
+      "list": [
+        [
+          "End-to-End Test Automation: Developed 420+ automated test scripts across API, UI, and backend layers, increasing regression coverage by 65% and reducing manual effort by 45% per release.",
+          "Compliance-Driven Validation: Designed 180+ test scenarios aligned with 21 CFR Part 11, HIPAA, and GxP frameworks, ensuring audit readiness and traceability.",
+          "Performance and Data Accuracy Testing: Simulated concurrent user loads up to 10,000 sessions to validate system stability under production-scale volumes."
+        ],
+        [
+          "Faster Release Turnaround: Achieved 40% reduction in release validation time, enabling biweekly release cycles instead of monthly.",
+          "Improved Data Confidence: Ensured 99.8% data accuracy in system-to-system synchronization during validation cycles.",
+          "Simplified Compliance Audits: Reduced audit preparation time from 3 weeks to 5 business days, supported by automated validation documentation."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 1",
+          "page_number": 11
+        },
+        {
+          "type": "h2",
+          "text": "Leading Life Sciences Data Management Platform",
+          "page_number": 11
+        },
+        {
+          "type": "h3",
+          "text": "About the Platform",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "A cloud-based life sciences data management platform built for global pharmaceutical enterprises to streamline multi-country clinical operations. The platform centralizes data collection, regulatory tracking, and analytics across study sites.",
+          "page_number": 11
+        },
+        {
+          "type": "h3",
+          "text": "Test Value Delivered",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• End-to-End Test Automation: Developed 420+ automated test scripts across API, UI, and backend layers, increasing regression coverage by 65% and reducing manual effort by 45% per release.\n• Compliance-Driven Validation: Designed 180+ test scenarios aligned with 21 CFR Part 11, HIPAA, and GxP frameworks, ensuring audit readiness and traceability.\n• Performance and Data Accuracy Testing: Simulated concurrent user loads up to 10,000 sessions to validate system stability under production-scale volumes.",
+          "page_number": 11
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• Faster Release Turnaround: Achieved 40% reduction in release validation time, enabling biweekly release cycles instead of monthly.\n• Improved Data Confidence: Ensured 99.8% data accuracy in system-to-system synchronization during validation cycles.\n• Simplified Compliance Audits: Reduced audit preparation time from 3 weeks to 5 business days, supported by automated validation documentation.",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Case Study 2"
+      ],
+      "h2": [
+        "Clinical Trial Automation and Monitoring Platform"
+      ],
+      "h3": [
+        "About the Platform",
+        "Test Value Delivered",
+        "Business Impact"
+      ],
+      "p": [
+        "A digital clinical trial management platform built to help CROs and pharma sponsors manage multi-phase studies, real-time site monitoring, and patient safety reporting across multiple geographies."
+      ],
+      "list": [
+        [
+          "Automated Regression and Validation: Implemented automation covering 14 core modules and 75 business-critical workflows, achieving 70% automation coverage in under 8 weeks.",
+          "Integration Testing Across Ecosystem: Verified seamless interoperability among EDC, CTMS, and Safety systems using mock and live API environments 4 ensuring 100% data consistency across integrations.",
+          "Risk-Based Testing Approach: Adopted a hybrid validation model prioritizing high-risk modules, optimizing QA effort by 35% without reducing test depth."
+        ],
+        [
+          "Accelerated UAT Sign-offs: Reduced UAT cycle time from 12 days to 7 days, improving overall release cadence.",
+          "Zero Critical Defects in Production: Achieved a defect leakage rate below 0.3% post-release.",
+          "Enhanced Sponsor Confidence: Helped the client secure three additional clinical partnerships through improved platform reliability and audit readiness."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 2",
+          "page_number": 12
+        },
+        {
+          "type": "h2",
+          "text": "Clinical Trial Automation and Monitoring Platform",
+          "page_number": 12
+        },
+        {
+          "type": "h3",
+          "text": "About the Platform",
+          "page_number": 12
+        },
+        {
+          "type": "p",
+          "text": "A digital clinical trial management platform built to help CROs and pharma sponsors manage multi-phase studies, real-time site monitoring, and patient safety reporting across multiple geographies.",
+          "page_number": 12
+        },
+        {
+          "type": "h3",
+          "text": "Test Value Delivered",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• Automated Regression and Validation: Implemented automation covering 14 core modules and 75 business-critical workflows, achieving 70% automation coverage in under 8 weeks.\n• Integration Testing Across Ecosystem: Verified seamless interoperability among EDC, CTMS, and Safety systems using mock and live API environments 4 ensuring 100% data consistency across integrations.\n• Risk-Based Testing Approach: Adopted a hybrid validation model prioritizing high-risk modules, optimizing QA effort by 35% without reducing test depth.",
+          "page_number": 12
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 12
+        },
+        {
+          "type": "list",
+          "text": "• Accelerated UAT Sign-offs: Reduced UAT cycle time from 12 days to 7 days, improving overall release cadence.\n• Zero Critical Defects in Production: Achieved a defect leakage rate below 0.3% post-release.\n• Enhanced Sponsor Confidence: Helped the client secure three additional clinical partnerships through improved platform reliability and audit readiness.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [
+        "Thank You!"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Thank You!",
+          "page_number": 13
+        }
+      ]
+    }
+  ]
+}

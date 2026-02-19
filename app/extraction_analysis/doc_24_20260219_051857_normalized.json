@@ -1,0 +1,777 @@
+{
+  "version": "1.0",
+  "document_id": 24,
+  "created_at": "2026-02-19T05:18:57.399639Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya Testing Quality Engineering Capabilities & Success Stories"
+      ],
+      "list": [],
+      "table": [
+        "14+",
+        "200+",
+        "20+",
+        "80%",
+        "Years in Business",
+        "Customers",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Moolya Testing Quality Engineering Capabilities & Success Stories",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Years in Business",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Customers",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Who we are",
+        "Why Choose us"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction."
+      ],
+      "list": [],
+      "table": [
+        "Skin in the Game",
+        "Culture Focus",
+        "Leadership Friendly",
+        "Scaling Value",
+        "We go beyond vendor roles, fostering deep co-ownership with customers.",
+        "We help customers address issues by focusing on cultural fixes.",
+        "Moolya empowers C-, V-, and D-level leaders with",
+        "insights.",
+        "Moolya unifies Tech, Test,",
+        "Product, Customer & Business",
+        "insights to scale value."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Who we are",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+          "page_number": 2
+        },
+        {
+          "type": "h1",
+          "text": "Why Choose us",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Skin in the Game",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Culture Focus",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Leadership Friendly",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Scaling Value",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We go beyond vendor roles, fostering deep co-ownership with customers.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We help customers address issues by focusing on cultural fixes.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Moolya empowers C-, V-, and D-level leaders with",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "insights.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Moolya unifies Tech, Test,",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Product, Customer & Business",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "insights to scale value.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Our Quality Engineering Philosophy"
+      ],
+      "h2": [
+        "Faster, safer, and more stable releases that reduce risk while improving user adoption."
+      ],
+      "h3": [],
+      "p": [
+        "At Moolya, we believe quality is not a checkpoint at the end, but a culture built into every stage of the product lifecycle."
+      ],
+      "list": [],
+      "table": [
+        "Shift-Left Approach",
+        "Automation-First Strategy",
+        "Built-in Trust",
+        "We adopt a shift-left approach, focusing on prevention over detection.",
+        "Automation-first strategies ensure 70–85% coverage, accelerating release cycles.",
+        "Compliance, security, and reliability are integrated into every test stage."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Quality Engineering Philosophy",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "At Moolya, we believe quality is not a checkpoint at the end, but a culture built into every stage of the product lifecycle.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Shift-Left Approach",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Automation-First Strategy",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Built-in Trust",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "We adopt a shift-left approach, focusing on prevention over detection.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Automation-first strategies ensure 70–85% coverage, accelerating release cycles.",
+          "page_number": 3
+        },
+        {
+          "type": "table",
+          "text": "Compliance, security, and reliability are integrated into every test stage.",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Faster, safer, and more stable releases that reduce risk while improving user adoption.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Testing Services"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Mobile App Testing",
+        "Testing on Device Farms",
+        "Performance Testing",
+        "Regression Testing",
+        "UAT",
+        "Security Testing Release Auditing Compatibility Testing"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Testing Services",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Mobile App Testing",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Testing on Device Farms",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Performance Testing",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Regression Testing",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "UAT",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Security Testing Release Auditing Compatibility Testing",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Our Solutions Advantages of Our Solutions"
+      ],
+      "list": [],
+      "table": [
+        "360°",
+        "Testing Solution",
+        "Fastrack",
+        "Automation",
+        "Rapid Deployment",
+        "Testing Solution",
+        "SpeedMaster",
+        "Optimization Solution",
+        "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction.",
+        "Dynamic, tool-agnostic automation to reduce",
+        "time-to-market and ensure",
+        "thorough test coverage.",
+        "Streamlined testing for faster release cycles and confident, quality product delivery.",
+        "Performance optimization to boost application speed, responsiveness, and scalability.",
+        "Alignment with Customer’s",
+        "Digital transformation goals",
+        "Testing Solutions",
+        "Address unique challenges & requirements",
+        "Accelerated",
+        "Time to Market & Reduced Cost"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Our Solutions Advantages of Our Solutions",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "360°",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Testing Solution",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Fastrack",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Automation",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Rapid Deployment",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Testing Solution",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "SpeedMaster",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Optimization Solution",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Holistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Dynamic, tool-agnostic automation to reduce",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "time-to-market and ensure",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "thorough test coverage.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Streamlined testing for faster release cycles and confident, quality product delivery.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Performance optimization to boost application speed, responsiveness, and scalability.",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Alignment with Customer’s",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Digital transformation goals",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Testing Solutions",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Address unique challenges & requirements",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Accelerated",
+          "page_number": 5
+        },
+        {
+          "type": "table",
+          "text": "Time to Market & Reduced Cost",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [],
+      "h2": [
+        "Case Study",
+        "Cross-Platform Healthcare App",
+        "Challenge:",
+        "Approach:",
+        "Impact:"
+      ],
+      "h3": [],
+      "p": [
+        "Ensuring functional consistency across Android, iOS, and Web for 200,000+ expectant and new parents while delivering a sensitive, emotionally positive user experience."
+      ],
+      "list": [
+        [
+          "Automated 85% of regression testing across 50+ devices and OS versions.",
+          "Focused on sentiment-driven features such as pregnancy tracker, polls, and healing mode.",
+          "Validated admin panel and advertiser workflows for accurate targeting."
+        ],
+        [
+          "35% faster release cycles through automation.",
+          "25% increase in app ratings (boosted positive reviews).",
+          "15% higher ad click-through rates, improving advertiser ROI."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Cross-Platform Healthcare App",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Challenge:",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "Ensuring functional consistency across Android, iOS, and Web for 200,000+ expectant and new parents while delivering a sensitive, emotionally positive user experience.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Approach:",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• Automated 85% of regression testing across 50+ devices and OS versions.\n• Focused on sentiment-driven features such as pregnancy tracker, polls, and healing mode.\n• Validated admin panel and advertiser workflows for accurate targeting.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Impact:",
+          "page_number": 6
+        },
+        {
+          "type": "list",
+          "text": "• 35% faster release cycles through automation.\n• 25% increase in app ratings (boosted positive reviews).\n• 15% higher ad click-through rates, improving advertiser ROI.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 8,
+      "h1": [],
+      "h2": [
+        "Case Study 3",
+        "Healthcare Platform Integration"
+      ],
+      "h3": [
+        "Challenge:",
+        "Approach:",
+        "Impact:"
+      ],
+      "p": [
+        "Testing integration across multiple modules (Quick Consult, Pharmacy, VC Dashboard), with critical workflows like video consultations and payments.",
+        "Delivered 99.5% uptime for core modules.",
+        "Improved patient experience, with a 30% increase in daily active users.",
+        "Reduced pharmacy checkout time by 15%, boosting conversions."
+      ],
+      "list": [
+        [
+          "Designed and executed 1,500+ test cases across 5 modules.",
+          "Verified RBAC for 30+ unique roles, including doctors, admins, and patients.",
+          "Stress-tested pharmacy checkout and video consultations for peak usage."
+        ],
+        [
+          "Supported 5,000+ daily video consultations during pandemic surges."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study 3",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Healthcare Platform Integration",
+          "page_number": 8
+        },
+        {
+          "type": "h3",
+          "text": "Challenge:",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Testing integration across multiple modules (Quick Consult, Pharmacy, VC Dashboard), with critical workflows like video consultations and payments.",
+          "page_number": 8
+        },
+        {
+          "type": "h3",
+          "text": "Approach:",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Designed and executed 1,500+ test cases across 5 modules.\n• Verified RBAC for 30+ unique roles, including doctors, admins, and patients.\n• Stress-tested pharmacy checkout and video consultations for peak usage.",
+          "page_number": 8
+        },
+        {
+          "type": "h3",
+          "text": "Impact:",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Supported 5,000+ daily video consultations during pandemic surges.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Delivered 99.5% uptime for core modules.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Improved patient experience, with a 30% increase in daily active users.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Reduced pharmacy checkout time by 15%, boosting conversions.",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [],
+      "h2": [
+        "Case Study 4",
+        "Fast-Paced Release Stability"
+      ],
+      "h3": [
+        "Challenge:",
+        "Approach:",
+        "Impact:"
+      ],
+      "p": [
+        "Delivering high stability in a fast-paced release environment with bi-weekly updates across iOS, Android, and Web.",
+        "Identified and resolved 200+ issues during 6 major updates in 3 months.",
+        "Focused on usability, staging-to-production validation, and regression stability.",
+        "Achieved 95% bug-free releases.",
+        "Reduced post-release bugs by 50%, increasing confidence in releases."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Case Study 4",
+          "page_number": 9
+        },
+        {
+          "type": "h2",
+          "text": "Fast-Paced Release Stability",
+          "page_number": 9
+        },
+        {
+          "type": "h3",
+          "text": "Challenge:",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Delivering high stability in a fast-paced release environment with bi-weekly updates across iOS, Android, and Web.",
+          "page_number": 9
+        },
+        {
+          "type": "h3",
+          "text": "Approach:",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Identified and resolved 200+ issues during 6 major updates in 3 months.",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Focused on usability, staging-to-production validation, and regression stability.",
+          "page_number": 9
+        },
+        {
+          "type": "h3",
+          "text": "Impact:",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Achieved 95% bug-free releases.",
+          "page_number": 9
+        },
+        {
+          "type": "p",
+          "text": "Reduced post-release bugs by 50%, increasing confidence in releases.",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Trusted by Industry Leaders"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Retail and E-commerce",
+          "Flipkart swiGcv CLiQ •TATA /Myntra Fynd"
+        ]
+      ],
+      "table": [
+        "Healthcare",
+        "( cloudnine",
+        "Ł ekincare",
+        "0 IntegraConnect",
+        "medidata",
+        "cure.fit",
+        "Velocity",
+        "•••",
+        "@ innovaccer"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Trusted by Industry Leaders",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Healthcare",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "( cloudnine",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Ł ekincare",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "0 IntegraConnect",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "medidata",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "cure.fit",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Velocity",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "•••",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "@ innovaccer",
+          "page_number": 10
+        },
+        {
+          "type": "list",
+          "text": "• Retail and E-commerce\n• Flipkart swiGcv CLiQ •TATA /Myntra Fynd",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 11
+        }
+      ]
+    }
+  ]
+}

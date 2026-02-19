@@ -1,0 +1,426 @@
+{
+  "version": "1.0",
+  "document_id": 29,
+  "created_at": "2026-02-19T05:28:12.841753Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Proven Casestudies",
+        "I 14+",
+        "200+",
+        "20+",
+        "Countries",
+        "80%",
+        "Industry leaders choose us"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Proven Casestudies",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "I 14+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Case Study 1"
+      ],
+      "h2": [
+        "Comprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company"
+      ],
+      "h3": [
+        "Problem Statement",
+        "Approach",
+        "Business Impact"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Significant daily orders faced issues, impacting operations.",
+          "•",
+          "Users experienced checkout errors, leading to high cart abandonment rates."
+        ],
+        [
+          "•",
+          "Audited application architecture, workflows, order processing, checkout, dependencies.",
+          "•",
+          "Audited architecture, tested 250+ scenarios, monitored 1.2M+ API calls daily",
+          "•",
+          "Monitored1.2 million+ API calls daily, analyzing response times, failures, and inconsistencies with payment gateways.",
+          "•",
+          "Simulated 10,000 concurrent users to enhance stability and resolved 95% of data inconsistencies."
+        ],
+        [
+          "•",
+          "Checkout success rate improved by 85%, increasing transactions by 15%.",
+          "•",
+          "Optimized order processing speed by 40%, ensuring 98% on-time deliveries.",
+          "•",
+          "Lowered cart abandonment to 42%, improving conversions and customer retention."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 1",
+          "page_number": 2
+        },
+        {
+          "type": "h2",
+          "text": "Comprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Problem Statement",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Significant daily orders faced issues, impacting operations.\n• •\n• Users experienced checkout errors, leading to high cart abandonment rates.",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Approach",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Audited application architecture, workflows, order processing, checkout, dependencies.\n• •\n• Audited architecture, tested 250+ scenarios, monitored 1.2M+ API calls daily\n• •\n• Monitored1.2 million+ API calls daily, analyzing response times, failures, and inconsistencies with payment gateways.\n• •\n• Simulated 10,000 concurrent users to enhance stability and resolved 95% of data inconsistencies.",
+          "page_number": 2
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Checkout success rate improved by 85%, increasing transactions by 15%.\n• •\n• Optimized order processing speed by 40%, ensuring 98% on-time deliveries.\n• •\n• Lowered cart abandonment to 42%, improving conversions and customer retention.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Case Study 2"
+      ],
+      "h2": [
+        "Transforming Financial Services Through Test Automation"
+      ],
+      "h3": [
+        "Problem Statement",
+        "Approach",
+        "Business Impact"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Regression testing covered 5,000+ cases per release, ensuring quality,",
+          "•",
+          "Automation framework processed 250 test cases hourly, needs optimization."
+        ],
+        [
+          "•",
+          "Developed a scalable automation framework, reducing test execution time by 45%.",
+          "•",
+          "Implemented Appium for Android and iOS, achieving 98% test coverage.",
+          "•",
+          "Integrated automation into CI/CD, enabling real-time feedback within 15 minutes.",
+          "•",
+          "Trained 20+ engineers in Java, Selenium, and Appium, enhancing automation efficiency."
+        ],
+        [
+          "•",
+          "Accelerated release cycles by 30%, improving time-to-market.",
+          "•",
+          "Enabled execution of 10,000+ test cases daily, supporting scalability.",
+          "•",
+          "Enhanced software reliability, ensuring seamless user experience."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 2",
+          "page_number": 3
+        },
+        {
+          "type": "h2",
+          "text": "Transforming Financial Services Through Test Automation",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Problem Statement",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Regression testing covered 5,000+ cases per release, ensuring quality,\n• •\n• Automation framework processed 250 test cases hourly, needs optimization.",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Approach",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Developed a scalable automation framework, reducing test execution time by 45%.\n• •\n• Implemented Appium for Android and iOS, achieving 98% test coverage.\n• •\n• Integrated automation into CI/CD, enabling real-time feedback within 15 minutes.\n• •\n• Trained 20+ engineers in Java, Selenium, and Appium, enhancing automation efficiency.",
+          "page_number": 3
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Accelerated release cycles by 30%, improving time-to-market.\n• •\n• Enabled execution of 10,000+ test cases daily, supporting scalability.\n• •\n• Enhanced software reliability, ensuring seamless user experience.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Case Study 3"
+      ],
+      "h2": [
+        "Performance Testing for a Leading Customer Communication Solutions Provider"
+      ],
+      "h3": [
+        "Problem Statement",
+        "Approach",
+        "Business Impact"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "Optimized resources for lM+ concurrent users without interruptions.",
+          "•",
+          "Assessed system scalability, ensuring 99.99% uptime under peak loads"
+        ],
+        [
+          "•",
+          "Microservice Capacity Testing: Validated performance 0f 50+ microservices, ensuring efficient load distribution.",
+          "•",
+          "Auto Scaling Validation: Optimized scaling mechanisms, allowing instant response to traffic spikes.",
+          "•",
+          "Kafka Message Capacity Testing: Verified smooth processing of 500,000+ messages per second.",
+          "•",
+          "End-to-End SLA Measurement: Ensured response times under 200ms across all services."
+        ],
+        [
+          "•",
+          "Kafka processed 2B+ messages daily for seamless communication.",
+          "•",
+          "Webhook APls handled l0x traffic, enhancing real-time interactions.",
+          "•",
+          "Peak stability improved 60%, boosting growth and scalability."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 3",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Performance Testing for a Leading Customer Communication Solutions Provider",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Problem Statement",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Optimized resources for lM+ concurrent users without interruptions.\n• •\n• Assessed system scalability, ensuring 99.99% uptime under peak loads",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Approach",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Microservice Capacity Testing: Validated performance 0f 50+ microservices, ensuring efficient load distribution.\n• •\n• Auto Scaling Validation: Optimized scaling mechanisms, allowing instant response to traffic spikes.\n• •\n• Kafka Message Capacity Testing: Verified smooth processing of 500,000+ messages per second.\n• •\n• End-to-End SLA Measurement: Ensured response times under 200ms across all services.",
+          "page_number": 4
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Kafka processed 2B+ messages daily for seamless communication.\n• •\n• Webhook APls handled l0x traffic, enhancing real-time interactions.\n• •\n• Peak stability improved 60%, boosting growth and scalability.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Case Study 4"
+      ],
+      "h2": [
+        "Driving User Experiance Engagement for a Leading E-commerce Company in India"
+      ],
+      "h3": [
+        "Problem Statement",
+        "Approach",
+        "Business Impact"
+      ],
+      "p": [],
+      "list": [
+        [
+          "•",
+          "High cart abandonment, resulting in a low cart-to-checkout conversion rate.",
+          "•",
+          "Identified areas for optimization in system processes and product features."
+        ],
+        [
+          "•",
+          "Assessed system workflows and optimized key touchpoints for a seamless user journey.",
+          "•",
+          "Evaluated perfect order experience guidelines across 500+ product categories.",
+          "•",
+          "Leveraged data analytics to refine user journeys, analyzing 1M+ interactions.",
+          "•",
+          "Reviewed 100,000+ customer reviews across Play Store and App Store for insights."
+        ],
+        [
+          "•",
+          "Reduced cart abandonment by 35%, increasing checkout conversions.",
+          "•",
+          "Enhanced user experience, leading to a 25% rise in repeat purchases."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Case Study 4",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Driving User Experiance Engagement for a Leading E-commerce Company in India",
+          "page_number": 5
+        },
+        {
+          "type": "h3",
+          "text": "Problem Statement",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• •\n• High cart abandonment, resulting in a low cart-to-checkout conversion rate.\n• •\n• Identified areas for optimization in system processes and product features.",
+          "page_number": 5
+        },
+        {
+          "type": "h3",
+          "text": "Approach",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Assessed system workflows and optimized key touchpoints for a seamless user journey.\n• •\n• Evaluated perfect order experience guidelines across 500+ product categories.\n• •\n• Leveraged data analytics to refine user journeys, analyzing 1M+ interactions.\n• •\n• Reviewed 100,000+ customer reviews across Play Store and App Store for insights.",
+          "page_number": 5
+        },
+        {
+          "type": "h3",
+          "text": "Business Impact",
+          "page_number": 5
+        },
+        {
+          "type": "list",
+          "text": "• •\n• Reduced cart abandonment by 35%, increasing checkout conversions.\n• •\n• Enhanced user experience, leading to a 25% rise in repeat purchases.",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Got questions? Let's talk"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "THANK YOU!",
+        "contactus@moolya.com"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "THANK YOU!",
+          "page_number": 6
+        },
+        {
+          "type": "h1",
+          "text": "Got questions? Let's talk",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "contactus@moolya.com",
+          "page_number": 6
+        }
+      ]
+    }
+  ]
+}

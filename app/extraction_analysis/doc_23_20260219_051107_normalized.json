@@ -1,0 +1,1099 @@
+{
+  "version": "1.0",
+  "document_id": 23,
+  "created_at": "2026-02-19T05:11:07.091899Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Test Automation Proposal for",
+        "Submitted by"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Test Automation Proposal for",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "Submitted by",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Project Overview"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Dimagi is seeking to establish a Test Automation Solution for one of its key product lines - CommCare Connect across web and mobile which currently has no automation in place. Primary focus areas are:"
+      ],
+      "list": [
+        [
+          "Asses Automation Feasibility",
+          "Design and Implement a robust Test Automation Framework",
+          "CI/CD Integration",
+          "Define an automation roadmap covering functional, regression, and smoke testing",
+          "Enable the internal QA team to maintain and scale automation effectively over time"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Project Overview",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Dimagi is seeking to establish a Test Automation Solution for one of its key product lines - CommCare Connect across web and mobile which currently has no automation in place. Primary focus areas are:",
+          "page_number": 2
+        },
+        {
+          "type": "list",
+          "text": "• Asses Automation Feasibility\n• Design and Implement a robust Test Automation Framework\n• CI/CD Integration\n• Define an automation roadmap covering functional, regression, and smoke testing\n• Enable the internal QA team to maintain and scale automation effectively over time",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Objective"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "The objective of this proposal is to establish a strategic QA partnership between Dimagi and Moolya Software Testing to ensure comprehensive quality ownership and implement a robust test automation solution.",
+        "Moolya will leverage its expertise in test automation and quality engineering to enhance product stability, improve testing efficiency, and minimize manual testing efforts. The engagement will focus on:"
+      ],
+      "list": [
+        [
+          "Establish a scalable automation framework for both web and mobile platforms.",
+          "Ensure CI/CD readiness through integration with build pipelines.",
+          "Reduce manual effort by automating test flows.",
+          "Deliver measurable outcomes in terms of test coverage, execution efficiency, and release confidence.",
+          "Build automation competency within Dimagi9s QA team through knowledge transfer and enablement sessions."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Objective",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "The objective of this proposal is to establish a strategic QA partnership between Dimagi and Moolya Software Testing to ensure comprehensive quality ownership and implement a robust test automation solution.",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "Moolya will leverage its expertise in test automation and quality engineering to enhance product stability, improve testing efficiency, and minimize manual testing efforts. The engagement will focus on:",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• Establish a scalable automation framework for both web and mobile platforms.\n• Ensure CI/CD readiness through integration with build pipelines.\n• Reduce manual effort by automating test flows.\n• Deliver measurable outcomes in terms of test coverage, execution efficiency, and release confidence.\n• Build automation competency within Dimagi9s QA team through knowledge transfer and enablement sessions.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "Testing Scope"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Design and implement a scalable automation framework for Dimagi's CommCare Connect product covering both Web and Mobile platforms.",
+          "Collaborate with Dimagi team to prioritize modules and features",
+          "Develop a Test Automation Roadmap defining smoke, feature, and regression test packs, with provisions for future expansion",
+          "Integrate automation with CI/CD pipelines to enable continuous testing",
+          "Implement best practices for framework optimization and long-term sustainability",
+          "Define and track key automation metrics to measure effectiveness",
+          "Upskill the Dimagi QA team to independently maintain, enhance, and scale automation efforts."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Testing Scope",
+          "page_number": 4
+        },
+        {
+          "type": "list",
+          "text": "• Design and implement a scalable automation framework for Dimagi's CommCare Connect product covering both Web and Mobile platforms.\n• Collaborate with Dimagi team to prioritize modules and features\n• Develop a Test Automation Roadmap defining smoke, feature, and regression test packs, with provisions for future expansion\n• Integrate automation with CI/CD pipelines to enable continuous testing\n• Implement best practices for framework optimization and long-term sustainability\n• Define and track key automation metrics to measure effectiveness\n• Upskill the Dimagi QA team to independently maintain, enhance, and scale automation efforts.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Test Automation - Moolya's Approach"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Test Automation - Moolya's Approach",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Test Execution Plan : 2-month Automation Foundation plan"
+      ],
+      "h2": [
+        "Month 1 : Discovery, Feasibility & Framework Design"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Phase",
+        "Activities",
+        "Deliverables",
+        "Discovery",
+        "CommCare Connect Application Understanding",
+        "Assessment & Audit",
+        "Review existing system, process and test environments Evaluate tools, frameworks, and integration feasibility Identify automation-ready scenarios for Web and Mobile",
+        "Automation Feasibility Report",
+        "Test Automation Setup",
+        "Design and implement automation framework Plan CI/CD integration approach. Outline roadmap for smoke, regression, and functional",
+        "automation",
+        "Test Automation Framework Automation Roadmap",
+        "Pilot Automation",
+        "Prioritize key modules Develop and execute smoke test scripts for key modules Demonstration of the automated scripts to Dimagi",
+        "stakeholders",
+        "Test Scripts",
+        "Test Execution and Summary Report"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Test Execution Plan : 2-month Automation Foundation plan",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Month 1 : Discovery, Feasibility & Framework Design",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Phase",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Activities",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Deliverables",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Discovery",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "CommCare Connect Application Understanding",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Assessment & Audit",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Review existing system, process and test environments Evaluate tools, frameworks, and integration feasibility Identify automation-ready scenarios for Web and Mobile",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Automation Feasibility Report",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Test Automation Setup",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Design and implement automation framework Plan CI/CD integration approach. Outline roadmap for smoke, regression, and functional",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "automation",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Test Automation Framework Automation Roadmap",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Pilot Automation",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Prioritize key modules Develop and execute smoke test scripts for key modules Demonstration of the automated scripts to Dimagi",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "stakeholders",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Test Scripts",
+          "page_number": 6
+        },
+        {
+          "type": "table",
+          "text": "Test Execution and Summary Report",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [],
+      "h2": [
+        "Month 2 : Automation Framework Optimization, Best Practices and Knowledge Transfer"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Phase",
+        "Activities",
+        "Deliverables",
+        "Continued Automation Execution",
+        "Develop and execute next set of smoke test scripts Integration with CI/CD pipeline Refine the roadmap and strategy for smoke,",
+        "regression, and functional automation",
+        "Automated Smoke Test Scripts (Web and Mobile)",
+        "CI/CD-enabled test execution setup Test Execution and Summary Report",
+        "Optimization and Best Practices",
+        "Optimization of the test automation framework Refine scripts for maintainability and modularity Finalize metrics to track automation efficiency Documentation of automation process and",
+        "maintenance guide",
+        "Demonstration of the automated scripts to stakeholders",
+        "Optimized Automation Framework Test Scripts",
+        "Automation Metrics Defined",
+        "Knowledge Transfer and Handover",
+        "Conduct QA enablement and training sessions to",
+        "Dimagi team Share automation process and maintenance document",
+        "Handover framework ownership",
+        "Knowledge transfer completion",
+        "Automation documentation and maintenance guide QA team ready for independent",
+        "ownership"
+      ],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Month 2 : Automation Framework Optimization, Best Practices and Knowledge Transfer",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Phase",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Activities",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Deliverables",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Continued Automation Execution",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Develop and execute next set of smoke test scripts Integration with CI/CD pipeline Refine the roadmap and strategy for smoke,",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "regression, and functional automation",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Automated Smoke Test Scripts (Web and Mobile)",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "CI/CD-enabled test execution setup Test Execution and Summary Report",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Optimization and Best Practices",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Optimization of the test automation framework Refine scripts for maintainability and modularity Finalize metrics to track automation efficiency Documentation of automation process and",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "maintenance guide",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Demonstration of the automated scripts to stakeholders",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Optimized Automation Framework Test Scripts",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Automation Metrics Defined",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Knowledge Transfer and Handover",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Conduct QA enablement and training sessions to",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Dimagi team Share automation process and maintenance document",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Handover framework ownership",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Knowledge transfer completion",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Automation documentation and maintenance guide QA team ready for independent",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "ownership",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Deliverables"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Test Plan and Strategy Document with Automation Roadmap",
+          "Test Automation Framework",
+          "Automated Test Scripts",
+          "Test Summary Report with execution status and insights",
+          "Script Maintenance Document",
+          "Knowledge Transfer and Training Document"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Deliverables",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Test Plan and Strategy Document with Automation Roadmap\n• Test Automation Framework\n• Automated Test Scripts\n• Test Summary Report with execution status and insights\n• Script Maintenance Document\n• Knowledge Transfer and Training Document",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [
+        "Value Delivered"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Value Delivered",
+          "page_number": 9
+        }
+      ]
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Our Commitment"
+      ],
+      "h2": [
+        "Unified Expertise with Moolya9s 3-in-a-Box Model",
+        "Combination of Expertise: Integrated Under One Roof"
+      ],
+      "h3": [],
+      "p": [
+        "We will setup a dedicated testing team supported by Domain expert and UX experts, to conduct comprehensive end-to-end testing of Instacoins9 web application across both Flights and Stays modules.",
+        "By combining Delivery Engineering, Testing Experts, and Domain SMEs into one cohesive unit, Moolya offers a comprehensive, cost-efficient solution that drives faster delivery, higher quality, and scalable results",
+        "Delivery Engineering Team",
+        "Bringing Technical Excellence through Delivery Engineering",
+        "Testing Experts",
+        "Expert QA Testing to Ensure Compliance and Quality",
+        "Domain Subject Matter Expert (SME) Team",
+        "Domain Experts Ensuring Business and Project Alignment"
+      ],
+      "list": [
+        [
+          "Collaborative Development",
+          "Custom Integrations",
+          "Continuous Delivery Focus"
+        ],
+        [
+          "Context Driven Testing",
+          "Automated Testing Frameworks",
+          "End-to-End Testing"
+        ],
+        [
+          "Deep Domain Knowledge",
+          "Technical Guidance & Expertise",
+          "Collaboration"
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Commitment",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "We will setup a dedicated testing team supported by Domain expert and UX experts, to conduct comprehensive end-to-end testing of Instacoins9 web application across both Flights and Stays modules.",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Unified Expertise with Moolya9s 3-in-a-Box Model",
+          "page_number": 10
+        },
+        {
+          "type": "h2",
+          "text": "Combination of Expertise: Integrated Under One Roof",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "By combining Delivery Engineering, Testing Experts, and Domain SMEs into one cohesive unit, Moolya offers a comprehensive, cost-efficient solution that drives faster delivery, higher quality, and scalable results",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Delivery Engineering Team",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Bringing Technical Excellence through Delivery Engineering",
+          "page_number": 10
+        },
+        {
+          "type": "list",
+          "text": "• Collaborative Development\n• Custom Integrations\n• Continuous Delivery Focus",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Testing Experts",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Expert QA Testing to Ensure Compliance and Quality",
+          "page_number": 10
+        },
+        {
+          "type": "list",
+          "text": "• Context Driven Testing\n• Automated Testing Frameworks\n• End-to-End Testing",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Domain Subject Matter Expert (SME) Team",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Domain Experts Ensuring Business and Project Alignment",
+          "page_number": 10
+        },
+        {
+          "type": "list",
+          "text": "• Deep Domain Knowledge\n• Technical Guidance & Expertise\n• Collaboration",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Assumptions"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework.",
+          "Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.",
+          "Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.",
+          "Environment Availability : A dedicated and stable testing environment will be available for the Moolya team.",
+          "Access to Test Data : Necessary test data will be provided by the Dimagi team.",
+          "Documents : Dimagi will provide the necessary documents required for the engagement."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Assumptions",
+          "page_number": 11
+        },
+        {
+          "type": "list",
+          "text": "• Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework.\n• Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance.\n• Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline.\n• Environment Availability : A dedicated and stable testing environment will be available for the Moolya team.\n• Access to Test Data : Necessary test data will be provided by the Dimagi team.\n• Documents : Dimagi will provide the necessary documents required for the engagement.",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [
+        "Quality Metrics"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Metric",
+        "Impact",
+        "Test Coverage (Percentage of tests covered by automation)",
+        "- Ensures better regression testing and reduces production defects.",
+        "Defect Detection Rate (Rate at which automated tests identify defects)",
+        "-",
+        "High rate ensures early defect identification, improving software quality.",
+        "-",
+        "Reduces debugging efforts in later stages of development.",
+        "Test Execution Time (Average time taken for automated test suites to run)",
+        "-",
+        "Faster execution speeds up feedback loops, reducing development cycle time.",
+        "-",
+        "Long execution times slow down releases and CI/CD processes.",
+        "Automation Pass Percentage (Percentage of tests passing)",
+        "-",
+        "High pass percentage indicates system stability.",
+        "-",
+        "Low percentage may signal frequent failures, requiring deeper analysis.",
+        "Flaky Tests (Percentage of unstable or inconsistent tests)",
+        "-",
+        "High flakiness reduces trust in automation.",
+        "-",
+        "Leads to manual verification efforts and increased debugging time.",
+        "-",
+        "Stable tests improve efficiency and confidence in results.",
+        "Stability Index Percentage (Percentage of builds passing)",
+        "-",
+        "High stability index indicates a reliable and stable system.",
+        "-",
+        "Frequent build failures disrupt development and delay releases."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Quality Metrics",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Metric",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Impact",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Test Coverage (Percentage of tests covered by automation)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "- Ensures better regression testing and reduces production defects.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Defect Detection Rate (Rate at which automated tests identify defects)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "High rate ensures early defect identification, improving software quality.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Reduces debugging efforts in later stages of development.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Test Execution Time (Average time taken for automated test suites to run)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Faster execution speeds up feedback loops, reducing development cycle time.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Long execution times slow down releases and CI/CD processes.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Automation Pass Percentage (Percentage of tests passing)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "High pass percentage indicates system stability.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Low percentage may signal frequent failures, requiring deeper analysis.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Flaky Tests (Percentage of unstable or inconsistent tests)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "High flakiness reduces trust in automation.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Leads to manual verification efforts and increased debugging time.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Stable tests improve efficiency and confidence in results.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Stability Index Percentage (Percentage of builds passing)",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "High stability index indicates a reliable and stable system.",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "-",
+          "page_number": 12
+        },
+        {
+          "type": "table",
+          "text": "Frequent build failures disrupt development and delay releases.",
+          "page_number": 12
+        }
+      ]
+    },
+    {
+      "page_number": 13,
+      "h1": [
+        "Pricing"
+      ],
+      "h2": [
+        "Payment Terms"
+      ],
+      "h3": [
+        "Important Note: Preliminary Estimate and Scope Adaptability"
+      ],
+      "p": [
+        "This proposal has been prepared based on our current, high-level understanding of Dimagi's outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+        "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team."
+      ],
+      "list": [
+        [
+          "Payment to be done within 30 days of invoice generation",
+          "Any applicable taxes will be charged extra on the pricing mentioned",
+          "Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation.",
+          "Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier.",
+          "As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense"
+        ]
+      ],
+      "table": [
+        "Engagement Plan",
+        "Duration",
+        "Monthly Cost (INR)",
+        "Automation Foundation Plan",
+        "2 Months",
+        "¹4,00,000 / month"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Pricing",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Engagement Plan",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Duration",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Monthly Cost (INR)",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "Automation Foundation Plan",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "2 Months",
+          "page_number": 13
+        },
+        {
+          "type": "table",
+          "text": "¹4,00,000 / month",
+          "page_number": 13
+        },
+        {
+          "type": "h2",
+          "text": "Payment Terms",
+          "page_number": 13
+        },
+        {
+          "type": "list",
+          "text": "• Payment to be done within 30 days of invoice generation\n• Any applicable taxes will be charged extra on the pricing mentioned\n• Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation.\n• Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier.\n• As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense",
+          "page_number": 13
+        },
+        {
+          "type": "h3",
+          "text": "Important Note: Preliminary Estimate and Scope Adaptability",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "This proposal has been prepared based on our current, high-level understanding of Dimagi's outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables.",
+          "page_number": 13
+        },
+        {
+          "type": "p",
+          "text": "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team.",
+          "page_number": 13
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Bugasura Capabilities"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "(a",
+        "Test Management",
+        "@",
+        "Requirements",
+        "Management",
+        "O",
+        "Issue Tracker",
+        "(°b",
+        "Chrome Reporter",
+        "a",
+        "Bugasura Widget",
+        "Jira Sync",
+        "Slack Notify",
+        "••",
+        "Asana Sync",
+        "Sentry Sync",
+        "Github Connect",
+        "ClickUp Link",
+        "Zendesk Sync",
+        "GlitchTip Sync",
+        "Linear Sync",
+        "Zoho Projects"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Bugasura Capabilities",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "(a",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Test Management",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "@",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Requirements",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Management",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "O",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Issue Tracker",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "(°b",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Chrome Reporter",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "a",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Bugasura Widget",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Jira Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Slack Notify",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "••",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Asana Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Sentry Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Github Connect",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "ClickUp Link",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Zendesk Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "GlitchTip Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Linear Sync",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Zoho Projects",
+          "page_number": 14
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "h1": [
+        "Thank You!"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Thank You!",
+          "page_number": 15
+        }
+      ]
+    }
+  ]
+}

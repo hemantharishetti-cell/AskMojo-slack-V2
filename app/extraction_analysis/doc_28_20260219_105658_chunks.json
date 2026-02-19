@@ -1,0 +1,132 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "Comprehensive Quality Engineering and Testing Services designed to help product and engineering teams build reliable, high-performing, and user-centric applications.",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": false
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Flexible Engagement Models\n\nOur engagement models range from full QA ownership to staff augmentation, enabling clients to scale quality operations with speed, efficiency, and measurable outcomes.\n\nFull Ownership\n\nEnd-to-end QA governance with complete accountability\n\nCo-Ownership\n\nShared responsibility between Moolya and client QA teams\n\nStaff Augmentation\n\nSkilled QA professionals integrate seamlessly into your ongoing projects",
+    "heading_level_1": "Flexible Engagement Models",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Flexible Engagement Models",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "QA Ownership Model\n\nWhen quality assurance needs to deliver tangible outcomes, Moolya takes full ownership of the QA process. We define, execute, and continuously improve test strategies to ensure product reliability, user satisfaction, and faster go-to-market.\n\nFunctional Testing\n\nEnd-to-end test ownership across functional, regression, exploratory, and usability areas\n\nAutomation Testing\n\nScalable automation frameworks with CI/CD integration for faster feedback\n\nPerformance Testing\n\nLoad, stress, and scalability validation for server and client-side performance\n\nSecurity Testing\n\nComprehensive VAPT aligned to OWASP Top 10 and compliance frameworks",
+    "heading_level_1": "QA Ownership Model",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "QA Ownership Model",
+    "is_table": true
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 4,
+    "text": "Functional Testing Ownership\n\nChallenges We Address\n\n\u2022 Testing handled by developers with limited QA focus\n\u2022 QA bandwidth consumed by release testing, leaving regression untested\n\u2022 High production defect rate despite internal QA\n\u2022 Pre-launch app readiness validation required\n\u2022 Crowd-sourced testing for real-world conditions\n\u2022 Inefficient QA processes lacking structure\n\u2022 Need for usability and UX validation\n\nMoolya's Approach\n\nRisk-Based Testing\n\nContext-driven and Growth-driven testing aligned to product goals\n\nDedicated QA Pods\n\nAgile alignment with client delivery teams\n\nProactive Quality Monitoring\n\nContinuous visibility into defects, trends, metrics, and release readiness",
+    "heading_level_1": "Functional Testing Ownership",
+    "heading_level_2": "Challenges We Address",
+    "heading_level_3": null,
+    "section": "Functional Testing Ownership > Challenges We Address",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 5,
+    "text": "Automation Testing Ownership\n\nChallenges We Address\n\n\u2022 Lengthy manual regression cycles\n\u2022 Limited or no automation framework\n\u2022 Growing automation backlog without governance\n\u2022 Lack of in-sprint automation and CI/CD integration\n\u2022 API and backend automation gaps\n\u2022 Lack of a scalable automation foundation\n\u2022 Unstructured and inefficient existing automation\n\nMoolya's Approach\n\nFramework Design\n\nModular, scalable automation frameworks\n\nRegression Automation\n\nAccelerate recurring release validation\n\nCI/CD Integration\n\nFaster feedback loops\n\nFull-Stack Coverage\n\nAPI, UI, backend, database\n\nTools/Frameworks: Playwright, Cypress, Selenium, Appium, WebdriverIO, Robot Framework\n\nLanguages: Java, JavaScript, Python, TypeScript, C Sharp\n\nBDD Tools: Cucumber, Behave, SpecFlow\n\nAPI Automation: Postman, REST Assured, Karate, Playwright, Requests library",
+    "heading_level_1": "Automation Testing Ownership",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Automation Testing Ownership",
+    "is_table": false
+  },
+  {
+    "chunk_index": 6,
+    "page_number": 6,
+    "text": "Performance Testing\n\nPerformance & Load Testing\n\nComprehensive validation for both server-side and client-side performance to ensure reliability and optimal user experience under real-world conditions.\n\nServer-Side Testing\n\n\u2022 Load, Stress, Endurance testing\n\u2022 Scalability validation\n\u2022 CPU and Memory Utilization\n\u2022 Micro Services Capacity Testing\n\u2022 Kafka Message Capacity Testing\n\u2022 Webhook Performance Testing\n\nClient-Side Testing\n\n\u2022 Real-device performance analysis\n\u2022 Page load time and rendering\n\u2022 Front-end resource profiling\n\u2022 Response time measurement\n\u2022 UX impact under varying networks",
+    "heading_level_1": "Performance Testing",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Performance Testing",
+    "is_table": false
+  },
+  {
+    "chunk_index": 7,
+    "page_number": 7,
+    "text": "Security & VAPT Testing\n\nComprehensive security assessments for web, mobile, and APIs aligned to OWASP Top 10 with compliance validation for data protection and regulatory frameworks.\n\n\u2022 Web & Mobile Application Vulnerabilities\n\u2022 API Security\n\u2022 Network & Infrastructure Security\n\u2022 Cloud & Configuration Security\n\u2022 Penetration Testing",
+    "heading_level_1": "Security & VAPT Testing",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Security & VAPT Testing",
+    "is_table": false
+  },
+  {
+    "chunk_index": 8,
+    "page_number": 8,
+    "text": "Staff Augmentation\n\nMoolya augments client teams with skilled QA professionals who bring proven experience across domains and technologies, ensuring immediate value and delivery continuity.\n\nEngagement Model\n\n01\n\n02\n\n03\n\nRequirements Sharing\n\nTesters Deployment\n\nSeamless Integration\n\nClients share project scope and job description requirements\n\nMoolya identifies and deploys the right-fit Testers\n\nTesters align with client workflows, tools, and methodologies\n\nCore Capabilities\n\nValue Proposition\n\nManual & functional testing\n\nRapid ramp-up of QA capacity with vetted experts.\n\nAutomation scripting and maintenance\n\nFlexible engagement models (onsite/offshore/hybrid).\n\nPerformance, API, and security testing\n\nDomain-aligned testers (Healthcare, PharmaTech, SaaS, Life\n\nTest consultancy and QA process setup\n\nSciences).\n\nTransparent rate card and governance.\n\nOutcome: Rapid scaling of QA capacity with domain-aligned and project-ready engineers",
+    "heading_level_1": "Staff Augmentation",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Staff Augmentation",
+    "is_table": true
+  },
+  {
+    "chunk_index": 9,
+    "page_number": 9,
+    "text": "Moolya's QA Maturity Framework\n\nTransforming industry challenges into competitive advantages through comprehensive quality engineering solutions.\n\nQA Dimension\n\nIndustry Challenge\n\nMoolya's Value Proposition\n\nFunctional Testing\n\nHigh defect leakage\n\nContext-driven, risk-based testing\n\nAutomation\n\nSlow release cycles\n\nScalable frameworks and CI/CD integration\n\nPerformance\n\nBottlenecks discovered late\n\nContinuous performance benchmarking\n\nSecurity\n\nVulnerability exposure\n\nProactive VAPT and compliance checks\n\nStaffing\n\nLack of Specialized QA Skills\n\nRapid ramp-up of QA capacity with vetted experts",
+    "heading_level_1": "Moolya's QA Maturity Framework",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Moolya's QA Maturity Framework",
+    "is_table": true
+  },
+  {
+    "chunk_index": 10,
+    "page_number": 10,
+    "text": "Moolya's Solution-led Delivery\n\n360\u00b0 Testing Solution\n\nHolistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction\n\nFastrack Automation\n\nDynamic, tool-agnostic automation to reduce time- to-market and ensure thorough test coverage\n\nRapid Deployment Testing Solution\n\nStreamlined testing for faster release cycles and confident, quality product delivery\n\nSpeedMaster Optimization Solution\n\nPerformance optimization to boost application speed, responsiveness, and scalability\n\nBugasura\n\nBug management tool, that helps you Report, track, and resolve issues efficiently with Al-enabled bug reporting and issue tracking\n\nSecure Shield\n\nComprehensive security testing solution designed to protect your digital assets from vulnerabilities and threats\n\nSREngine\n\nAdvanced solution for Service Reliability Engineering (SRE), ensuring highest levels of reliability, availability, and performance\n\nMoolyaWave\n\nDevOps services tailored to the unique needs of organizations developing web and mobile applications",
+    "heading_level_1": "Moolya's Solution-led Delivery",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Moolya's Solution-led Delivery",
+    "is_table": false
+  },
+  {
+    "chunk_index": 11,
+    "page_number": 11,
+    "text": "Case Study 1\n\nLeading Life Sciences Data Management Platform\n\nAbout the Platform\n\nA cloud-based life sciences data management platform built for global pharmaceutical enterprises to streamline multi-country clinical operations. The platform centralizes data collection, regulatory tracking, and analytics across study sites.\n\nTest Value Delivered\n\n\u2022 End-to-End Test Automation: Developed 420+ automated test scripts across API, UI, and backend layers, increasing regression coverage by 65% and reducing manual effort by 45% per release.\n\u2022 Compliance-Driven Validation: Designed 180+ test scenarios aligned with 21 CFR Part 11, HIPAA, and GxP frameworks, ensuring audit readiness and traceability.\n\u2022 Performance and Data Accuracy Testing: Simulated concurrent user loads up to 10,000 sessions to validate system stability under production-scale volumes.\n\nBusiness Impact\n\n\u2022 Faster Release Turnaround: Achieved 40% reduction in release validation time, enabling biweekly release cycles instead of monthly.\n\u2022 Improved Data Confidence: Ensured 99.8% data accuracy in system-to-system synchronization during validation cycles.\n\u2022 Simplified Compliance Audits: Reduced audit preparation time from 3 weeks to 5 business days, supported by automated validation documentation.",
+    "heading_level_1": "Case Study 1",
+    "heading_level_2": "Leading Life Sciences Data Management Platform",
+    "heading_level_3": null,
+    "section": "Case Study 1 > Leading Life Sciences Data Management Platform",
+    "is_table": false
+  },
+  {
+    "chunk_index": 12,
+    "page_number": 12,
+    "text": "Case Study 2\n\nClinical Trial Automation and Monitoring Platform\n\nAbout the Platform\n\nA digital clinical trial management platform built to help CROs and pharma sponsors manage multi-phase studies, real-time site monitoring, and patient safety reporting across multiple geographies.\n\nTest Value Delivered\n\n\u2022 Automated Regression and Validation: Implemented automation covering 14 core modules and 75 business-critical workflows, achieving 70% automation coverage in under 8 weeks.\n\u2022 Integration Testing Across Ecosystem: Verified seamless interoperability among EDC, CTMS, and Safety systems using mock and live API environments 4 ensuring 100% data consistency across integrations.\n\u2022 Risk-Based Testing Approach: Adopted a hybrid validation model prioritizing high-risk modules, optimizing QA effort by 35% without reducing test depth.\n\nBusiness Impact\n\n\u2022 Accelerated UAT Sign-offs: Reduced UAT cycle time from 12 days to 7 days, improving overall release cadence.\n\u2022 Zero Critical Defects in Production: Achieved a defect leakage rate below 0.3% post-release.\n\u2022 Enhanced Sponsor Confidence: Helped the client secure three additional clinical partnerships through improved platform reliability and audit readiness.",
+    "heading_level_1": "Case Study 2",
+    "heading_level_2": "Clinical Trial Automation and Monitoring Platform",
+    "heading_level_3": null,
+    "section": "Case Study 2 > Clinical Trial Automation and Monitoring Platform",
+    "is_table": false
+  },
+  {
+    "chunk_index": 13,
+    "page_number": 13,
+    "text": "Thank You!",
+    "heading_level_1": "Thank You!",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Thank You!",
+    "is_table": false
+  }
+]

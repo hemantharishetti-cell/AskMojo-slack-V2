@@ -1,0 +1,790 @@
+{
+  "version": "1.0",
+  "document_id": 20,
+  "created_at": "2026-02-19T05:06:40.344480Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya Engineering",
+        "14+",
+        "200+"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Moolya Engineering",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "p",
+          "text": "200+",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Who we are",
+        "Why Choose us"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+        "Scaling Value",
+        "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value"
+      ],
+      "list": [],
+      "table": [
+        "Skin in the Game",
+        "Culture Focus",
+        "Leadership Friendly",
+        "We go beyond vendor roles, fostering deep co-ownership with customers.",
+        "We help customers address issues by focusing on cultural fixes.",
+        "Moolya empowers C-, V-, and D-level leaders with",
+        "insights."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Who we are",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+          "page_number": 2
+        },
+        {
+          "type": "h1",
+          "text": "Why Choose us",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Skin in the Game",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Culture Focus",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Leadership Friendly",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We go beyond vendor roles, fostering deep co-ownership with customers.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We help customers address issues by focusing on cultural fixes.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Moolya empowers C-, V-, and D-level leaders with",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "insights.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Scaling Value",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [],
+      "h2": [
+        "Home Screen"
+      ],
+      "h3": [],
+      "p": [
+        "A central hub to manage projects, start new edits, or generate Al­powered videos. Quick access to saved projects, recent work, and options to begin from scratch."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Home Screen",
+          "page_number": 3
+        },
+        {
+          "type": "p",
+          "text": "A central hub to manage projects, start new edits, or generate Al­powered videos. Quick access to saved projects, recent work, and options to begin from scratch.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [],
+      "h2": [
+        "Prompt to Video"
+      ],
+      "h3": [],
+      "p": [
+        "Generate videos instantly by entering text prompts. Choose clip length or aspect ratio, and access a history of past prompts and generated outputs."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Prompt to Video",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Generate videos instantly by entering text prompts. Choose clip length or aspect ratio, and access a history of past prompts and generated outputs.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [],
+      "h2": [
+        "Al Video Editor"
+      ],
+      "h3": [],
+      "p": [
+        "An intuitive editor to refine raw or Al-generated clips. Add media, adjust cuts, and use Al-assisted tools for professional-quality video creation."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Al Video Editor",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "An intuitive editor to refine raw or Al-generated clips. Add media, adjust cuts, and use Al-assisted tools for professional-quality video creation.",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [],
+      "h2": [
+        "Prompt based Video Editor"
+      ],
+      "h3": [],
+      "p": [
+        "A workspace where users can turn written scripts into engaging videos. The editor syncs text with visuals, showing real-time previews and timeline edits. It helps creators quickly transform ideas into polished content."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Prompt based Video Editor",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "A workspace where users can turn written scripts into engaging videos. The editor syncs text with visuals, showing real-time previews and timeline edits. It helps creators quickly transform ideas into polished content.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [
+        "Executive Summary"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "The rapid rise of short-form video platforms like Instagram and TikTok has transformed the way creators engage their audiences. For many, the process of transforming long talking-head content into engaging reels remains manual, time intensive, and inconsistent.",
+        "Moolya proposes an AI-driven SaaS platform that automates this process end-to-end 4 from ingesting raw talking-head videos, analyzing stylistic references, transcribing speech, creating captions, inserting B-roll, and exporting optimized reels. The system is designed to align with user-defined style profiles, ensuring that each output reflects the creator’s unique identity while maintaining professional consistency.",
+        "The solution will be developed as a cloud-native, scalable SaaS platform with GPU-accelerated processing pipelines, modular architecture, and role-based access for individuals and teams. The initial build will focus on an MVP that produces Instagram-ready reels, with optional enhancements in subsequent phases (e.g., adaptive style learning, real-time previews)."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Executive Summary",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "The rapid rise of short-form video platforms like Instagram and TikTok has transformed the way creators engage their audiences. For many, the process of transforming long talking-head content into engaging reels remains manual, time intensive, and inconsistent.",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Moolya proposes an AI-driven SaaS platform that automates this process end-to-end 4 from ingesting raw talking-head videos, analyzing stylistic references, transcribing speech, creating captions, inserting B-roll, and exporting optimized reels. The system is designed to align with user-defined style profiles, ensuring that each output reflects the creator’s unique identity while maintaining professional consistency.",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "The solution will be developed as a cloud-native, scalable SaaS platform with GPU-accelerated processing pipelines, modular architecture, and role-based access for individuals and teams. The initial build will focus on an MVP that produces Instagram-ready reels, with optional enhancements in subsequent phases (e.g., adaptive style learning, real-time previews).",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "Our Solution Overview"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "Automated Reel Generation",
+        "Transform raw talking-head content into styled, vertical reels with minimal manual effort.",
+        "Style Adaptation",
+        "Extract visual elements (fonts, colors, captioning style, cut rhythm) from reference videos and apply them consistently.",
+        "AI-Enhanced Editing",
+        "Integrate modules for transcription, jump cuts, captions, B-roll, and music overlays.",
+        "Platform Flexibility",
+        "Export optimized videos for Instagram, TikTok, and other social platforms.",
+        "Scalable SaaS Architecture",
+        "Web-based dashboard with account",
+        "management, subscription models, analytics, and admin controls.",
+        "Cloud-Native & Secure Performance",
+        "GPU-accelerated pipelines with autoscaling and",
+        "CDN delivery, secured with role-based access and compliance-aligned data protection."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Solution Overview",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Automated Reel Generation",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Transform raw talking-head content into styled, vertical reels with minimal manual effort.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Style Adaptation",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Extract visual elements (fonts, colors, captioning style, cut rhythm) from reference videos and apply them consistently.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "AI-Enhanced Editing",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Integrate modules for transcription, jump cuts, captions, B-roll, and music overlays.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Platform Flexibility",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Export optimized videos for Instagram, TikTok, and other social platforms.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Scalable SaaS Architecture",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Web-based dashboard with account",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "management, subscription models, analytics, and admin controls.",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "Cloud-Native & Secure Performance",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "GPU-accelerated pipelines with autoscaling and",
+          "page_number": 8
+        },
+        {
+          "type": "table",
+          "text": "CDN delivery, secured with role-based access and compliance-aligned data protection.",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Proposed High-Level Engineering Plan and Delivery"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "S:No",
+        "Task",
+        "Activity",
+        "01",
+        "Discovery & Alignment",
+        "Finalize user workflows, reference style taxonomy, and architecture design.",
+        "Define MVP features, style parameters, and database schema.",
+        "02",
+        "Data Preparation & Reference Analysis",
+        "Preprocess sample reference videos.",
+        "Build normalization and tagging pipeline.",
+        "Document reproducible preprocessing steps.",
+        "03",
+        "AI/ML Model Development",
+        "Speech transcription (English + Hindi).",
+        "Silence detection and jump cut logic.",
+        "Caption generation with style replication.",
+        "B-roll/music suggestion module.",
+        "04",
+        "Rendering & Export",
+        "FFmpeg-based integration.",
+        "Presets for Instagram/TikTok reels.",
+        "Automated export workflows."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Proposed High-Level Engineering Plan and Delivery",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Task",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Activity",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Discovery & Alignment",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Finalize user workflows, reference style taxonomy, and architecture design.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Define MVP features, style parameters, and database schema.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Data Preparation & Reference Analysis",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Preprocess sample reference videos.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Build normalization and tagging pipeline.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Document reproducible preprocessing steps.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "AI/ML Model Development",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Speech transcription (English + Hindi).",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Silence detection and jump cut logic.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Caption generation with style replication.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "B-roll/music suggestion module.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "04",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Rendering & Export",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "FFmpeg-based integration.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Presets for Instagram/TikTok reels.",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Automated export workflows.",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [
+        "S:No",
+        "Task",
+        "Activity",
+        "05",
+        "SaaS Platform Development",
+        "User dashboard with upload, preview, style profiles.",
+        "Subscription, billing, and admin monitoring features.",
+        "Team role-based access.",
+        "06",
+        "Cloud Infra & Scalability",
+        "GPU-powered pipelines.",
+        "Object storage + CDN.",
+        "Autoscaling, monitoring, alerting.",
+        "07",
+        "Documentation & Handover",
+        "Developer & user documentation.",
+        "Training sessions (live/recorded)."
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Task",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Activity",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "05",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "SaaS Platform Development",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "User dashboard with upload, preview, style profiles.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Subscription, billing, and admin monitoring features.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Team role-based access.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "06",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Cloud Infra & Scalability",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "GPU-powered pipelines.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Object storage + CDN.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Autoscaling, monitoring, alerting.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "07",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Documentation & Handover",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Developer & user documentation.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Training sessions (live/recorded).",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 13,
+      "h1": [],
+      "h2": [
+        "Assumptions"
+      ],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "1.",
+          "All cloud, SMS/notification gateways, and third-party licence fees are borne by the client.",
+          "2.",
+          "Infrastructure keys remain in the client9s control; Moolya deploys only within those accounts.",
+          "3.",
+          "A dedicated client Product Owner is available for sprint ceremonies and day-to-day clarifications.",
+          "4.",
+          "Client supplies brand guidelines, legal disclaimers before design starts.",
+          "5.",
+          "Pilot data: at least three months of anonymised case study samples are provided to bootstrap Al models .",
+          "6.",
+          "Baseline performance tests target will be handled; higher loads may require additional infra.",
+          "7.",
+          "Delays in API credentials, compliance approvals, or data access will proportionally extend effort and cost.",
+          "8.",
+          "Any additional scenarios/APls treated as change requests.",
+          "9.",
+          "Iterations beyond agreed scope billed additionally."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Assumptions",
+          "page_number": 13
+        },
+        {
+          "type": "list",
+          "text": "• 1.\n• All cloud, SMS/notification gateways, and third-party licence fees are borne by the client.\n• 2.\n• Infrastructure keys remain in the client9s control; Moolya deploys only within those accounts.\n• 3.\n• A dedicated client Product Owner is available for sprint ceremonies and day-to-day clarifications.\n• 4.\n• Client supplies brand guidelines, legal disclaimers before design starts.\n• 5.\n• Pilot data: at least three months of anonymised case study samples are provided to bootstrap Al models .\n• 6.\n• Baseline performance tests target will be handled; higher loads may require additional infra.\n• 7.\n• Delays in API credentials, compliance approvals, or data access will proportionally extend effort and cost.\n• 8.\n• Any additional scenarios/APls treated as change requests.\n• 9.\n• Iterations beyond agreed scope billed additionally.",
+          "page_number": 13
+        }
+      ]
+    },
+    {
+      "page_number": 14,
+      "h1": [
+        "Sprint Model & Workflow Rhythm"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Sprint-based Delivery",
+        "Work will be broken into structured sprints with clear objectives, demos,",
+        "Retrospectives"
+      ],
+      "list": [],
+      "table": [
+        "Adaptive Planning",
+        "Progress Syncs",
+        "Demo & Review",
+        "Each sprint will begin with a scope review and planning activity involving both teams.",
+        "Regular check-ins will be scheduled to ensure visibility, unblock issues, and incorporate feedback early.",
+        "At the end of each sprint, demonstrable outcomes will be shared, with room for iteration or course correction."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Sprint Model & Workflow Rhythm",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "Sprint-based Delivery",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "Work will be broken into structured sprints with clear objectives, demos,",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Adaptive Planning",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Progress Syncs",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Demo & Review",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Each sprint will begin with a scope review and planning activity involving both teams.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "Regular check-ins will be scheduled to ensure visibility, unblock issues, and incorporate feedback early.",
+          "page_number": 14
+        },
+        {
+          "type": "table",
+          "text": "At the end of each sprint, demonstrable outcomes will be shared, with room for iteration or course correction.",
+          "page_number": 14
+        },
+        {
+          "type": "p",
+          "text": "Retrospectives",
+          "page_number": 14
+        }
+      ]
+    },
+    {
+      "page_number": 15,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 15
+        }
+      ]
+    }
+  ]
+}

@@ -176,19 +176,40 @@ def store_chunks_in_chromadb(
         chunk_id = f"doc_{doc_id}_chunk_{idx}" if doc_id is not None else f"chunk_{idx}"
         ids.append(chunk_id)
 
+        # Build minimal, Chroma-safe metadata (no None values, no heavy fields)
         metadata: Dict[str, Any] = {
-            "page_number": chunk.get("page_number"),
-            "chunk_index": chunk.get("chunk_index"),
-            "char_count": chunk.get("char_count"),
-            "word_count": chunk.get("word_count"),
             "source": "page_chunker",
         }
 
+        # Only include numeric fields if present (not None)
+        if chunk.get("page_number") is not None:
+            # Ensure int type for safety
+            try:
+                metadata["page_number"] = int(chunk.get("page_number"))
+            except Exception:
+                # Fallback to string if conversion fails
+                metadata["page_number"] = str(chunk.get("page_number"))
+
+        if chunk.get("chunk_index") is not None:
+            try:
+                metadata["chunk_index"] = int(chunk.get("chunk_index"))
+            except Exception:
+                metadata["chunk_index"] = str(chunk.get("chunk_index"))
+
         # Optional: allow passing document-related metadata
-        if "document_id" in chunk:
-            metadata["document_id"] = chunk["document_id"]
-        if "version" in chunk:
-            metadata["version"] = chunk["version"]
+        if "document_id" in chunk and chunk["document_id"] is not None:
+            # Keep as int if possible, else str
+            try:
+                metadata["document_id"] = int(chunk["document_id"])
+            except Exception:
+                metadata["document_id"] = str(chunk["document_id"]) 
+        if "version" in chunk and chunk["version"] is not None:
+            try:
+                metadata["version"] = int(chunk["version"])
+            except Exception:
+                metadata["version"] = str(chunk["version"]) 
+        # Final guard: drop any None values that might have slipped in
+        metadata = {k: v for k, v in metadata.items() if v is not None}
 
         metadatas.append(metadata)
 

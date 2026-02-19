@@ -1,0 +1,186 @@
+{
+  "document": {
+    "id": 28,
+    "title": "Moolya-QA-Services-and-Solutions (1)"
+  },
+  "extraction": {
+    "total_elements": 276,
+    "element_types_distribution": {
+      "Title": 1,
+      "P": 42,
+      "Figure": 52,
+      "H1": 1,
+      "P[2]": 5,
+      "H2": 1,
+      "P[3]": 1,
+      "H2[2]": 1,
+      "P[4]": 1,
+      "H2[3]": 1,
+      "P[5]": 1,
+      "Figure[2]": 1,
+      "H1[2]": 1,
+      "P[6]": 1,
+      "Table": 1,
+      "TH": 4,
+      "TH[2]": 3,
+      "TH[3]": 3,
+      "TD": 13,
+      "TD[2]": 13,
+      "Figure[3]": 1,
+      "H1[3]": 1,
+      "H2[4]": 1,
+      "LBody": 42,
+      "H3": 1,
+      "H3[2]": 1,
+      "P[7]": 1,
+      "H3[3]": 1,
+      "P[8]": 1,
+      "H3[4]": 1,
+      "P[9]": 1,
+      "Footnote": 4,
+      "H1[4]": 1,
+      "H2[5]": 1,
+      "H2[6]": 1,
+      "H2[7]": 1,
+      "P[10]": 1,
+      "H2[8]": 1,
+      "P[11]": 1,
+      "H2[9]": 1,
+      "P[12]": 1,
+      "H2[10]": 1,
+      "P[13]": 1,
+      "P[14]": 1,
+      "P[15]": 1,
+      "P[16]": 1,
+      "P[17]": 1,
+      "H1[5]": 1,
+      "H2[11]": 1,
+      "P[18]": 1,
+      "H2[12]": 1,
+      "H2[13]": 1,
+      "H1[6]": 1,
+      "P[19]": 1,
+      "Figure[4]": 1,
+      "H1[7]": 1,
+      "P[20]": 1,
+      "H2[14]": 1,
+      "Table[2]": 1,
+      "TD[3]": 7,
+      "H2[15]": 1,
+      "H2[16]": 1,
+      "Table[3]": 1,
+      "H1[8]": 1,
+      "P[21]": 1,
+      "Table[4]": 1,
+      "Figure[5]": 1,
+      "H1[9]": 1,
+      "H2[17]": 1,
+      "P[22]": 1,
+      "H2[18]": 1,
+      "P[23]": 1,
+      "H2[19]": 1,
+      "P[24]": 1,
+      "H2[20]": 1,
+      "P[25]": 1,
+      "H2[21]": 1,
+      "P[26]": 1,
+      "H2[22]": 1,
+      "P[27]": 1,
+      "H2[23]": 1,
+      "P[28]": 1,
+      "H2[24]": 1,
+      "P[29]": 1,
+      "H1[10]": 1,
+      "H2[25]": 1,
+      "H3[5]": 1,
+      "P[30]": 1,
+      "H3[6]": 1,
+      "H3[7]": 1,
+      "H1[11]": 1,
+      "H2[26]": 1,
+      "H3[8]": 1,
+      "P[31]": 1,
+      "H3[9]": 1,
+      "H3[10]": 1,
+      "Figure[6]": 1,
+      "H1[12]": 1,
+      "Figure[7]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Title",
+        "text": "Moolya QA Services and Solutions ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "Comprehensive Quality Engineering and Testing Services designed to help product and engineering team",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/H1",
+        "text": "Flexible Engagement Models ",
+        "page": 1
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "Our engagement models range from full QA ownership to staff augmentation, enabling clients to scale ",
+        "page": 1
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 13,
+    "total_characters": 8787,
+    "total_words": 1124,
+    "average_chunk_size": 676.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Comprehensive Quality Engineering and Testing Services designed to help product and engineering teams build reliable, high-performing, and user-centric applications."
+      },
+      {
+        "chunk_index": 2,
+        "section": "Flexible Engagement Models",
+        "page": 2,
+        "text": "Flexible Engagement Models\n\nOur engagement models range from full QA ownership to staff augmentation, enabling clients to scale quality operations with speed, efficiency, and measurable outcomes.\n\nFul"
+      },
+      {
+        "chunk_index": 3,
+        "section": "QA Ownership Model",
+        "page": 3,
+        "text": "QA Ownership Model\n\nWhen quality assurance needs to deliver tangible outcomes, Moolya takes full ownership of the QA process. We define, execute, and continuously improve test strategies to ensure pro"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Functional Testing Ownership > Challenges We Address",
+        "page": 4,
+        "text": "Functional Testing Ownership\n\nChallenges We Address\n\n\u2022 Testing handled by developers with limited QA focus\n\u2022 QA bandwidth consumed by release testing, leaving regression untested\n\u2022 High production def"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Automation Testing Ownership",
+        "page": 5,
+        "text": "Automation Testing Ownership\n\nChallenges We Address\n\n\u2022 Lengthy manual regression cycles\n\u2022 Limited or no automation framework\n\u2022 Growing automation backlog without governance\n\u2022 Lack of in-sprint automat"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 31.8,
+    "smallest_chunk": 10,
+    "largest_chunk": 1266,
+    "chunks_under_min_size": 1,
+    "chunks_over_max_size": 3
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

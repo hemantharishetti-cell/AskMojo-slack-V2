@@ -1,0 +1,62 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "Proven Casestudies\n\nI 14+\n\n200+\n\n20+\n\nCountries\n\n80%\n\nIndustry leaders choose us",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": false
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Case Study 1\n\nComprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Significant daily orders faced issues, impacting operations.\n\u2022 \u2022\n\u2022 Users experienced checkout errors, leading to high cart abandonment rates.\n\nApproach\n\n\u2022 \u2022\n\u2022 Audited application architecture, workflows, order processing, checkout, dependencies.\n\u2022 \u2022\n\u2022 Audited architecture, tested 250+ scenarios, monitored 1.2M+ API calls daily\n\u2022 \u2022\n\u2022 Monitored1.2 million+ API calls daily, analyzing response times, failures, and inconsistencies with payment gateways.\n\u2022 \u2022\n\u2022 Simulated 10,000 concurrent users to enhance stability and resolved 95% of data inconsistencies.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 Checkout success rate improved by 85%, increasing transactions by 15%.\n\u2022 \u2022\n\u2022 Optimized order processing speed by 40%, ensuring 98% on-time deliveries.\n\u2022 \u2022\n\u2022 Lowered cart abandonment to 42%, improving conversions and customer retention.",
+    "heading_level_1": "Case Study 1",
+    "heading_level_2": "Comprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company",
+    "heading_level_3": null,
+    "section": "Case Study 1 > Comprehensive Functional Testing for a Leading E-commerce and Digital Marketing Company",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 3,
+    "text": "Case Study 2\n\nTransforming Financial Services Through Test Automation\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Regression testing covered 5,000+ cases per release, ensuring quality,\n\u2022 \u2022\n\u2022 Automation framework processed 250 test cases hourly, needs optimization.\n\nApproach\n\n\u2022 \u2022\n\u2022 Developed a scalable automation framework, reducing test execution time by 45%.\n\u2022 \u2022\n\u2022 Implemented Appium for Android and iOS, achieving 98% test coverage.\n\u2022 \u2022\n\u2022 Integrated automation into CI/CD, enabling real-time feedback within 15 minutes.\n\u2022 \u2022\n\u2022 Trained 20+ engineers in Java, Selenium, and Appium, enhancing automation efficiency.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 Accelerated release cycles by 30%, improving time-to-market.\n\u2022 \u2022\n\u2022 Enabled execution of 10,000+ test cases daily, supporting scalability.\n\u2022 \u2022\n\u2022 Enhanced software reliability, ensuring seamless user experience.",
+    "heading_level_1": "Case Study 2",
+    "heading_level_2": "Transforming Financial Services Through Test Automation",
+    "heading_level_3": null,
+    "section": "Case Study 2 > Transforming Financial Services Through Test Automation",
+    "is_table": false
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 4,
+    "text": "Case Study 3\n\nPerformance Testing for a Leading Customer Communication Solutions Provider\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 Optimized resources for lM+ concurrent users without interruptions.\n\u2022 \u2022\n\u2022 Assessed system scalability, ensuring 99.99% uptime under peak loads\n\nApproach\n\n\u2022 \u2022\n\u2022 Microservice Capacity Testing: Validated performance 0f 50+ microservices, ensuring efficient load distribution.\n\u2022 \u2022\n\u2022 Auto Scaling Validation: Optimized scaling mechanisms, allowing instant response to traffic spikes.\n\u2022 \u2022\n\u2022 Kafka Message Capacity Testing: Verified smooth processing of 500,000+ messages per second.\n\u2022 \u2022\n\u2022 End-to-End SLA Measurement: Ensured response times under 200ms across all services.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 Kafka processed 2B+ messages daily for seamless communication.\n\u2022 \u2022\n\u2022 Webhook APls handled l0x traffic, enhancing real-time interactions.\n\u2022 \u2022\n\u2022 Peak stability improved 60%, boosting growth and scalability.",
+    "heading_level_1": "Case Study 3",
+    "heading_level_2": "Performance Testing for a Leading Customer Communication Solutions Provider",
+    "heading_level_3": null,
+    "section": "Case Study 3 > Performance Testing for a Leading Customer Communication Solutions Provider",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 5,
+    "text": "Case Study 4\n\nDriving User Experiance Engagement for a Leading E-commerce Company in India\n\nProblem Statement\n\n\u2022 \u2022\n\u2022 High cart abandonment, resulting in a low cart-to-checkout conversion rate.\n\u2022 \u2022\n\u2022 Identified areas for optimization in system processes and product features.\n\nApproach\n\n\u2022 \u2022\n\u2022 Assessed system workflows and optimized key touchpoints for a seamless user journey.\n\u2022 \u2022\n\u2022 Evaluated perfect order experience guidelines across 500+ product categories.\n\u2022 \u2022\n\u2022 Leveraged data analytics to refine user journeys, analyzing 1M+ interactions.\n\u2022 \u2022\n\u2022 Reviewed 100,000+ customer reviews across Play Store and App Store for insights.\n\nBusiness Impact\n\n\u2022 \u2022\n\u2022 Reduced cart abandonment by 35%, increasing checkout conversions.\n\u2022 \u2022\n\u2022 Enhanced user experience, leading to a 25% rise in repeat purchases.\n\nTHANK YOU!",
+    "heading_level_1": "Case Study 4",
+    "heading_level_2": "Driving User Experiance Engagement for a Leading E-commerce Company in India",
+    "heading_level_3": null,
+    "section": "Case Study 4 > Driving User Experiance Engagement for a Leading E-commerce Company in India",
+    "is_table": false
+  },
+  {
+    "chunk_index": 6,
+    "page_number": 6,
+    "text": "Got questions? Let's talk\n\ncontactus@moolya.com",
+    "heading_level_1": "Got questions? Let's talk",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Got questions? Let's talk",
+    "is_table": false
+  }
+]

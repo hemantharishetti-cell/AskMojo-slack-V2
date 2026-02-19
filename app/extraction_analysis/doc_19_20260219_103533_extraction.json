@@ -1,0 +1,5402 @@
+{
+  "version": {
+    "json_export": "226",
+    "page_segmentation": "55",
+    "schema": "1.1.0",
+    "structure": "1.1183.0",
+    "table_structure": "5"
+  },
+  "extended_metadata": {
+    "ID_instance": "72 0B 65 80 EF BE B2 11 0A 00 5E 9D 8A 20 24 2A ",
+    "ID_permanent": "B1 32 FD 4E 0C 0A 0C F7 D3 7A 6E EA 59 19 4F F9 ",
+    "has_acroform": false,
+    "has_embedded_files": false,
+    "is_XFA": false,
+    "is_certified": false,
+    "is_encrypted": false,
+    "is_digitally_signed": false,
+    "language": "en",
+    "page_count": 12,
+    "pdf_version": "1.6",
+    "pdfa_compliance_level": "",
+    "pdfua_compliance_level": ""
+  },
+  "elements": [
+    {
+      "Bounds": [
+        0.0,
+        421.80499267578125,
+        900.0,
+        507.68499755859375
+      ],
+      "ClipBounds": [
+        0.0,
+        422.2749938964844,
+        900.0,
+        507.125
+      ],
+      "ObjectID": 1015,
+      "Page": 0,
+      "Path": "//Document/Figure",
+      "attributes": {
+        "BBox": [
+          0.0,
+          422.2829999999958,
+          899.9629999999888,
+          507.11999999999534
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        159.375,
+        256.7947540283203,
+        740.7334594726562,
+        318.13401794433594
+      ],
+      "ClipBounds": [
+        159.375,
+        256.7947540283203,
+        740.7334594726562,
+        318.13401794433594
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "NGHCVI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 1004,
+      "Page": 0,
+      "Path": "//Document/P",
+      "Text": "Test Automation Proposal ",
+      "TextSize": 46.57499694824219,
+      "attributes": {
+        "LineHeight": 55.875,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        413.5899963378906,
+        178.0447540283203,
+        486.4845275878906,
+        239.38401794433594
+      ],
+      "ClipBounds": [
+        413.5899963378906,
+        178.0447540283203,
+        486.4845275878906,
+        239.38401794433594
+      ],
+      "ObjectID": 1005,
+      "Page": 0,
+      "Path": "//Document/Figure[2]",
+      "attributes": {
+        "BBox": [
+          413.6229999999923,
+          190.6929999999993,
+          474.8209999999963,
+          228.49099999999453
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        413.5899963378906,
+        178.0447540283203,
+        486.4845275878906,
+        239.38401794433594
+      ],
+      "ClipBounds": [
+        413.5899963378906,
+        178.0447540283203,
+        486.4845275878906,
+        239.38401794433594
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "NGHCVI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 1005,
+      "Page": 0,
+      "Path": "//Document/Figure[2]",
+      "Text": "for ",
+      "TextSize": 46.57499694824219,
+      "attributes": {
+        "BBox": [
+          413.6229999999923,
+          190.6929999999993,
+          474.8209999999963,
+          228.49099999999453
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        388.05479431152344,
+        115.50750732421875,
+        520.3446807861328,
+        159.9562530517578
+      ],
+      "ClipBounds": [
+        388.05479431152344,
+        115.50750732421875,
+        520.3446807861328,
+        159.9562530517578
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "NGHCVI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 1006,
+      "Page": 0,
+      "Path": "//Document/P[2]",
+      "Text": "DIMAGI ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        800.25,
+        60.1199951171875,
+        852.75,
+        96.1199951171875
+      ],
+      "ClipBounds": [
+        800.25,
+        60.1199951171875,
+        852.75,
+        96.1199951171875
+      ],
+      "ObjectID": 1007,
+      "Page": 0,
+      "Path": "//Document/Figure[3]",
+      "attributes": {
+        "BBox": [
+          800.2469999999739,
+          60.138199999999415,
+          852.6849999999977,
+          96.13669999999911
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        0.0,
+        436.68499755859375,
+        900.0,
+        522.5650024414062
+      ],
+      "ClipBounds": [
+        0.0,
+        437.2250061035156,
+        900.0,
+        522.0249938964844
+      ],
+      "ObjectID": 1016,
+      "Page": 1,
+      "Path": "//Document/Figure[4]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          515.2829999999958,
+          899.9629999999888,
+          600.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        357.6374969482422,
+        325.7381286621094,
+        402.08624267578125
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "ROIWDT+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "nl",
+      "ObjectID": 968,
+      "Page": 1,
+      "Path": "//Document/H1",
+      "Text": "Project Overview ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        297.85650634765625,
+        843.3936004638672,
+        337.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 969,
+      "Page": 1,
+      "Path": "//Document/P[3]",
+      "Text": "Dimagi seeks to optimize its QA automation suite to achieve higher efficiency, reduce maintenance effort, and improve the scalability of its testing framework. ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.75,
+        "SpaceAfter": 15.125
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        239.36099243164062,
+        809.6124572753906,
+        279.010498046875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 970,
+      "Page": 1,
+      "Path": "//Document/P[4]",
+      "Text": "Moolya, with its strong expertise in automation strategy and framework design, proposes to act as Dimagi9s strategic partner to assess, optimize, and future-proof the existing automation setup. This engagement will focus on: ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.75,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        207.72500610351562,
+        54.774993896484375,
+        212.27499389648438
+      ],
+      "ObjectID": 971,
+      "Page": 1,
+      "Path": "//Document/L/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          285.61299999999756,
+          54.83779999999933,
+          290.29299999999057
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        202.60499572753906,
+        455.1383972167969,
+        220.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 972,
+      "Page": 1,
+      "Path": "//Document/L/LI/LBody",
+      "Text": "Comprehensive audit of the existing framework and test scripts. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        181.47500610351562,
+        54.774993896484375,
+        186.02499389648438
+      ],
+      "ObjectID": 973,
+      "Page": 1,
+      "Path": "//Document/L/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          259.4539999999979,
+          54.83779999999933,
+          264.0139999999956
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        176.35499572753906,
+        416.9523010253906,
+        194.25599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 974,
+      "Page": 1,
+      "Path": "//Document/L/LI[2]/LBody",
+      "Text": "Recommending best practices and design improvements. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        155.22500610351562,
+        54.774993896484375,
+        159.77499389648438
+      ],
+      "ObjectID": 975,
+      "Page": 1,
+      "Path": "//Document/L/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          233.17499999999563,
+          54.83779999999933,
+          237.7349999999933
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        150.10499572753906,
+        503.0836486816406,
+        168.00599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 976,
+      "Page": 1,
+      "Path": "//Document/L/LI[3]/LBody",
+      "Text": "Sharing documentation and training the QA team for sustained success. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.24940490722656,
+        91.6094970703125,
+        854.076904296875,
+        131.25900268554688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "LDJXYD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 977,
+      "Page": 1,
+      "Path": "//Document/P[5]",
+      "Text": "Moolya9s automation-first approach will ensure that Dimagi achieves faster release cycles, more stable automation suites, and a lower long-term cost of quality. ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.75,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        800.25,
+        37.5,
+        852.75,
+        73.5
+      ],
+      "ClipBounds": [
+        800.25,
+        37.5,
+        852.75,
+        73.5
+      ],
+      "ObjectID": 978,
+      "Page": 1,
+      "Path": "//Document/Figure[5]",
+      "attributes": {
+        "BBox": [
+          800.2469999999739,
+          115.57999999999811,
+          852.6849999999977,
+          151.57799999999406
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.1640625,
+        0.120025634765625,
+        225.1639404296875,
+        507.1200256347656
+      ],
+      "ClipBounds": [
+        -0.024993896484375,
+        0.120025634765625,
+        225.02499389648438,
+        507.1200256347656
+      ],
+      "ObjectID": 934,
+      "Page": 2,
+      "Path": "//Document/Figure[6]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          130.9409999999989,
+          224.99099999999453,
+          637.9199999999837
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        272.25,
+        370.50750732421875,
+        584.8661193847656,
+        414.9562530517578
+      ],
+      "ClipBounds": [
+        272.25,
+        370.50750732421875,
+        584.8661193847656,
+        414.9562530517578
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "ROERSJ+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 935,
+      "Page": 2,
+      "Path": "//Document/H1[2]",
+      "Text": "Problem Statement ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        272.25,
+        332.4750061035156,
+        837.9607543945312,
+        350.3760070800781
+      ],
+      "ClipBounds": [
+        272.25,
+        332.4750061035156,
+        837.9607543945312,
+        350.3760070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CTLGKW+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 936,
+      "Page": 2,
+      "Path": "//Document/P[6]",
+      "Text": "Dimagi9s current automation framework has grown organically and now faces challenges with: ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        300.8450012207031,
+        279.7749938964844,
+        305.39500427246094
+      ],
+      "ClipBounds": [
+        275.2250061035156,
+        300.8450012207031,
+        279.7749938964844,
+        305.39500427246094
+      ],
+      "ObjectID": 937,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          431.52799999999115,
+          279.8289999999979,
+          436.2079999999987
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        295.7250061035156,
+        553.0184478759766,
+        313.6260070800781
+      ],
+      "ClipBounds": [
+        293.83599853515625,
+        295.7250061035156,
+        553.0184478759766,
+        313.6260070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CTLGKW+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 938,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI/LBody",
+      "Text": "Redundant, flaky, or hard-to-maintain tests. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        274.5950012207031,
+        279.7749938964844,
+        279.14500427246094
+      ],
+      "ClipBounds": [
+        275.2250061035156,
+        274.5950012207031,
+        279.7749938964844,
+        279.14500427246094
+      ],
+      "ObjectID": 939,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          405.3689999999915,
+          279.8289999999979,
+          409.9289999999892
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        269.4750061035156,
+        618.3867950439453,
+        287.3760070800781
+      ],
+      "ClipBounds": [
+        293.83599853515625,
+        269.4750061035156,
+        618.3867950439453,
+        287.3760070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CTLGKW+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 940,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI[2]/LBody",
+      "Text": "Increased maintenance effort and reduced scalability. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        248.34500122070312,
+        279.7749938964844,
+        252.89500427246094
+      ],
+      "ClipBounds": [
+        275.2250061035156,
+        248.34500122070312,
+        279.7749938964844,
+        252.89500427246094
+      ],
+      "ObjectID": 941,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          379.0909999999858,
+          279.8289999999979,
+          383.6499999999942
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        243.22500610351562,
+        653.6298980712891,
+        261.1260070800781
+      ],
+      "ClipBounds": [
+        293.83599853515625,
+        243.22500610351562,
+        653.6298980712891,
+        261.1260070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CTLGKW+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 942,
+      "Page": 2,
+      "Path": "//Document/L[2]/LI[3]/LBody",
+      "Text": "Lack of alignment with future QA strategy and CI/CD needs. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        272.25010681152344,
+        184.72650146484375,
+        814.1738433837891,
+        224.37600708007812
+      ],
+      "ClipBounds": [
+        272.25010681152344,
+        184.72650146484375,
+        814.1738433837891,
+        224.37600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CTLGKW+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 943,
+      "Page": 2,
+      "Path": "//Document/P[7]",
+      "Text": "Without intervention, automation effectiveness may decrease over time, impacting release velocity and reliability. ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.75,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        800.25,
+        93.8699951171875,
+        852.75,
+        129.8699951171875
+      ],
+      "ClipBounds": [
+        800.25,
+        93.8699951171875,
+        852.75,
+        129.8699951171875
+      ],
+      "ObjectID": 944,
+      "Page": 2,
+      "Path": "//Document/Figure[7]",
+      "attributes": {
+        "BBox": [
+          800.2469999999739,
+          224.65699999999924,
+          852.6849999999977,
+          260.65499999999884
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        355.50750732421875,
+        200.85299682617188,
+        399.9562530517578
+      ],
+      "ClipBounds": [
+        47.25,
+        355.50750732421875,
+        200.85299682617188,
+        399.9562530517578
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "BNCYPJ+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 900,
+      "Page": 3,
+      "Path": "//Document/H1[3]",
+      "Text": "Objective ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        317.4750061035156,
+        331.6004943847656,
+        335.3760070800781
+      ],
+      "ClipBounds": [
+        47.25,
+        317.4750061035156,
+        331.6004943847656,
+        335.3760070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "SZJPIE+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 901,
+      "Page": 3,
+      "Path": "//Document/P[8]",
+      "Text": "The primary objective of this engagement is to: ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 15
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        285.8450012207031,
+        54.774993896484375,
+        290.39500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        285.8450012207031,
+        54.774993896484375,
+        290.39500427246094
+      ],
+      "ObjectID": 902,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          683.6489999999758,
+          54.83779999999933,
+          688.3289999999979
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        258.97650146484375,
+        591.6152954101562,
+        298.6260070800781
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        258.97650146484375,
+        591.6152954101562,
+        298.6260070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TSGVRA+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 903,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI/LBody",
+      "Text": "Audit & Optimize: Review framework architecture, CI/CD integration, and test coverage; identify inefficiencies and redundancies. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        237.84500122070312,
+        54.774993896484375,
+        242.39500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        237.84500122070312,
+        54.774993896484375,
+        242.39500427246094
+      ],
+      "ObjectID": 904,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          635.6509999999835,
+          54.83779999999933,
+          640.3309999999765
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        210.97650146484375,
+        605.9900970458984,
+        250.62600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        210.97650146484375,
+        605.9900970458984,
+        250.62600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TSGVRA+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 905,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI[2]/LBody",
+      "Text": "Recommend & Strategize: Propose a roadmap for improving test stability, maintainability, and coverage across functional, regression, and smoke testing. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        189.84500122070312,
+        54.774993896484375,
+        194.39500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        189.84500122070312,
+        54.774993896484375,
+        194.39500427246094
+      ],
+      "ObjectID": 906,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          587.6529999999912,
+          54.83779999999933,
+          592.3329999999842
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        162.97650146484375,
+        586.608154296875,
+        202.62600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        162.97650146484375,
+        586.608154296875,
+        202.62600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TSGVRA+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 907,
+      "Page": 3,
+      "Path": "//Document/L[3]/LI[3]/LBody",
+      "Text": "Enable & Empower: Provide documentation, training, and knowledge transfer to upskill Dimagi9s QA team for sustainable maintenance. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        575.25,
+        108.8699951171875,
+        627.75,
+        144.8699951171875
+      ],
+      "ClipBounds": [
+        575.25,
+        108.8699951171875,
+        627.75,
+        144.8699951171875
+      ],
+      "ObjectID": 908,
+      "Page": 3,
+      "Path": "//Document/Figure[8]",
+      "attributes": {
+        "BBox": [
+          575.2569999999832,
+          506.775999999998,
+          627.6939999999886,
+          542.7749999999942
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        674.8359985351562,
+        0.120025634765625,
+        900.1640014648438,
+        507.1200256347656
+      ],
+      "ClipBounds": [
+        674.9750061035156,
+        0.120025634765625,
+        900.0249938964844,
+        507.1200256347656
+      ],
+      "ObjectID": 909,
+      "Page": 3,
+      "Path": "//Document/Figure[9]",
+      "attributes": {
+        "BBox": [
+          674.9729999999981,
+          398.06099999998696,
+          899.9629999999888,
+          905.039999999979
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        0.0,
+        -4.57763671875e-05,
+        225.0,
+        599.9999542236328
+      ],
+      "ObjectID": 819,
+      "Page": 4,
+      "Path": "//Document/Figure[10]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          -92.85559999999896,
+          224.99099999999453,
+          507.11999999999534
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        272.25,
+        519.6374969482422,
+        502.843505859375,
+        564.0862426757812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "VWLEJA+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 820,
+      "Page": 4,
+      "Path": "//Document/H1[4]",
+      "Text": "Testing Scope ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        272.25,
+        481.60499572753906,
+        398.73284912109375,
+        499.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DITBFL+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 821,
+      "Page": 4,
+      "Path": "//Document/H2",
+      "Text": "Assessment & Audit ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        449.9750061035156,
+        279.7749938964844,
+        454.5249938964844
+      ],
+      "ObjectID": 822,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          357.00599999999395,
+          279.8289999999979,
+          361.68599999998696
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        444.85499572753906,
+        673.3966064453125,
+        462.75599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 823,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI/LBody",
+      "Text": "Review existing framework (tools, structure, CI/CD integration). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        423.7250061035156,
+        279.7749938964844,
+        428.2749938964844
+      ],
+      "ObjectID": 824,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          330.72699999999895,
+          279.8289999999979,
+          335.40699999999197
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        418.60499572753906,
+        638.3802947998047,
+        436.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 825,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[2]/LBody",
+      "Text": "Analyze test coverage, design, reusability, maintainability. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        397.4750061035156,
+        279.7749938964844,
+        402.0249938964844
+      ],
+      "ObjectID": 826,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          304.5679999999993,
+          279.8289999999979,
+          309.127999999997
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        392.35499572753906,
+        546.6450958251953,
+        410.25599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 827,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[3]/LBody",
+      "Text": "Identify flaky/redundant scripts and gaps. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        371.2250061035156,
+        279.7749938964844,
+        375.7749938964844
+      ],
+      "ObjectID": 828,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          278.28899999998976,
+          279.8289999999979,
+          282.8489999999874
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        366.10499572753906,
+        707.1627960205078,
+        384.00599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 829,
+      "Page": 4,
+      "Path": "//Document/L[4]/LI[4]/LBody",
+      "Text": "Prepare Automation Audit Report with risks and improvement areas. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        272.24949645996094,
+        329.3580017089844,
+        456.32200622558594,
+        347.2590026855469
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DITBFL+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 830,
+      "Page": 4,
+      "Path": "//Document/H2[2]",
+      "Text": "Recommendations & Strategy ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        297.7250061035156,
+        279.7749938964844,
+        302.2749938964844
+      ],
+      "ObjectID": 831,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          204.73199999999633,
+          279.8289999999979,
+          209.41199999999662
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        292.60499572753906,
+        733.6336059570312,
+        310.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 832,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI/LBody",
+      "Text": "Suggest architectural upgrades (design patterns, libraries, POM refactor). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        270.7250061035156,
+        279.7749938964844,
+        275.2749938964844
+      ],
+      "ObjectID": 833,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          177.7329999999929,
+          279.8289999999979,
+          182.4129999999932
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        265.60499572753906,
+        717.9614562988281,
+        283.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 834,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[2]/LBody",
+      "Text": "Recommend improvements to reduce fragility and maintenance effort. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        244.47500610351562,
+        279.7749938964844,
+        249.02499389648438
+      ],
+      "ObjectID": 835,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          151.57399999999325,
+          279.8289999999979,
+          156.1339999999982
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        239.35499572753906,
+        726.4893951416016,
+        257.25599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 836,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[3]/LBody",
+      "Text": "Provide a prioritized roadmap for optimization and coverage expansion. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        218.22500610351562,
+        279.7749938964844,
+        222.77499389648438
+      ],
+      "ObjectID": 837,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          125.29599999999846,
+          279.8289999999979,
+          129.85499999999593
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        213.10499572753906,
+        680.0885467529297,
+        231.00599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 838,
+      "Page": 4,
+      "Path": "//Document/L[5]/LI[4]/LBody",
+      "Text": "Define key metrics (automation ROI, stability index, coverage %). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        272.24949645996094,
+        176.35800170898438,
+        505.25274658203125,
+        194.25900268554688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DITBFL+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 839,
+      "Page": 4,
+      "Path": "//Document/H2[3]",
+      "Text": "Documentation & Knowledge Transfer ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 15
+      }
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        144.72500610351562,
+        279.7749938964844,
+        149.27499389648438
+      ],
+      "ObjectID": 840,
+      "Page": 4,
+      "Path": "//Document/L[6]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          51.738499999999476,
+          279.8289999999979,
+          56.41829999999936
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        117.85650634765625,
+        794.0677032470703,
+        157.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 841,
+      "Page": 4,
+      "Path": "//Document/L[6]/LI/LBody",
+      "Text": "Prepare documentation on coding standards, implementation best practices, CI/CD guidelines. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        275.2250061035156,
+        96.72500610351562,
+        279.7749938964844,
+        101.27499389648438
+      ],
+      "ObjectID": 842,
+      "Page": 4,
+      "Path": "//Document/L[6]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          275.2689999999857,
+          3.740479999999934,
+          279.8289999999979,
+          8.420289999999568
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        293.83599853515625,
+        91.60499572753906,
+        706.2745056152344,
+        109.50599670410156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "CWRGVD+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 843,
+      "Page": 4,
+      "Path": "//Document/L[6]/LI[2]/LBody",
+      "Text": "Conduct enablement workshops with QA team for smooth adoption. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        473.5574951171875,
+        373.8251190185547,
+        518.0062561035156
+      ],
+      "ClipBounds": [
+        47.25,
+        473.5574951171875,
+        373.8251190185547,
+        518.0062561035156
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "HFTTUV+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 743,
+      "Page": 5,
+      "Path": "//Document/H1[5]",
+      "Text": "Test Execution Plan ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        428.45249938964844,
+        343.9793243408203,
+        455.1217498779297
+      ],
+      "ClipBounds": [
+        47.25,
+        428.45249938964844,
+        343.9793243408203,
+        455.1217498779297
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "HFTTUV+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 744,
+      "Page": 5,
+      "Path": "//Document/H2[4]",
+      "Text": "Week 1 : Kickoff and Discovery ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        394.89500427246094,
+        54.774993896484375,
+        399.44500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        394.89500427246094,
+        54.774993896484375,
+        399.44500732421875
+      ],
+      "ObjectID": 745,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          579.8499999999767,
+          54.83779999999933,
+          584.5299999999988
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        389.7749938964844,
+        503.2469940185547,
+        407.6759948730469
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        389.7749938964844,
+        503.2469940185547,
+        407.6759948730469
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 746,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI/LBody",
+      "Text": "Review project scope, repo access, CI/CD pipelines, and documentation. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        368.64500427246094,
+        54.774993896484375,
+        373.19500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        368.64500427246094,
+        54.774993896484375,
+        373.19500732421875
+      ],
+      "ObjectID": 747,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          553.5709999999963,
+          54.83779999999933,
+          558.2509999999893
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        363.5249938964844,
+        491.1199493408203,
+        381.4259948730469
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        363.5249938964844,
+        491.1199493408203,
+        381.4259948730469
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 748,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI[2]/LBody",
+      "Text": "Begin high-level audit of automation framework, tools, and integration. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        342.39500427246094,
+        54.774993896484375,
+        346.94500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        342.39500427246094,
+        54.774993896484375,
+        346.94500732421875
+      ],
+      "ObjectID": 749,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          527.4119999999821,
+          54.83779999999933,
+          531.9719999999797
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        337.2749938964844,
+        369.21629333496094,
+        355.1759948730469
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        337.2749938964844,
+        369.21629333496094,
+        355.1759948730469
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JLLFLZ+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 750,
+      "Page": 5,
+      "Path": "//Document/L[7]/LI[3]/LBody",
+      "Text": "Deliverable: Engagement plan & access checklist. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        288.20249938964844,
+        414.2528991699219,
+        314.8717498779297
+      ],
+      "ClipBounds": [
+        47.25,
+        288.20249938964844,
+        414.2528991699219,
+        314.8717498779297
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "HFTTUV+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 751,
+      "Page": 5,
+      "Path": "//Document/H2[5]",
+      "Text": "Week 2 - 3 : Framework & Script Audit ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        254.64500427246094,
+        54.774993896484375,
+        259.19500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        254.64500427246094,
+        54.774993896484375,
+        259.19500732421875
+      ],
+      "ObjectID": 752,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          439.5759999999864,
+          54.83779999999933,
+          444.2549999999901
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        249.52499389648438,
+        574.4878540039062,
+        267.4259948730469
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        249.52499389648438,
+        574.4878540039062,
+        267.4259948730469
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 753,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI/LBody",
+      "Text": "Deep dive into automation framework design (tools, architecture, coding standards). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        228.39500427246094,
+        54.774993896484375,
+        232.94500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        228.39500427246094,
+        54.774993896484375,
+        232.94500732421875
+      ],
+      "ObjectID": 754,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          413.41699999998673,
+          54.83779999999933,
+          417.97699999999895
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        223.27499389648438,
+        341.27130126953125,
+        241.17599487304688
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        223.27499389648438,
+        341.27130126953125,
+        241.17599487304688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 755,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[2]/LBody",
+      "Text": "Review CI/CD integration and execution logs. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        202.14500427246094,
+        54.774993896484375,
+        206.69500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        202.14500427246094,
+        54.774993896484375,
+        206.69500732421875
+      ],
+      "ObjectID": 756,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          387.13799999999173,
+          54.83779999999933,
+          391.6979999999894
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        197.02499389648438,
+        485.4553527832031,
+        214.92599487304688
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        197.02499389648438,
+        485.4553527832031,
+        214.92599487304688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 757,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[3]/LBody",
+      "Text": "Analyze test scripts for design quality, maintainability, and reusability. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        175.89500427246094,
+        54.774993896484375,
+        180.44500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        175.89500427246094,
+        54.774993896484375,
+        180.44500732421875
+      ],
+      "ObjectID": 758,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          360.85899999999674,
+          54.83779999999933,
+          365.53899999998976
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        170.77499389648438,
+        311.1419982910156,
+        188.67599487304688
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        170.77499389648438,
+        311.1419982910156,
+        188.67599487304688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 759,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[4]/LBody",
+      "Text": "Identify flaky, redundant, or fragile tests. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        149.64500427246094,
+        54.774993896484375,
+        154.19500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        149.64500427246094,
+        54.774993896484375,
+        154.19500732421875
+      ],
+      "ObjectID": 760,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          334.5799999999872,
+          54.83779999999933,
+          339.25999999999476
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        144.52499389648438,
+        466.1678924560547,
+        162.42599487304688
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        144.52499389648438,
+        466.1678924560547,
+        162.42599487304688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 761,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[5]/LBody",
+      "Text": "Evaluate coverage (functional, regression, smoke) vs. QA strategy. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        123.39500427246094,
+        54.774993896484375,
+        127.94500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        123.39500427246094,
+        54.774993896484375,
+        127.94500732421875
+      ],
+      "ObjectID": 762,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[6]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          308.42099999998754,
+          54.83779999999933,
+          312.98099999999977
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        118.27499389648438,
+        416.55674743652344,
+        136.17599487304688
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        118.27499389648438,
+        416.55674743652344,
+        136.17599487304688
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "DYKZLA+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 763,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[6]/LBody",
+      "Text": "Assess scalability, error handling, and reporting practices. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        97.1448974609375,
+        54.774993896484375,
+        101.69500732421875
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        97.1448974609375,
+        54.774993896484375,
+        101.69500732421875
+      ],
+      "ObjectID": 764,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[7]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          282.14199999999255,
+          54.83779999999933,
+          286.7019999999902
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        92.02490234375,
+        666.1056060791016,
+        109.9259033203125
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        92.02490234375,
+        666.1056060791016,
+        109.9259033203125
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JLLFLZ+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 765,
+      "Page": 5,
+      "Path": "//Document/L[8]/LI[7]/LBody",
+      "Text": "Deliverable: Automation Audit Report (draft in Week 2, finalized in Week 3 after stakeholder review). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        757.8224945068359,
+        431.7124481201172,
+        784.4917449951172
+      ],
+      "ClipBounds": [
+        47.25,
+        757.8224945068359,
+        431.7124481201172,
+        784.4917449951172
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JMLNLI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 605,
+      "Page": 6,
+      "Path": "//Document/H2[6]",
+      "Text": "Week 4 : Recommendations & Roadmap ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 17.5
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        731.0149841308594,
+        54.774993896484375,
+        735.5649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        731.0149841308594,
+        54.774993896484375,
+        735.5649871826172
+      ],
+      "ObjectID": 606,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          333.0069999999978,
+          54.83779999999933,
+          337.6869999999908
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        725.8950042724609,
+        580.6249542236328,
+        743.7960052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        725.8950042724609,
+        580.6249542236328,
+        743.7960052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 607,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI/LBody",
+      "Text": "Propose framework improvements (design patterns, tool/library upgrades, reporting). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        704.7649841308594,
+        54.774993896484375,
+        709.3149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        704.7649841308594,
+        54.774993896484375,
+        709.3149871826172
+      ],
+      "ObjectID": 608,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          306.72799999998824,
+          54.83779999999933,
+          311.4079999999958
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        699.6450042724609,
+        559.5784454345703,
+        717.5460052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        699.6450042724609,
+        559.5784454345703,
+        717.5460052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 609,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[2]/LBody",
+      "Text": "Suggest optimization techniques (modularization, error handling, version control). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        678.5149841308594,
+        54.774993896484375,
+        683.0649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        678.5149841308594,
+        54.774993896484375,
+        683.0649871826172
+      ],
+      "ObjectID": 610,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          280.5689999999886,
+          54.83779999999933,
+          285.12899999998626
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        673.3950042724609,
+        393.6269989013672,
+        691.2960052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        673.3950042724609,
+        393.6269989013672,
+        691.2960052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 611,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[3]/LBody",
+      "Text": "Provide best practice guidelines for CI/CD integration. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        652.2649841308594,
+        54.774993896484375,
+        656.8149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        652.2649841308594,
+        54.774993896484375,
+        656.8149871826172
+      ],
+      "ObjectID": 612,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          254.2899999999936,
+          54.83779999999933,
+          258.84999999999127
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        647.1450042724609,
+        362.9091033935547,
+        665.0460052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        647.1450042724609,
+        362.9091033935547,
+        665.0460052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 613,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[4]/LBody",
+      "Text": "Define success metrics (stability, coverage, ROI). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        626.0149841308594,
+        54.774993896484375,
+        630.5649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        626.0149841308594,
+        54.774993896484375,
+        630.5649871826172
+      ],
+      "ObjectID": 614,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          228.0109999999986,
+          54.83779999999933,
+          232.6909999999989
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        620.8950042724609,
+        378.5151062011719,
+        638.7960052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        620.8950042724609,
+        378.5151062011719,
+        638.7960052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 615,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[5]/LBody",
+      "Text": "Recommend training/upskilling needs for QA team. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        599.7649841308594,
+        54.774993896484375,
+        604.3149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        599.7649841308594,
+        54.774993896484375,
+        604.3149871826172
+      ],
+      "ObjectID": 616,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[6]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          201.73199999999633,
+          54.83779999999933,
+          206.41199999999662
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        594.6450042724609,
+        458.3946075439453,
+        612.5460052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        594.6450042724609,
+        458.3946075439453,
+        612.5460052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 617,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[6]/LBody",
+      "Text": "Finalize roadmap for framework upgrades and script refactoring. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        573.5149841308594,
+        54.774993896484375,
+        578.0649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        573.5149841308594,
+        54.774993896484375,
+        578.0649871826172
+      ],
+      "ObjectID": 618,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[7]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          175.57299999999668,
+          54.83779999999933,
+          180.13299999999435
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        568.3950042724609,
+        396.7954559326172,
+        586.2960052490234
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        568.3950042724609,
+        396.7954559326172,
+        586.2960052490234
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JLLFLZ+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 619,
+      "Page": 6,
+      "Path": "//Document/L[9]/LI[7]/LBody",
+      "Text": "Deliverable: Improvement Plan & Prioritized Roadmap. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        519.3224945068359,
+        442.77906799316406,
+        545.9917449951172
+      ],
+      "ClipBounds": [
+        47.25,
+        519.3224945068359,
+        442.77906799316406,
+        545.9917449951172
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JMLNLI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 620,
+      "Page": 6,
+      "Path": "//Document/H2[7]",
+      "Text": "Week 5 - 6 : Documentation Development ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        485.7649841308594,
+        54.774993896484375,
+        490.3149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        485.7649841308594,
+        54.774993896484375,
+        490.3149871826172
+      ],
+      "ObjectID": 621,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          87.73709999999846,
+          54.83779999999933,
+          92.41689999999653
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        480.64500427246094,
+        270.89039611816406,
+        498.54600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        480.64500427246094,
+        270.89039611816406,
+        498.54600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 622,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI/LBody",
+      "Text": "Prepare documentation covering: ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        459.5149841308594,
+        54.774993896484375,
+        464.0649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        459.5149841308594,
+        54.774993896484375,
+        464.0649871826172
+      ],
+      "ObjectID": 623,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          61.57809999999881,
+          54.83779999999933,
+          66.1378999999979
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        454.39500427246094,
+        324.178955078125,
+        472.29600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        454.39500427246094,
+        324.178955078125,
+        472.29600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 624,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[2]/LBody",
+      "Text": "Recommended framework improvements. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        433.2649841308594,
+        54.774993896484375,
+        437.8149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        433.2649841308594,
+        54.774993896484375,
+        437.8149871826172
+      ],
+      "ObjectID": 625,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          35.29919999999947,
+          54.83779999999933,
+          39.85899999999856
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        428.14500427246094,
+        281.4514465332031,
+        446.04600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        428.14500427246094,
+        281.4514465332031,
+        446.04600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 626,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[3]/LBody",
+      "Text": "Coding standards & best practices. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        407.0149841308594,
+        54.774993896484375,
+        411.5649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        407.0149841308594,
+        54.774993896484375,
+        411.5649871826172
+      ],
+      "ObjectID": 627,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          9.02025999999978,
+          54.83779999999933,
+          13.700099999999566
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        401.89500427246094,
+        378.42735290527344,
+        419.79600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        401.89500427246094,
+        378.42735290527344,
+        419.79600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 628,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[4]/LBody",
+      "Text": "Guidelines for test design, reporting, error handling. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        380.7649841308594,
+        54.774993896484375,
+        385.3149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        380.7649841308594,
+        54.774993896484375,
+        385.3149871826172
+      ],
+      "ObjectID": 629,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -17.258699999999408,
+          54.83779999999933,
+          -12.578899999999976
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        375.64500427246094,
+        291.8734436035156,
+        393.54600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        375.64500427246094,
+        291.8734436035156,
+        393.54600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 630,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[5]/LBody",
+      "Text": "Training & implementation practices. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        354.5149841308594,
+        54.774993896484375,
+        359.0649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        354.5149841308594,
+        54.774993896484375,
+        359.0649871826172
+      ],
+      "ObjectID": 631,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[6]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -43.417599999998856,
+          54.83779999999933,
+          -38.85779999999977
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        349.39500427246094,
+        408.5715026855469,
+        367.29600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        349.39500427246094,
+        408.5715026855469,
+        367.29600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 632,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[6]/LBody",
+      "Text": "Share draft with stakeholders, refine based on feedback. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        328.2649841308594,
+        54.774993896484375,
+        332.8149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        328.2649841308594,
+        54.774993896484375,
+        332.8149871826172
+      ],
+      "ObjectID": 633,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[7]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -69.6964999999982,
+          54.83779999999933,
+          -65.13669999999911
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        323.14500427246094,
+        477.26759338378906,
+        341.04600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        323.14500427246094,
+        477.26759338378906,
+        341.04600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JLLFLZ+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 634,
+      "Page": 6,
+      "Path": "//Document/L[10]/LI[7]/LBody",
+      "Text": "Deliverable: Documentation Pack (processes, standards, practices). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        274.07249450683594,
+        454.7488555908203,
+        300.7417449951172
+      ],
+      "ClipBounds": [
+        47.25,
+        274.07249450683594,
+        454.7488555908203,
+        300.7417449951172
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JMLNLI+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 635,
+      "Page": 6,
+      "Path": "//Document/H2[8]",
+      "Text": "Week 7 - 8 : Knowledge Transfer & Closure ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        240.51498413085938,
+        54.774993896484375,
+        245.0649871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        240.51498413085938,
+        54.774993896484375,
+        245.0649871826172
+      ],
+      "ObjectID": 636,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -157.4129999999932,
+          54.83779999999933,
+          -152.85299999999552
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        235.39500427246094,
+        477.127197265625,
+        253.29600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        235.39500427246094,
+        477.127197265625,
+        253.29600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 637,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI/LBody",
+      "Text": "Conduct walkthrough sessions with QA team (framework + scripts). ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        214.26498413085938,
+        54.774993896484375,
+        218.8149871826172
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        214.26498413085938,
+        54.774993896484375,
+        218.8149871826172
+      ],
+      "ObjectID": 638,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -183.69199999999546,
+          54.83779999999933,
+          -179.1319999999978
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        209.14500427246094,
+        316.45965576171875,
+        227.04600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        209.14500427246094,
+        316.45965576171875,
+        227.04600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 639,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[2]/LBody",
+      "Text": "Present improvement plan and roadmap. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        188.01499938964844,
+        54.774993896484375,
+        192.56500244140625
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        188.01499938964844,
+        54.774993896484375,
+        192.56500244140625
+      ],
+      "ObjectID": 640,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -209.97099999999773,
+          54.83779999999933,
+          -205.29099999999744
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        182.89500427246094,
+        350.17860412597656,
+        200.79600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        182.89500427246094,
+        350.17860412597656,
+        200.79600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 641,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[3]/LBody",
+      "Text": "Mentor QA team on implementation approach. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        161.76499938964844,
+        54.774993896484375,
+        166.31500244140625
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        161.76499938964844,
+        54.774993896484375,
+        166.31500244140625
+      ],
+      "ObjectID": 642,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -236.25,
+          54.83779999999933,
+          -231.5699999999997
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        156.64500427246094,
+        184.58355712890625,
+        174.54600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        156.64500427246094,
+        184.58355712890625,
+        174.54600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 643,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[4]/LBody",
+      "Text": "Address final Q&A. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        135.51499938964844,
+        54.774993896484375,
+        140.06500244140625
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        135.51499938964844,
+        54.774993896484375,
+        140.06500244140625
+      ],
+      "ObjectID": 644,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -262.40899999999965,
+          54.83779999999933,
+          -257.8489999999874
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        130.39500427246094,
+        420.00599670410156,
+        148.29600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        130.39500427246094,
+        420.00599670410156,
+        148.29600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "PZTCHG+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 645,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[5]/LBody",
+      "Text": "Handover documentation and formally close engagement. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        109.26499938964844,
+        54.774993896484375,
+        113.81500244140625
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        109.26499938964844,
+        54.774993896484375,
+        113.81500244140625
+      ],
+      "ObjectID": 646,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[6]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          -288.68799999999464,
+          54.83779999999933,
+          -284.127999999997
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        104.14500427246094,
+        437.4425964355469,
+        122.04600524902344
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        104.14500427246094,
+        437.4425964355469,
+        122.04600524902344
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "JLLFLZ+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 647,
+      "Page": 6,
+      "Path": "//Document/L[11]/LI[6]/LBody",
+      "Text": "Deliverable: Knowledge Transfer Session(s) + Final Handover ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        303.75750732421875,
+        267.7050018310547,
+        348.2062530517578
+      ],
+      "ClipBounds": [
+        47.25,
+        303.75750732421875,
+        267.7050018310547,
+        348.2062530517578
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "ZJQUWX+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 557,
+      "Page": 7,
+      "Path": "//Document/H1[6]",
+      "Text": "Assumptions ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        270.0950012207031,
+        54.774993896484375,
+        274.64500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        270.0950012207031,
+        54.774993896484375,
+        274.64500427246094
+      ],
+      "ObjectID": 558,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          274.56999999999243,
+          54.83779999999933,
+          279.24899999999616
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        264.9750061035156,
+        727.8073425292969,
+        282.8760070800781
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        264.9750061035156,
+        727.8073425292969,
+        282.8760070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 559,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI/LBody",
+      "Text": "Product Overview: The Dimagi team will provide Moolya with a comprehensive walkthrough of the framework. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        243.84500122070312,
+        54.774993896484375,
+        248.39500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        243.84500122070312,
+        54.774993896484375,
+        248.39500427246094
+      ],
+      "ObjectID": 560,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          248.29099999999744,
+          54.83779999999933,
+          252.97099999999773
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        238.72500610351562,
+        758.9613037109375,
+        256.6260070800781
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        238.72500610351562,
+        758.9613037109375,
+        256.6260070800781
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 561,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[2]/LBody",
+      "Text": "Point of Contact: A designated point of contact will be available for the Moolya team to reach out to for assistance. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        217.59500122070312,
+        54.774993896484375,
+        222.14500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        217.59500122070312,
+        54.774993896484375,
+        222.14500427246094
+      ],
+      "ObjectID": 562,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          222.1319999999978,
+          54.83779999999933,
+          226.69199999999546
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        212.47500610351562,
+        754.7398529052734,
+        230.37600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        212.47500610351562,
+        754.7398529052734,
+        230.37600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 563,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[3]/LBody",
+      "Text": "Requirement Stability : All functionalities will be clearly defined, and remain stable throughout the project timeline. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        191.34500122070312,
+        54.774993896484375,
+        195.89500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        191.34500122070312,
+        54.774993896484375,
+        195.89500427246094
+      ],
+      "ObjectID": 564,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          195.85299999999552,
+          54.83779999999933,
+          200.4129999999932
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        186.22500610351562,
+        715.1430053710938,
+        204.12600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        186.22500610351562,
+        715.1430053710938,
+        204.12600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 565,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[4]/LBody",
+      "Text": "Environment Availability : A dedicated and stable testing environment will be available for the Moolya team. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        165.09500122070312,
+        54.774993896484375,
+        169.64500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        165.09500122070312,
+        54.774993896484375,
+        169.64500427246094
+      ],
+      "ObjectID": 566,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          169.57399999999325,
+          54.83779999999933,
+          174.25399999999354
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        159.97500610351562,
+        542.2350006103516,
+        177.87600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        159.97500610351562,
+        542.2350006103516,
+        177.87600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 567,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[5]/LBody",
+      "Text": "Access to Test Data : Necessary test data will be provided by the Dimagi team. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        138.84500122070312,
+        54.774993896484375,
+        143.39500427246094
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        138.84500122070312,
+        54.774993896484375,
+        143.39500427246094
+      ],
+      "ObjectID": 568,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[6]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          143.29499999999825,
+          54.83779999999933,
+          147.97499999999854
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        133.72500610351562,
+        600.0744018554688,
+        151.62600708007812
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        133.72500610351562,
+        600.0744018554688,
+        151.62600708007812
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "AMGSXH+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "ObjectID": 569,
+      "Page": 7,
+      "Path": "//Document/L[12]/LI[6]/LBody",
+      "Text": "Documents : Dimagi will provide the necessary documents required for the engagement. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        796.5,
+        76.6199951171875,
+        852.75,
+        115.6199951171875
+      ],
+      "ClipBounds": [
+        796.5,
+        76.6199951171875,
+        852.75,
+        115.6199951171875
+      ],
+      "ObjectID": 570,
+      "Page": 7,
+      "Path": "//Document/Figure[11]",
+      "attributes": {
+        "BBox": [
+          796.4079999999958,
+          81.25749999999971,
+          852.6849999999977,
+          120.25599999999758
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        667.1699981689453,
+        146.44529724121094,
+        702.72900390625
+      ],
+      "ClipBounds": [
+        47.25,
+        667.1699981689453,
+        146.44529724121094,
+        702.72900390625
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TXMFFM+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 503,
+      "Page": 8,
+      "Path": "//Document/H1[7]",
+      "Text": "Pricing ",
+      "TextSize": 27.0,
+      "attributes": {
+        "LineHeight": 32.375,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        369.47999572753906,
+        617.2424926757812,
+        535.5664520263672,
+        643.9117431640625
+      ],
+      "ClipBounds": [
+        369.47999572753906,
+        617.2424926757812,
+        535.5664520263672,
+        643.9117431640625
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TXMFFM+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 504,
+      "Page": 8,
+      "Path": "//Document/H2[9]",
+      "Text": "Total Cost in INR ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        411.69090270996094,
+        573.7424926757812,
+        493.3388977050781,
+        600.4117431640625
+      ],
+      "ClipBounds": [
+        411.69090270996094,
+        573.7424926757812,
+        493.3388977050781,
+        600.4117431640625
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TXMFFM+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 505,
+      "Page": 8,
+      "Path": "//Document/P[9]",
+      "Text": "4,50,000 ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        47.24989318847656,
+        518.9924926757812,
+        204.23802185058594,
+        545.6617431640625
+      ],
+      "ClipBounds": [
+        47.24989318847656,
+        518.9924926757812,
+        204.23802185058594,
+        545.6617431640625
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "TXMFFM+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 506,
+      "Page": 8,
+      "Path": "//Document/H3",
+      "Text": "Payment Terms ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        485.4350128173828,
+        54.774993896484375,
+        489.9850158691406
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        485.4350128173828,
+        54.774993896484375,
+        489.9850158691406
+      ],
+      "ObjectID": 507,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          169.57399999999325,
+          54.83779999999933,
+          174.1339999999982
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        480.31500244140625,
+        409.9768524169922,
+        498.21600341796875
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        480.31500244140625,
+        409.9768524169922,
+        498.21600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 508,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI/LBody",
+      "Text": "Payment to be done within 30 days of invoice generation ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        459.1850128173828,
+        54.774993896484375,
+        463.7350158691406
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        459.1850128173828,
+        54.774993896484375,
+        463.7350158691406
+      ],
+      "ObjectID": 509,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[2]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          143.29499999999825,
+          54.83779999999933,
+          147.85499999999593
+        ]
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        454.06500244140625,
+        474.6405029296875,
+        471.96600341796875
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        454.06500244140625,
+        474.6405029296875,
+        471.96600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 510,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[2]/LBody",
+      "Text": "Any applicable taxes will be charged extra on the pricing mentioned ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        432.9350128173828,
+        54.774993896484375,
+        437.4850158691406
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        432.9350128173828,
+        54.774993896484375,
+        437.4850158691406
+      ],
+      "ObjectID": 511,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[3]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          117.01599999999962,
+          54.83779999999933,
+          121.69599999999991
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        406.0664978027344,
+        847.7278442382812,
+        445.71600341796875
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        406.0664978027344,
+        847.7278442382812,
+        445.71600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 512,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[3]/LBody",
+      "Text": "Payment Milestone 1: 50% of the total project cost shall be payable upon signing the Statement of Work (SoW), as confirmation of project initiation. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        384.9350128173828,
+        54.774993896484375,
+        389.4850158691406
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        384.9350128173828,
+        54.774993896484375,
+        389.4850158691406
+      ],
+      "ObjectID": 513,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[4]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          69.0177999999978,
+          54.83779999999933,
+          73.69759999999951
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        358.0664978027344,
+        853.5058441162109,
+        397.71600341796875
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        358.0664978027344,
+        853.5058441162109,
+        397.71600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 514,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[4]/LBody",
+      "Text": "Payment Milestone 2:  Remaining 50% of the invoice amount on completion of one month from the date of submission of the initial test report or immediately upon completion of the retest, whichever is earlier. ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        50.225006103515625,
+        336.9350128173828,
+        54.774993896484375,
+        341.4850158691406
+      ],
+      "ClipBounds": [
+        50.225006103515625,
+        336.9350128173828,
+        54.774993896484375,
+        341.4850158691406
+      ],
+      "ObjectID": 515,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[5]/Lbl/Figure",
+      "attributes": {
+        "BBox": [
+          50.27799999999843,
+          21.019799999999123,
+          54.83779999999933,
+          25.69959999999992
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        68.83590698242188,
+        289.0605010986328,
+        844.0193939208984,
+        349.71600341796875
+      ],
+      "ClipBounds": [
+        68.83590698242188,
+        289.0605010986328,
+        844.0193939208984,
+        349.71600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "ObjectID": 516,
+      "Page": 8,
+      "Path": "//Document/L[13]/LI[5]/LBody",
+      "Text": "As part of our standard operating procedures, Moolya ensures comprehensive insurance coverage including liability, security, cybersecurity, and employee welfare. Should there arise a necessity for project-specific insurance, such coverage will be procured and billed accordingly as a pass-through expense ",
+      "TextSize": 13.5
+    },
+    {
+      "Bounds": [
+        47.25,
+        251.56500244140625,
+        420.1780548095703,
+        269.46600341796875
+      ],
+      "ClipBounds": [
+        47.25,
+        251.56500244140625,
+        420.1780548095703,
+        269.46600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "GYNLTT+Roboto-Bold",
+        "subset": true,
+        "weight": 700
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 517,
+      "Page": 8,
+      "Path": "//Document/H4",
+      "Text": "Important Note: Preliminary Estimate and Scope Adaptability ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 16.25,
+        "SpaceAfter": 15.25
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        172.0605010986328,
+        794.6788330078125,
+        232.71600341796875
+      ],
+      "ClipBounds": [
+        47.25,
+        172.0605010986328,
+        794.6788330078125,
+        232.71600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 518,
+      "Page": 8,
+      "Path": "//Document/P[10]",
+      "Text": "This proposal has been prepared based on our current, high-level understanding of Dimagi's Web Extension and the outlined requirements. It serves as an initial estimate, providing a foundational overview of the proposed testing strategy, phases, and deliverables. ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.375,
+        "SpaceAfter": 15
+      }
+    },
+    {
+      "Bounds": [
+        47.25,
+        91.8179931640625,
+        851.7379455566406,
+        153.21600341796875
+      ],
+      "ClipBounds": [
+        47.25,
+        91.8179931640625,
+        851.7379455566406,
+        153.21600341796875
+      ],
+      "Font": {
+        "alt_family_name": "Roboto",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "WOBBTY+Roboto-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 519,
+      "Page": 8,
+      "Path": "//Document/P[11]",
+      "Text": "We acknowledge that the complexities of the application, along with specific testing needs, may evolve as we progress further into the project. Therefore, we anticipate refining this proposal to align more closely with the project's specific requirements and objectives, guided by our collaborative engagement with the Dimagi team. ",
+      "TextSize": 13.5,
+      "attributes": {
+        "LineHeight": 21.75,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        800.25,
+        37.71000671386719,
+        852.75,
+        73.71000671386719
+      ],
+      "ClipBounds": [
+        800.25,
+        37.71000671386719,
+        852.75,
+        73.71000671386719
+      ],
+      "ObjectID": 520,
+      "Page": 8,
+      "Path": "//Document/Figure[12]",
+      "attributes": {
+        "BBox": [
+          800.2469999999739,
+          -278.127999999997,
+          852.6849999999977,
+          -242.12999999999738
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        310.0800018310547,
+        383.0012969970703,
+        605.8200836181641,
+        412.85130310058594
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-601",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 424,
+      "Page": 9,
+      "Path": "//Document/H1[8]",
+      "Text": "Bugasura Testpert ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 36,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        -0.024993896484375,
+        0.0948944091796875,
+        900.0249938964844,
+        507.1449279785156
+      ],
+      "ClipBounds": [
+        105.94599914550781,
+        117.72599792480469,
+        811.2489471435547,
+        352.9360046386719
+      ],
+      "ObjectID": 425,
+      "Page": 9,
+      "Path": "//Document/Figure[13]",
+      "attributes": {
+        "BBox": [
+          106.19599999999991,
+          117.97599999999875,
+          796.167999999976,
+          352.68599999998696
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.024993896484375,
+        0.0948944091796875,
+        900.0249938964844,
+        507.1449279785156
+      ],
+      "ClipBounds": [
+        105.94599914550781,
+        117.72599792480469,
+        811.2489471435547,
+        352.9360046386719
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-600",
+        "subset": false,
+        "weight": 400
+      },
+      "HasClip": false,
+      "ObjectID": 425,
+      "Page": 9,
+      "Path": "//Document/Figure[13]",
+      "Text": "tp l Context Understanding I I tp tp xe xe I Setup 7l Perform \u0141_1__o_ue- st-io_n__, \u0141__st-ra-te-giz_e__ Course correction 4 tp __ln-flu_e_nc_e__I <-------' tp I ",
+      "TextSize": 8.0,
+      "attributes": {
+        "BBox": [
+          106.19599999999991,
+          117.97599999999875,
+          796.167999999976,
+          352.68599999998696
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.024993896484375,
+        0.0948944091796875,
+        900.0249938964844,
+        507.1449279785156
+      ],
+      "ClipBounds": [
+        802.156982421875,
+        62.76800537109375,
+        854.2550048828125,
+        99.74700927734375
+      ],
+      "ObjectID": 426,
+      "Page": 9,
+      "Path": "//Document/Figure[14]",
+      "attributes": {
+        "BBox": [
+          802.4069999999774,
+          63.01809999999932,
+          854.0049999999756,
+          99.49659999999858
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.024993896484375,
+        0.0948944091796875,
+        900.0249938964844,
+        507.1449279785156
+      ],
+      "ClipBounds": [
+        802.156982421875,
+        62.76800537109375,
+        854.2550048828125,
+        99.74700927734375
+      ],
+      "ObjectID": 426,
+      "Page": 9,
+      "Path": "//Document/Figure[14]",
+      "attributes": {
+        "BBox": [
+          802.4069999999774,
+          63.01809999999932,
+          854.0049999999756,
+          99.49659999999858
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        267.8399963378906,
+        369.6978454589844,
+        412.78517150878906,
+        394.66517639160156
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-2514",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 361,
+      "Page": 10,
+      "Path": "//Document/H1[9]",
+      "Rotation": 0.240447998046875,
+      "Skew": 0.240447998046875,
+      "Text": "Testpert is ",
+      "TextSize": 28.999740600585938,
+      "attributes": {
+        "LineHeight": 34.75,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        198.2220001220703,
+        124.20309448242188,
+        465.47999572753906,
+        375.6159973144531
+      ],
+      "ObjectID": 362,
+      "Page": 10,
+      "Path": "//Document/Figure[15]",
+      "attributes": {
+        "BBox": [
+          198.4719999999943,
+          120.01599999999962,
+          464.74099999999453,
+          370.80599999999686
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        198.2220001220703,
+        124.20309448242188,
+        465.47999572753906,
+        375.6159973144531
+      ],
+      "Font": {
+        "alt_family_name": "* Arial",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Arial",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Arial-Bold-2518",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "ObjectID": 362,
+      "Page": 10,
+      "Path": "//Document/Figure[15]",
+      "Rotation": 0.2406463623046875,
+      "Skew": 0.2406463623046875,
+      "Text": "Context platform Test Intelligence platfrom Influence platform } Testpert reduces cost, increases focus, drives growth Confidential & Intellectual Property of Moolya. We take these matters seriously! ",
+      "TextSize": 7.9999237060546875,
+      "attributes": {
+        "BBox": [
+          198.4719999999943,
+          120.01599999999962,
+          464.74099999999453,
+          370.80599999999686
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        493.2900085449219,
+        101.16700744628906,
+        732.219970703125,
+        449.6529846191406
+      ],
+      "ObjectID": 363,
+      "Page": 10,
+      "Path": "//Document/Figure[16]",
+      "attributes": {
+        "BBox": [
+          493.5399999999936,
+          96.85669999999664,
+          731.9699999999721,
+          444.8429999999935
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        493.2900085449219,
+        101.16700744628906,
+        732.219970703125,
+        449.6529846191406
+      ],
+      "Font": {
+        "alt_family_name": "* Times New Roman",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "* Times New Roman",
+        "font_type": "CIDFontType0",
+        "italic": false,
+        "monospaced": false,
+        "name": "*Times New Roman-Bold-2517",
+        "subset": false,
+        "weight": 700
+      },
+      "HasClip": false,
+      "ObjectID": 363,
+      "Page": 10,
+      "Path": "//Document/Figure[16]",
+      "Rotation": 0.240570068359375,
+      "Skew": 0.240570068359375,
+      "Text": "\u0141 4 Driven Testing Moolya. Way of Testing Culture that has helped Startups Enterprises Grow Pradeep Soundararajan Dhanasekar Subramaniam Foreword By Parthasara.thy NS ",
+      "TextSize": 9.999908447265625,
+      "attributes": {
+        "BBox": [
+          493.5399999999936,
+          96.85669999999664,
+          731.9699999999721,
+          444.8429999999935
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        802.2769775390625,
+        68.88800048828125,
+        853.8949584960938,
+        107.42599487304688
+      ],
+      "ObjectID": 364,
+      "Page": 10,
+      "Path": "//Document/Figure[17]",
+      "attributes": {
+        "BBox": [
+          802.5269999999728,
+          64.5779999999977,
+          853.6449999999895,
+          102.61599999999817
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.0276336669921875,
+        0.09478759765625,
+        902.4150085449219,
+        511.7130889892578
+      ],
+      "ClipBounds": [
+        802.2769775390625,
+        68.88800048828125,
+        853.8949584960938,
+        107.42599487304688
+      ],
+      "ObjectID": 364,
+      "Page": 10,
+      "Path": "//Document/Figure[17]",
+      "attributes": {
+        "BBox": [
+          802.5269999999728,
+          64.5779999999977,
+          853.6449999999895,
+          102.61599999999817
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        357.9960021972656,
+        252.00750732421875,
+        550.4418792724609,
+        296.4562530517578
+      ],
+      "ClipBounds": [
+        357.9960021972656,
+        252.00750732421875,
+        550.4418792724609,
+        296.4562530517578
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "KZCTMJ+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 350,
+      "Page": 11,
+      "Path": "//Document/H1[10]",
+      "Text": "Thank You! ",
+      "TextSize": 33.75,
+      "attributes": {
+        "LineHeight": 40.5,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        123.62100219726562,
+        206.15249633789062,
+        781.4159240722656,
+        232.82174682617188
+      ],
+      "ClipBounds": [
+        123.62100219726562,
+        206.15249633789062,
+        781.4159240722656,
+        232.82174682617188
+      ],
+      "Font": {
+        "alt_family_name": "Roboto Slab",
+        "embedded": true,
+        "encoding": "Identity-H",
+        "family_name": "Roboto Slab",
+        "font_type": "CIDFontType2",
+        "italic": false,
+        "monospaced": false,
+        "name": "KZCTMJ+RobotoSlab-Regular",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": true,
+      "Lang": "en",
+      "ObjectID": 351,
+      "Page": 11,
+      "Path": "//Document/H2[10]",
+      "Text": "Moolya is excited to collaborate with Dimagi on this exciting project. ",
+      "TextSize": 20.25,
+      "attributes": {
+        "LineHeight": 24.25,
+        "SpaceAfter": 18,
+        "TextAlign": "Center"
+      }
+    },
+    {
+      "Bounds": [
+        800.25,
+        150.1199951171875,
+        852.75,
+        186.8699951171875
+      ],
+      "ClipBounds": [
+        800.25,
+        150.1199951171875,
+        852.75,
+        186.8699951171875
+      ],
+      "ObjectID": 352,
+      "Page": 11,
+      "Path": "//Document/Figure[18]",
+      "attributes": {
+        "BBox": [
+          800.2469999999739,
+          150.13499999999476,
+          852.6849999999977,
+          186.85299999999552
+        ],
+        "Placement": "Block"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": false,
+      "page_number": 0,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          522.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          522.0
+        ]
+      },
+      "height": 522.0,
+      "is_scanned": false,
+      "page_number": 1,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": false,
+      "page_number": 2,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": false,
+      "page_number": 3,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          600.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          600.0
+        ]
+      },
+      "height": 600.0,
+      "is_scanned": false,
+      "page_number": 4,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          637.9199829101562
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          637.9199829101562
+        ]
+      },
+      "height": 637.9199829101562,
+      "is_scanned": false,
+      "page_number": 5,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          905.0399780273438
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          905.0399780273438
+        ]
+      },
+      "height": 905.0399780273438,
+      "is_scanned": false,
+      "page_number": 6,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": false,
+      "page_number": 7,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          822.9600219726562
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          822.9600219726562
+        ]
+      },
+      "height": 822.9600219726562,
+      "is_scanned": false,
+      "page_number": 8,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": true,
+      "page_number": 9,
+      "rotation": 0,
+      "width": 900.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          902.4000244140625,
+          511.67999267578125
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          902.4000244140625,
+          511.67999267578125
+        ]
+      },
+      "height": 511.67999267578125,
+      "is_scanned": true,
+      "page_number": 10,
+      "rotation": 0,
+      "width": 902.4000244140625
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          900.0,
+          507.1199951171875
+        ]
+      },
+      "height": 507.1199951171875,
+      "is_scanned": false,
+      "page_number": 11,
+      "rotation": 0,
+      "width": 900.0
+    }
+  ]
+}

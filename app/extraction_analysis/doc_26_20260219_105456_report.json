@@ -1,0 +1,162 @@
+{
+  "document": {
+    "id": 26,
+    "title": "Product Engineering Services_Updated"
+  },
+  "extraction": {
+    "total_elements": 249,
+    "element_types_distribution": {
+      "Figure": 10,
+      "Sub": 2,
+      "Sub[2]": 2,
+      "P": 36,
+      "P[2]": 19,
+      "H1": 1,
+      "H1[2]": 1,
+      "P[3]": 11,
+      "P[4]": 6,
+      "P[5]": 4,
+      "H1[3]": 1,
+      "P[6]": 2,
+      "Figure[2]": 2,
+      "Figure[3]": 2,
+      "Figure[4]": 2,
+      "Figure[5]": 2,
+      "Figure[6]": 2,
+      "H1[4]": 1,
+      "Table": 1,
+      "TH": 5,
+      "TH[2]": 2,
+      "StyleSpan": 1,
+      "StyleSpan[2]": 1,
+      "TH[3]": 2,
+      "TH[4]": 1,
+      "TH[5]": 1,
+      "TD": 8,
+      "TD[2]": 7,
+      "TD[3]": 7,
+      "TD[4]": 3,
+      "H1[5]": 1,
+      "P[7]": 1,
+      "P[8]": 1,
+      "P[9]": 1,
+      "P[10]": 1,
+      "P[11]": 1,
+      "P[12]": 1,
+      "P[13]": 1,
+      "P[14]": 1,
+      "P[15]": 1,
+      "P[16]": 1,
+      "H2": 1,
+      "Table[2]": 1,
+      "H1[6]": 1,
+      "Table[3]": 1,
+      "H1[7]": 1,
+      "Table[4]": 1,
+      "H2[2]": 1,
+      "P[17]": 1,
+      "ParagraphSpan": 2,
+      "LBody": 31,
+      "H3": 1,
+      "H1[8]": 1,
+      "H2[3]": 1,
+      "Lbl": 23,
+      "H2[4]": 1,
+      "H2[5]": 1,
+      "Figure[7]": 2,
+      "Figure[8]": 2,
+      "H3[2]": 1,
+      "H1[9]": 1,
+      "H2[6]": 1,
+      "P[18]": 1,
+      "H2[7]": 1,
+      "H2[8]": 1,
+      "Figure[9]": 2,
+      "H3[3]": 1,
+      "H1[10]": 1,
+      "H2[9]": 1,
+      "H2[10]": 1,
+      "H2[11]": 1,
+      "Figure[10]": 2,
+      "Figure[11]": 2,
+      "H1[11]": 1,
+      "Figure[12]": 2
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Title/Sub",
+        "text": "Moolya ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Title/Sub[2]",
+        "text": "Product Engineering Services ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "Engineering Excellence, Accelerating Innovation ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 12,
+    "total_characters": 5881,
+    "total_words": 810,
+    "average_chunk_size": 490.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Engineering Excellence, Accelerating Innovation\n\nI 14+"
+      },
+      {
+        "chunk_index": 2,
+        "section": "200+",
+        "page": 1,
+        "text": "200+"
+      },
+      {
+        "chunk_index": 3,
+        "section": "20+",
+        "page": 1,
+        "text": "20+\n\nYears in Business\n\nCustomers\n\nCountries"
+      },
+      {
+        "chunk_index": 4,
+        "section": "80%",
+        "page": 1,
+        "text": "80%\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Moolya Clientele",
+        "page": 2,
+        "text": "Moolya Clientele\n\nFlipkart \u0141\n\n\u0141\n\nc\n\n\u0141\n\n<:CJl&NEf + hotstar\n\nQ)PhonePe\n\nSONY\n\nMMyntra\n\nJup1ter\n\nblinkit\n\nlndia's Last Minute App\n\nf sw1GGY\n\nTATA\n\nCLiQ\n\n\u0141CRED\n\nt: coinswitch\n\n\u25a0foodpanda\n\nLi50U6\n\nreiitpa"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 23.6,
+    "smallest_chunk": 4,
+    "largest_chunk": 1253,
+    "chunks_under_min_size": 5,
+    "chunks_over_max_size": 2
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

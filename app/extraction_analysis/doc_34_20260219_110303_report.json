@@ -1,0 +1,184 @@
+{
+  "document": {
+    "id": 34,
+    "title": "Fastrack Automation Presentation (1)"
+  },
+  "extraction": {
+    "total_elements": 289,
+    "element_types_distribution": {
+      "P": 57,
+      "Title": 1,
+      "P[2]": 5,
+      "P[3]": 2,
+      "P[4]": 2,
+      "P[5]": 2,
+      "P[6]": 1,
+      "P[7]": 1,
+      "P[8]": 1,
+      "H1": 1,
+      "P[9]": 1,
+      "Figure": 2,
+      "H2": 1,
+      "P[10]": 1,
+      "Figure[2]": 2,
+      "H2[2]": 1,
+      "P[11]": 1,
+      "Figure[3]": 2,
+      "H2[3]": 1,
+      "P[12]": 1,
+      "Figure[4]": 2,
+      "H2[4]": 1,
+      "P[13]": 1,
+      "H1[2]": 1,
+      "Figure[5]": 2,
+      "H2[5]": 1,
+      "P[14]": 1,
+      "Figure[6]": 2,
+      "H2[6]": 1,
+      "P[15]": 1,
+      "Figure[7]": 2,
+      "H2[7]": 1,
+      "P[16]": 1,
+      "Figure[8]": 2,
+      "H2[8]": 1,
+      "P[17]": 1,
+      "H1[3]": 1,
+      "P[18]": 1,
+      "P[19]": 1,
+      "P[20]": 1,
+      "P[21]": 1,
+      "P[22]": 1,
+      "P[23]": 1,
+      "H1[4]": 1,
+      "H1[5]": 1,
+      "P[24]": 1,
+      "P[25]": 1,
+      "Table": 1,
+      "TH": 15,
+      "TH[2]": 3,
+      "TD": 13,
+      "H1[6]": 1,
+      "Table[2]": 1,
+      "TH[3]": 2,
+      "TH[4]": 2,
+      "TD[2]": 10,
+      "TD[3]": 10,
+      "H1[7]": 1,
+      "P[26]": 1,
+      "Figure[9]": 2,
+      "H1[8]": 1,
+      "P[27]": 1,
+      "H2[9]": 1,
+      "Figure[10]": 2,
+      "H1[9]": 1,
+      "Figure[11]": 2,
+      "H2[10]": 1,
+      "Table[3]": 1,
+      "H1[10]": 1,
+      "Table[4]": 1,
+      "H1[11]": 1,
+      "Figure[12]": 2,
+      "H2[11]": 1,
+      "P[28]": 1,
+      "Figure[13]": 2,
+      "H2[12]": 1,
+      "P[29]": 1,
+      "Figure[14]": 2,
+      "H2[13]": 1,
+      "P[30]": 1,
+      "Figure[15]": 2,
+      "H2[14]": 1,
+      "P[31]": 1,
+      "H2[15]": 1,
+      "H3": 1,
+      "Lbl": 34,
+      "LBody": 34,
+      "H3[2]": 1,
+      "H3[3]": 1,
+      "H3[4]": 1,
+      "H1[12]": 1,
+      "H2[16]": 1,
+      "H2[17]": 1,
+      "H2[18]": 1,
+      "H2[19]": 1,
+      "H2[20]": 1,
+      "H1[13]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/P",
+        "text": "Moolya Testing ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Title",
+        "text": "Fastrack Automation Solution ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "Accelerating Test Automation Across Web, Mobile, and APls. ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[3]",
+        "text": "I 14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[4]",
+        "text": "Years in Business ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 14,
+    "total_characters": 7074,
+    "total_words": 996,
+    "average_chunk_size": 505.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Moolya Testing\n\nAccelerating Test Automation Across Web, Mobile, and APls.\n\nI 14+\n\nYears in Business\n\n200+\n\nCustomers\n\n20+\n\nCountries\n\n80%\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Why Moolya? Why Partner With Us?",
+        "page": 2,
+        "text": "Why Moolya? Why Partner With Us?\n\nAt Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier "
+      },
+      {
+        "chunk_index": 3,
+        "section": "Solutions Led Delivery",
+        "page": 3,
+        "text": "Solutions Led Delivery\n\n360\u00b0 Testing Solution\n\nHolistic testing for comprehensive coverage and risk mitigation, enhancing quality and satisfaction.\n\nFastrack Automation\n\nDynamic, tool-agnostic automat"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Advantages of Solution-Led Delivery",
+        "page": 3,
+        "text": "Advantages of Solution-Led Delivery\n\nAlignment with Customer's\n\nDigital transformation goals\n\nTesting Solutions\n\nAddress unique challenges & requirements\n\nAccelerated\n\nTime to Market & Reduced Cost"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Fastrack Automation",
+        "page": 4,
+        "text": "Fastrack Automation"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 24.5,
+    "smallest_chunk": 10,
+    "largest_chunk": 1601,
+    "chunks_under_min_size": 2,
+    "chunks_over_max_size": 2
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

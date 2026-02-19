@@ -1,0 +1,156 @@
+{
+  "document": {
+    "id": 23,
+    "title": "DimagiCommcareConnect-Test-Automation-Proposal"
+  },
+  "extraction": {
+    "total_elements": 333,
+    "element_types_distribution": {
+      "Figure": 63,
+      "P": 58,
+      "Figure[2]": 1,
+      "P[2]": 12,
+      "Figure[3]": 1,
+      "Figure[4]": 1,
+      "H1": 1,
+      "P[3]": 2,
+      "LBody": 54,
+      "Figure[5]": 1,
+      "H1[2]": 1,
+      "P[4]": 1,
+      "P[5]": 1,
+      "Figure[6]": 1,
+      "Figure[7]": 1,
+      "Figure[8]": 1,
+      "H1[3]": 1,
+      "Figure[9]": 1,
+      "H1[4]": 1,
+      "Figure[10]": 1,
+      "Figure[11]": 1,
+      "H1[5]": 1,
+      "H2": 1,
+      "Table": 1,
+      "TH": 18,
+      "TH[2]": 5,
+      "TH[3]": 5,
+      "TD": 16,
+      "TD[2]": 16,
+      "Sub": 9,
+      "Sub[2]": 3,
+      "Figure[12]": 1,
+      "H2[2]": 1,
+      "Table[2]": 1,
+      "Figure[13]": 1,
+      "Figure[14]": 1,
+      "H1[6]": 1,
+      "Figure[15]": 1,
+      "H1[7]": 1,
+      "Figure[16]": 1,
+      "H1[8]": 1,
+      "P[6]": 1,
+      "H2[3]": 1,
+      "Figure[17]": 1,
+      "H2[4]": 1,
+      "P[7]": 1,
+      "H1[9]": 1,
+      "Figure[18]": 1,
+      "H1[10]": 1,
+      "Table[3]": 1,
+      "Lbl": 11,
+      "Figure[19]": 1,
+      "H1[11]": 1,
+      "Table[4]": 1,
+      "TD[3]": 3,
+      "H2[5]": 1,
+      "H3": 1,
+      "P[8]": 1,
+      "P[9]": 1,
+      "Figure[20]": 1,
+      "H1[12]": 1,
+      "Table[5]": 1,
+      "TH[4]": 1,
+      "TH[5]": 1,
+      "TD[4]": 2,
+      "TD[5]": 2,
+      "Figure[21]": 2,
+      "H1[13]": 1,
+      "Figure[22]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "Test Automation Proposal for ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure[2]",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "Submitted by ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure[3]",
+        "text": "",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 14,
+    "total_characters": 8958,
+    "total_words": 1250,
+    "average_chunk_size": 640.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Test Automation Proposal for\n\nSubmitted by"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Project Overview",
+        "page": 2,
+        "text": "Project Overview\n\nDimagi is seeking to establish a Test Automation Solution for one of its key product lines - CommCare Connect across web and mobile which currently has no automation in place. Primar"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Objective",
+        "page": 3,
+        "text": "Objective\n\nThe objective of this proposal is to establish a strategic QA partnership between Dimagi and Moolya Software Testing to ensure comprehensive quality ownership and implement a robust test au"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Testing Scope",
+        "page": 4,
+        "text": "Testing Scope\n\n\u2022 Design and implement a scalable automation framework for Dimagi's CommCare Connect product covering both Web and Mobile platforms.\n\u2022 Collaborate with Dimagi team to prioritize modules"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Test Automation - Moolya's Approach",
+        "page": 5,
+        "text": "Test Automation - Moolya's Approach"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 26.9,
+    "smallest_chunk": 10,
+    "largest_chunk": 1926,
+    "chunks_under_min_size": 4,
+    "chunks_over_max_size": 4
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

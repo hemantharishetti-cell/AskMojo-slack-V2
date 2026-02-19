@@ -1,0 +1,160 @@
+{
+  "document": {
+    "id": 35,
+    "title": "Moolya ContinuousCare (2)"
+  },
+  "extraction": {
+    "total_elements": 126,
+    "element_types_distribution": {
+      "H1": 1,
+      "P": 1,
+      "P[2]": 1,
+      "P[3]": 1,
+      "P[4]": 1,
+      "P[5]": 1,
+      "P[6]": 1,
+      "P[7]": 1,
+      "P[8]": 1,
+      "P[9]": 1,
+      "P[10]": 1,
+      "Figure": 6,
+      "Figure[2]": 2,
+      "Figure[3]": 2,
+      "Figure[4]": 2,
+      "H1[2]": 1,
+      "Figure[5]": 2,
+      "P[11]": 1,
+      "H1[3]": 1,
+      "H2": 1,
+      "Figure[6]": 2,
+      "Figure[7]": 2,
+      "H3": 1,
+      "P[12]": 1,
+      "Sub": 2,
+      "Sub[2]": 2,
+      "Figure[8]": 2,
+      "H3[3]": 1,
+      "P[13]": 1,
+      "Figure[9]": 2,
+      "H3[4]": 1,
+      "P[14]": 1,
+      "H1[4]": 1,
+      "H2[2]": 1,
+      "Figure[10]": 2,
+      "H3[5]": 1,
+      "P[15]": 1,
+      "Figure[11]": 2,
+      "H3[6]": 1,
+      "P[16]": 1,
+      "Figure[12]": 2,
+      "H3[7]": 1,
+      "P[17]": 1,
+      "Figure[13]": 2,
+      "H3[8]": 1,
+      "P[18]": 1,
+      "Figure[14]": 2,
+      "H3[9]": 1,
+      "P[19]": 1,
+      "P[20]": 1,
+      "H1[5]": 1,
+      "H2[3]": 1,
+      "Figure[15]": 2,
+      "H1[6]": 1,
+      "H2[4]": 1,
+      "Figure[16]": 2,
+      "H1[7]": 1,
+      "H2[5]": 1,
+      "H2[6]": 1,
+      "Lbl": 15,
+      "LBody": 17,
+      "H2[7]": 1,
+      "H2[8]": 1,
+      "H2[9]": 1,
+      "H2[10]": 1,
+      "H2[11]": 1,
+      "H2[12]": 1,
+      "H2[13]": 1,
+      "H2[14]": 1,
+      "Figure[17]": 2,
+      "P[21]": 1,
+      "H1[9]": 1,
+      "P[22]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/H1",
+        "text": "Moolya ContinuousCare ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "ContinuousCare is Moolya's proactive support solution offering seamless L2 & L3 assistance across ch",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "ContinuousCare: Supporting Customers, Continuously!\" ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[3]",
+        "text": "I 14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[4]",
+        "text": "Years in Business ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 10,
+    "total_characters": 2946,
+    "total_words": 406,
+    "average_chunk_size": 295.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": "Moolya ContinuousCare",
+        "page": 1,
+        "text": "Moolya ContinuousCare\n\nContinuousCare is Moolya's proactive support solution offering seamless L2 & L3 assistance across chat, email, and ITSM, powered by automation and end-to-end ownership\n\nContinuo"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Moolya Solution -ContinuousCare",
+        "page": 2,
+        "text": "Moolya Solution -ContinuousCare\n\nContinuousCare: Supporting Customers, Continuously!"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Business Problem > Identifying the gaps in efficiency, prioritization, and ITSM integration",
+        "page": 3,
+        "text": "Business Problem\n\nIdentifying the gaps in efficiency, prioritization, and ITSM integration\n\nInefficiency in Multi-Channel Support\n\nSilos between email, chat, and ticketing lead to delayed responses\n\nI"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Solution Highlights > Streamlining email, chat, and ITSM for seamless operations.",
+        "page": 4,
+        "text": "Solution Highlights\n\nStreamlining email, chat, and ITSM for seamless operations.\n\nMulti Channel Integration\n\nUnified Dashboard to identify tickets in one place\n\nTicket Prioritization\n\nRank and escalat"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Moolya' s Academy > Streamlining email, chat, and ITSM for seamless operations.",
+        "page": null,
+        "text": "Moolya' s Academy\n\nStreamlining email, chat, and ITSM for seamless operations."
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 23.4,
+    "smallest_chunk": 10,
+    "largest_chunk": 790,
+    "chunks_under_min_size": 5,
+    "chunks_over_max_size": 0
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

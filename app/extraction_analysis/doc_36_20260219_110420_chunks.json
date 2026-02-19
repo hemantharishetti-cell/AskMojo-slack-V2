@@ -1,0 +1,112 @@
+[
+  {
+    "chunk_index": 1,
+    "page_number": 1,
+    "text": "Moolya MoolyAImpact: Governing Quality for AI Systems\n\n14+\n\n200+\n\n20+\n\n80%\n\nYears in Business\n\nCustomers\n\nCountries\n\nIndustry leaders choose us",
+    "heading_level_1": null,
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": null,
+    "is_table": true
+  },
+  {
+    "chunk_index": 2,
+    "page_number": 2,
+    "text": "Who we are\n\nAt Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+    "heading_level_1": "Who we are",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Who we are",
+    "is_table": false
+  },
+  {
+    "chunk_index": 3,
+    "page_number": 2,
+    "text": "Why Choose us\n\nSkin in the Game\n\nCulture Focus\n\nLeadership Friendly\n\nWe go beyond vendor roles, fostering deep co-ownership with customers.\n\nWe help customers address issues by focusing on cultural fixes.\n\nMoolya empowers C-, V-, and D-level leaders with\n\ninsights.\n\nScaling Value\n\nMoolya unifies Tech, Test, Product, Customer & Business insights to scale value.",
+    "heading_level_1": "Why Choose us",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Why Choose us",
+    "is_table": true
+  },
+  {
+    "chunk_index": 4,
+    "page_number": 3,
+    "text": "Why Now?\n\n\u2022 AI adoption is accelerating across large language models, computer vision, and recommendation systems. Unlike traditional software, outputs are non-deterministic, creating new challenges for testing.\n\u2022 Emerging AI Quality Challenges These challenges surface as hallucinations, bias, drift, and gaps in audit readiness.\n\u2022 Rising Regulatory Pressure Regulators such as the EU AI Act, DPDP, and ISO 42001 are making evidence-driven quality assurance mandatory.\n\u2022 Expanding Market Demand Industry forecasts estimate that the AI market will grow at a CAGR of nearly 37% between 2024 and 2030, creating a significant demand for structured QA governance.",
+    "heading_level_1": "Why Now?",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Why Now?",
+    "is_table": false
+  },
+  {
+    "chunk_index": 5,
+    "page_number": 4,
+    "text": "The Challenge\n\nTraditional QA approaches do not fully apply to AI systems. There is no fixed \u201cexpected versus actual\u201d truth, and quality risks tend to emerge gradually rather than immediately.\n\nHidden Bias Risk\n\nBias can remain hidden, affecting fairness and decision-making.\n\nModel Drift Challenges\n\nModel drift leads to silent performance degradation over time.\n\nFragmented Tooling\n\nFragmented tools across the ecosystem reduce release velocity.\n\nTalent Gaps in AI QA\n\nSpecialized QA talent for AI testing is still limited in availability.\n\nQuality Assurance Gaps\n\nStudies show that nearly 60% of reported AI issues are linked to insufficient or incomplete quality assurance practices.",
+    "heading_level_1": "The Challenge",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "The Challenge",
+    "is_table": false
+  },
+  {
+    "chunk_index": 6,
+    "page_number": 5,
+    "text": "Our Philosophy\n\nWe believe innovation and trust must grow hand-in-hand, with quality in AI defined not by perfection, but by making risks visible, measurable, and governable.\n\n\u201cDon\u2019t become AI rich and trust poor.\u201d\n\nClarity in Quality\n\nUse AI only where quality can be clearly measured and governed.\n\nBalanced Innovation\n\nFocus on innovation with responsibility, so adoption scales safely.\n\nProven Acceleration\n\nStructured QA governance drives 25\u201335% faster AI adoption.",
+    "heading_level_1": "Our Philosophy",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Our Philosophy",
+    "is_table": false
+  },
+  {
+    "chunk_index": 7,
+    "page_number": 6,
+    "text": "Introducing MoolyAImpact\n\nMoolyAImpact environments. Delivered is a productised as a ready QA service servicethat pod, spans it eliminates the full the AI lifecycle need for \u2014 internal from clean talent data ramp-up. to monitored production\n\nLifecycle Coverage\n\nThe lifecycle coverage includes Data, Model, Scenario, and Production.\n\nService Pod Team\n\nEach client receives a service pod that includes an AI\n\nQA Lead, SDETs, an Analyst, and a Red-Team Engineer.\n\nSeamless Integration\n\nThe solution integrates seamlessly into existing pipelines and workflows.\n\nRapid Onboarding\n\nOn average, clients are able to integrate MoolyAImpact within two to four weeks.",
+    "heading_level_1": "Introducing MoolyAImpact",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Introducing MoolyAImpact",
+    "is_table": false
+  },
+  {
+    "chunk_index": 8,
+    "page_number": 7,
+    "text": "Service Stack (How We Do It)\n\nOur service stack transforms theory into execution. It combines risk discovery, automated gates, advanced testing, and governance frameworks into one unified pipeline.\n\nS:No\n\nLayer\n\nWhat We Deliver\n\n01\n\nDiscovery & Risk\n\nA comprehensive risk register and compliance mapping\n\n02\n\nData\n\nSchema checks, bias analysis, and drift gates embedded into CI/CD\n\n03\n\nModel\n\nProperty-based testing, metamorphic testing, and adversarial testing\n\n04\n\nScenario\n\nSynthetic flows, replay validations, and operational dashboards\n\n05\n\nProduction\n\nContinuous monitoring for drift, hallucinations, and latency\n\n06\n\nGovernance\n\nAudit-ready dossiers and traceability frameworks\n\nMore than 90% of compliance controls can be auto-validated in each release cycle.",
+    "heading_level_1": "Service Stack (How We Do It)",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Service Stack (How We Do It)",
+    "is_table": true
+  },
+  {
+    "chunk_index": 9,
+    "page_number": 8,
+    "text": "MoolyAImpact \u2014 Practical Assurance for AI-Powered Platforms\n\nModern AI-driven platforms leverage intelligent search, automation, and analytics to enhance support efficiency and user experience. As these systems grow in complexity, ensuring reliability, performance, and AI accuracy becomes mission-critical.\n\nMoolyAImpact\u2019s Quality Framework delivers assurance across these dimensions through a dual-layer model that unifies functional\n\ntesting, API validation, and AI behaviour evaluation \u2014 enabling measurable reliability, accuracy, and transparency.\n\nTechnical QA\n\n\u2022 Validate APIs and data flow.\n\u2022 Measure latency and failover.\n\u2022 Automate repeatable checks.\n\nFunctional QA\n\n\u2022 Run real query variants.\n\u2022 Check accuracy and relevance.\n\u2022 Find model/data gaps.\n\nAI Quality Signals\n\n\u2022 Detect bias and drift.\n\u2022 Recheck after model updates.\n\u2022 Track accuracy and latency.\n\nExpected Outcomes : Consistent AI response accuracy, Strong system reliability, Lower production risks.\n\nDeliverables: Defect Matrix, Accuracy Dashboard, Test Suites",
+    "heading_level_1": "MoolyAImpact \u2014 Practical Assurance for AI-Powered Platforms",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "MoolyAImpact \u2014 Practical Assurance for AI-Powered Platforms",
+    "is_table": false
+  },
+  {
+    "chunk_index": 10,
+    "page_number": 10,
+    "text": "Metrics, Impact, and Next Steps\n\nSuccess Metrics Strategic Value Proposition MoolyAImpact\u2019s Framework ensures technical precision and AI integrity by:\n\nMetric\n\nPurpose\n\nAPI Reliability\n\nEnsures stability and data integrity\n\nResponse Accuracy\n\nProves AI precision and relevance\n\nAI Regressions\n\nMaintains quality and trust\n\nThis delivers practical assurance that AI in Service Cloud and KSP is reliable and production-ready.",
+    "heading_level_1": "Metrics, Impact, and Next Steps",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Metrics, Impact, and Next Steps",
+    "is_table": true
+  },
+  {
+    "chunk_index": 11,
+    "page_number": 11,
+    "text": "Outcomes (Pain \u2192 Change \u2192 KPI Lift)\n\nMoolyAImpact converts QA challenges into measurable business improvements by accelerating releases, improving resilience, and simplifying compliance preparation.\n\nS:No\n\nPain\n\nMoolyAImpact Change\n\nKPI Lift\n\n01\n\nDifficulty proving model safety\n\nCompliance gates validate builds at every stage\n\n70% reduction in hotfixes\n\n02\n\nManual evaluations that\n\ntake weeks\n\nAutomated evaluations complete in less than 15 minutes per PR\n\n2\u20134\u00d7 faster release velocity\n\n03\n\nErrors that impact\n\ncustomers\n\nDrift monitors automatically raise tickets for issues\n\n60% fewer user-raised issues within three months\n\n04\n\nLong audit preparation cycles\n\nConformity dossiers generated with every release\n\nAudit prep time reduced from weeks to days\n\nTeams using MoolyAImpact have reported 30\u201340% cost savings in QA cycles within the first year of adoption.\n\nThank You!",
+    "heading_level_1": "Outcomes (Pain \u2192 Change \u2192 KPI Lift)",
+    "heading_level_2": null,
+    "heading_level_3": null,
+    "section": "Outcomes (Pain \u2192 Change \u2192 KPI Lift)",
+    "is_table": true
+  }
+]

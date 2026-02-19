@@ -1,0 +1,2956 @@
+{
+  "version": {
+    "json_export": "226",
+    "page_segmentation": "55",
+    "schema": "1.1.0",
+    "structure": "1.1183.0",
+    "table_structure": "5"
+  },
+  "extended_metadata": {
+    "ID_instance": "1D 6F 4C 89 EF BE B2 11 0A 00 A0 8F 57 19 C5 A2 ",
+    "ID_permanent": "73 6F 6D 65 ",
+    "has_acroform": false,
+    "has_embedded_files": false,
+    "is_XFA": false,
+    "is_certified": false,
+    "is_encrypted": false,
+    "is_digitally_signed": false,
+    "language": "en",
+    "page_count": 7,
+    "pdf_version": "1.7",
+    "pdfa_compliance_level": "",
+    "pdfua_compliance_level": ""
+  },
+  "elements": [
+    {
+      "Bounds": [
+        165.0,
+        -22222.0,
+        561.7178039550781,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2032,
+      "Page": 0,
+      "Path": "//Document/Title",
+      "Text": "Moolya Engineering ",
+      "TextSize": 46.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        164.9040069580078,
+        -32768.0,
+        1789.2335968017578,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2033,
+      "Page": 0,
+      "Path": "//Document/H1",
+      "Text": "BugBuster Without Slowing \u2013 Tackling Development Defect Backlogs ",
+      "TextSize": 96.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29746.0,
+        1758.2030029296875,
+        32767.99998474121
+      ],
+      "ObjectID": 2036,
+      "Page": 0,
+      "Path": "//Document/Table",
+      "attributes": {
+        "BBox": [
+          172.07299999999668,
+          181.47699999999895,
+          1750.609999999986,
+          319.1109999999899
+        ],
+        "NumCol": 4,
+        "NumRow": 2,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart0.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29746.0,
+        322.1000061035156,
+        32767.99998474121
+      ],
+      "ObjectID": 2038,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH",
+      "attributes": {
+        "BBox": [
+          150.71399999999994,
+          231.63499999999476,
+          578.1359999999986,
+          319.1109999999899
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "BorderColor": [
+          null,
+          null,
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ],
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ]
+        ],
+        "BorderStyle": [
+          "None",
+          "None",
+          "Solid",
+          "Solid"
+        ],
+        "BorderThickness": [
+          0,
+          0,
+          14.25,
+          7.125
+        ],
+        "ColIndex": 0,
+        "Height": 87.5,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 427.25
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -29746.0,
+        322.1000061035156,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2039,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH/P",
+      "Text": "14+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -29746.0,
+        779.6300048828125,
+        32767.99998474121
+      ],
+      "ObjectID": 2040,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          563.8569999999891,
+          231.63499999999476,
+          854.2449999999953,
+          319.1109999999899
+        ],
+        "BlockAlign": "Middle",
+        "BorderColor": [
+          null,
+          null,
+          [
+            0.4666599999999903,
+            0.3607789999999937,
+            0.9843139999999835
+          ],
+          null
+        ],
+        "BorderStyle": [
+          "None",
+          "None",
+          "Solid",
+          "None"
+        ],
+        "BorderThickness": [
+          0,
+          0,
+          7.125,
+          0
+        ],
+        "ColIndex": 1,
+        "Height": 87.5,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 290.375
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -29746.0,
+        779.6300048828125,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2041,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[2]/P",
+      "Text": "200+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -29746.0,
+        1136.3899993896484,
+        32767.99998474121
+      ],
+      "ObjectID": 2042,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[3]",
+      "attributes": {
+        "BBox": [
+          854.2449999999953,
+          231.63499999999476,
+          1233.1899999999441,
+          319.1109999999899
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 2,
+        "Height": 87.5,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 379
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -29746.0,
+        1136.3899993896484,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2043,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[3]/P",
+      "Text": "20+ ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -29746.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "ObjectID": 2044,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[4]",
+      "attributes": {
+        "BBox": [
+          1233.1899999999441,
+          231.63499999999476,
+          1750.4899999999907,
+          319.1109999999899
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "Middle",
+        "ColIndex": 3,
+        "Height": 87.5,
+        "InlineAlign": "Center",
+        "RowIndex": 0,
+        "Width": 517.25
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -29746.0,
+        1560.8300018310547,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2045,
+      "Page": 0,
+      "Path": "//Document/Table/TR/TH[4]/P",
+      "Text": "80% ",
+      "TextSize": 60.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -14811.0,
+        435.4459991455078,
+        30189.0
+      ],
+      "ObjectID": 2047,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          172.07299999999668,
+          181.47699999999895,
+          571.0569999999716,
+          231.63499999999476
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 0,
+        "Height": 50.125,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 399
+      }
+    },
+    {
+      "Bounds": [
+        209.0,
+        -14811.0,
+        435.4459991455078,
+        30189.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2048,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD/P",
+      "Text": "Years in Business ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -14811.0,
+        758.5070037841797,
+        30189.0
+      ],
+      "ObjectID": 2049,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          571.0569999999716,
+          181.47699999999895,
+          854.2449999999953,
+          231.63499999999476
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 1,
+        "Height": 50.125,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 283.25
+      }
+    },
+    {
+      "Bounds": [
+        608.0,
+        -14811.0,
+        758.5070037841797,
+        30189.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2050,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[2]/P",
+      "Text": "Customers ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -14811.0,
+        1140.1009979248047,
+        30189.0
+      ],
+      "ObjectID": 2051,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[3]",
+      "attributes": {
+        "BBox": [
+          854.2449999999953,
+          181.47699999999895,
+          1233.1899999999441,
+          231.63499999999476
+        ],
+        "BackgroundColor": [
+          0.0705871999999985,
+          0,
+          0.1411739999999994
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 2,
+        "Height": 50.125,
+        "InlineAlign": "Center",
+        "RowIndex": 1,
+        "Width": 379
+      }
+    },
+    {
+      "Bounds": [
+        1007.0,
+        -14811.0,
+        1140.1009979248047,
+        30189.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2052,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[3]/P",
+      "Text": "Countries ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -14811.0,
+        1758.2030029296875,
+        30189.0
+      ],
+      "ObjectID": 2053,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[4]",
+      "attributes": {
+        "BBox": [
+          1233.1899999999441,
+          181.47699999999895,
+          1750.4899999999907,
+          231.63499999999476
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 3,
+        "Height": 50.125,
+        "InlineAlign": "End",
+        "RowIndex": 1,
+        "Width": 517.25
+      }
+    },
+    {
+      "Bounds": [
+        1406.0,
+        -14811.0,
+        1758.2030029296875,
+        30189.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_0",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2054,
+      "Page": 0,
+      "Path": "//Document/Table/TR[2]/TD[4]/P",
+      "Text": "Industry leaders choose us ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        689.8504028320312,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2055,
+      "Page": 1,
+      "Path": "//Document/H1[2]",
+      "Text": "The Challenge ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.14999389648438,
+        690.2774353027344,
+        232.8509979248047,
+        776.054443359375
+      ],
+      "ObjectID": 2056,
+      "Page": 1,
+      "Path": "//Document/Figure",
+      "attributes": {
+        "BBox": [
+          149.153999999995,
+          690.255999999994,
+          232.79099999999744,
+          776.051999999996
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14358.0,
+        487.02000427246094,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2057,
+      "Page": 1,
+      "Path": "//Document/P",
+      "Text": "Growing Defect Pile-Up ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 15.125
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -10437.009994506836,
+        660.7937927246094,
+        22595.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2058,
+      "Page": 1,
+      "Path": "//Document/P[2]",
+      "Text": "Defect backlogs grow while development sprints continue. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 31.875,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14683.0,
+        654.7079925537109,
+        30317.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2059,
+      "Page": 1,
+      "Path": "//Document/P[3]",
+      "Text": "Manual Processes Drain Productivity High defect leakage into production increases costs and customer dissatisfaction. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 39.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1062.890853881836,
+        696.8295288085938,
+        1133.10986328125,
+        767.1085357666016
+      ],
+      "ObjectID": 2060,
+      "Page": 1,
+      "Path": "//Document/Figure[2]",
+      "attributes": {
+        "BBox": [
+          1062.7999999999884,
+          696.8559999999998,
+          1133.109999999986,
+          767.1729999999807
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -14358.0,
+        1560.3580017089844,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2061,
+      "Page": 1,
+      "Path": "//Document/P[4]",
+      "Text": "Delivery Delays from Legacy Issues Feature delivery often gets delayed due to old unresolved bugs. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 39.5,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -14683.0,
+        1470.890396118164,
+        30317.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_1",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2062,
+      "Page": 1,
+      "Path": "//Document/P[5]",
+      "Text": "Impact of Defect Leakage Manual defect resolution and validation consumes valuable engineering time. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 39.5
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        1304.3883972167969,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2063,
+      "Page": 2,
+      "Path": "//Document/H1[3]",
+      "Text": "Moolya's Solution \u2013 BugBuster ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14683.0,
+        1564.9360046386719,
+        30642.0
+      ],
+      "ObjectID": 2064,
+      "Page": 2,
+      "Path": "//Document/Table[2]",
+      "attributes": {
+        "BBox": [
+          149.75399999999354,
+          232.4739999999947,
+          1559.3399999999674,
+          783.2519999999786
+        ],
+        "NumCol": 2,
+        "NumRow": 4,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart1.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        154.50071716308594,
+        702.2171325683594,
+        227.49771118164062,
+        761.8731384277344
+      ],
+      "ObjectID": 2066,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.75399999999354,
+          684.9759999999951,
+          1038.4399999999441,
+          783.2519999999786
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 98.25,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 888.625
+      }
+    },
+    {
+      "Bounds": [
+        154.50071716308594,
+        702.2171325683594,
+        227.49771118164062,
+        761.8731384277344
+      ],
+      "ObjectID": 2067,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR/TH/Figure",
+      "attributes": {
+        "BBox": [
+          154.7939999999944,
+          702.375,
+          227.39099999999598,
+          761.6529999999912
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1064.2099609375,
+        698.2093811035156,
+        1131.7739715576172,
+        765.7903747558594
+      ],
+      "ObjectID": 2068,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          1038.4399999999441,
+          684.9759999999951,
+          1559.219999999972,
+          783.2519999999786
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 98.25,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 520.875
+      }
+    },
+    {
+      "Bounds": [
+        1064.2099609375,
+        698.2093811035156,
+        1131.7739715576172,
+        765.7903747558594
+      ],
+      "ObjectID": 2069,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR/TH[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1064.359999999986,
+          698.295999999973,
+          1131.5499999999884,
+          765.612999999983
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14358.0,
+        653.8220062255859,
+        30642.0
+      ],
+      "ObjectID": 2071,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          149.75399999999354,
+          488.3039999999892,
+          1038.4399999999441,
+          684.9759999999951
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 196.625,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 888.625
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        594.468994140625,
+        232.47500610351562,
+        664.2959747314453
+      ],
+      "ObjectID": 2072,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          558.1409999999742,
+          646.7739999999758,
+          664.0969999999797
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14358.0,
+        547.3769989013672,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2073,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD/P",
+      "Text": "Focused Backlog Resolution ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 15.125
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -10437.009994506836,
+        653.8220062255859,
+        22595.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2074,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD/P[2]",
+      "Text": "Dedicated engineering teams focusing solely on backlog clearance. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 31.875
+      }
+    },
+    {
+      "Bounds": [
+        1056.75,
+        -14358.0,
+        1460.3261413574219,
+        30642.0
+      ],
+      "ObjectID": 2075,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1038.4399999999441,
+          488.3039999999892,
+          1559.219999999972,
+          684.9759999999951
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 196.625,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 520.875
+      }
+    },
+    {
+      "Bounds": [
+        1056.75,
+        594.468994140625,
+        1112.9450073242188,
+        664.2960357666016
+      ],
+      "ObjectID": 2076,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1056.9199999999837,
+          558.380999999994,
+          1459.259999999951,
+          664.0969999999797
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -14358.0,
+        1460.3261413574219,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2077,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/P",
+      "Text": "Dual-Track Execution \u2013 backlog fixes while",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -10405.0,
+        1245.0516052246094,
+        22595.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2080,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/P[2]",
+      "Text": "Parallel execution ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -10437.009994506836,
+        1376.6159973144531,
+        22562.990005493164
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2081,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[2]/TD[2]/P[3]",
+      "Text": "development sprints continue. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        154.38270568847656,
+        374.3830108642578,
+        227.61770629882812,
+        447.6170196533203
+      ],
+      "ObjectID": 2083,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          149.75399999999354,
+          360.98899999998685,
+          1038.4399999999441,
+          488.3039999999892
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 127.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 888.625
+      }
+    },
+    {
+      "Bounds": [
+        154.38270568847656,
+        374.3830108642578,
+        227.61770629882812,
+        447.6170196533203
+      ],
+      "ObjectID": 2084,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[3]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          154.67399999999907,
+          374.54899999999907,
+          227.5109999999986,
+          447.3859999999986
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1058.8123931884766,
+        372.0887451171875,
+        1137.9703979492188,
+        449.9117431640625
+      ],
+      "ObjectID": 2085,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1038.4399999999441,
+          360.98899999998685,
+          1559.219999999972,
+          488.3039999999892
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 127.375,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 520.875
+      }
+    },
+    {
+      "Bounds": [
+        1058.8123931884766,
+        372.0887451171875,
+        1137.9703979492188,
+        449.9117431640625
+      ],
+      "ObjectID": 2086,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[3]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1059.079999999958,
+          372.2689999999857,
+          1137.789999999979,
+          449.66599999999744
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14683.0,
+        610.9308013916016,
+        30317.0
+      ],
+      "ObjectID": 2088,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD",
+      "attributes": {
+        "BBox": [
+          149.75399999999354,
+          232.4739999999947,
+          1038.4399999999441,
+          360.98899999998685
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 0,
+        "Height": 128.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 888.625
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        269.46905517578125,
+        361.67799377441406,
+        339.29603576660156
+      ],
+      "ObjectID": 2089,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          237.6339999999982,
+          603.6949999999779,
+          339.02999999999884
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14683.0,
+        529.1399993896484,
+        30317.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2090,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD/P",
+      "Text": "Automation-Led Validation ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 15
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -10762.009994506836,
+        610.9308013916016,
+        22270.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2091,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD/P[2]",
+      "Text": "Automation-first validation of bug fixes with minimal manual intervention. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        1056.75,
+        -14683.0,
+        1564.9360046386719,
+        30317.0
+      ],
+      "ObjectID": 2092,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1038.4399999999441,
+          232.4739999999947,
+          1559.219999999972,
+          360.98899999998685
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 1,
+        "Height": 128.5,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 520.875
+      }
+    },
+    {
+      "Bounds": [
+        1056.75,
+        265.25,
+        1394.4859924316406,
+        339.6180114746094
+      ],
+      "ObjectID": 2093,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1056.9199999999837,
+          233.19399999999587,
+          1558.3799999999464,
+          339.3899999999994
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -14683.0,
+        1429.3809967041016,
+        30317.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2094,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD[2]/P",
+      "Text": "Preventive Quality Insights ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 15
+      }
+    },
+    {
+      "Bounds": [
+        1057.0,
+        -10762.009994506836,
+        1564.9360046386719,
+        22270.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_2",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2095,
+      "Page": 2,
+      "Path": "//Document/Table[2]/TR[4]/TD[2]/P[2]",
+      "Text": "Root cause analysis to prevent recurring defects and reduce future backlog. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 32
+      }
+    },
+    {
+      "Bounds": [
+        -0.25,
+        -32768.0,
+        1920.25,
+        32767.99998474121
+      ],
+      "ObjectID": 2096,
+      "Page": 3,
+      "Path": "//Document/Figure[3]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          0.0439452999999989,
+          1919.9199999999837,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        -0.25,
+        -32768.0,
+        1920.25,
+        32767.99998474121
+      ],
+      "ObjectID": 2096,
+      "Page": 3,
+      "Path": "//Document/Figure[3]",
+      "attributes": {
+        "BBox": [
+          0.0,
+          0.0439452999999989,
+          1919.9199999999837,
+          1080.0
+        ],
+        "Placement": "Block"
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        769.1622009277344,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2097,
+      "Page": 4,
+      "Path": "//Document/H1[4]",
+      "Text": "Business Impact ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14712.0,
+        1678.464599609375,
+        30642.0
+      ],
+      "ObjectID": 2098,
+      "Page": 4,
+      "Path": "//Document/Table[3]",
+      "attributes": {
+        "BBox": [
+          142.7939999999944,
+          26.202899999999318,
+          1672.8499999999767,
+          789.7319999999891
+        ],
+        "NumCol": 3,
+        "NumRow": 4,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart2.xlsx"
+      ]
+    },
+    {
+      "ObjectID": 2100,
+      "Path": "//Document/Table[3]/TR/TH",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          682.8159999999916,
+          665.612999999983,
+          789.7319999999891
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 106.875,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 515.625
+      }
+    },
+    {
+      "ObjectID": 2101,
+      "Path": "//Document/Table[3]/TR/TH[2]",
+      "attributes": {
+        "BBox": [
+          665.612999999983,
+          679.0959999999905,
+          1256.2299999999814,
+          789.7319999999891
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 110.625,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 590.625
+      }
+    },
+    {
+      "Bounds": [
+        1274.75,
+        -14358.0,
+        1678.464599609375,
+        30642.0
+      ],
+      "ObjectID": 2102,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR/TD",
+      "attributes": {
+        "BBox": [
+          1256.2299999999814,
+          26.202899999999318,
+          1672.7299999999814,
+          789.7319999999891
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 2,
+        "Height": 763.375,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "RowSpan": 4,
+        "Width": 416.625
+      }
+    },
+    {
+      "Bounds": [
+        1274.75,
+        600.5,
+        1610.5069885253906,
+        772.2496795654297
+      ],
+      "ObjectID": 2103,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR/TD/Figure",
+      "attributes": {
+        "BBox": [
+          1274.9499999999534,
+          564.380999999994,
+          1671.289999999979,
+          771.9729999999981
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1275.0,
+        -14358.0,
+        1646.207992553711,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2104,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR/TD/P",
+      "Text": "Lower Production Defects ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 9.125
+      }
+    },
+    {
+      "Bounds": [
+        1275.0,
+        -10431.009994506836,
+        1678.464599609375,
+        22601.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2105,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR/TD/P[2]",
+      "Text": "Reduced defect leakage to production by 20%-40%. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 31.875
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14358.0,
+        522.8318023681641,
+        30642.0
+      ],
+      "ObjectID": 2107,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          142.7939999999944,
+          454.4649999999965,
+          665.612999999983,
+          682.8159999999916
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 228.375,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 522.875
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        600.5000152587891,
+        234.21800231933594,
+        664.2959747314453
+      ],
+      "ObjectID": 2108,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          568.3409999999858,
+          521.1389999999956,
+          664.0969999999797
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14358.0,
+        521.7999572753906,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2109,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD/P",
+      "Text": "Rapid Backlog Impact \u2013 up",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 9.125
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -10431.009994506836,
+        522.8318023681641,
+        22601.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2111,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD/P[2]",
+      "Text": "Accelerated backlog clearance to 50% reduction within 3 months. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 31.875
+      }
+    },
+    {
+      "Bounds": [
+        704.75,
+        -14358.0,
+        1060.8569946289062,
+        30642.0
+      ],
+      "ObjectID": 2112,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          665.612999999983,
+          502.70299999999406,
+          1672.7299999999814,
+          679.0959999999905
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "ColSpan": 2,
+        "Height": 176.375,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 1007.25
+      }
+    },
+    {
+      "Bounds": [
+        704.75,
+        600.4690551757812,
+        851.3220062255859,
+        664.6180267333984
+      ],
+      "ObjectID": 2113,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          704.9709999999905,
+          568.5809999999765,
+          1052.0,
+          664.3369999999995
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -14358.0,
+        1060.8569946289062,
+        30642.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2114,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/P",
+      "Text": "Cleaner, Faster Releases ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -10399.0,
+        1015.0108032226562,
+        22601.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2115,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/P[2]",
+      "Text": "Faster release readiness with ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -10431.009994506836,
+        861.3320007324219,
+        22568.990005493164
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2116,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[2]/TD[2]/P[3]",
+      "Text": "cleaner builds. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "ObjectID": 2118,
+      "Path": "//Document/Table[3]/TR[3]/TD",
+      "attributes": {
+        "BBox": [
+          142.7939999999944,
+          340.70999999999185,
+          665.612999999983,
+          454.4649999999965
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 113.75,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "Width": 522.875
+      }
+    },
+    {
+      "Bounds": [
+        704.75,
+        -14712.0,
+        1093.154800415039,
+        30288.0
+      ],
+      "ObjectID": 2119,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]",
+      "attributes": {
+        "BBox": [
+          665.612999999983,
+          143.67799999999988,
+          1672.7299999999814,
+          454.4649999999965
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 1,
+        "ColSpan": 2,
+        "Height": 310.75,
+        "InlineAlign": "Start",
+        "RowIndex": 2,
+        "RowSpan": 2,
+        "Width": 1007.25
+      }
+    },
+    {
+      "Bounds": [
+        704.75,
+        246.46905517578125,
+        813.4020080566406,
+        425.7253723144531
+      ],
+      "ObjectID": 2120,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          704.9709999999905,
+          214.5949999999939,
+          1085.9599999999627,
+          425.42699999999604
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -14712.0,
+        965.7929992675781,
+        30288.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2121,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/P",
+      "Text": "Happier End Users ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -10753.0,
+        1093.154800415039,
+        22247.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2122,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/P[2]",
+      "Text": "Increased customer satisfaction with ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        705.0,
+        -10785.009994506836,
+        873.2185974121094,
+        22214.990005493164
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2123,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[3]/TD[2]/P[3]",
+      "Text": "stable releases. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        -14712.0,
+        569.7239990234375,
+        30288.0
+      ],
+      "ObjectID": 2125,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[4]/TD",
+      "attributes": {
+        "BBox": [
+          142.7939999999944,
+          209.55499999999302,
+          665.612999999983,
+          340.70999999999185
+        ],
+        "BlockAlign": "After",
+        "ColIndex": 0,
+        "Height": 131.125,
+        "InlineAlign": "Start",
+        "RowIndex": 3,
+        "Width": 522.875
+      }
+    },
+    {
+      "Bounds": [
+        149.75,
+        246.75,
+        294.3659973144531,
+        310.2959747314453
+      ],
+      "ObjectID": 2126,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[4]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          210.15499999999884,
+          560.8569999999891,
+          310.1109999999899
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -14712.0,
+        569.7239990234375,
+        30288.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2127,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[4]/TD/P",
+      "Text": "Developer Productivity Boost ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 9.125
+      }
+    },
+    {
+      "Bounds": [
+        149.97799682617188,
+        -10785.009994506836,
+        507.5,
+        22247.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_4",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2128,
+      "Page": 4,
+      "Path": "//Document/Table[3]/TR[4]/TD/P[2]",
+      "Text": "Improved developer focus on new features, boosting productivity. ",
+      "TextSize": 22.0,
+      "attributes": {
+        "LineHeight": 31.875
+      }
+    },
+    {
+      "Bounds": [
+        150.0,
+        -32768.0,
+        676.8356018066406,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2129,
+      "Page": 5,
+      "Path": "//Document/H1[5]",
+      "Text": "Why Moolya? ",
+      "TextSize": 80.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        177.75,
+        -14642.990005493164,
+        1614.6419982910156,
+        30638.0
+      ],
+      "ObjectID": 2130,
+      "Page": 5,
+      "Path": "//Document/Table[4]",
+      "attributes": {
+        "BBox": [
+          154.07399999999325,
+          2.6838399999999183,
+          1607.0899999999674,
+          680.5359999999928
+        ],
+        "NumCol": 2,
+        "NumRow": 2,
+        "Placement": "Block",
+        "SpaceAfter": 18
+      },
+      "filePaths": [
+        "tables/fileoutpart3.xlsx"
+      ]
+    },
+    {
+      "Bounds": [
+        177.75,
+        -14401.990005493164,
+        725.2989959716797,
+        30638.0
+      ],
+      "ObjectID": 2132,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD",
+      "attributes": {
+        "BBox": [
+          149.99399999999878,
+          438.50599999999395,
+          1026.079999999958,
+          680.5359999999928
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 242,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 876.125
+      }
+    },
+    {
+      "Bounds": [
+        177.75,
+        631.8910217285156,
+        442.1520080566406,
+        660.2960205078125
+      ],
+      "ObjectID": 2133,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD/Figure",
+      "attributes": {
+        "BBox": [
+          177.95299999999406,
+          591.9799999999814,
+          716.3709999999846,
+          660.3769999999786
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        178.0,
+        -14401.990005493164,
+        725.2989959716797,
+        30638.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2134,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD/P",
+      "Text": "Proven expertise in QA and engineering for complex systems. ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 40.125
+      }
+    },
+    {
+      "Bounds": [
+        1049.75,
+        -14401.990005493164,
+        1614.6419982910156,
+        30638.0
+      ],
+      "ObjectID": 2135,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD[2]",
+      "attributes": {
+        "BBox": [
+          1026.079999999958,
+          438.50599999999395,
+          1606.969999999972,
+          680.5359999999928
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 242,
+        "InlineAlign": "Start",
+        "RowIndex": 0,
+        "Width": 581
+      }
+    },
+    {
+      "Bounds": [
+        1049.75,
+        631.8469848632812,
+        1089.3619995117188,
+        660.2959747314453
+      ],
+      "ObjectID": 2136,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1049.9599999999627,
+          591.9799999999814,
+          1603.969999999972,
+          660.0169999999925
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1050.0,
+        -14401.990005493164,
+        1614.6419982910156,
+        30638.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2137,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR/TD[2]/P",
+      "Text": "Hybrid approach combining engineering, automation, and testing. ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 40.125
+      }
+    },
+    {
+      "Bounds": [
+        177.75,
+        -14642.990005493164,
+        799.6840057373047,
+        30397.0
+      ],
+      "ObjectID": 2139,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD",
+      "attributes": {
+        "BBox": [
+          154.07399999999325,
+          2.6838399999999183,
+          1026.079999999958,
+          438.50599999999395
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 0,
+        "Height": 435.875,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 872
+      }
+    },
+    {
+      "Bounds": [
+        177.75,
+        390.84698486328125,
+        790.947021484375,
+        419.6329803466797
+      ],
+      "ObjectID": 2140,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD/Figure",
+      "attributes": {
+        "BBox": [
+          177.95299999999406,
+          353.1899999999878,
+          790.7679999999818,
+          419.42699999999604
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        178.0,
+        -14603.0,
+        799.6840057373047,
+        30397.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2141,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD/P",
+      "Text": "Seamless integration with your existing tools ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "SpaceAfter": -3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        177.97000122070312,
+        -14642.990005493164,
+        513.0399932861328,
+        30357.009994506836
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2142,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD/P[2]",
+      "Text": "(Jira, Jenkins, GitHub). ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953
+      }
+    },
+    {
+      "Bounds": [
+        1049.75,
+        -14642.990005493164,
+        1497.4230041503906,
+        30397.0
+      ],
+      "ObjectID": 2143,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD[2]",
+      "attributes": {
+        "BBox": [
+          1026.079999999958,
+          2.6838399999999183,
+          1606.969999999972,
+          438.50599999999395
+        ],
+        "BackgroundColor": [
+          0.9607849999999871,
+          0.9568629999999985,
+          0.9490199999999902
+        ],
+        "BlockAlign": "Before",
+        "ColIndex": 1,
+        "Height": 435.875,
+        "InlineAlign": "Start",
+        "RowIndex": 1,
+        "Width": 581
+      }
+    },
+    {
+      "Bounds": [
+        1049.75,
+        396.41302490234375,
+        1112.6690063476562,
+        419.2960205078125
+      ],
+      "ObjectID": 2144,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD[2]/Figure",
+      "attributes": {
+        "BBox": [
+          1049.9599999999627,
+          351.02999999999884,
+          1488.6599999999744,
+          419.06699999999546
+        ],
+        "Placement": "Block",
+        "SpaceAfter": 18
+      }
+    },
+    {
+      "Bounds": [
+        1050.0,
+        -14642.990005493164,
+        1497.4230041503906,
+        30397.0
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_5",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2145,
+      "Page": 5,
+      "Path": "//Document/Table[4]/TR[2]/TD[2]/P",
+      "Text": "Data-driven defect analysis and prioritization. ",
+      "TextSize": 30.0,
+      "attributes": {
+        "LineHeight": 40
+      }
+    },
+    {
+      "Bounds": [
+        658.0,
+        -32768.0,
+        1291.6959991455078,
+        32767.99998474121
+      ],
+      "Font": {
+        "alt_family_name": "T 3 Font",
+        "embedded": true,
+        "encoding": "Custom",
+        "family_name": "T 3 Font",
+        "font_type": "Type3",
+        "italic": false,
+        "monospaced": false,
+        "name": "T3Font_6",
+        "subset": true,
+        "weight": 400
+      },
+      "HasClip": false,
+      "Lang": "en",
+      "ObjectID": 2146,
+      "Page": 6,
+      "Path": "//Document/P[6]",
+      "Text": "Thank You! ",
+      "TextSize": 120.0,
+      "attributes": {
+        "LineHeight": 3931.8699999999953,
+        "TextAlign": "Center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 0,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 1,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 2,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 3,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 4,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 5,
+      "rotation": 0,
+      "width": 1920.0
+    },
+    {
+      "boxes": {
+        "CropBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ],
+        "MediaBox": [
+          0.0,
+          0.0,
+          1920.0,
+          1080.0
+        ]
+      },
+      "height": 1080.0,
+      "is_scanned": false,
+      "page_number": 6,
+      "rotation": 0,
+      "width": 1920.0
+    }
+  ]
+}

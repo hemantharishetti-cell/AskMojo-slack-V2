@@ -1,0 +1,117 @@
+{
+  "document": {
+    "id": 25,
+    "title": "BFSI Proven Case Studies (3)"
+  },
+  "extraction": {
+    "total_elements": 82,
+    "element_types_distribution": {
+      "P": 1,
+      "Figure": 1,
+      "P[2]": 1,
+      "Figure[2]": 2,
+      "Figure[3]": 2,
+      "H1": 1,
+      "H2": 1,
+      "H3": 1,
+      "Lbl": 23,
+      "LBody": 23,
+      "H3[2]": 1,
+      "H3[3]": 1,
+      "Figure[4]": 2,
+      "H1[2]": 1,
+      "Figure[5]": 2,
+      "H2[2]": 1,
+      "H3[4]": 1,
+      "H3[5]": 1,
+      "H3[6]": 1,
+      "Figure[6]": 2,
+      "H1[3]": 1,
+      "H2[3]": 1,
+      "H3[7]": 1,
+      "H3[8]": 1,
+      "H3[9]": 1,
+      "Figure[7]": 2,
+      "Figure[8]": 2,
+      "H1[4]": 1,
+      "Figure[9]": 2,
+      "P[3]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/P",
+        "text": "Moolya Testing Excellence ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/P[2]",
+        "text": "20+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure[2]",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure[2]",
+        "text": "Countries ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 5,
+    "total_characters": 2421,
+    "total_words": 372,
+    "average_chunk_size": 484.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "Moolya Testing Excellence\n\n20+"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Case Study 1 > Enhancing Banking Stability with Functional and Automated Testing",
+        "page": 2,
+        "text": "Case Study 1\n\nEnhancing Banking Stability with Functional and Automated Testing\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Functional Testing, Test Automation, and Performance Testing to ensure seamless banking o"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Case Study 2 > Strengthening Security and Compliance in Financial Services",
+        "page": 3,
+        "text": "Case Study 2\n\nStrengthening Security and Compliance in Financial Services\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Performed Security Testing, Compliance Testing, and Functional Testing to align with regulatory"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Case Study 3 > Optimizing Performance and User Experience in High-Traffic Banking Operations",
+        "page": 4,
+        "text": "Case Study 3\n\nOptimizing Performance and User Experience in High-Traffic Banking Operations\n\nServices and Solutions\n\n\u2022 \u2022\n\u2022 Usability Testing, Performance Testing, and Regression Testing to support rap"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Our Customers Who Have Experienced the Moolya Values",
+        "page": 5,
+        "text": "Our Customers Who Have Experienced the Moolya Values\n\nThank You!"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 29.5,
+    "smallest_chunk": 30,
+    "largest_chunk": 863,
+    "chunks_under_min_size": 2,
+    "chunks_over_max_size": 0
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

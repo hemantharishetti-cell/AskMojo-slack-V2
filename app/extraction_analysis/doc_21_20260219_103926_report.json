@@ -1,0 +1,182 @@
+{
+  "document": {
+    "id": 21,
+    "title": "DevOps Implementation and Managed Operations for Keysight"
+  },
+  "extraction": {
+    "total_elements": 817,
+    "element_types_distribution": {
+      "Sub": 1,
+      "Sub[2]": 1,
+      "P": 212,
+      "Figure": 206,
+      "P[2]": 22,
+      "Figure[2]": 2,
+      "Figure[3]": 2,
+      "P[3]": 7,
+      "Figure[4]": 2,
+      "P[4]": 5,
+      "H1": 1,
+      "P[5]": 4,
+      "H1[2]": 1,
+      "Figure[5]": 1,
+      "H2": 1,
+      "P[6]": 3,
+      "Table": 1,
+      "TD": 54,
+      "TD[2]": 44,
+      "TD[3]": 29,
+      "H2[2]": 1,
+      "P[7]": 2,
+      "H1[3]": 1,
+      "P[8]": 1,
+      "P[9]": 1,
+      "P[10]": 1,
+      "ParagraphSpan": 2,
+      "LBody": 30,
+      "P[11]": 1,
+      "H1[4]": 1,
+      "Table[2]": 1,
+      "P[12]": 1,
+      "H2[3]": 1,
+      "P[13]": 1,
+      "Table[3]": 1,
+      "TH": 60,
+      "TH[2]": 11,
+      "TH[3]": 10,
+      "TH[4]": 6,
+      "P[14]": 1,
+      "Table[4]": 1,
+      "Figure[6]": 2,
+      "H1[5]": 1,
+      "Table[5]": 1,
+      "H1[6]": 1,
+      "H2[4]": 1,
+      "P[15]": 1,
+      "Table[6]": 1,
+      "H2[5]": 1,
+      "P[16]": 1,
+      "Table[7]": 1,
+      "H2[6]": 1,
+      "P[17]": 1,
+      "Table[8]": 1,
+      "H1[7]": 1,
+      "Table[9]": 1,
+      "H1[8]": 1,
+      "H1[9]": 1,
+      "P[18]": 1,
+      "Table[10]": 1,
+      "H1[10]": 1,
+      "Table[11]": 1,
+      "H1[11]": 1,
+      "Table[12]": 1,
+      "P[19]": 1,
+      "Table[13]": 1,
+      "Figure[7]": 2,
+      "Figure[8]": 2,
+      "H2[7]": 1,
+      "H2[8]": 1,
+      "H3": 1,
+      "Lbl": 23,
+      "H3[2]": 1,
+      "H3[3]": 1,
+      "Figure[9]": 2,
+      "Figure[10]": 2,
+      "H2[9]": 1,
+      "H2[10]": 1,
+      "H3[4]": 1,
+      "P[20]": 1,
+      "H3[5]": 1,
+      "H3[6]": 1,
+      "Figure[11]": 2,
+      "H2[11]": 1,
+      "H2[12]": 1,
+      "H3[7]": 1,
+      "P[21]": 1,
+      "H3[8]": 1,
+      "H3[9]": 1,
+      "Figure[12]": 2,
+      "H1[12]": 1,
+      "P[22]": 1,
+      "P[23]": 1,
+      "P[24]": 1,
+      "P[25]": 1
+    },
+    "element_samples": [
+      {
+        "path": "//Document/Title/Sub",
+        "text": "Moolya ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Title/Sub[2]",
+        "text": "DevOps Implementation and Managed Operations ",
+        "page": 0
+      },
+      {
+        "path": "//Document/P",
+        "text": "14+ ",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "",
+        "page": 0
+      },
+      {
+        "path": "//Document/Figure",
+        "text": "Years in Business ",
+        "page": 0
+      }
+    ]
+  },
+  "chunking": {
+    "total_chunks": 13,
+    "total_characters": 14914,
+    "total_words": 1915,
+    "average_chunk_size": 1147.0,
+    "chunk_samples": [
+      {
+        "chunk_index": 1,
+        "section": null,
+        "page": 1,
+        "text": "14+\n\n200+\n\nCountries\n\nIndustry leaders choose us"
+      },
+      {
+        "chunk_index": 2,
+        "section": "Who we are",
+        "page": 2,
+        "text": "Who we are\n\nAt Moolya Software Testing Private Limited, we are a global leader in AI-driven engineering solutions, specializing in creating scalable, secure, and intelligent platforms that transform b"
+      },
+      {
+        "chunk_index": 3,
+        "section": "Why Choose us",
+        "page": 2,
+        "text": "Why Choose us\n\nSkin in the Game\n\nWe go beyond vendor roles, fostering deep co-ownership with customers.\n\nCulture Focus\n\nLeadership Friendly\n\nWe help customers address issues by focusing on cultural fi"
+      },
+      {
+        "chunk_index": 4,
+        "section": "Executive Summary",
+        "page": 3,
+        "text": "Executive Summary\n\nKeysight Technologies empowers innovators to design and deliver next-generation solutions with precision, speed, and confidence.\n\nMoolya proposes a DevOps Implementation and Managed"
+      },
+      {
+        "chunk_index": 5,
+        "section": "Engagement Objectives > From Maintenance Mode to Modern DevOps Excellence",
+        "page": 4,
+        "text": "Engagement Objectives\n\nDrive continuous improvement and governance through measurable KPIs.\n\nImplement and manage Kubernetes-based DevOps platform on AWS.\n\nIntegrate Jenkins pipelines with Polaris and"
+      }
+    ]
+  },
+  "quality_metrics": {
+    "utilization_rate": 18.3,
+    "smallest_chunk": 48,
+    "largest_chunk": 4279,
+    "chunks_under_min_size": 2,
+    "chunks_over_max_size": 4
+  },
+  "recommendations": [
+    "\u26a0\ufe0f  Low chunk-to-element ratio - may be over-aggregating content",
+    "\u2139\ufe0f  Missing element types in output: {'P', 'H1', 'H2', 'H3'}"
+  ]
+}

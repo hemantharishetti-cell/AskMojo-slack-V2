@@ -1,0 +1,953 @@
+{
+  "version": "1.0",
+  "document_id": 36,
+  "created_at": "2026-02-19T05:34:20.786323Z",
+  "pages": [
+    {
+      "page_number": 1,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Moolya MoolyAImpact: Governing Quality for AI Systems"
+      ],
+      "list": [],
+      "table": [
+        "14+",
+        "200+",
+        "20+",
+        "80%",
+        "Years in Business",
+        "Customers",
+        "Countries",
+        "Industry leaders choose us"
+      ],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Moolya MoolyAImpact: Governing Quality for AI Systems",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "14+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "200+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "20+",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "80%",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Years in Business",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Customers",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Countries",
+          "page_number": 1
+        },
+        {
+          "type": "table",
+          "text": "Industry leaders choose us",
+          "page_number": 1
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "h1": [
+        "Who we are",
+        "Why Choose us"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+        "Scaling Value",
+        "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value."
+      ],
+      "list": [],
+      "table": [
+        "Skin in the Game",
+        "Culture Focus",
+        "Leadership Friendly",
+        "We go beyond vendor roles, fostering deep co-ownership with customers.",
+        "We help customers address issues by focusing on cultural fixes.",
+        "Moolya empowers C-, V-, and D-level leaders with",
+        "insights."
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Who we are",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "At Moolya Software Testing Private Limited, we lead globally in software testing and quality assurance, partnering with clients across industries to deliver top-tier solutions. Our services ranging from functional and automation to performance and security testing are designed to enhance software quality, efficiency, and productivity, ensuring client success and satisfaction.",
+          "page_number": 2
+        },
+        {
+          "type": "h1",
+          "text": "Why Choose us",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Skin in the Game",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Culture Focus",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Leadership Friendly",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We go beyond vendor roles, fostering deep co-ownership with customers.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "We help customers address issues by focusing on cultural fixes.",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "Moolya empowers C-, V-, and D-level leaders with",
+          "page_number": 2
+        },
+        {
+          "type": "table",
+          "text": "insights.",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Scaling Value",
+          "page_number": 2
+        },
+        {
+          "type": "p",
+          "text": "Moolya unifies Tech, Test, Product, Customer & Business insights to scale value.",
+          "page_number": 2
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "h1": [
+        "Why Now?"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [
+        [
+          "AI adoption is accelerating across large language models, computer vision, and recommendation systems. Unlike traditional software, outputs are non-deterministic, creating new challenges for testing.",
+          "Emerging AI Quality Challenges These challenges surface as hallucinations, bias, drift, and gaps in audit readiness.",
+          "Rising Regulatory Pressure Regulators such as the EU AI Act, DPDP, and ISO 42001 are making evidence-driven quality assurance mandatory.",
+          "Expanding Market Demand Industry forecasts estimate that the AI market will grow at a CAGR of nearly 37% between 2024 and 2030, creating a significant demand for structured QA governance."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Why Now?",
+          "page_number": 3
+        },
+        {
+          "type": "list",
+          "text": "• AI adoption is accelerating across large language models, computer vision, and recommendation systems. Unlike traditional software, outputs are non-deterministic, creating new challenges for testing.\n• Emerging AI Quality Challenges These challenges surface as hallucinations, bias, drift, and gaps in audit readiness.\n• Rising Regulatory Pressure Regulators such as the EU AI Act, DPDP, and ISO 42001 are making evidence-driven quality assurance mandatory.\n• Expanding Market Demand Industry forecasts estimate that the AI market will grow at a CAGR of nearly 37% between 2024 and 2030, creating a significant demand for structured QA governance.",
+          "page_number": 3
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "h1": [
+        "The Challenge"
+      ],
+      "h2": [
+        "Hidden Bias Risk",
+        "Model Drift Challenges",
+        "Fragmented Tooling",
+        "Talent Gaps in AI QA",
+        "Quality Assurance Gaps"
+      ],
+      "h3": [],
+      "p": [
+        "Traditional QA approaches do not fully apply to AI systems. There is no fixed “expected versus actual” truth, and quality risks tend to emerge gradually rather than immediately.",
+        "Bias can remain hidden, affecting fairness and decision-making.",
+        "Model drift leads to silent performance degradation over time.",
+        "Fragmented tools across the ecosystem reduce release velocity.",
+        "Specialized QA talent for AI testing is still limited in availability.",
+        "Studies show that nearly 60% of reported AI issues are linked to insufficient or incomplete quality assurance practices."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "The Challenge",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Traditional QA approaches do not fully apply to AI systems. There is no fixed “expected versus actual” truth, and quality risks tend to emerge gradually rather than immediately.",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Hidden Bias Risk",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Bias can remain hidden, affecting fairness and decision-making.",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Model Drift Challenges",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Model drift leads to silent performance degradation over time.",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Fragmented Tooling",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Fragmented tools across the ecosystem reduce release velocity.",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Talent Gaps in AI QA",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Specialized QA talent for AI testing is still limited in availability.",
+          "page_number": 4
+        },
+        {
+          "type": "h2",
+          "text": "Quality Assurance Gaps",
+          "page_number": 4
+        },
+        {
+          "type": "p",
+          "text": "Studies show that nearly 60% of reported AI issues are linked to insufficient or incomplete quality assurance practices.",
+          "page_number": 4
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "h1": [
+        "Our Philosophy"
+      ],
+      "h2": [
+        "Clarity in Quality",
+        "Balanced Innovation"
+      ],
+      "h3": [],
+      "p": [
+        "We believe innovation and trust must grow hand-in-hand, with quality in AI defined not by perfection, but by making risks visible, measurable, and governable.",
+        "“Don’t become AI rich and trust poor.”",
+        "Use AI only where quality can be clearly measured and governed.",
+        "Focus on innovation with responsibility, so adoption scales safely.",
+        "Proven Acceleration",
+        "Structured QA governance drives 25–35% faster AI adoption."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Our Philosophy",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "We believe innovation and trust must grow hand-in-hand, with quality in AI defined not by perfection, but by making risks visible, measurable, and governable.",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "“Don’t become AI rich and trust poor.”",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Clarity in Quality",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Use AI only where quality can be clearly measured and governed.",
+          "page_number": 5
+        },
+        {
+          "type": "h2",
+          "text": "Balanced Innovation",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Focus on innovation with responsibility, so adoption scales safely.",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Proven Acceleration",
+          "page_number": 5
+        },
+        {
+          "type": "p",
+          "text": "Structured QA governance drives 25–35% faster AI adoption.",
+          "page_number": 5
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "h1": [
+        "Introducing MoolyAImpact"
+      ],
+      "h2": [
+        "Lifecycle Coverage",
+        "Service Pod Team",
+        "Seamless Integration",
+        "Rapid Onboarding"
+      ],
+      "h3": [],
+      "p": [
+        "MoolyAImpact environments. Delivered is a productised as a ready QA service servicethat pod, spans it eliminates the full the AI lifecycle need for — internal from clean talent data ramp-up. to monitored production",
+        "The lifecycle coverage includes Data, Model, Scenario, and Production.",
+        "Each client receives a service pod that includes an AI",
+        "QA Lead, SDETs, an Analyst, and a Red-Team Engineer.",
+        "The solution integrates seamlessly into existing pipelines and workflows.",
+        "On average, clients are able to integrate MoolyAImpact within two to four weeks."
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Introducing MoolyAImpact",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "MoolyAImpact environments. Delivered is a productised as a ready QA service servicethat pod, spans it eliminates the full the AI lifecycle need for — internal from clean talent data ramp-up. to monitored production",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Lifecycle Coverage",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "The lifecycle coverage includes Data, Model, Scenario, and Production.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Service Pod Team",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "Each client receives a service pod that includes an AI",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "QA Lead, SDETs, an Analyst, and a Red-Team Engineer.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Seamless Integration",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "The solution integrates seamlessly into existing pipelines and workflows.",
+          "page_number": 6
+        },
+        {
+          "type": "h2",
+          "text": "Rapid Onboarding",
+          "page_number": 6
+        },
+        {
+          "type": "p",
+          "text": "On average, clients are able to integrate MoolyAImpact within two to four weeks.",
+          "page_number": 6
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "h1": [
+        "Service Stack (How We Do It)"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Our service stack transforms theory into execution. It combines risk discovery, automated gates, advanced testing, and governance frameworks into one unified pipeline.",
+        "More than 90% of compliance controls can be auto-validated in each release cycle."
+      ],
+      "list": [],
+      "table": [
+        "S:No",
+        "Layer",
+        "What We Deliver",
+        "01",
+        "Discovery & Risk",
+        "A comprehensive risk register and compliance mapping",
+        "02",
+        "Data",
+        "Schema checks, bias analysis, and drift gates embedded into CI/CD",
+        "03",
+        "Model",
+        "Property-based testing, metamorphic testing, and adversarial testing",
+        "04",
+        "Scenario",
+        "Synthetic flows, replay validations, and operational dashboards",
+        "05",
+        "Production",
+        "Continuous monitoring for drift, hallucinations, and latency",
+        "06",
+        "Governance",
+        "Audit-ready dossiers and traceability frameworks"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Service Stack (How We Do It)",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "Our service stack transforms theory into execution. It combines risk discovery, automated gates, advanced testing, and governance frameworks into one unified pipeline.",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Layer",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "What We Deliver",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Discovery & Risk",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "A comprehensive risk register and compliance mapping",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Data",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Schema checks, bias analysis, and drift gates embedded into CI/CD",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Model",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Property-based testing, metamorphic testing, and adversarial testing",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "04",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Scenario",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Synthetic flows, replay validations, and operational dashboards",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "05",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Production",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Continuous monitoring for drift, hallucinations, and latency",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "06",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Governance",
+          "page_number": 7
+        },
+        {
+          "type": "table",
+          "text": "Audit-ready dossiers and traceability frameworks",
+          "page_number": 7
+        },
+        {
+          "type": "p",
+          "text": "More than 90% of compliance controls can be auto-validated in each release cycle.",
+          "page_number": 7
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "h1": [
+        "MoolyAImpact — Practical Assurance for AI-Powered Platforms"
+      ],
+      "h2": [
+        "Technical QA",
+        "Functional QA",
+        "AI Quality Signals"
+      ],
+      "h3": [],
+      "p": [
+        "Modern AI-driven platforms leverage intelligent search, automation, and analytics to enhance support efficiency and user experience. As these systems grow in complexity, ensuring reliability, performance, and AI accuracy becomes mission-critical.",
+        "MoolyAImpact’s Quality Framework delivers assurance across these dimensions through a dual-layer model that unifies functional",
+        "testing, API validation, and AI behaviour evaluation — enabling measurable reliability, accuracy, and transparency.",
+        "Expected Outcomes : Consistent AI response accuracy, Strong system reliability, Lower production risks.",
+        "Deliverables: Defect Matrix, Accuracy Dashboard, Test Suites"
+      ],
+      "list": [
+        [
+          "Validate APIs and data flow.",
+          "Measure latency and failover.",
+          "Automate repeatable checks."
+        ],
+        [
+          "Run real query variants.",
+          "Check accuracy and relevance.",
+          "Find model/data gaps."
+        ],
+        [
+          "Detect bias and drift.",
+          "Recheck after model updates.",
+          "Track accuracy and latency."
+        ]
+      ],
+      "table": [],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "MoolyAImpact — Practical Assurance for AI-Powered Platforms",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Modern AI-driven platforms leverage intelligent search, automation, and analytics to enhance support efficiency and user experience. As these systems grow in complexity, ensuring reliability, performance, and AI accuracy becomes mission-critical.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "MoolyAImpact’s Quality Framework delivers assurance across these dimensions through a dual-layer model that unifies functional",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "testing, API validation, and AI behaviour evaluation — enabling measurable reliability, accuracy, and transparency.",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Technical QA",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Validate APIs and data flow.\n• Measure latency and failover.\n• Automate repeatable checks.",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "Functional QA",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Run real query variants.\n• Check accuracy and relevance.\n• Find model/data gaps.",
+          "page_number": 8
+        },
+        {
+          "type": "h2",
+          "text": "AI Quality Signals",
+          "page_number": 8
+        },
+        {
+          "type": "list",
+          "text": "• Detect bias and drift.\n• Recheck after model updates.\n• Track accuracy and latency.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Expected Outcomes : Consistent AI response accuracy, Strong system reliability, Lower production risks.",
+          "page_number": 8
+        },
+        {
+          "type": "p",
+          "text": "Deliverables: Defect Matrix, Accuracy Dashboard, Test Suites",
+          "page_number": 8
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [],
+      "list": [],
+      "table": [],
+      "blocks": []
+    },
+    {
+      "page_number": 10,
+      "h1": [
+        "Metrics, Impact, and Next Steps"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Success Metrics Strategic Value Proposition MoolyAImpact’s Framework ensures technical precision and AI integrity by:",
+        "This delivers practical assurance that AI in Service Cloud and KSP is reliable and production-ready."
+      ],
+      "list": [],
+      "table": [
+        "Metric",
+        "Purpose",
+        "API Reliability",
+        "Ensures stability and data integrity",
+        "Response Accuracy",
+        "Proves AI precision and relevance",
+        "AI Regressions",
+        "Maintains quality and trust"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Metrics, Impact, and Next Steps",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "Success Metrics Strategic Value Proposition MoolyAImpact’s Framework ensures technical precision and AI integrity by:",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Metric",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Purpose",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "API Reliability",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Ensures stability and data integrity",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Response Accuracy",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Proves AI precision and relevance",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "AI Regressions",
+          "page_number": 10
+        },
+        {
+          "type": "table",
+          "text": "Maintains quality and trust",
+          "page_number": 10
+        },
+        {
+          "type": "p",
+          "text": "This delivers practical assurance that AI in Service Cloud and KSP is reliable and production-ready.",
+          "page_number": 10
+        }
+      ]
+    },
+    {
+      "page_number": 11,
+      "h1": [
+        "Outcomes (Pain → Change → KPI Lift)"
+      ],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "MoolyAImpact converts QA challenges into measurable business improvements by accelerating releases, improving resilience, and simplifying compliance preparation.",
+        "Teams using MoolyAImpact have reported 30–40% cost savings in QA cycles within the first year of adoption."
+      ],
+      "list": [],
+      "table": [
+        "S:No",
+        "Pain",
+        "MoolyAImpact Change",
+        "KPI Lift",
+        "01",
+        "Difficulty proving model safety",
+        "Compliance gates validate builds at every stage",
+        "70% reduction in hotfixes",
+        "02",
+        "Manual evaluations that",
+        "take weeks",
+        "Automated evaluations complete in less than 15 minutes per PR",
+        "2–4× faster release velocity",
+        "03",
+        "Errors that impact",
+        "customers",
+        "Drift monitors automatically raise tickets for issues",
+        "60% fewer user-raised issues within three months",
+        "04",
+        "Long audit preparation cycles",
+        "Conformity dossiers generated with every release",
+        "Audit prep time reduced from weeks to days"
+      ],
+      "blocks": [
+        {
+          "type": "h1",
+          "text": "Outcomes (Pain → Change → KPI Lift)",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "MoolyAImpact converts QA challenges into measurable business improvements by accelerating releases, improving resilience, and simplifying compliance preparation.",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "S:No",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Pain",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "MoolyAImpact Change",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "KPI Lift",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "01",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Difficulty proving model safety",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Compliance gates validate builds at every stage",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "70% reduction in hotfixes",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "02",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Manual evaluations that",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "take weeks",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Automated evaluations complete in less than 15 minutes per PR",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "2–4× faster release velocity",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "03",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Errors that impact",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "customers",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Drift monitors automatically raise tickets for issues",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "60% fewer user-raised issues within three months",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "04",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Long audit preparation cycles",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Conformity dossiers generated with every release",
+          "page_number": 11
+        },
+        {
+          "type": "table",
+          "text": "Audit prep time reduced from weeks to days",
+          "page_number": 11
+        },
+        {
+          "type": "p",
+          "text": "Teams using MoolyAImpact have reported 30–40% cost savings in QA cycles within the first year of adoption.",
+          "page_number": 11
+        }
+      ]
+    },
+    {
+      "page_number": 12,
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "p": [
+        "Thank You!"
+      ],
+      "list": [],
+      "table": [],
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Thank You!",
+          "page_number": 12
+        }
+      ]
+    }
+  ]
+}
