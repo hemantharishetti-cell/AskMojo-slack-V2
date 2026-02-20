@@ -59,3 +59,4 @@ class RetrievalResult(BaseModel):
     # Summaries for prompt building (TOON-encoded)
     summaries_toon: str = ""
     chunks_toon: str = ""
+    toon_savings: dict | None = None

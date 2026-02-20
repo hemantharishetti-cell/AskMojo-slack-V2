@@ -115,6 +115,7 @@ async def generate_response(ctx: PipelineContext) -> FinalResponse:
     )
 
     # ── 3. LLM call ────────────────────────────────────────────────
+
     messages: list[dict] = [{"role": "system", "content": system_prompt}]
 
     # Add conversation history
@@ -126,6 +127,12 @@ async def generate_response(ctx: PipelineContext) -> FinalResponse:
                 messages.append({"role": r, "content": c})
 
     messages.append({"role": "user", "content": user_prompt})
+
+    # --- DEBUG: Log prompt length and preview for TOON effectiveness ---
+    prompt_text = system_prompt + "\n" + user_prompt
+    logger.info("[TOON DEBUG] Prompt length: %d chars, %d tokens (approx)", len(prompt_text), len(prompt_text) // 4)
+    logger.info("[TOON DEBUG] Prompt preview: %s", prompt_text[:500].replace("\n", " "))
+
 
     client = get_openai_client()
     response = client.chat.completions.create(
@@ -147,6 +154,20 @@ async def generate_response(ctx: PipelineContext) -> FinalResponse:
         )
 
     logger.info("Answer generated: %d chars, model=%s", len(answer), model_sel.model)
+
+    # --- Token usage and TOON savings tracking ---
+    # Example: OpenAI API returns usage in response.usage
+    token_usage = None
+    if hasattr(response, "usage") and response.usage:
+        token_usage = {
+            "prompt_tokens": getattr(response.usage, "prompt_tokens", None),
+            "completion_tokens": getattr(response.usage, "completion_tokens", None),
+            "total_tokens_used": getattr(response.usage, "total_tokens", None),
+        }
+    # Pass toon_savings from retrieval result if available
+    toon_savings = getattr(retrieval, "toon_savings", None)
+    ctx.token_usage = token_usage
+    ctx.toon_savings = toon_savings
 
     # ── 4. Quality evaluation ───────────────────────────────────────
     quality = evaluate_quality(
@@ -198,6 +219,8 @@ async def generate_response(ctx: PipelineContext) -> FinalResponse:
             confidence_score=dq.confidence_score,
             selected_solution=getattr(intent, "selected_solution", None),
         ),
+        token_usage=getattr(ctx, "token_usage", None),
+        toon_savings=getattr(ctx, "toon_savings", None),
     )
 
 

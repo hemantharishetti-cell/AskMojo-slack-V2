@@ -21,6 +21,76 @@ from app.pdf_extraction.concurrency_manager import ConcurrencyManager
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
+# Upload Logs Management Route
+@router.get("/logs/uploads", response_model=list[DocumentUploadLogResponse])
+def get_upload_logs(
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get document upload logs (admin only).
+    """
+    logs = db.query(DocumentUploadLog).order_by(DocumentUploadLog.created_at.desc()).offset(skip).limit(limit).all()
+    result = []
+    for log in logs:
+        uploader = db.query(User).filter(User.id == log.uploaded_by).first()
+        doc = db.query(Document).filter(Document.id == log.document_id).first()
+        category_name = None
+        if log.category_id:
+            cat = db.query(Category).filter(Category.id == log.category_id).first()
+            if cat:
+                category_name = cat.name
+        result.append(DocumentUploadLogResponse(
+            id=log.id,
+            document_id=log.document_id,
+            document_title=doc.title if doc else log.title,
+            uploaded_by=log.uploaded_by,
+            uploader_name=uploader.name if uploader else None,
+            uploader_email=uploader.email if uploader else None,
+            title=log.title,
+            file_name=log.file_name,
+            category_id=log.category_id,
+            category_name=category_name,
+            category=log.category,
+            description_generated=log.description_generated,
+            description_length=log.description_length,
+            processing_started=log.processing_started,
+            processing_completed=log.processing_completed,
+            processing_error=log.processing_error,
+            created_at=log.created_at,
+            processed_at=log.processed_at,
+            upload_time_seconds=log.upload_time_seconds,
+            description_generation_time_seconds=log.description_generation_time_seconds,
+            description_tokens_used=log.description_tokens_used,
+            description_tokens_prompt=log.description_tokens_prompt,
+            description_tokens_completion=log.description_tokens_completion,
+        ))
+    return result
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+from typing import Dict, Any
+
+from app.sqlite.database import get_db
+from app.sqlite.models import User, Document, QueryLog, Category, DocumentUploadLog, QuerySource
+from app.core.security import get_current_admin_user
+from app.admin.schemas import (
+    AdminUserCreate, AdminUserUpdate, AdminUserResponse, AdminStatsResponse,
+    CategoryCreate, CategoryUpdate, CategoryResponse, DomainResponse,
+    QueryLogResponse, DocumentUploadLogResponse,
+    CategoryDomainBackfillRequest, CategoryDomainBackfillResponse
+)
+from sqlalchemy.orm import joinedload
+from app.core.security import get_password_hash
+from sqlalchemy import func
+
+# Concurrency management
+from app.pdf_extraction.concurrency_manager import ConcurrencyManager
+
+router = APIRouter(prefix="/admin", tags=["admin"])
+
 
 @router.get("/stats", response_model=AdminStatsResponse)
 def get_admin_stats(
@@ -778,4 +848,47 @@ def delete_domain(
     db.delete(domain)
     db.commit()
     return None
+
+
+# Update Domain endpoint
+from pydantic import BaseModel
+
+class DomainUpdate(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    is_active: bool | None = None
+
+@router.put("/domains/{domain_id}", response_model=DomainResponse)
+def update_domain(
+    domain_id: int,
+    domain_update: DomainUpdate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update a domain by ID (admin only).
+    """
+    from app.sqlite.models import Domain
+    domain = db.query(Domain).filter(Domain.id == domain_id).first()
+    if not domain:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Domain with id {domain_id} not found"
+        )
+    # Check if name is being updated and if it already exists
+    if domain_update.name and domain_update.name != domain.name:
+        existing_domain = db.query(Domain).filter(Domain.name == domain_update.name).first()
+        if existing_domain:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Domain name already exists"
+            )
+        domain.name = domain_update.name.strip()
+    if domain_update.description is not None:
+        domain.description = domain_update.description
+    if domain_update.is_active is not None:
+        domain.is_active = domain_update.is_active
+    db.commit()
+    db.refresh(domain)
+    return domain
 

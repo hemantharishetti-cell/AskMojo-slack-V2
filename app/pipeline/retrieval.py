@@ -227,8 +227,20 @@ async def retrieve_documents_and_chunks(
         for c in all_chunks
     ]
 
-    summaries_toon, _, _ = convert_to_toon(summaries_data, "retrieval", "Summaries")
-    chunks_toon, _, _ = convert_to_toon(chunks_data, "retrieval", "Chunks")
+    summaries_toon, summaries_json_tokens, summaries_toon_tokens = convert_to_toon(summaries_data, "retrieval", "Summaries")
+    chunks_toon, chunks_json_tokens, chunks_toon_tokens = convert_to_toon(chunks_data, "retrieval", "Chunks")
+
+    # Calculate TOON savings
+    toon_savings = {
+        "summaries_json_tokens": summaries_json_tokens,
+        "summaries_toon_tokens": summaries_toon_tokens,
+        "summaries_savings": summaries_json_tokens - summaries_toon_tokens,
+        "summaries_savings_percent": (100 * (summaries_json_tokens - summaries_toon_tokens) / summaries_json_tokens) if summaries_json_tokens else 0,
+        "chunks_json_tokens": chunks_json_tokens,
+        "chunks_toon_tokens": chunks_toon_tokens,
+        "chunks_savings": chunks_json_tokens - chunks_toon_tokens,
+        "chunks_savings_percent": (100 * (chunks_json_tokens - chunks_toon_tokens) / chunks_json_tokens) if chunks_json_tokens else 0,
+    }
 
     logger.info(
         "Retrieval complete: %d docs, %d chunks, quality=%s",
@@ -241,6 +253,7 @@ async def retrieve_documents_and_chunks(
         data_quality=quality,
         summaries_toon=summaries_toon,
         chunks_toon=chunks_toon,
+        toon_savings=toon_savings,
     )
 
 

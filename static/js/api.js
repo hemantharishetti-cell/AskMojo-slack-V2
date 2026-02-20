@@ -3,6 +3,12 @@
 // Don't redeclare it, just use window.API_BASE_URL directly
 
 class ApiClient {
+        async updateDomain(domainId, data) {
+            return this.request(`/api/v1/admin/domains/${domainId}`, {
+                method: 'PUT',
+                body: JSON.stringify(data)
+            });
+        }
     constructor() {
         this.baseURL = window.API_BASE_URL || window.location.origin;
     }

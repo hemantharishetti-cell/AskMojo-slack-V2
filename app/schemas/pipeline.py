@@ -58,6 +58,10 @@ class PipelineContext(BaseModel):
     })
     api_call_responses: list[dict] = Field(default_factory=list)
 
+    # --- Added for logging ---
+    token_usage: dict | None = None
+    toon_savings: dict | None = None
+
     class Config:
         arbitrary_types_allowed = True
 

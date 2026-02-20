@@ -235,6 +235,84 @@
 
         <!-- Main Content Area -->
         <main class="p-8">
+
+
+            <!-- Domains Management Modal -->
+            <div id="domainsModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+                <div class="modal-box bg-white max-w-2xl w-full mx-4 rounded-2xl shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto" style="pointer-events: auto; position: relative; z-index: 10000;">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200 sticky top-0 bg-white z-10">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Manage Domains</h3>
+                            <p class="text-sm text-gray-500 mt-1">View, edit, add, or delete domains</p>
+                        </div>
+                        <button id="closeDomainsModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                            <i class="fas fa-times text-gray-600"></i>
+                        </button>
+                    </div>
+                    <div class="mb-4 flex justify-end">
+                        <button id="addDomainModalBtn" class="btn btn-outline btn-sm rounded-xl">
+                            <i class="fas fa-plus mr-1"></i> Add Domain
+                        </button>
+                    </div>
+                    <div id="domainsTableContainer">
+                        <table class="table w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th class="text-xs font-bold text-gray-700">Name</th>
+                                    <th class="text-xs font-bold text-gray-700">Documents</th>
+                                    <th class="text-xs font-bold text-gray-700">Status</th>
+                                    <th class="text-xs font-bold text-gray-700">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="domainsTableBody">
+                                <tr><td colspan="4" class="text-center py-8 text-gray-500 text-sm">Loading domains...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit/Add Domain Modal -->
+            <div id="editDomainModal" class="modal fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-[9999] backdrop-blur-sm" style="display: none; pointer-events: auto;">
+                <div class="modal-box bg-white max-w-md w-full mx-4 rounded-2xl shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto" style="pointer-events: auto; position: relative; z-index: 10000;">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-200 sticky top-0 bg-white z-10">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900" id="editDomainModalTitle">Edit Domain</h3>
+                        </div>
+                        <button id="closeEditDomainModal" class="btn btn-sm btn-circle btn-ghost hover:bg-gray-100">
+                            <i class="fas fa-times text-gray-600"></i>
+                        </button>
+                    </div>
+                    <form id="editDomainForm" class="space-y-5">
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Domain Name <span class="text-red-500">*</span></span>
+                            </label>
+                            <input type="text" id="domainNameInput" class="input input-bordered w-full rounded-xl" required>
+                        </div>
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Description</span>
+                            </label>
+                            <textarea id="domainDescriptionInput" class="textarea textarea-bordered w-full rounded-xl" rows="2"></textarea>
+                        </div>
+                        <div>
+                            <label class="label pb-2">
+                                <span class="label-text font-bold text-gray-700 text-sm">Active</span>
+                            </label>
+                            <input type="checkbox" id="domainActiveInput" class="toggle toggle-success">
+                        </div>
+                        <div id="editDomainErrorMessage" class="alert alert-error hidden rounded-xl"></div>
+                        <div class="modal-action mt-8 pt-6 border-t border-gray-200">
+                            <button type="button" id="cancelEditDomainBtn" class="btn btn-ghost rounded-xl px-6">Cancel</button>
+                            <button type="submit" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold">
+                                <i class="fas fa-save mr-2"></i>
+                                <span id="editDomainSubmitLabel">Save Changes</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <!-- Dashboard Page -->
             <div id="dashboardPage" class="page active">
                 <div class="mb-8">
@@ -1309,21 +1387,24 @@
                     <div class="mb-6">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
-                                <div
-                                    class="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
+                                <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center shadow-md">
                                     <i class="fas fa-folder text-white text-base"></i>
                                 </div>
                                 <div>
                                     <h1 class="text-2xl font-bold text-gray-900">Category Management</h1>
-                                    <p class="text-gray-600 text-sm mt-0.5">Manage document categories and ChromaDB
-                                        collections</p>
+                                    <p class="text-gray-600 text-sm mt-0.5">Manage document categories and ChromaDB collections</p>
                                 </div>
                             </div>
-                            <button id="addCategoryBtn"
-                                class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold flex items-center gap-2">
-                                <i class="fas fa-plus"></i>
-                                <span>Add Category</span>
-                            </button>
+                            <div class="flex flex-col items-end gap-2">
+                                <button id="addCategoryBtn" class="btn bg-gradient-to-r from-green-600 to-emerald-600 text-white border-none hover:shadow-xl hover:from-green-700 hover:to-emerald-700 transition-all rounded-xl px-6 font-semibold flex items-center gap-2">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Add Category</span>
+                                </button>
+                                <button id="manageDomainsBtn" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-semibold bg-white border border-gray-200 text-gray-700 shadow-sm hover:shadow-md hover:bg-gray-50 transition-all">
+                                    <i class="fas fa-cogs text-sm"></i>
+                                    <span>Manage Domains</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -1567,9 +1648,6 @@
                                 class="select select-bordered w-full rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-500">
                                 <option value="">No Domain</option>
                             </select>
-                            <button type="button" id="addDomainBtn" class="btn btn-outline btn-sm rounded-xl">
-                                <i class="fas fa-plus mr-1"></i> Add Domain
-                            </button>
                         </div>
                         <label class="label">
                             <span class="label-text-alt text-gray-500">Choose a domain to narrow the category

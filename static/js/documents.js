@@ -9,6 +9,180 @@ window.openUploadDocumentModal = openUploadDocumentModal;
 // Load documents on page load
 document.addEventListener('DOMContentLoaded', function() {
     setupDocumentsEventListeners();
+
+    // Domain Management Modal Logic
+    const manageDomainsBtn = document.getElementById('manageDomainsBtn');
+    const domainsModal = document.getElementById('domainsModal');
+    const closeDomainsModal = document.getElementById('closeDomainsModal');
+    const addDomainModalBtn = document.getElementById('addDomainModalBtn');
+    const editDomainModal = document.getElementById('editDomainModal');
+    const closeEditDomainModal = document.getElementById('closeEditDomainModal');
+    const cancelEditDomainBtn = document.getElementById('cancelEditDomainBtn');
+    const editDomainForm = document.getElementById('editDomainForm');
+    const editDomainModalTitle = document.getElementById('editDomainModalTitle');
+    const editDomainSubmitLabel = document.getElementById('editDomainSubmitLabel');
+    const domainNameInput = document.getElementById('domainNameInput');
+    const domainDescriptionInput = document.getElementById('domainDescriptionInput');
+    const domainActiveInput = document.getElementById('domainActiveInput');
+    const editDomainErrorMessage = document.getElementById('editDomainErrorMessage');
+    let editingDomainId = null;
+
+    // Open/close modal helpers
+    function showModal(modal) {
+        modal.classList.remove('hidden');
+        modal.style.display = 'flex';
+        modal.style.visibility = 'visible';
+        modal.style.opacity = '1';
+        modal.style.zIndex = '9999';
+        modal.style.pointerEvents = 'auto';
+    }
+    function hideModal(modal) {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        modal.style.visibility = 'hidden';
+        modal.style.opacity = '0';
+        modal.style.pointerEvents = 'none';
+    }
+
+    // Open domains modal
+    if (manageDomainsBtn) {
+        manageDomainsBtn.addEventListener('click', async () => {
+            await loadDomainsTable();
+            showModal(domainsModal);
+        });
+    }
+    if (closeDomainsModal) closeDomainsModal.onclick = () => hideModal(domainsModal);
+
+    // Add Domain button in modal
+    if (addDomainModalBtn) {
+        addDomainModalBtn.addEventListener('click', () => {
+            editingDomainId = null;
+            editDomainModalTitle.textContent = 'Add Domain';
+            editDomainSubmitLabel.textContent = 'Add Domain';
+            domainNameInput.value = '';
+            domainDescriptionInput.value = '';
+            domainActiveInput.checked = true;
+            editDomainErrorMessage.classList.add('hidden');
+            showModal(editDomainModal);
+        });
+    }
+    if (closeEditDomainModal) closeEditDomainModal.onclick = () => hideModal(editDomainModal);
+    if (cancelEditDomainBtn) cancelEditDomainBtn.onclick = () => hideModal(editDomainModal);
+
+    // Load domains into modal table
+    async function loadDomainsTable() {
+        const tbody = document.getElementById('domainsTableBody');
+        if (!tbody) return;
+        tbody.innerHTML = '<tr><td colspan="4" class="text-center py-8 text-gray-500 text-sm">Loading domains...</td></tr>';
+        try {
+            const domains = await apiClient.getDomains(0, 100);
+            if (!domains || domains.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center py-8 text-gray-500 text-sm">No domains found.</td></tr>';
+                return;
+            }
+            // Build a map of document counts per domain
+            let docCounts = {};
+            try {
+                const allDocs = await apiClient.getDocuments(0, 10000);
+                if (Array.isArray(allDocs)) {
+                    allDocs.forEach(d => {
+                        const did = d.domain_id || null;
+                        docCounts[did] = (docCounts[did] || 0) + 1;
+                    });
+                }
+            } catch (e) {
+                // If fetching documents fails, fall back to zero counts silently
+                docCounts = {};
+            }
+
+            tbody.innerHTML = domains.map(domain => `
+                <tr>
+                    <td>${escapeHtml(domain.name)}</td>
+                    <td>${escapeHtml(String(docCounts[domain.id] || 0))}</td>
+                    <td>
+                        <span class="px-2 py-1 text-xs font-bold rounded-full ${domain.is_active ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'}">
+                            ${domain.is_active ? 'Active' : 'Inactive'}
+                        </span>
+                    </td>
+                    <td>
+                        <button class="btn btn-ghost btn-xs text-blue-500 hover:bg-blue-50 edit-domain-btn" data-domain-id="${domain.id}"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-ghost btn-xs text-red-500 hover:bg-red-50 delete-domain-btn" data-domain-id="${domain.id}" data-domain-name="${escapeHtml(domain.name)}"><i class="fas fa-trash"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+            // Attach edit/delete listeners
+            tbody.querySelectorAll('.edit-domain-btn').forEach(btn => {
+                btn.addEventListener('click', async function() {
+                    const domainId = this.getAttribute('data-domain-id');
+                    const domain = domains.find(d => String(d.id) === String(domainId));
+                    if (!domain) return;
+                    editingDomainId = domain.id;
+                    editDomainModalTitle.textContent = 'Edit Domain';
+                    editDomainSubmitLabel.textContent = 'Save Changes';
+                    domainNameInput.value = domain.name;
+                    domainDescriptionInput.value = domain.description || '';
+                    domainActiveInput.checked = !!domain.is_active;
+                    editDomainErrorMessage.classList.add('hidden');
+                    showModal(editDomainModal);
+                });
+            });
+            tbody.querySelectorAll('.delete-domain-btn').forEach(btn => {
+                btn.addEventListener('click', async function() {
+                    const domainId = this.getAttribute('data-domain-id');
+                    const domainName = this.getAttribute('data-domain-name');
+                    if (!confirm(`Are you sure you want to delete the domain "${domainName}"?\n\nThis will delete all associated documents and cannot be undone.`)) return;
+                    try {
+                        await apiClient.deleteDomain(domainId);
+                        // Show detailed popup message per design
+                        showNotification('Domain deleted.', 'success');
+                        // Show note after a short delay to ensure visibility
+                        setTimeout(() => {
+                            showNotification('Domain deleted. Ensure all documents are assigned to a domain to maintain answer accuracy.', 'info');
+                        }, 300);
+                        await loadDomainsTable();
+                        await loadDomainsAndCategories(); // update dropdowns
+                    } catch (e) {
+                        showNotification(e.message || 'Failed to delete domain', 'error');
+                    }
+                });
+            });
+        } catch (e) {
+            tbody.innerHTML = `<tr><td colspan="4" class="text-center py-8 text-red-500 text-sm">${escapeHtml(e.message || 'Failed to load domains')}</td></tr>`;
+        }
+    }
+
+    // Handle add/edit domain form submit
+    if (editDomainForm) {
+        editDomainForm.onsubmit = async function(e) {
+            e.preventDefault();
+            const name = domainNameInput.value.trim();
+            const description = domainDescriptionInput.value.trim();
+            const is_active = domainActiveInput.checked;
+            if (!name) {
+                editDomainErrorMessage.textContent = 'Domain name is required.';
+                editDomainErrorMessage.classList.remove('hidden');
+                return;
+            }
+            try {
+                if (editingDomainId) {
+                    // Update
+                    await apiClient.updateDomain(editingDomainId, { name, description, is_active });
+                    showNotification('Domain updated.', 'success');
+                } else {
+                    // Add
+                    await apiClient.createDomain({ name, description, is_active });
+                    // Show required popup message after creation
+                    showNotification('Domain added. Enable it in Edit Category to make it visible during document upload..', 'success');
+                }
+                hideModal(editDomainModal);
+                await loadDomainsTable();
+                await loadDomainsAndCategories(); // update dropdowns
+            } catch (e) {
+                editDomainErrorMessage.textContent = e.message || 'Failed to save domain.';
+                editDomainErrorMessage.classList.remove('hidden');
+            }
+        };
+    }
 });
 
 function setupDocumentsEventListeners() {
@@ -44,26 +218,7 @@ function setupDocumentsEventListeners() {
         });
     }
 
-    // Add Domain button
-    const addDomainBtn = document.getElementById('addDomainBtn');
-    if (addDomainBtn) {
-        addDomainBtn.addEventListener('click', async () => {
-            const newDomain = prompt('Enter new domain name (e.g., DevOps, Policies):', '');
-            if (!newDomain || !newDomain.trim()) return;
-            try {
-                const created = await apiClient.createDomain({ name: newDomain.trim(), description: null, is_active: true });
-                await loadDomainsAndCategories();
-                // Select the newly created domain
-                const select = document.getElementById('documentDomain');
-                select.value = String(created.id);
-                // Refilter categories
-                loadCategoriesForDocument(created.id);
-                showNotification(`Domain "${created.name}" created.`, 'success');
-            } catch (e) {
-                showNotification(e.message || 'Failed to create domain', 'error');
-            }
-        });
-    }
+    // Note: Domain creation from the upload modal has been disabled — users must select existing domains.
 }
 
 async function loadDocuments() {
