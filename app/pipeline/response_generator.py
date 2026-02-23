@@ -34,15 +34,52 @@ from app.utils.logging import get_logger
 logger = get_logger("askmojo.pipeline.response_generator")
 
 
+
 async def generate_response(ctx: PipelineContext) -> FinalResponse:
     """
     Full Stage 3: answer generation, quality evaluation, and
     optional refinement.
     """
+    # --- Comparison question detection ---
+    is_comparison = any(
+        w in ctx.raw_question.lower()
+        for w in ["different", "difference", "compare", "instead of"]
+    )
+    # --- Discovery question detection ---
+    is_discovery_question = "discovery" in ctx.raw_question.lower()
+    # --- Proof-type question detection ---
+    is_proof_question = any(
+        phrase in ctx.raw_question.lower()
+        for phrase in ["handled", "experience", "before", "proof", "scale"]
+    )
+
+    # --- Multi-problem mapping detection ---
+    def extract_list_items(question: str) -> list[str]:
+        lines = [l.strip() for l in question.split("\n") if l.strip()]
+        # Skip first line if it’s instruction
+        if len(lines) > 1:
+            return lines[1:]
+        return []
+
+    list_items = extract_list_items(ctx.raw_question)
+    is_multi_problem = len(list_items) >= 2
+
     intent = ctx.intent_decision
     retrieval = ctx.retrieval_result
     if intent is None or retrieval is None:
         return FinalResponse(answer="Unable to generate a response — missing context.")
+
+
+    # --- Multi-problem mapping detection ---
+    def extract_list_items(question: str) -> list[str]:
+        lines = [l.strip() for l in question.split("\n") if l.strip()]
+        # Skip first line if it’s instruction
+        if len(lines) > 1:
+            return lines[1:]
+        return []
+
+    list_items = extract_list_items(ctx.raw_question)
+    is_multi_problem = len(list_items) >= 2
 
     # ── 1. Model selection ──────────────────────────────────────────
     question_words = [
@@ -112,6 +149,11 @@ async def generate_response(ctx: PipelineContext) -> FinalResponse:
         proof_snippet=proof_snippet,
         selected_solution=getattr(intent, "selected_solution", None),
         solution_rationale=getattr(intent, "solution_rationale", None),
+        list_items=list_items,
+        is_multi_problem=is_multi_problem,
+        is_proof_question=is_proof_question,
+        is_discovery_question=is_discovery_question,
+        is_comparison=is_comparison,
     )
 
     # ── 3. LLM call ────────────────────────────────────────────────

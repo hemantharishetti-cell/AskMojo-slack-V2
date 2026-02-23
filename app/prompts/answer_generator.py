@@ -18,18 +18,35 @@ from app.prompts.constants import (
 
 def build_system_prompt(role: str, response_type: str) -> str:
     """Build the static system message (persona / role)."""
+    tone_rules = """
+Maintain a friendly, confident, helpful, professional, and value-oriented tone.
+Remove any pushy, promotional, or marketing language. Do NOT use phrases like:
+- "Let’s schedule a call"
+- "Take action today"
+- "Get started now"
+- "Are you available this week?"
+- Any hard CTA or meeting push
+- Overly promotional language
+Replace hard CTA with value-framed closing statements, calm advisory tone, and outcome-oriented conclusions.
+Keep persuasion subtle: focus on business impact and measurable outcomes. Avoid exclamation marks and urgency language.
+Tone should feel like a senior presales engineer, not a marketing email, cold-sales script, or executive brochure.
+If the question is analytical (comparison, proof, technical), remove recommendation framing (e.g., "I recommend...") and use neutral, analytical phrasing (e.g., "X differs from Y in the following ways:").
+End answers with a value-based summary, not a call-to-action.
+"""
     if role == "Pre-Sales":
         return (
             "You are a Senior Pre-Sales Engineer with deep technical knowledge. "
             "You answer with precise technical details, evidence from documents, "
             "and use a professional, consultative tone. "
-            "You never fabricate data. You cite sources using human-friendly document titles."
+            "You never fabricate data. You cite sources using human-friendly document titles. "
+            f"\n\n{tone_rules}"
         )
     return (
         "You are a Senior Sales Advisor with expertise in enterprise software solutions. "
         "You speak with confidence, lead with recommendations, and always ground "
         "your claims in evidence from documents. "
-        "You never fabricate data. You cite sources using human-friendly document titles."
+        "You never fabricate data. You cite sources using human-friendly document titles. "
+        f"\n\n{tone_rules}"
     )
 
 
@@ -48,6 +65,11 @@ def build_answer_prompt(
     proof_snippet: str | None = None,
     selected_solution: str | None = None,
     solution_rationale: str | None = None,
+    list_items: list[str] = None,
+    is_multi_problem: bool = False,
+    is_proof_question: bool = False,
+    is_discovery_question: bool = False,
+    is_comparison: bool = False,
 ) -> str:
     """
     Build the full user-message prompt for answer generation.
@@ -71,6 +93,64 @@ def build_answer_prompt(
 
     # 3. Mode-specific instructions
     parts.append(_mode_instructions(answer_mode, role, response_type))
+
+    # --- Multi-problem enforcement ---
+    if is_multi_problem and list_items:
+        parts.append(
+            """
+You MUST address ALL of the following problems explicitly:
+{items}
+
+Structure:
+For each problem:
+- Problem:
+- Recommended Solution:
+- Why:
+Do not skip any item.
+""".replace("{items}", "\n".join(f"- {p}" for p in list_items))
+        )
+
+    # --- Proof-type question enforcement ---
+    if is_proof_question:
+        parts.append(
+            """
+When answering:
+- Mention scale handled (users, workflows, test cases, environments).
+- Mention measurable outcomes.
+- Do NOT list documents alone.
+- Provide concrete proof from retrieved evidence.
+"""
+        )
+
+    # --- Discovery question enforcement ---
+    if is_discovery_question:
+        parts.append(
+            """
+Provide exactly 3 concise discovery questions.
+Number them 1, 2, 3.
+Do not provide explanations.
+"""
+        )
+
+    # --- Comparison question enforcement ---
+    if is_comparison:
+        parts.append(
+            """
+Structure your answer as:
+1. What Option A is
+2. What Option B is
+3. Key Differences (bullet points)
+4. When to choose each
+
+Use contrast words like:
+- whereas
+- compared to
+- unlike
+
+Avoid marketing tone.
+Be analytical.
+"""
+        )
 
     # 4. Option C: Solution constraint (single recommendation, no list)
     if selected_solution:
