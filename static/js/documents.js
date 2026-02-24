@@ -411,7 +411,7 @@ async function loadDomainsAndCategories() {
         domainSelect.innerHTML = '';
         const noDomainOpt = document.createElement('option');
         noDomainOpt.value = '';
-        noDomainOpt.textContent = 'All Domains';
+        noDomainOpt.textContent = 'Select Domain';
         domainSelect.appendChild(noDomainOpt);
         
         if (domains && Array.isArray(domains)) {
@@ -486,6 +486,7 @@ async function handleUploadDocument(event) {
     const fileInput = document.getElementById('documentFile');
     const titleInput = document.getElementById('documentTitle');
     const categorySelect = document.getElementById('documentCategory');
+    const domainSelect = document.getElementById('documentDomain');
     const internalOnlyCheckbox = document.getElementById('documentInternalOnly');
     const errorDiv = document.getElementById('uploadDocumentErrorMessage');
 
@@ -497,6 +498,11 @@ async function handleUploadDocument(event) {
 
     if (!titleInput.value.trim()) {
         showError('Please enter a document title');
+        return;
+    }
+
+    if (!domainSelect || !domainSelect.value) {
+        showError('Please select a domain');
         return;
     }
 
@@ -513,11 +519,8 @@ async function handleUploadDocument(event) {
     if (categorySelect.value) {
         formData.append('category_id', categorySelect.value);
     }
-    // Append selected domain_id if any
-    const domainSelect = document.getElementById('documentDomain');
-    if (domainSelect && domainSelect.value) {
-        formData.append('domain_id', domainSelect.value);
-    }
+    // Domain is mandatory
+    formData.append('domain_id', domainSelect.value);
     
     // Description is now auto-generated from full PDF, no need to send it
     

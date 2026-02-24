@@ -61,6 +61,13 @@ def migrate_documents_table():
             conn.commit()
             print("[OK] Added 'domain_id' column to documents table")
 
+        # Add doc_type if missing (logical type: proposal/case_study/solution/other)
+        if "doc_type" not in existing_columns:
+            print("Adding 'doc_type' column to documents table...")
+            conn.execute(text("ALTER TABLE documents ADD COLUMN doc_type VARCHAR NOT NULL DEFAULT 'other'"))
+            conn.commit()
+            print("[OK] Added 'doc_type' column to documents table")
+
         # Optionally, clean up duplicates before enforcing unique constraint (manual step if needed)
 
 
@@ -371,6 +378,90 @@ def migrate_query_logs_table():
             print("[OK] Added 'slack_user_email' column")
 
 
+def migrate_domain_required_triggers():
+    """Enforce domain_id as required at the DB layer (SQLite triggers).
+
+    SQLite cannot ALTER a column to NOT NULL in-place; triggers give us a strong
+    guarantee for new writes without rebuilding tables.
+    """
+    inspector = inspect(engine)
+    tables = set(inspector.get_table_names())
+
+    with engine.connect() as conn:
+        if "documents" in tables:
+            try:
+                # Ensure we can evolve trigger logic across releases
+                conn.execute(text("DROP TRIGGER IF EXISTS trg_documents_domain_required_insert"))
+                conn.execute(text("DROP TRIGGER IF EXISTS trg_documents_domain_required_update"))
+
+                conn.execute(
+                    text(
+                        """
+                        CREATE TRIGGER IF NOT EXISTS trg_documents_domain_required_insert
+                        BEFORE INSERT ON documents
+                        FOR EACH ROW
+                        WHEN NEW.domain_id IS NULL
+                        BEGIN
+                            SELECT RAISE(ABORT, 'documents.domain_id is required');
+                        END;
+                        """
+                    )
+                )
+                conn.execute(
+                    text(
+                        """
+                        CREATE TRIGGER IF NOT EXISTS trg_documents_domain_required_update
+                        BEFORE UPDATE ON documents
+                        FOR EACH ROW
+                        WHEN NEW.domain_id IS NULL AND OLD.domain_id IS NOT NULL
+                        BEGIN
+                            SELECT RAISE(ABORT, 'documents.domain_id is required');
+                        END;
+                        """
+                    )
+                )
+                conn.commit()
+                print("[OK] Ensured documents.domain_id required triggers")
+            except Exception as e:
+                print(f"[WARN] Could not create documents domain triggers: {e}")
+
+        if "document_upload_logs" in tables:
+            try:
+                conn.execute(text("DROP TRIGGER IF EXISTS trg_upload_logs_domain_required_insert"))
+                conn.execute(text("DROP TRIGGER IF EXISTS trg_upload_logs_domain_required_update"))
+
+                conn.execute(
+                    text(
+                        """
+                        CREATE TRIGGER IF NOT EXISTS trg_upload_logs_domain_required_insert
+                        BEFORE INSERT ON document_upload_logs
+                        FOR EACH ROW
+                        WHEN NEW.domain_id IS NULL
+                        BEGIN
+                            SELECT RAISE(ABORT, 'document_upload_logs.domain_id is required');
+                        END;
+                        """
+                    )
+                )
+                conn.execute(
+                    text(
+                        """
+                        CREATE TRIGGER IF NOT EXISTS trg_upload_logs_domain_required_update
+                        BEFORE UPDATE ON document_upload_logs
+                        FOR EACH ROW
+                        WHEN NEW.domain_id IS NULL AND OLD.domain_id IS NOT NULL
+                        BEGIN
+                            SELECT RAISE(ABORT, 'document_upload_logs.domain_id is required');
+                        END;
+                        """
+                    )
+                )
+                conn.commit()
+                print("[OK] Ensured document_upload_logs.domain_id required triggers")
+            except Exception as e:
+                print(f"[WARN] Could not create upload log domain triggers: {e}")
+
+
 def run_migrations():
     """
     Run all migrations.
@@ -387,6 +478,7 @@ def run_migrations():
     migrate_document_upload_logs_table()
     migrate_slack_integrations_socket_mode()
     migrate_query_logs_table()
+    migrate_domain_required_triggers()
     # Enforce unique constraint on domain name
     inspector = inspect(engine)
     if "domains" in inspector.get_table_names():

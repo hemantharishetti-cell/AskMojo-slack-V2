@@ -36,7 +36,8 @@ class Document(Base):
     title = Column(String, nullable=False, index=True)
     category = Column(String, nullable=True)  # Legacy: kept for backward compatibility
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)  # Foreign key to categories table
-    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)  # Optional domain tag per document
+    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)  # Required for new docs (API + DB triggers); legacy rows may be NULL until backfilled
+    doc_type = Column(String, nullable=False, default="other")  # proposal / case_study / solution / other
     description = Column(String, nullable=True)
     source_type = Column(String, nullable=False)
     internal_only = Column(Boolean, default=False, nullable=False)
@@ -140,7 +141,7 @@ class DocumentUploadLog(Base):
     file_name = Column(String, nullable=True)
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)
     category = Column(String, nullable=True)  # Legacy category name
-    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)
+    domain_id = Column(Integer, ForeignKey("domains.id"), nullable=True)  # Required for new logs (API + DB triggers); legacy rows may be NULL until backfilled
     description_generated = Column(Boolean, default=True, nullable=False)  # Whether description was auto-generated
     description_length = Column(Integer, nullable=True)  # Length of generated description
     processing_started = Column(Boolean, default=False, nullable=False)

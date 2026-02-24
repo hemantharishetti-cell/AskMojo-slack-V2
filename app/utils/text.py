@@ -44,6 +44,35 @@ def extract_entity(question: str) -> str | None:
     if not q:
         return None
 
+    def _clean_entity(value: str) -> str | None:
+        v = (value or "").strip().strip("?.,!\"'()")
+        v = re.sub(r"\s+", " ", v)
+        v = re.sub(r"^(?:the|a|an|any)\s+", "", v, flags=re.IGNORECASE)
+        if not v:
+            return None
+        if len(v) < 2:
+            return None
+        return v
+
+    # Pattern 0: Classification phrasing with possibly-lowercase entities
+    m = re.search(
+        r"\bunder\s+(?:which|what)\s+domain\s+(.+?)\s+(?:comes?|falls?|belongs?)\s+under\b",
+        q,
+        flags=re.IGNORECASE,
+    )
+    ent = _clean_entity(m.group(1)) if m else None
+    if ent:
+        return ent
+
+    m = re.search(
+        r"\bwhich\s+domain\b.*?\b(?:does|do|is)\b\s+(.+?)\s+(?:come|fall|belong)\s+under\b",
+        q,
+        flags=re.IGNORECASE,
+    )
+    ent = _clean_entity(m.group(1)) if m else None
+    if ent:
+        return ent
+
     # Pattern 1: "<Entity>'s" (possessive) — strongest signal
     match = re.search(r"([A-Z][a-zA-Z0-9_\-]+)'s\b", q)
     if match and match.group(1) not in _NON_ENTITIES:

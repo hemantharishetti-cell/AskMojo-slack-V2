@@ -1,7 +1,7 @@
 from fastapi import APIRouter, File, Form, UploadFile, Depends, BackgroundTasks, status
 from sqlalchemy.orm import Session, joinedload
 from app.sqlite.database import get_db
-from app.sqlite.models import Document, Category, User, DocumentUploadLog, QueryLog
+from app.sqlite.models import Document, Category, Domain, User, DocumentUploadLog, QueryLog
 from app.core.security import get_current_admin_user
 from app.vector_logic.processor import process_document_background
 # Optional third-party dependencies (graceful fallbacks if missing)
@@ -451,7 +451,7 @@ def upload_document(
     file: UploadFile = File(...),
     title: str = Form(...),
     category_id: int | None = Form(None),  # Category ID from Category table
-    domain_id: int | None = Form(None),  # Domain ID from Domain table
+    domain_id: int = Form(...),  # Domain ID from Domain table (required)
     category: str | None = Form(None),  # Legacy: kept for backward compatibility
     description: str | None = Form(None),  # Optional description (if provided, will be used; otherwise AI-generated from full PDF)
     internal_only: bool = Form(False),  # Whether document is internal-only
@@ -464,11 +464,11 @@ def upload_document(
     """
     try:
         # Check for duplicate file name in the same domain
-        duplicate_query = db.query(Document).filter(Document.file_name == file.filename)
-        if domain_id is not None:
-            duplicate_query = duplicate_query.filter(Document.domain_id == domain_id)
-        else:
-            duplicate_query = duplicate_query.filter(Document.domain_id.is_(None))
+        duplicate_query = (
+            db.query(Document)
+            .filter(Document.file_name == file.filename)
+            .filter(Document.domain_id == domain_id)
+        )
         duplicate_doc = duplicate_query.first()
         if duplicate_doc:
             raise HTTPException(
@@ -513,6 +513,21 @@ def upload_document(
             category_name = category_obj.name  # Use category name from database
 
         # -----------------------------
+        # 2.5 Validate domain_id (required)
+        # -----------------------------
+        domain_obj = db.query(Domain).filter(Domain.id == domain_id).first()
+        if not domain_obj:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Domain with id {domain_id} not found",
+            )
+        if not domain_obj.is_active:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Cannot upload to inactive domain: {domain_obj.name}",
+            )
+
+        # -----------------------------
         # 3. Safe filename
         # -----------------------------
         safe_filename = f"{uuid4().hex}{ext}"
@@ -537,12 +552,7 @@ def upload_document(
             print(f"Generating description from full PDF for document: {title}")
             desc_start_time = time.time()
             # Determine domain for description generation: prefer explicit domain selection
-            domain_name = None
-            if domain_id:
-                from app.sqlite.models import Domain
-                dom = db.query(Domain).filter(Domain.id == domain_id).first()
-                if dom:
-                    domain_name = dom.name
+            domain_name = domain_obj.name if domain_obj else None
             if not domain_name and category_obj and category_obj.domains:
                 # Fallback to first domain associated with category
                 domain_name = category_obj.domains[0].name
@@ -588,6 +598,15 @@ def upload_document(
             processed=False,
             uploaded_by=current_user.id,  # Use authenticated admin user's ID
         )
+
+        # Persist a deterministic doc_type for SQL-only filters.
+        try:
+            if category_obj is not None:
+                document.category_ref = category_obj
+            document.doc_type = infer_doc_type_for_document(document, db)
+        except Exception:
+            # Never block uploads on doc_type inference.
+            document.doc_type = "other"
 
         db.add(document)
         db.commit()

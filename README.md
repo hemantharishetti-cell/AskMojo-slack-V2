@@ -216,6 +216,8 @@ Requires admin role.
 | POST | `/search` | Vector search |
 | POST | `/ask` | Ask a question (RAG) |
 
+`POST /upload` is `multipart/form-data` and requires `file`, `title`, and `domain_id`.
+
 ### Slack (`/api/v1/slack`)
 
 | Method | Endpoint | Description |

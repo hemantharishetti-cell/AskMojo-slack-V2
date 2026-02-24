@@ -67,8 +67,10 @@ def try_metadata_short_circuit(
 
     # ── DOCUMENT_COUNT ──────────────────────────────────────────────
     elif attr == QuestionAttribute.DOCUMENT_COUNT:
+        logger.info("metadata_short_circuit_triggered: DOCUMENT_COUNT")
         answer = handle_count(question, db, categories, hints)
         logger.info("HARD STOP: DOCUMENT_COUNT")
+        return _build_meta_response(answer, intent_decision)
 
     # ── DOCUMENT_EXIST ──────────────────────────────────────────────
     elif attr == QuestionAttribute.DOCUMENT_EXIST:
@@ -87,13 +89,17 @@ def try_metadata_short_circuit(
 
     # ── DOCUMENT_LISTING ────────────────────────────────────────────
     elif attr == QuestionAttribute.DOCUMENT_LISTING:
+        logger.info("metadata_short_circuit_triggered: DOCUMENT_LISTING")
         answer = handle_listing(question, db, categories, hints)
         logger.info("HARD STOP: DOCUMENT_LISTING")
+        return _build_meta_response(answer, intent_decision)
 
     # ── DOMAIN_QUERY ────────────────────────────────────────────────
     elif attr == QuestionAttribute.DOMAIN_QUERY:
+        logger.info("metadata_short_circuit_triggered: DOMAIN_QUERY")
         answer = handle_domain_query(question, db, categories, hints)
         logger.info("HARD STOP: DOMAIN_QUERY")
+        return _build_meta_response(answer, intent_decision)
 
     # ── DOCUMENT_REFERENCE → registry-first ─────────────────────────
     elif attr == QuestionAttribute.DOCUMENT_REFERENCE:

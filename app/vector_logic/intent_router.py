@@ -26,9 +26,53 @@ import re
 from enum import Enum
 from typing import Any
 
+from sqlalchemy import func, or_
 from sqlalchemy.orm import Session
 
 from app.sqlite.models import Document, Category, Domain, CategoryDomain
+
+
+def _normalize_registry_text(text: str) -> str:
+    """Normalize text for deterministic exact registry matching."""
+    t = (text or "").lower()
+    t = t.replace("_", " ").replace("-", " ")
+    t = re.sub(r"[^a-z0-9\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def _resolve_domain_from_registry(
+    db: Session,
+    question: str,
+    hints: dict[str, Any] | None = None,
+) -> Domain | None:
+    """Resolve a domain strictly by exact match against the Domain registry.
+
+    Matching rules:
+    - Case-insensitive
+    - Minor whitespace / '_' / '-' variations tolerated
+    - Exact domain name match (normalized) either from extracted hint or phrase match in question
+    """
+    h = hints or {}
+    candidate = h.get("domain") or h.get("target_domain") or h.get("domain_hint")
+
+    q_norm = f" {_normalize_registry_text(question)} "
+    domains = db.query(Domain).all()
+    norm_map: dict[str, Domain] = {
+        _normalize_registry_text(d.name): d for d in domains if d.name
+    }
+
+    if candidate:
+        cand_norm = _normalize_registry_text(candidate)
+        if cand_norm in norm_map:
+            return norm_map[cand_norm]
+
+    # Phrase match: find a full normalized domain token inside the normalized question
+    for dn_norm, dom in norm_map.items():
+        if dn_norm and f" {dn_norm} " in q_norm:
+            return dom
+
+    return None
 
 
 # =====================================================================
@@ -78,6 +122,48 @@ def classify_intent(question: str) -> tuple[QuestionIntent, dict[str, Any]]:
     """
     q = (question or "").lower().strip()
     words = q.split()
+
+    is_doc_query = re.search(r"\bdocuments?\b", q) is not None
+
+    # ---- DOMAIN REGISTRY QUERIES (structured detection, DB resolution later) ----
+    # These MUST be answered from the database (registry) and never from RAG.
+    if (
+        not is_doc_query
+        and (
+            re.search(r"\b(show|list)\b.+\b(domains?|domins?)\b", q)
+            or any(
+                kw in q
+                for kw in [
+                    "show all domains",
+                    "what domains do we have",
+                    "what domains",
+                    "list domains",
+                ]
+            )
+        )
+    ):
+        return QuestionIntent.DOMAIN_QUERY, {"domain_action": "list"}
+
+    if not is_doc_query and any(kw in q for kw in ["how many domains", "number of domains", "count domains"]):
+        return QuestionIntent.DOMAIN_QUERY, {"domain_action": "count"}
+
+    if re.search(r"\b(is|does)\b.+\bdomain\b.+\b(available|exist|exists|listed)\b", q):
+        # Domain name resolution happens inside the handler from the registry.
+        return QuestionIntent.DOMAIN_QUERY, {"domain_action": "exists"}
+
+    # ---- STRUCTURED COUNT/LISTING ----
+    # These are still routed as metadata-only, with domain/category/doc-type extracted via regex.
+    if any(t in q for t in ["how many", "count", "number of", "total count", "total number"]):
+        hints = _extract_count_hints(q)
+        return QuestionIntent.COUNT, {**hints}
+
+    if re.search(r"\b(list|show)\b", q) and "document" in q:
+        hints = {**_extract_count_hints(q), **_extract_classification_hints(q)}
+        return QuestionIntent.DOCUMENT_LISTING, {**hints}
+
+    if re.search(r"\bwhich\s+documents?\b", q):
+        hints = {**_extract_count_hints(q), **_extract_classification_hints(q)}
+        return QuestionIntent.DOCUMENT_LISTING, {**hints}
 
     # --- Sales intent detection (adds hints: sales_intent, buying_stage) ---
     sales_hints: dict[str, Any] = {}
@@ -177,7 +263,10 @@ def classify_intent(question: str) -> tuple[QuestionIntent, dict[str, Any]]:
         return QuestionIntent.DOCUMENT_LISTING, {**hints, **sales_hints}
 
     # Domain-specific queries (e.g., "related to cybersecurity", "in the X domain")
-    if re.search(r"related to\s+|\bin\s+the\s+.+\s+domain\b|\bwhat domain\b|\bwhich domain\b", q):
+    if re.search(
+        r"related to\s+|\bin\s+the\s+.+\s+domain\b|\bwhat\s+domai?n\b|\bwhich\s+domai?n\b",
+        q,
+    ):
         hints = _extract_classification_hints(q)
         return QuestionIntent.DOMAIN_QUERY, {**hints, **sales_hints}
 
@@ -383,31 +472,8 @@ def handle_count(
     """Handle COUNT intent: answer with document counts from the database."""
     q = question.lower()
 
-    # --- Filter by domain ---
-    domain_hint = hints.get("domain_hint")
-    if domain_hint:
-        domain = db.query(Domain).filter(
-            Domain.name.ilike(f"%{domain_hint}%")
-        ).first()
-
-        if domain:
-            cat_ids = [
-                cd.category_id
-                for cd in db.query(CategoryDomain).filter(
-                    CategoryDomain.domain_id == domain.id
-                ).all()
-            ]
-            if cat_ids:
-                count = db.query(Document).filter(
-                    Document.category_id.in_(cat_ids),
-                    Document.processed == True,
-                ).count()
-                return (
-                    f"There are **{count} document{'s' if count != 1 else ''}** "
-                    f"under the **{domain.name}** domain."
-                )
-            return f"The **{domain.name}** domain exists but has no categories assigned yet."
-        return f"I couldn't find a domain matching '{domain_hint}'."
+    from app.utils.logging import get_logger
+    logger = get_logger("domain_query")
 
     # --- Filter by category ---
     category_hint = hints.get("category_hint")
@@ -426,6 +492,47 @@ def handle_count(
                     f"in the **{cat.name}** collection."
                 )
         return f"I couldn't find a category matching '{category_hint}'."
+
+    # --- Filter by domain (registry exact match; implicit match allowed) ---
+    dom = _resolve_domain_from_registry(db, question, hints)
+    domain_scoped = bool(
+        ("domain" in q)
+        or hints.get("domain")
+        or hints.get("domain_hint")
+        or hints.get("target_domain")
+        or dom is not None
+    )
+    if domain_scoped:
+        logger.info(
+            "handle_count: detected_domain=%s",
+            dom.name if dom else None,
+        )
+        if not dom:
+            # Deterministic: never fall back to generic counts if the question is domain-scoped.
+            raw = hints.get("domain") or hints.get("domain_hint") or hints.get("target_domain")
+            return (
+                f"Domain '{raw}' is not found in our system."
+                if raw
+                else "This domain is not listed in our registry."
+            )
+
+        query = (
+            db.query(func.count(func.distinct(Document.id)))
+            .filter(Document.domain_id == dom.id, Document.processed == True)
+        )
+
+        # Optional doc type narrowing (case study / proposal etc)
+        doc_type = hints.get("doc_type")
+        if doc_type:
+            query = query.filter(Document.doc_type == doc_type)
+
+        count = query.scalar() or 0
+        logger.info(
+            "SQL: SELECT COUNT(DISTINCT documents.id) WHERE domain_id=%s",
+            dom.id,
+        )
+        logger.info("Row count returned: %s", count)
+        return f"There are **{count} document{'s' if count != 1 else ''}** under the **{dom.name}** domain."
 
     # --- Filter by doc type keyword ---
     doc_type = hints.get("doc_type")
@@ -504,18 +611,11 @@ def handle_classification(
                     cat = db.query(Category).filter(Category.id == doc.category_id).first()
                     if cat:
                         cat_name = cat.name
-                        d_ids = [
-                            cd.domain_id
-                            for cd in db.query(CategoryDomain).filter(
-                                CategoryDomain.category_id == cat.id
-                            ).all()
-                        ]
-                        if d_ids:
-                            domain_names = [
-                                d.name for d in db.query(Domain).filter(Domain.id.in_(d_ids)).all()
-                            ]
                 elif doc.category:
                     cat_name = doc.category
+
+                if doc.domain_ref is not None and doc.domain_ref.name:
+                    domain_names = [doc.domain_ref.name]
 
                 line = f"**{doc.title}** → Category: **{cat_name}**"
                 if domain_names:
@@ -564,7 +664,38 @@ def handle_listing(
     """
     q = question.lower()
 
-    # Filter by category hint
+    include_domain_names = bool(
+        re.search(r"\bdocuments?\b", q)
+        and (
+            "domain name" in q
+            or "their domain" in q
+            or re.search(r"\bwith\b.+\b(domains?|domins?)\b", q)
+        )
+    )
+
+    if include_domain_names:
+        rows = (
+            db.query(Document.title, Domain.name)
+            .outerjoin(Domain, Document.domain_id == Domain.id)
+            .filter(Document.processed == True)
+            .order_by(Document.title)
+            .all()
+        )
+        if not rows:
+            return "I don't have any documents in the registry yet."
+
+        max_rows = 200
+        shown = rows[:max_rows]
+        lines = [
+            f"• **{title}** → Domain: **{domain_name or 'Unassigned'}**"
+            for title, domain_name in shown
+        ]
+        suffix = ""
+        if len(rows) > max_rows:
+            suffix = f"\n\n...and {len(rows) - max_rows} more."
+        return "Here are the documents with their domain names:\n\n" + "\n".join(lines) + suffix
+
+    # Filter by category hint (prefer explicit category/collection requests)
     category_hint = hints.get("category_hint") or hints.get("target_category")
     if category_hint:
         for cat in categories:
@@ -583,19 +714,58 @@ def handle_listing(
                     )
                 return f"The **{cat.name}** collection exists but has no documents yet."
 
-    # Filter by domain hint
-    domain_hint = hints.get("domain_hint")
-    if domain_hint:
-        dom = db.query(Domain).filter(Domain.name.ilike(f"%{domain_hint}%")).first()
-        if dom:
-            cat_ids = [cd.category_id for cd in db.query(CategoryDomain).filter(CategoryDomain.domain_id == dom.id).all()]
-            if cat_ids:
-                docs = db.query(Document).filter(Document.category_id.in_(cat_ids), Document.processed == True).order_by(Document.title).all()
-                if docs:
-                    titles = [f"• {d.title}" for d in docs]
-                    return f"Found **{len(docs)} documents** under the **{dom.name}** domain:\n\n" + "\n".join(titles)
-                return f"The **{dom.name}** domain exists but has no documents yet."
-        return f"I couldn't find a domain matching '{domain_hint}'."
+    from app.utils.logging import get_logger
+    logger = get_logger("domain_listing")
+
+    # Filter by domain (registry exact match; implicit match allowed)
+    dom = _resolve_domain_from_registry(db, question, hints)
+    domain_scoped = bool(
+        ("domain" in q)
+        or hints.get("domain")
+        or hints.get("domain_hint")
+        or hints.get("target_domain")
+        or dom is not None
+    )
+    if domain_scoped:
+        logger.info(
+            "handle_listing: detected_intent=DOCUMENT_LISTING, detected_domain=%s",
+            dom.name if dom else None,
+        )
+        if not dom:
+            raw = hints.get("domain") or hints.get("domain_hint") or hints.get("target_domain")
+            return (
+                f"Domain '{raw}' is not found in our system."
+                if raw
+                else "This domain is not listed in our registry."
+            )
+
+        docs_query = db.query(Document).filter(
+            Document.domain_id == dom.id,
+            Document.processed == True,
+        )
+
+        # Optional doc type narrowing (case study / proposal etc)
+        doc_type = hints.get("doc_type")
+        if doc_type:
+            docs_query = docs_query.filter(Document.doc_type == doc_type)
+
+        docs = (
+            docs_query.distinct(Document.id)
+            .order_by(Document.title)
+            .all()
+        )
+        logger.info(
+            "SQL: SELECT DISTINCT documents.id, documents.title WHERE domain_id=%s",
+            dom.id,
+        )
+        logger.info("Row count returned: %s", len(docs))
+        if docs:
+            titles = [f"• {d.title}" for d in docs]
+            return (
+                f"Found **{len(docs)} documents** under the **{dom.name}** domain:\n\n"
+                + "\n".join(titles)
+            )
+        return f"The **{dom.name}** domain exists but has no documents yet."
 
     # Generic listing: return recent/top documents
     docs = db.query(Document).filter(Document.processed == True).order_by(Document.created_at.desc()).limit(20).all()
@@ -604,6 +774,45 @@ def handle_listing(
         return "Here are some documents I have:\n\n" + "\n".join(titles)
     return "I don't have any documents in the registry yet."
 
+# Move these functions to module level
+def handle_domain_existence(
+    question: str,
+    db: Session,
+    hints: dict[str, Any] | None = None,
+) -> str:
+    """
+    Handle domain existence queries: "Is X domain available?"
+    """
+    if hints is None:
+        hints = {}
+    domain_name = hints.get("domain") or hints.get("domain_hint")
+    domain_name_norm = domain_name.lower().strip() if domain_name else None
+    from app.utils.logging import get_logger
+    logger = get_logger("domain_existence")
+    logger.info(f"handle_domain_existence: detected_intent=DOMAIN_EXISTENCE, detected_domain={domain_name_norm}")
+    if not domain_name_norm:
+        return "Could you clarify which domain you are asking about?"
+    dom = db.query(Domain).filter(Domain.name.ilike(domain_name_norm)).first()
+    if dom:
+        return f"Yes, the domain **{dom.name}** is available in our system."
+    else:
+        return f"Domain '{domain_name}' is not found in our system."
+
+def handle_domain_listing(
+    db: Session,
+) -> str:
+    """
+    Handle domain listing queries: "Show all domains", "What domains do we have?"
+    """
+    from app.utils.logging import get_logger
+    logger = get_logger("domain_listing")
+    domains = db.query(Domain).all()
+    logger.info(f"SQL: SELECT * FROM Domain")
+    if not domains:
+        return "No domains are registered in the system."
+    lines = [f"• {d.name}" for d in domains]
+    return "Here are all domains in the system:\n\n" + "\n".join(lines)
+
 
 def handle_domain_query(
     question: str,
@@ -611,41 +820,114 @@ def handle_domain_query(
     categories: list[Category],
     hints: dict[str, Any] | None = None,
 ) -> str:
-    """Handle DOMAIN_QUERY: answer using domain, tags, and service taxonomy.
-
-    Examples:
-    - "Is there doc related to cybersecurity domain?"
-    - "Which documents are related to healthcare?"
-    """
+    """Handle DOMAIN_QUERY strictly from the registry (SQL-only)."""
     if hints is None:
         hints = {}
-    q = question.lower()
 
-    # Try to extract domain hint from hints or question
-    domain_hint = hints.get("target_domain") or hints.get("domain_hint")
-    if not domain_hint:
-        m = re.search(r"related to\s+(.+?)(?:\?|$)", q)
-        if m:
-            domain_hint = m.group(1).strip()
+    from app.utils.logging import get_logger
+    logger = get_logger("domain_query")
 
-    if domain_hint:
-        dom = db.query(Domain).filter(Domain.name.ilike(f"%{domain_hint}%")).first()
+    q_norm = _normalize_registry_text(question)
+    action = hints.get("domain_action")
+
+    is_doc_query = re.search(r"\bdocuments?\b", q_norm) is not None
+
+    # Topic-based registry listing (deterministic): "domains related to AI"
+    m = re.search(
+        r"\b(?:domains?|domins?)\b\s+(?:related to|about|for|relevant to)\s+(.+?)\s*$",
+        q_norm,
+    )
+    if m:
+        topic = (m.group(1) or "").strip()
+        if not topic:
+            return "Could you clarify which topic you want related domains for?"
+
+        domains = (
+            db.query(Domain)
+            .filter(
+                or_(
+                    Domain.name.ilike(f"%{topic}%"),
+                    Domain.description.ilike(f"%{topic}%"),
+                )
+            )
+            .order_by(Domain.name)
+            .all()
+        )
+        logger.info("SQL: SELECT domains.* WHERE name/description ILIKE topic=%s", topic)
+        if not domains:
+            return f"No domains found related to '{topic}'."
+        lines = [f"• {d.name}" for d in domains]
+        return f"Domains related to **{topic}**:\n\n" + "\n".join(lines)
+
+    # Global domain registry operations
+    if (
+        not is_doc_query
+        and (
+            action == "list"
+            or re.search(r"\b(show|list)\b.+\b(domains?|domins?)\b", q_norm)
+            or "what domains" in q_norm
+        )
+    ):
+        return handle_domain_listing(db)
+
+    if action == "count" or "how many domains" in q_norm or "number of domains" in q_norm:
+        cnt = db.query(func.count(Domain.id)).scalar() or 0
+        logger.info("SQL: SELECT COUNT(domains.id)")
+        return f"There are **{cnt} domain{'s' if cnt != 1 else ''}** in the system."
+
+    if action == "exists":
+        dom = _resolve_domain_from_registry(db, question, hints)
         if dom:
-            # List categories and counts under this domain
-            cd_rows = db.query(CategoryDomain).filter(CategoryDomain.domain_id == dom.id).all()
-            if not cd_rows:
-                return f"The **{dom.name}** domain exists but is not associated with any collections."
-            cats = db.query(Category).filter(Category.id.in_([c.category_id for c in cd_rows])).all()
-            lines = []
-            total = 0
-            for c in cats:
-                ccount = db.query(Document).filter(Document.category_id == c.id, Document.processed == True).count()
-                total += ccount
-                lines.append(f"• **{c.name}**: {ccount}")
-            return f"The **{dom.name}** domain has **{total} document{'s' if total != 1 else ''}** across these collections:\n\n" + "\n".join(lines)
-        return f"I couldn't find a domain matching '{domain_hint}'."
+            return f"Yes, the domain **{dom.name}** is available in our system."
+        raw = hints.get("domain") or hints.get("domain_hint") or hints.get("target_domain")
+        return (
+            f"Domain '{raw}' is not found in our system."
+            if raw
+            else "This domain is not listed in our registry."
+        )
 
-    return "Could you clarify which domain or topic you're asking about?"
+    # Default: treat as domain-specific summary/count across collections
+    dom = _resolve_domain_from_registry(db, question, hints)
+    logger.info(
+        "handle_domain_query: detected_domain=%s",
+        dom.name if dom else None,
+    )
+    if not dom:
+        raw = hints.get("domain") or hints.get("domain_hint") or hints.get("target_domain")
+        return (
+            f"Domain '{raw}' is not found in our system."
+            if raw
+            else "Could you clarify which domain or topic you're asking about?"
+        )
+
+    # Authoritative domain constraint: documents.domain_id
+    rows = (
+        db.query(Document.category_id, func.count(func.distinct(Document.id)))
+        .filter(Document.domain_id == dom.id, Document.processed == True)
+        .group_by(Document.category_id)
+        .all()
+    )
+    logger.info(
+        "SQL: SELECT category_id, COUNT(DISTINCT documents.id) WHERE domain_id=%s GROUP BY category_id",
+        dom.id,
+    )
+
+    if not rows:
+        return f"The **{dom.name}** domain exists but has no documents yet."
+
+    cat_by_id = {c.id: c for c in categories}
+    lines: list[str] = []
+    total = 0
+    for category_id, ccount in rows:
+        total += int(ccount or 0)
+        cat_name = cat_by_id.get(category_id).name if category_id in cat_by_id else "Uncategorized"
+        lines.append(f"• **{cat_name}**: {int(ccount or 0)}")
+
+    logger.info("Row count returned: %s", total)
+    return (
+        f"The **{dom.name}** domain has **{total} document{'s' if total != 1 else ''}** across these collections:\n\n"
+        + "\n".join(lines)
+    )
 
 
 def handle_existence(

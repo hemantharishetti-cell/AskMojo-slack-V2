@@ -26,6 +26,7 @@ def infer_doc_type_from_category_name(name_or_collection: Optional[str]) -> str:
       - "proposal"
       - "case_study"
       - "solution"   (also used for 'services')
+            - "policy"
       - "other"
     """
     label = _normalize_label(name_or_collection)
@@ -44,12 +45,16 @@ def infer_doc_type_from_category_name(name_or_collection: Optional[str]) -> str:
     if "solution" in label or "service" in label:
         return "solution"
 
+    # Policies (e.g. "Security Policies", "HR Policy")
+    if "policy" in label or "policies" in label:
+        return "policy"
+
     return "other"
 
 
 def infer_doc_type_for_document(document: Document, db: Optional[Session] = None) -> str:
     """
-    Infer the logical document type (proposal / case_study / solution / other)
+    Infer the logical document type (proposal / case_study / solution / policy / other)
     for a given Document using:
       1. Its Category (name / collection_name) when available
       2. Legacy document.category as a fallback
@@ -69,6 +74,10 @@ def infer_doc_type_for_document(document: Document, db: Optional[Session] = None
     # Solutions / Services
     if "solution" in label or "service" in label:
         return "solution"
+
+    # Policies
+    if "policy" in label or "policies" in label:
+        return "policy"
 
     # 2) Fallback to Category.name / collection_name
     if document.category_ref is not None:
