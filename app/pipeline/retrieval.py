@@ -231,6 +231,11 @@ async def retrieve_documents_and_chunks(
     chunks_toon, chunks_json_tokens, chunks_toon_tokens = convert_to_toon(chunks_data, "retrieval", "Chunks")
 
     # Calculate TOON savings
+    total_json_tokens = summaries_json_tokens + chunks_json_tokens
+    total_toon_tokens = summaries_toon_tokens + chunks_toon_tokens
+    total_savings = total_json_tokens - total_toon_tokens
+    total_savings_percent = (100 * total_savings / total_json_tokens) if total_json_tokens else 0
+
     toon_savings = {
         "summaries_json_tokens": summaries_json_tokens,
         "summaries_toon_tokens": summaries_toon_tokens,
@@ -240,6 +245,10 @@ async def retrieve_documents_and_chunks(
         "chunks_toon_tokens": chunks_toon_tokens,
         "chunks_savings": chunks_json_tokens - chunks_toon_tokens,
         "chunks_savings_percent": (100 * (chunks_json_tokens - chunks_toon_tokens) / chunks_json_tokens) if chunks_json_tokens else 0,
+        "total_json_tokens": total_json_tokens,
+        "total_toon_tokens": total_toon_tokens,
+        "total_savings": total_savings,
+        "total_savings_percent": total_savings_percent,
     }
 
     logger.info(

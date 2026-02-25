@@ -26,7 +26,7 @@ import re
 from enum import Enum
 from typing import Any
 
-from sqlalchemy import func, or_
+from sqlalchemy import func, or_, and_
 from sqlalchemy.orm import Session
 
 from app.sqlite.models import Document, Category, Domain, CategoryDomain
@@ -147,9 +147,47 @@ def classify_intent(question: str) -> tuple[QuestionIntent, dict[str, Any]]:
     if not is_doc_query and any(kw in q for kw in ["how many domains", "number of domains", "count domains"]):
         return QuestionIntent.DOMAIN_QUERY, {"domain_action": "count"}
 
-    if re.search(r"\b(is|does)\b.+\bdomain\b.+\b(available|exist|exists|listed)\b", q):
-        # Domain name resolution happens inside the handler from the registry.
-        return QuestionIntent.DOMAIN_QUERY, {"domain_action": "exists"}
+    # Domain existence checks
+    # Examples:
+    # - "Do we have a FinTech domain?"
+    # - "Does AI Governance exist as a domain?"
+    # - "Is SaaS a domain?" / "Is SaaS registered as a domain?"
+    # Domain name resolution happens inside the handler from the registry.
+    domain_exist_patterns: list[tuple[str, str | None]] = [
+        # explicit 'domain' keyword present
+        (r"\bdo\s+we\s+have\b.*\bdomain\b", None),
+        (r"\bdo\s+you\s+have\b.*\bdomain\b", None),
+        (r"\bis\s+there\b.*\bdomain\b", None),
+        # canonical phrasing
+        (r"\bdoes\b.+\bexist\s+as\s+(?:a\s+)?domain\b", None),
+        (r"\b(is|does)\b.+\bdomain\b.+\b(available|exist|exists|listed|registered)\b", None),
+        (r"\bis\b.+\b(?:a|an)\s+domain\b", None),
+        (r"\bdo\s+we\s+have\s+any\s+domain\s+(?:called|named)\b", None),
+    ]
+    if any(re.search(p, q) for p, _ in domain_exist_patterns):
+        # Best-effort extraction of the requested domain phrase (exact resolution occurs in handler)
+        hints: dict[str, Any] = {"domain_action": "exists"}
+        m = re.search(r"\bdomain\s+(?:called|named)\s+(.+?)\s*(?:\?|$)", q)
+        if m:
+            hints["domain_hint"] = m.group(1).strip()
+            return QuestionIntent.DOMAIN_QUERY, hints
+
+        m = re.search(r"\bdo\s+we\s+have\b\s+(?:a|an|any)?\s*(.+?)\s+domain\b", q)
+        if m:
+            hints["domain_hint"] = m.group(1).strip()
+            return QuestionIntent.DOMAIN_QUERY, hints
+
+        m = re.search(r"\bdoes\s+(.+?)\s+exist\s+as\s+(?:a\s+)?domain\b", q)
+        if m:
+            hints["domain_hint"] = m.group(1).strip()
+            return QuestionIntent.DOMAIN_QUERY, hints
+
+        m = re.search(r"\bis\s+(.+?)\s+(?:a|an)\s+domain\b", q)
+        if m:
+            hints["domain_hint"] = m.group(1).strip()
+            return QuestionIntent.DOMAIN_QUERY, hints
+
+        return QuestionIntent.DOMAIN_QUERY, hints
 
     # ---- STRUCTURED COUNT/LISTING ----
     # These are still routed as metadata-only, with domain/category/doc-type extracted via regex.
@@ -161,9 +199,25 @@ def classify_intent(question: str) -> tuple[QuestionIntent, dict[str, Any]]:
         hints = {**_extract_count_hints(q), **_extract_classification_hints(q)}
         return QuestionIntent.DOCUMENT_LISTING, {**hints}
 
-    if re.search(r"\bwhich\s+documents?\b", q):
+    if re.search(r"\b(which|what)\s+documents?\b", q):
         hints = {**_extract_count_hints(q), **_extract_classification_hints(q)}
         return QuestionIntent.DOCUMENT_LISTING, {**hints}
+
+    # Deterministic verification: "Is <document> under <domain>?"
+    # Route to metadata classification (no RAG) and let handler verify via SQL.
+    m = re.search(
+        r"^(?!is\s+there\b)\s*(?:is|are)\s+(.+?)\s+under\s+(.+?)\s*(?:\?|$)",
+        q,
+    )
+    if m:
+        doc_hint = (m.group(1) or "").strip()
+        dom_hint = (m.group(2) or "").strip()
+        if doc_hint and dom_hint:
+            return QuestionIntent.CLASSIFICATION, {
+                "verification": "doc_under_domain",
+                "doc_hint": doc_hint,
+                "domain_hint": dom_hint,
+            }
 
     # --- Sales intent detection (adds hints: sales_intent, buying_stage) ---
     sales_hints: dict[str, Any] = {}
@@ -586,6 +640,7 @@ def handle_classification(
     db: Session,
     categories: list[Category],
     entity: str | None,
+    hints: dict[str, Any] | None = None,
 ) -> str | None:
     """
     Handle CLASSIFICATION intent.
@@ -593,6 +648,78 @@ def handle_classification(
     (caller should fall through to RAG in that case).
     """
     q = question.lower()
+    h = hints or {}
+
+    def _find_docs_by_title_guess(title_guess: str) -> list[Document]:
+        guess = (title_guess or "").strip().strip("?.,!\"'()")
+        guess = re.sub(r"\s+", " ", guess)
+        if not guess:
+            return []
+
+        # Prefer a tight substring match first.
+        docs = (
+            db.query(Document)
+            .filter(Document.title.ilike(f"%{guess}%"), Document.processed == True)
+            .order_by(Document.title)
+            .limit(10)
+            .all()
+        )
+        if docs:
+            return docs
+
+        # Fallback: token AND match (still deterministic)
+        stop = {"the", "a", "an", "is", "are", "was", "were", "does", "do", "under", "in", "of"}
+        tokens = [t for t in re.split(r"\W+", guess.lower()) if len(t) >= 3 and t not in stop]
+        if not tokens:
+            return []
+        conds = [Document.title.ilike(f"%{t}%") for t in tokens[:6]]
+        return (
+            db.query(Document)
+            .filter(and_(*conds), Document.processed == True)
+            .order_by(Document.title)
+            .limit(10)
+            .all()
+        )
+
+    # Verification mode: "Is <doc> under <domain>?" (domain registry exact match)
+    if h.get("verification") == "doc_under_domain" or (" under " in q and ("is " in q or q.startswith("is ") or q.startswith("are "))):
+        dom = _resolve_domain_from_registry(db, question, h)
+        if not dom:
+            raw = h.get("domain_hint") or h.get("target_domain")
+            return (
+                f"Domain '{raw}' is not found in our system."
+                if raw
+                else "This domain is not listed in our registry."
+            )
+
+        # Prefer classifier-provided doc_hint, else derive from question.
+        doc_guess = h.get("doc_hint")
+        if not doc_guess and " under " in q:
+            left = question.split(" under ", 1)[0]
+            doc_guess = re.sub(r"^\s*(?:is|are)\s+", "", left, flags=re.IGNORECASE).strip()
+
+        if doc_guess:
+            docs = _find_docs_by_title_guess(doc_guess)
+            if not docs:
+                return f"I couldn't find any documents with '{doc_guess}' in the title."
+
+            lines: list[str] = []
+            for doc in docs:
+                actual_dom = doc.domain_ref.name if doc.domain_ref is not None else "Unassigned"
+                ok = (doc.domain_id == dom.id)
+                lines.append(
+                    f"**{doc.title}** → Domain: **{actual_dom}** ({'YES' if ok else 'NO'})"
+                )
+            if len(lines) == 1:
+                only_ok = docs[0].domain_id == dom.id
+                return (
+                    f"Yes — **{docs[0].title}** is under **{dom.name}**."
+                    if only_ok
+                    else f"No — **{docs[0].title}** is under **{docs[0].domain_ref.name if docs[0].domain_ref is not None else 'Unassigned'}**, not **{dom.name}**."
+                )
+            return "I found multiple matching documents. Here are their domains:\n\n" + "\n".join(
+                f"• {l}" for l in lines
+            )
 
     # If we have an entity, look it up in documents
     if entity:
@@ -834,7 +961,7 @@ def handle_domain_query(
 
     # Topic-based registry listing (deterministic): "domains related to AI"
     m = re.search(
-        r"\b(?:domains?|domins?)\b\s+(?:related to|about|for|relevant to)\s+(.+?)\s*$",
+        r"\b(?:domains?|domins?)\b\s+(?:(?:are|is)\s+)?(?:related to|about|for|relevant to)\s+(.+?)\s*$",
         q_norm,
     )
     if m:

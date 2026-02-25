@@ -79,7 +79,7 @@ def try_metadata_short_circuit(
 
     # ── DOCUMENT_CATEGORY ───────────────────────────────────────────
     elif attr == QuestionAttribute.DOCUMENT_CATEGORY:
-        answer = handle_classification(question, db, categories, entity)
+        answer = handle_classification(question, db, categories, entity, hints)
         if answer is None:
             answer = (
                 "I couldn't determine the category/domain classification "

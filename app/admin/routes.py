@@ -32,66 +32,49 @@ def get_upload_logs(
     """
     Get document upload logs (admin only).
     """
-    logs = db.query(DocumentUploadLog).order_by(DocumentUploadLog.created_at.desc()).offset(skip).limit(limit).all()
-    result = []
-    for log in logs:
-        uploader = db.query(User).filter(User.id == log.uploaded_by).first()
-        doc = db.query(Document).filter(Document.id == log.document_id).first()
-        category_name = None
-        if log.category_id:
-            cat = db.query(Category).filter(Category.id == log.category_id).first()
-            if cat:
-                category_name = cat.name
-        result.append(DocumentUploadLogResponse(
-            id=log.id,
-            document_id=log.document_id,
-            document_title=doc.title if doc else log.title,
-            uploaded_by=log.uploaded_by,
-            uploader_name=uploader.name if uploader else None,
-            uploader_email=uploader.email if uploader else None,
-            title=log.title,
-            file_name=log.file_name,
-            category_id=log.category_id,
-            category_name=category_name,
-            category=log.category,
-            description_generated=log.description_generated,
-            description_length=log.description_length,
-            processing_started=log.processing_started,
-            processing_completed=log.processing_completed,
-            processing_error=log.processing_error,
-            created_at=log.created_at,
-            processed_at=log.processed_at,
-            upload_time_seconds=log.upload_time_seconds,
-            description_generation_time_seconds=log.description_generation_time_seconds,
-            description_tokens_used=log.description_tokens_used,
-            description_tokens_prompt=log.description_tokens_prompt,
-            description_tokens_completion=log.description_tokens_completion,
-        ))
+    # Fetch related entities in one query (avoid N+1 lookups in production).
+    rows = (
+        db.query(DocumentUploadLog, User, Document, Category)
+        .outerjoin(User, User.id == DocumentUploadLog.uploaded_by)
+        .outerjoin(Document, Document.id == DocumentUploadLog.document_id)
+        .outerjoin(Category, Category.id == DocumentUploadLog.category_id)
+        .order_by(DocumentUploadLog.created_at.desc())
+        .offset(skip)
+        .limit(limit)
+        .all()
+    )
+
+    result: list[DocumentUploadLogResponse] = []
+    for log, uploader, doc, cat in rows:
+        result.append(
+            DocumentUploadLogResponse(
+                id=log.id,
+                document_id=log.document_id,
+                document_title=(doc.title if doc else None) or log.title,
+                uploaded_by=log.uploaded_by,
+                uploader_name=uploader.name if uploader else None,
+                uploader_email=uploader.email if uploader else None,
+                title=log.title,
+                file_name=log.file_name,
+                category_id=log.category_id,
+                category_name=cat.name if cat else None,
+                category=log.category,
+                description_generated=log.description_generated,
+                description_length=log.description_length,
+                processing_started=log.processing_started,
+                processing_completed=log.processing_completed,
+                processing_error=log.processing_error,
+                created_at=log.created_at,
+                processed_at=log.processed_at,
+                upload_time_seconds=log.upload_time_seconds,
+                description_generation_time_seconds=log.description_generation_time_seconds,
+                description_tokens_used=log.description_tokens_used,
+                description_tokens_prompt=log.description_tokens_prompt,
+                description_tokens_completion=log.description_tokens_completion,
+            )
+        )
+
     return result
-from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.orm import Session
-from sqlalchemy import func
-from typing import Dict, Any
-
-from app.sqlite.database import get_db
-from app.sqlite.models import User, Document, QueryLog, Category, DocumentUploadLog, QuerySource
-from app.core.security import get_current_admin_user
-from app.admin.schemas import (
-    AdminUserCreate, AdminUserUpdate, AdminUserResponse, AdminStatsResponse,
-    CategoryCreate, CategoryUpdate, CategoryResponse, DomainResponse,
-    QueryLogResponse, DocumentUploadLogResponse,
-    CategoryDomainBackfillRequest, CategoryDomainBackfillResponse
-)
-from sqlalchemy.orm import joinedload
-from app.core.security import get_password_hash
-from sqlalchemy import func
-
-# Concurrency management
-from app.pdf_extraction.concurrency_manager import ConcurrencyManager
-
-router = APIRouter(prefix="/admin", tags=["admin"])
-
-
 @router.get("/stats", response_model=AdminStatsResponse)
 def get_admin_stats(
     current_user: User = Depends(get_current_admin_user),

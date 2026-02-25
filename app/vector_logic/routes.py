@@ -49,6 +49,8 @@ from app.vector_logic.intent_router import (
     recommend_solution, SOLUTION_KEYWORDS, handle_objection,
 )
 
+from app.utils.text import extract_entity
+
 import json
 import re
 from app.core.config import settings
@@ -1181,12 +1183,58 @@ def ask_question(
         
         # Get categories (needed for both Step 0 and Step 1)
         categories = db.query(Category).filter(Category.is_active == True).all()
+
+        # DB-backed domain presence detection (removes regex brittleness)
+        # If a known domain appears in the question, we can force deterministic
+        # metadata routing for registry-style questions.
+        domains = db.query(Domain).filter(Domain.is_active == True).all()
+        q_norm = (request.question or "").lower()
+        q_norm = q_norm.replace("_", " ").replace("-", " ")
+        q_norm = re.sub(r"[^a-z0-9\s]", " ", q_norm)
+        q_norm = re.sub(r"\s+", " ", q_norm).strip()
+
+        detected_domain = None
+        for d in domains:
+            if not d.name:
+                continue
+            dn = d.name.lower().replace("_", " ").replace("-", " ")
+            dn = re.sub(r"[^a-z0-9\s]", " ", dn)
+            dn = re.sub(r"\s+", " ", dn).strip()
+            if dn and f" {dn} " in f" {q_norm} ":
+                detected_domain = d
+                break
         
         intent, intent_hints = classify_intent(request.question)
         attribute = map_intent_to_attribute(intent)
+
+        if detected_domain is not None:
+            intent_hints = {**(intent_hints or {}), "domain_hint": detected_domain.name}
+
+        # Safety override: if classifier says FACTUAL but the question is clearly
+        # registry-style and contains a known domain, force deterministic handling.
+        if detected_domain is not None and attribute == QuestionAttribute.FACTUAL:
+            q0 = (request.question or "").lower()
+            looks_like_domain_existence = (
+                ("domain" in q0 or "domai" in q0)
+                and any(p in q0 for p in ["do we have", "do you have", "is there", "does", "is "])
+                and ("exist" in q0 or "available" in q0 or "listed" in q0 or "registered" in q0 or " domain" in q0)
+            )
+            looks_like_doc_listing = (
+                ("document" in q0 or "documents" in q0)
+                and any(p in q0 for p in ["list", "show", "which documents", "what documents", "fall under", "falls under", "comes under", "come under"])
+            )
+            looks_like_count = any(p in q0 for p in ["how many", "count", "number of", "total"])
+
+            if looks_like_domain_existence:
+                attribute = QuestionAttribute.DOMAIN_QUERY
+                intent_hints = {**(intent_hints or {}), "domain_action": "exists"}
+            elif looks_like_doc_listing:
+                attribute = QuestionAttribute.DOCUMENT_LISTING
+            elif looks_like_count:
+                attribute = QuestionAttribute.DOCUMENT_COUNT
         
         # Extract entity early so metadata handlers can use it
-        primary_entity = _extract_entity_from_question(request.question)
+        primary_entity = extract_entity(request.question)
         
         print(f"  Intent: {intent.value} | Attribute: {attribute.value} | Entity: {primary_entity or 'none'} | Hints: {intent_hints}")
 
@@ -1212,6 +1260,20 @@ def ask_question(
         
         # ---- HARD CONSTRAINT: DOCUMENT_EXIST → CHECK REGISTRY ONLY ----
         if attribute == QuestionAttribute.DOCUMENT_EXIST:
+            q0 = (request.question or "").lower()
+            # Safety net: if the user is clearly asking about *domain existence*, do not
+            # answer with generic document counts.
+            if "domain" in q0 or "domai" in q0:
+                if any(p in q0 for p in ["do we have", "do you have", "is there", "does", "is "]):
+                    answer_text = handle_domain_query(
+                        request.question,
+                        db,
+                        categories,
+                        {**(intent_hints or {}), "domain_action": "exists"},
+                    )
+                    print("  [HARD STOP] Step 0: DOMAIN_EXISTENCE safety-net (registry only)")
+                    return AskResponse(answer=answer_text, token_usage=None, toon_savings=None, api_calls=[])
+
             answer_text = handle_existence(
                 request.question, db, categories, primary_entity, intent_hints
             )
@@ -1220,7 +1282,7 @@ def ask_question(
         
         # ---- HARD CONSTRAINT: DOCUMENT_CATEGORY → REGISTRY ONLY ----
         if attribute == QuestionAttribute.DOCUMENT_CATEGORY:
-            answer_text = handle_classification(request.question, db, categories, primary_entity)
+            answer_text = handle_classification(request.question, db, categories, primary_entity, intent_hints)
             if answer_text is not None:
                 print(f"  [HARD STOP] Step 0: DOCUMENT_CATEGORY (registry only, no RAG)")
                 return AskResponse(answer=answer_text, token_usage=None, toon_savings=None, api_calls=[])

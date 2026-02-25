@@ -1,9 +1,11 @@
 // Logs Management JavaScript
 
-// Get API client - ensure it's available
-const client = window.apiClient || (typeof apiClient !== 'undefined' ? apiClient : null);
+// Get API client (resolve lazily in case script load order/caching differs)
+function getApiClient() {
+    return window.apiClient || (typeof apiClient !== 'undefined' ? apiClient : null);
+}
 
-if (!client) {
+if (!getApiClient()) {
     console.error('API client not available. Make sure api.js is loaded before logs.js');
 }
 
@@ -19,6 +21,8 @@ function escapeHtml(text) {
 async function loadQueryLogs() {
     const tbody = document.getElementById('queryLogsTableBody');
     if (!tbody) return;
+
+    const client = getApiClient();
 
     if (!client || !client.getQueryLogs) {
         console.error('API client or getQueryLogs method not available');
@@ -96,9 +100,11 @@ async function loadUploadLogs() {
     const tbody = document.getElementById('uploadLogsTableBody');
     if (!tbody) return;
 
+    const client = getApiClient();
+
     if (!client || !client.getUploadLogs) {
         console.error('API client or getUploadLogs method not available');
-        tbody.innerHTML = '<tr><td colspan="6" class="text-center py-8 text-red-500 text-sm">API client not initialized. Please refresh the page.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="8" class="text-center py-8 text-red-500 text-sm">API client not initialized. Please refresh the page.</td></tr>';
         return;
     }
 
@@ -286,6 +292,8 @@ async function viewQueryLogDetails(logId) {
     console.log('Viewing details for log:', logId);
     const modal = document.getElementById('queryLogDetailsModal');
     const content = document.getElementById('queryLogDetailsContent');
+
+    const client = getApiClient();
     
     if (!modal || !content) {
         console.error('Modal elements not found');
@@ -294,8 +302,9 @@ async function viewQueryLogDetails(logId) {
     
     try {
         // Fetch the specific log (we'll need to get it from the already loaded logs or fetch it)
-        const logs = await client.getQueryLogs(0, 1000); // Get more logs to find the one we need
-        const log = logs.find(l => l.id === logId);
+        const response = await client.getQueryLogs(0, 1000); // Get more logs to find the one we need
+        const logs = Array.isArray(response) ? response : (response.data || response.logs || []);
+        const log = (logs || []).find(l => l.id === logId);
         
         if (!log) {
             content.innerHTML = '<div class="text-red-500">Log not found</div>';

@@ -123,9 +123,20 @@ def convert_to_toon(
     json_str = json.dumps(data, indent=2)
     original_tokens = count_tokens(json_str)
 
+    global _toon_encode
+
     try:
+        # If the optional dependency was installed after module import,
+        # try to import it lazily.
+        if _toon_encode is None:
+            try:
+                from toon import encode as _toon_encode  # type: ignore
+            except ImportError:
+                _toon_encode = None
+
         if _toon_encode is None:
             raise RuntimeError("toon library not installed")
+
         toon_str = _toon_encode(data)
         if isinstance(toon_str, bytes):
             toon_str = toon_str.decode("utf-8")
