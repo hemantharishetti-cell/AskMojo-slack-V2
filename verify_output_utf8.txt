@@ -1,0 +1,461 @@
+﻿python : 
+C:\Users\Hemant Harish
+etti\AppData\Local\Pro
+grams\Python\Python310
+\lib\site-packages\req
+uests\__init__.py:113:
+ RequestsDependencyWar
+ning: urllib3 (2.6.3) 
+or chardet (7.0.1)/cha
+rset_normalizer 
+(3.4.4) doesn't match 
+a supported version!
+At line:1 char:1
++ python scripts/verif
+y_pass2_v2.py > 
+verify_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (C:\Users\H   
+ emant...ported ve    
+rsion!:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  warnings.warn(
+2026-03-24 11:23:00 | 
+INFO    | chromadb.tel
+emetry.product.posthog
+ | Anonymized 
+telemetry enabled. 
+See                   
+  https://docs.trychro
+ma.com/telemetry for 
+more information.
+2026-03-24 11:23:02 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:04 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:04 | 
+INFO    | deep_agent 
+| [T1] Fetching 
+collections
+2026-03-24 11:23:06 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:06 | 
+INFO    | deep_agent 
+| [T2] collection=cros
+s_team_decks top_k=4
+2026-03-24 11:23:07 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:08 | 
+INFO    | deep_agent 
+| [T3] 4 docs in 
+__auto__ per_doc=8
+2026-03-24 11:23:08 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:10 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:10 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:11 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:11 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:12 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:12 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:13 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:13 | 
+INFO    | deep_agent 
+| [Stitching] 
+Checking chunks for 
+enrichment
+2026-03-24 11:23:18 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:19 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:20 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:20 | 
+INFO    | deep_agent 
+| [T1] Fetching 
+collections
+2026-03-24 11:23:26 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+2026-03-24 11:23:26 | 
+WARNING | deep_agent 
+| [Planner] failed: 
+'dict' object has no 
+attribute 'strip'
+2026-03-24 11:23:26 | 
+INFO    | deep_agent 
+| [T2] collection=cust
+omer_pitch_decks 
+top_k=4
+2026-03-24 11:23:27 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:27 | 
+INFO    | deep_agent 
+| [T3] 4 docs in 
+__auto__ per_doc=10
+2026-03-24 11:23:27 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:27 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:28 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:28 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:28 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:29 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:29 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:29 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:29 | 
+INFO    | deep_agent 
+| [Pass 2] Triggered 
+due to weak retrieval
+2026-03-24 11:23:29 | 
+INFO    | deep_agent 
+| [Pass 2] Global 
+document recovery for 
+query: Tell me about 
+the 'Skin in the 
+Game' approach 
+description doc.
+2026-03-24 11:23:30 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:30 | 
+INFO    | deep_agent 
+| [T3] 1 docs in 
+cross_team_decks 
+per_doc=10
+2026-03-24 11:23:30 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:30 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:30 | 
+INFO    | deep_agent 
+| [T3] 1 docs in 
+marketing_collateral 
+per_doc=10
+2026-03-24 11:23:31 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:31 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:31 | 
+INFO    | deep_agent 
+| [T3] 8 docs in 
+customer_pitch_decks 
+per_doc=10
+2026-03-24 11:23:32 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:32 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:32 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:33 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:33 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:34 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:34 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:34 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:35 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:35 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:35 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:36 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:36 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:36 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:37 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:37 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/embeddings "HTTP/1.1 
+200 OK"
+2026-03-24 11:23:37 | 
+INFO    | deep_agent 
+| [Stitching] 
+Checking chunks for 
+enrichment
+2026-03-24 11:23:40 | 
+INFO    | httpx | 
+HTTP Request: POST htt
+ps://api.openai.com/v1
+/chat/completions 
+"HTTP/1.1 200 OK"
+
+Testing Query: What is the ROI for Jagged Frontier?
+--------------------------------------------------
+
+======================================================================
+Query: What is the ROI for Jagged Frontier?
+======================================================================
+**ROI for Jagged Frontier**
+The specific ROI for Jagged Frontier is not detailed in the provided chunks. However, the document mentions various AI-driven approaches and methodologies that could imply potential benefits.
+
+**Key Details:**
+- No specific ROI figures or percentages for Jagged Frontier are provided in the chunks.
+
+**Source:** AI Product Engineering for Syntheticpeople.AI, Moolya Way Of Testing
+Time: 17.63s | Steps: 6
+======================================================================
+
+Answer: **ROI for Jagged Frontier**
+The specific ROI for Jagged Frontier is not detailed in the provided chunks. However, the document mentions various AI-driven approaches and methodologies that could imply potential benefits.
+
+**Key Details:**
+- No specific ROI figures or percentages for Jagged Frontier are provided in the chunks.
+
+**Source:** AI Product Engineering for Syntheticpeople.AI, Moolya Way Of Testing
+Total Time: 17.63s
+
+Steps taken:
+ - Intent Route: {'route': 'RAG'}
+ - Query Rewrite: {'rewritten': 'What is the return on investment (ROI) for Jagged Frontier, including financial performance metrics, profitability analysis, investment yield, economic return, and cost-benefit evaluation for the game or project?'}
+ - Anchor Extraction: {'anchors': ['return on investment', 'ROI', 'Jagged Frontier', 'financial performance metrics', 'profitability analysis', 'investment yield', 'economic return', 'cost-benefit evaluation', 'game', 'project']}
+ - Plan Retrieval: {'collections': ['cross_team_decks'], 'doc_queries': ['What is the return on investment (ROI) for Jagged Frontier, including financial performance metrics, profitability analysis, investment yield, economic return, and cost-benefit evaluation for the game or project?'], 'chunk_dense_queries': ['What is the return on investment (ROI) for Jagged Frontier, including financial performance metrics, profitability analysis, investment yield, economic return, and cost-benefit evaluation for the game or project?'], 'chunk_sparse_queries': ['what return investment roi jagged frontier including financial performance metrics profitability analysis yield economic cost-benefit evaluation game project benchmark latency throughput results impact improvement coverage qa cycle business value'], 'named_entities': ['Jagged Frontier'], 'anchor_terms': ['Jagged Frontier'], 'answer_mode': 'partial_ok', 'retry_policy': {'retry_on_missing_entity': False, 'retry_on_no_anchor': False, 'retry_on_low_confidence': False}, '_planner_model': 'gpt-4o-mini-2024-07-18', '_planner_tokens': 1244}
+ - get_top_documents[cross_team_decks]: {'found': 7}
+ - get_chunks: {'chunks': 32}
+
+Pass-2 Triggered: False
+
+Testing Query: Tell me about the 'Skin in the Game' approach description doc.
+--------------------------------------------------
+
+======================================================================
+Query: Tell me about the 'Skin in the Game' approach description doc.
+======================================================================
+**Skin in the Game Approach Description**  
+The "Skin in the Game" approach emphasizes deep co-ownership with customers, going beyond traditional vendor roles. It focuses on addressing issues through cultural fixes and empowering leadership at various levels.
+
+**Key Details:**  
+- Moolya fosters deep co-ownership with customers, helping them address issues by focusing on cultural fixes.  
+- The approach is described as "Leadership Friendly," aiming to empower C-, V-, and D-level leaders with insights to scale value.
+
+**Source:** Best practice sharing, E-Commerce Experience & Revenue Assurance Framework
+Time: 22.47s | Steps: 7
+======================================================================
+
+Answer: **Skin in the Game Approach Description**  
+The "Skin in the Game" approach emphasizes deep co-ownership with customers, going beyond traditional vendor roles. It focuses on addressing issues through cultural fixes and empowering leadership at various levels.
+
+**Key Details:**  
+- Moolya fosters deep co-ownership with customers, helping them address issues by focusing on cultural fixes.  
+- The approach is described as "Leadership Friendly," aiming to empower C-, V-, and D-level leaders with insights to scale value.
+
+**Source:** Best practice sharing, E-Commerce Experience & Revenue Assurance Framework
+Total Time: 22.47s
+
+Steps taken:
+ - Intent Route: {'route': 'RAG'}
+ - Query Rewrite: {'rewritten': "Query: Provide information regarding the 'Skin in the Game' methodology, framework, or approach description document, including related concepts such as risk-sharing, stakeholder engagement, accountability, investment strategies, and decision-making processes."}
+ - Anchor Extraction: {'anchors': ['Skin in the Game', 'methodology', 'framework', 'risk-sharing', 'stakeholder engagement', 'accountability', 'investment strategies', 'decision-making processes']}
+ - Plan Retrieval: {'collections': ['customer_pitch_decks'], 'doc_queries': ["Query: Provide information regarding the 'Skin in the Game' methodology, framework, or approach description document, including related concepts such as risk-sharing, stakeholder engagement, accountability, investment strategies, and decision-making processes."], 'chunk_dense_queries': ["Query: Provide information regarding the 'Skin in the Game' methodology, framework, or approach description document, including related concepts such as risk-sharing, stakeholder engagement, accountability, investment strategies, and decision-making processes."], 'chunk_sparse_queries': ['query provide information regarding skin game methodology framework approach description document including related concepts such risk-sharing stakeholder engagement accountability investment strategies decision-making processes. frameworks libraries library solution architecture implementation method design'], 'named_entities': ['skin in the game'], 'anchor_terms': ['skin in the game'], 'answer_mode': 'direct', 'retry_policy': {'retry_on_missing_entity': False, 'retry_on_no_anchor': False, 'retry_on_low_confidence': False}, '_planner_model': 'fallback', '_planner_tokens': 0}
+ - get_top_documents[customer_pitch_decks]: {'found': 7}
+ - get_chunks: {'chunks': 37}
+ - Pass-2 Recovery: {'total_chunks': 107}
+
+Pass-2 Triggered: True

@@ -1,0 +1,144 @@
+# Lossless Chunk Retention Plan for `dev_v2.py`
+
+## Summary
+We should **not redesign ChromaDB first**. The better move is to redesign the **retrieval contract in `dev_v2.py`** so Tool 3 becomes a **lossless chunk collector and selector**, not a replacer. The repo already appears to store enough metadata to do this: `document_id`, `chunk_index`, and OCR-origin chunk identity fields are already present in the ingestion/adapter path, so we can implement the new behavior without changing collection layout up front.
+
+Your proposed direction is the right one. I would implement it as a **pipeline refactor inside Tool 3 + post-Tool-3 handoff**, with only an optional later migration for legacy records that lack stable chunk identity metadata.
+
+## Key Changes
+### 1. Introduce a canonical chunk record and make Tool 3 lossless
+Replace the ad hoc chunk dicts returned by `get_document_chunks_exec()` with one canonical internal schema carried from retrieval through final prompt preparation:
+
+- `chunk_id`
+- `document_id`
+- `collection_name`
+- `document_title`
+- `chunk_text`
+- `metadata`
+- `dense_rank`
+- `sparse_rank`
+- `rrf_score`
+- `anchor_score`
+- `entity_score`
+- `query_type_score`
+- `final_score`
+- `selection_reason`
+- `retrieval_stage`
+
+Implementation defaults:
+- `chunk_id` resolution order:
+  1. explicit metadata chunk id if present
+  2. `(collection_name, document_id, chunk_index)`
+  3. content hash fallback for legacy chunks
+- `selection_reason` is a list such as `["dense_hit", "bm25_hit", "entity_match", "strongest_for_doc"]`
+- `retrieval_stage` values: `pass1`, `pass2_recovery`, `pass2_stitch`
+
+Tool 3 must:
+- collect dense and sparse candidates for each doc
+- normalize them into the canonical schema
+- merge duplicate hits before any truncation
+- preserve per-source provenance and intermediate ranks
+
+### 2. Replace lossy truncation with two-bucket selection
+Remove the current `fused_chunks[:effective_chunks_per_doc]` behavior in [`dev_v2.py`](/D:/Project/Askmojo-Working-Folder/Devlopment%20march%2025/askmojo-slack%20-%2020%20march%20clean%20and%20stab/askmojo-slack%20-%2020%20march%20clean%20and%20stab/askmojo-slack%20-%2016%20March/askmojo-slack%20-%2012%20March/dev_v2.py).
+
+New per-document selection flow:
+1. Build `must_keep_chunks`
+2. Build `scored_chunks`
+3. Return `must_keep_chunks + top(scored_chunks)` until cap
+4. If `must_keep_chunks` exceeds cap, raise the temporary cap instead of dropping them
+
+`must_keep_chunks` rules:
+- any chunk with strong entity hit
+- any quoted phrase hit
+- strongest chunk per named entity
+- strongest chunk per document
+- optionally strongest numeric/timeline chunk when answer mode demands it
+
+`scored_chunks` rules:
+- all remaining fused candidates
+- sorted by `final_score`
+
+`final_score` should be a transparent weighted sum:
+- RRF / retrieval strength
+- anchor hit score
+- entity hit score
+- query-type score
+- metadata heading/section support
+- optional answer-mode bonus
+
+Hard rule:
+- a chunk strongly matching anchors/entities cannot be discarded because its generic retrieval score is slightly lower
+
+### 3. Remove post-Tool-3 lossy re-ranking
+The current extra `_rerank_chunk_payload()` step after Tool 3 is a major risk because it reorders chunks using a weaker heuristic than Tool 3 already computed.
+
+Plan:
+- delete this step from the main flow, or downgrade it to a debug-only annotator
+- Tool 3 becomes the single source of truth for chunk ranking
+- `_prepare_context()` must consume `final_score` order directly and not re-infer relevance
+
+### 4. Make Pass-2 use the same canonical schema and formatting path
+Right now Pass-2 swaps in recovered/stiched chunks and they bypass parts of the normal shaping path, which is why raw chunks leak through.
+
+Plan:
+- `_get_chunks_for_recovered_docs()` must return canonical chunk records, not legacy chunk dicts
+- `_stitch_chunks()` must append context as canonical chunks with `retrieval_stage="pass2_stitch"` and `selection_reason += ["adjacent_context"]`
+- re-run the same dedupe + two-bucket selector after stitching
+- `_prepare_context()` should render both Pass-1 and Pass-2 through one formatter so Pass-2 never sends raw chunks directly
+
+### 5. Tighten collection fallback without redesigning storage
+The `cross_team_decks` problem is a routing issue, not a Chroma schema issue.
+
+Plan:
+- keep `select_retrieval_scope()` heuristic routing, but mark routed collections as `preferred`, not `locked`
+- in Tool 2, when the requested collection has weak support, keep its best docs but allow competing collections into the candidate set rather than silently broadening late
+- add a collection confidence/debug payload so we can see when fallback changed the candidate pool
+- preserve collection provenance on every chunk to avoid “good chunk found, then lost across collection merge”
+
+### 6. Add observability so chunk loss becomes visible
+Add debug counters at each stage:
+- candidates collected
+- duplicates merged
+- must-keep count
+- scored count
+- chunks removed by dedupe
+- chunks removed by budget
+- final chunks sent to prompt
+- top dropped chunk ids with drop reason
+
+This should be attached to agent history so we can prove whether a relevant chunk was dropped, and where.
+
+## Interface Changes
+Internal retrieval interfaces should be updated so downstream code stops using free-form chunk dicts.
+
+Recommended additions:
+- extend the retrieval schema model to include canonical chunk provenance/score fields
+- make the final prompt builder accept only canonical chunks
+- standardize chunk identity on `chunk_id`
+
+No ChromaDB collection redesign is required for v1 of this change.
+
+Optional later data backfill:
+- if some older collections do not have `ocr_chunk_id` or reliable `chunk_index`, add a maintenance script to backfill stable chunk ids into metadata for legacy records
+
+## Test Plan
+Add focused tests for these scenarios:
+
+- Tool 3 keeps the strongest entity chunk even when it ranks below generic dense/BM25 results
+- duplicate dense+sparse hits collapse into one canonical chunk with merged provenance
+- quoted phrase chunk is always retained
+- strongest chunk per document is retained even when cap is low
+- if must-keep count exceeds per-doc cap, cap expands rather than dropping must-keep chunks
+- `_rerank_chunk_payload` no longer changes final ordering
+- Pass-2 recovered chunks are formatted through the same context builder as Pass-1
+- Pass-2 stitched neighbors do not displace the original strong chunk
+- mixed-collection retrieval preserves chunk provenance and does not silently overwrite stronger chunks
+- the “Skin in the Game” style failure returns shaped evidence, not raw chunks
+- a known `cross_team_decks` query still retrieves there first, but fallback does not hide stronger chunks from another collection
+
+## Assumptions
+- Existing ingestion metadata already includes enough identity fields for most records, so no Chroma redesign is needed immediately
+- We will treat this as a **pipeline refactor in `dev_v2.py` first**, with optional legacy metadata backfill later
+- Tool 3 becomes the authoritative ranker/selector; later stages may format and budget chunks, but must not re-rank them with weaker logic
+- Budgeting is allowed to trim low-priority chunks, but never `must_keep_chunks`

@@ -1,0 +1,1100 @@
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+from typing import Dict, Any
+
+from app.sqlite.database import get_db
+from app.sqlite.models import User, Document, QueryLog, Category, DocumentUploadLog, QuerySource
+from app.core.security import get_current_admin_user
+from app.admin.schemas import (
+    AdminUserCreate, AdminUserUpdate, AdminUserResponse, AdminStatsResponse,
+    CategoryCreate, CategoryUpdate, CategoryResponse, DomainResponse,
+    QueryLogResponse, DocumentUploadLogResponse,
+    CategoryDomainBackfillRequest, CategoryDomainBackfillResponse,
+    QuerySourceInfo
+)
+from sqlalchemy.orm import joinedload
+from app.core.security import get_password_hash
+from sqlalchemy import func
+
+# Concurrency management
+from app.utils.concurrency import ConcurrencyManager
+
+router = APIRouter(prefix="/admin", tags=["admin"])
+
+# Upload Logs Management Route
+@router.get("/logs/uploads", response_model=list[DocumentUploadLogResponse])
+def get_upload_logs(
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get document upload logs (admin only).
+    """
+    # Fetch related entities in one query (avoid N+1 lookups in production).
+    rows = (
+        db.query(DocumentUploadLog, User, Document, Category)
+        .outerjoin(User, User.id == DocumentUploadLog.uploaded_by)
+        .outerjoin(Document, Document.id == DocumentUploadLog.document_id)
+        .outerjoin(Category, Category.id == DocumentUploadLog.category_id)
+        .order_by(DocumentUploadLog.created_at.desc())
+        .offset(skip)
+        .limit(limit)
+        .all()
+    )
+
+    result: list[DocumentUploadLogResponse] = []
+    for log, uploader, doc, cat in rows:
+        result.append(
+            DocumentUploadLogResponse(
+                id=log.id,
+                document_id=log.document_id,
+                document_title=(doc.title if doc else None) or log.title,
+                uploaded_by=log.uploaded_by,
+                uploader_name=uploader.name if uploader else None,
+                uploader_email=uploader.email if uploader else None,
+                title=log.title,
+                file_name=log.file_name,
+                category_id=log.category_id,
+                category_name=cat.name if cat else None,
+                category=log.category,
+                document_description=log.document_description,
+                chunk_count=log.chunk_count,
+                description_generated=log.description_generated,
+                description_length=log.description_length,
+                processing_started=log.processing_started,
+                processing_completed=log.processing_completed,
+                processing_error=log.processing_error,
+                created_at=log.created_at,
+                processed_at=log.processed_at,
+                upload_time_seconds=log.upload_time_seconds,
+                description_generation_time_seconds=log.description_generation_time_seconds,
+                description_tokens_used=log.description_tokens_used,
+                description_tokens_prompt=log.description_tokens_prompt,
+                description_tokens_completion=log.description_tokens_completion,
+            )
+        )
+
+    return result
+
+def _perform_description_regeneration(document: Document, upload_log: DocumentUploadLog | None, db: Session) -> dict:
+    """
+    Helper function to regenerate document description.
+    Updates Document.description and (optionally) DocumentUploadLog attributes.
+    """
+    from app.vector_logic.description_generator import generate_description_from_ocr, convert_plain_description_to_json
+    from app.core.config import settings
+    import time
+    from app.sqlite.models import Category
+    from app.vector_logic.vector_store import get_document_chunks_from_collection
+
+    # 1. Resolve domain name for context
+    domain_name = None
+    if document.domain_id:
+        from app.sqlite.models import Domain
+        domain_obj = db.query(Domain).filter(Domain.id == document.domain_id).first()
+        if domain_obj:
+            domain_name = domain_obj.name
+
+    # 2. Resolve category name for context + collection
+    category_name = document.category
+    collection_name = None
+    if document.category_id:
+        category_obj = db.query(Category).filter(Category.id == document.category_id).first()
+        if category_obj:
+            category_name = category_obj.name
+            collection_name = category_obj.collection_name
+    if not collection_name:
+        if document.category:
+            collection_name = document.category.lower().replace(" ", "_")
+        else:
+            collection_name = "documents"
+
+    # 3. Regenerate description (OCR-only)
+    start_time = time.time()
+    chunk_texts = get_document_chunks_from_collection(
+        document_id=document.id,
+        collection_name=collection_name,
+        persist_directory=None,
+        limit=200,
+    )
+
+    if not chunk_texts:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                "Cannot regenerate description: no OCR-derived chunks found for this document. "
+                "Process the document first (OCR pipeline) and try again."
+            ),
+        )
+
+    try:
+        chunks = [{"text": t} for t in chunk_texts]
+        new_description, tokens_info = generate_description_from_ocr(
+            title=document.title,
+            category=category_name,
+            ocr_metadata=None,
+            ocr_pages_text=None,
+            chunks=chunks,
+            openai_api_key=settings.openai_api_key,
+            domain=domain_name,
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to regenerate description from stored OCR chunks: {str(e)}",
+        )
+
+    elapsed = time.time() - start_time
+
+    # 5. Update Document (used by RAG system)
+    document.description = new_description
+    db.commit()
+    db.refresh(document)
+
+    # 6. Update upload log if provided
+    if upload_log:
+        upload_log.document_description = new_description
+        upload_log.description_length = len(new_description) if new_description else 0
+        upload_log.description_generated = True
+        upload_log.description_generation_time_seconds = elapsed
+        if tokens_info:
+            upload_log.description_tokens_used = tokens_info.get("total_tokens")
+            upload_log.description_tokens_prompt = tokens_info.get("prompt_tokens")
+            upload_log.description_tokens_completion = tokens_info.get("completion_tokens")
+        db.commit()
+
+    return {
+        "success": True,
+        "document_id": document.id,
+        "document_title": document.title,
+        "file_name": document.file_name,
+        "new_description": new_description,
+        "generation_time_seconds": round(elapsed, 2),
+        "tokens_used": tokens_info.get("total_tokens") if tokens_info else None,
+        "log_id": upload_log.id if upload_log else None
+    }
+
+
+@router.post("/documents/{document_id}/regenerate-description")
+def regenerate_document_description_by_id(
+    document_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Regenerate the AI description for a document by its ID.
+    Updates Document.description and the latest associated DocumentUploadLog.
+    """
+    # 1. Fetch the document
+    document = db.query(Document).filter(Document.id == document_id).first()
+    if not document:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Document with id {document_id} not found"
+        )
+
+    # 2. Try to find the latest upload log for this document
+    upload_log = (
+        db.query(DocumentUploadLog)
+        .filter(DocumentUploadLog.document_id == document_id)
+        .order_by(DocumentUploadLog.created_at.desc())
+        .first()
+    )
+
+    # 3. Perform regeneration
+    return _perform_description_regeneration(document, upload_log, db)
+
+
+@router.post("/logs/uploads/{log_id}/regenerate-description")
+def regenerate_document_description(
+    log_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Regenerate the AI description for a document using its stored PDF file.
+    Updates DocumentUploadLog.document_description and Document.description.
+    """
+    # 1. Fetch the upload log
+    upload_log = db.query(DocumentUploadLog).filter(DocumentUploadLog.id == log_id).first()
+    if not upload_log:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Upload log with id {log_id} not found"
+        )
+
+    # 2. Fetch the linked document
+    document = db.query(Document).filter(Document.id == upload_log.document_id).first()
+    if not document:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Document linked to upload log {log_id} not found"
+        )
+
+    # 3. Perform regeneration
+    return _perform_description_regeneration(document, upload_log, db)
+
+
+@router.get("/documents/{document_id}/chunks")
+def get_document_chunks_api(
+    document_id: int,
+    limit: int = 500,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get all chunks for a document from the vector database.
+    """
+    document = db.query(Document).filter(Document.id == document_id).first()
+    if not document:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Document with id {document_id} not found"
+        )
+
+    category_name = document.category
+    collection_name = None
+    if document.category_id:
+        category_obj = db.query(Category).filter(Category.id == document.category_id).first()
+        if category_obj:
+            collection_name = category_obj.collection_name
+    if not collection_name:
+        if document.category:
+            collection_name = document.category.lower().replace(" ", " ").replace("-", "_")
+            collection_name = "".join(c for c in collection_name if c.isalnum() or c == "_")
+        else:
+            collection_name = "documents"
+
+    from app.vector_logic.vector_store import get_document_chunks_from_collection
+    try:
+        chunk_texts = get_document_chunks_from_collection(
+            document_id=document.id,
+            collection_name=collection_name,
+            persist_directory=None,
+            limit=limit,
+        )
+        return {"document_id": document.id, "chunks": chunk_texts}
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch chunks from vector store: {str(e)}"
+        )
+
+
+@router.get("/stats", response_model=AdminStatsResponse)
+def get_admin_stats(
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get admin dashboard statistics.
+    """
+    total_users = db.query(func.count(User.id)).scalar() or 0
+    total_documents = db.query(func.count(Document.id)).scalar() or 0
+    total_queries = db.query(func.count(QueryLog.id)).scalar() or 0
+    active_users = db.query(func.count(User.id)).filter(User.is_active == True).scalar() or 0
+    admin_users = db.query(func.count(User.id)).filter(User.role == "admin").scalar() or 0
+    
+    return AdminStatsResponse(
+        total_users=total_users,
+        total_documents=total_documents,
+        total_queries=total_queries,
+        active_users=active_users,
+        admin_users=admin_users
+    )
+
+
+@router.get("/processing/concurrency")
+def get_processing_concurrency_stats(
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+) -> Dict[str, Any]:
+    """
+    Get document processing concurrency statistics for current admin.
+    
+    Shows:
+    - Current concurrent processing count (max 15 per admin)
+    - Queue length (documents waiting to be processed)
+    - Remaining capacity
+    - Utilization percentage
+    """
+    stats = ConcurrencyManager.get_stats(current_user.id, db)
+    
+    return {
+        "admin_id": stats["admin_id"],
+        "admin_name": current_user.name,
+        "concurrent_processing": stats["concurrent_processing"],
+        "queue_length": stats["queue_length"],
+        "remaining_capacity": stats["remaining_capacity"],
+        "max_capacity": stats["max_capacity"],
+        "utilization_percent": round(stats["utilization_percent"], 1),
+        "status": "At capacity" if stats["remaining_capacity"] == 0 else "Available",
+    }
+
+
+@router.post("/users", response_model=AdminUserResponse, status_code=status.HTTP_201_CREATED)
+def create_user(
+    user_data: AdminUserCreate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new user (admin only).
+    """
+    # Check if email already exists
+    existing_user = db.query(User).filter(User.email == user_data.email).first()
+    if existing_user:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Email already registered"
+        )
+    
+    # Validate role
+    if user_data.role not in ["user", "admin"]:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid role. Must be 'user' or 'admin'"
+        )
+    
+    # Create new user with hashed password
+    hashed_password = get_password_hash(user_data.password)
+    new_user = User(
+        name=user_data.name,
+        email=user_data.email,
+        password=hashed_password,
+        role=user_data.role,
+        is_active=user_data.is_active
+    )
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+    return new_user
+
+
+@router.get("/users", response_model=list[AdminUserResponse])
+def get_all_users(
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get all users (admin only).
+    """
+    users = db.query(User).offset(skip).limit(limit).all()
+    return users
+
+
+@router.get("/users/{user_id}", response_model=AdminUserResponse)
+def get_user(
+    user_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get a specific user by ID (admin only).
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with id {user_id} not found"
+        )
+    return user
+
+
+@router.put("/users/{user_id}", response_model=AdminUserResponse)
+def update_user(
+    user_id: int,
+    user_update: AdminUserUpdate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update a user by ID (admin only).
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with id {user_id} not found"
+        )
+    
+    # Prevent admin from removing their own admin role
+    if user_id == current_user.id and user_update.role and user_update.role != "admin":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Cannot remove your own admin role"
+        )
+    
+    # Check if email is being updated and if it already exists
+    if user_update.email and user_update.email != user.email:
+        existing_user = db.query(User).filter(User.email == user_update.email).first()
+        if existing_user:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Email already registered"
+            )
+    
+    # Update only provided fields
+    update_data = user_update.model_dump(exclude_unset=True, exclude={"password"})
+    for field, value in update_data.items():
+        setattr(user, field, value)
+    
+    # Handle password update separately (hash it)
+    if user_update.password:
+        user.password = get_password_hash(user_update.password)
+    
+    db.commit()
+    db.refresh(user)
+    return user
+
+
+@router.delete("/users/{user_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_user(
+    user_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Delete a user by ID (admin only).
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with id {user_id} not found"
+        )
+    
+    # Prevent admin from deleting themselves
+    if user_id == current_user.id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Cannot delete your own account"
+        )
+    
+    db.delete(user)
+    db.commit()
+    return None
+
+
+@router.post("/users/{user_id}/toggle-active", response_model=AdminUserResponse)
+def toggle_user_active(
+    user_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Toggle user active status (admin only).
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with id {user_id} not found"
+        )
+    
+    # Prevent admin from deactivating themselves
+    if user_id == current_user.id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Cannot deactivate your own account"
+        )
+    
+    user.is_active = not user.is_active
+    db.commit()
+    db.refresh(user)
+    return user
+
+
+# Category Management Routes
+@router.get("/categories", response_model=list[CategoryResponse])
+def get_all_categories(
+    skip: int = 0,
+    limit: int = 100,
+    domain_id: int | None = None,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get all categories (admin only).
+    """
+    from app.sqlite.models import Domain
+    
+    query = db.query(Category)
+    if domain_id:
+        # Filter categories that have the specified domain
+        query = query.join(Category.domains).filter(Domain.id == domain_id)
+    
+    categories = query.offset(skip).limit(limit).all()
+    result = []
+    for category in categories:
+        # Count documents in this category
+        doc_count = db.query(func.count(Document.id)).filter(
+            Document.category_id == category.id
+        ).scalar() or 0
+        
+        # Convert domains to response format
+        domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+        
+        category_dict = {
+            "id": category.id,
+            "name": category.name,
+            "description": category.description,
+            "domains": domain_responses,
+            "collection_name": category.collection_name,
+            "is_active": category.is_active,
+            "created_at": category.created_at,
+            "updated_at": category.updated_at,
+            "document_count": doc_count
+        }
+        result.append(CategoryResponse(**category_dict))
+    return result
+
+
+@router.get("/categories/{category_id}", response_model=CategoryResponse)
+def get_category(
+    category_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get a specific category by ID (admin only).
+    """
+    category = db.query(Category).filter(Category.id == category_id).first()
+    if not category:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Category with id {category_id} not found"
+        )
+    
+    # Count documents in this category
+    doc_count = db.query(func.count(Document.id)).filter(
+        Document.category_id == category.id
+    ).scalar() or 0
+    
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+    
+    return CategoryResponse(
+        id=category.id,
+        name=category.name,
+        description=category.description,
+        domains=domain_responses,
+        collection_name=category.collection_name,
+        is_active=category.is_active,
+        created_at=category.created_at,
+        updated_at=category.updated_at,
+        document_count=doc_count
+    )
+
+
+@router.post("/categories", response_model=CategoryResponse, status_code=status.HTTP_201_CREATED)
+def create_category(
+    category_data: CategoryCreate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new category (admin only).
+    Also creates the corresponding ChromaDB collection.
+    """
+    # Check if category name already exists
+    existing_category = db.query(Category).filter(Category.name == category_data.name).first()
+    if existing_category:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Category name already exists"
+        )
+    
+    # Generate collection name from category name (normalize)
+    collection_name = category_data.name.lower().replace(" ", "_").replace("-", "_")
+    # Remove special characters
+    collection_name = "".join(c for c in collection_name if c.isalnum() or c == "_")
+    
+    # Check if collection name already exists
+    existing_collection = db.query(Category).filter(Category.collection_name == collection_name).first()
+    if existing_collection:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Collection name '{collection_name}' already exists"
+        )
+    
+    # Ensure ChromaDB collection exists (create if it doesn't)
+    # Pass category description to be stored in ChromaDB collection metadata
+    from app.vector_logic.vector_store import ensure_collection_exists
+    if not ensure_collection_exists(collection_name, category_description=category_data.description):
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to create ChromaDB collection '{collection_name}'"
+        )
+    
+    # Create new category
+    new_category = Category(
+        name=category_data.name,
+        description=category_data.description,
+        collection_name=collection_name,
+        is_active=category_data.is_active
+    )
+    db.add(new_category)
+    db.flush()  # Get the category ID
+    
+    # Add domains if provided
+    if category_data.domain_ids:
+        from app.sqlite.models import Domain
+        domains = db.query(Domain).filter(Domain.id.in_(category_data.domain_ids)).all()
+        new_category.domains = domains
+    
+    db.commit()
+    db.refresh(new_category)
+    
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in new_category.domains] if new_category.domains else []
+    
+    return CategoryResponse(
+        id=new_category.id,
+        name=new_category.name,
+        description=new_category.description,
+        domains=domain_responses,
+        collection_name=new_category.collection_name,
+        is_active=new_category.is_active,
+        created_at=new_category.created_at,
+        updated_at=new_category.updated_at,
+        document_count=0
+    )
+
+
+@router.put("/categories/{category_id}", response_model=CategoryResponse)
+def update_category(
+    category_id: int,
+    category_update: CategoryUpdate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update a category by ID (admin only).
+    If category name changes, the ChromaDB collection is also renamed.
+    """
+    from app.vector_logic.vector_store import rename_chromadb_collection, ensure_collection_exists
+    
+    category = db.query(Category).filter(Category.id == category_id).first()
+    if not category:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Category with id {category_id} not found"
+        )
+    
+    old_collection_name = category.collection_name
+    new_collection_name = old_collection_name  # Default to same name
+    collection_name_changed = False
+    
+    # Check if name is being updated and if it already exists
+    if category_update.name and category_update.name != category.name:
+        existing_category = db.query(Category).filter(Category.name == category_update.name).first()
+        if existing_category:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Category name already exists"
+            )
+        # Update collection name if name changed
+        new_collection_name = category_update.name.lower().replace(" ", "_").replace("-", "_")
+        new_collection_name = "".join(c for c in new_collection_name if c.isalnum() or c == "_")
+        
+        # Check if new collection name already exists
+        existing_collection = db.query(Category).filter(
+            Category.collection_name == new_collection_name,
+            Category.id != category_id
+        ).first()
+        if existing_collection:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Collection name '{new_collection_name}' already exists"
+            )
+        
+        # Check if collection name actually changed
+        if old_collection_name != new_collection_name:
+            collection_name_changed = True
+            # Rename ChromaDB collection
+            # Get the new description (from update or keep existing)
+            new_description = category_update.description if category_update.description is not None else category.description
+            if not rename_chromadb_collection(old_collection_name, new_collection_name, category_description=new_description):
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail=f"Failed to rename ChromaDB collection from '{old_collection_name}' to '{new_collection_name}'"
+                )
+            category.collection_name = new_collection_name
+    
+    # Handle description update when collection name doesn't change
+    # (or when name is not being updated at all)
+    if not collection_name_changed:
+        # Collection name didn't change, but description might have
+        # Update collection metadata if description changed
+        if category_update.description is not None and category_update.description != category.description:
+            # Update ChromaDB collection metadata by recreating it
+            from app.vector_logic.vector_store import update_collection_metadata
+            if not update_collection_metadata(old_collection_name, category_description=category_update.description):
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail=f"Failed to update ChromaDB collection metadata for '{old_collection_name}'"
+                )
+            print(f"Updated ChromaDB collection metadata for '{category.name}' with new description")
+    
+    # Update only provided fields (excluding domain_ids)
+    update_data = category_update.model_dump(exclude_unset=True, exclude={"name", "domain_ids"})
+    for field, value in update_data.items():
+        setattr(category, field, value)
+    
+    # Handle name update separately (already handled above)
+    if category_update.name:
+        category.name = category_update.name
+    
+    # Handle domain_ids update
+    if category_update.domain_ids is not None:
+        from app.sqlite.models import Domain
+        domains = db.query(Domain).filter(Domain.id.in_(category_update.domain_ids)).all()
+        category.domains = domains
+    
+    db.commit()
+    db.refresh(category)
+    
+    # Count documents
+    doc_count = db.query(func.count(Document.id)).filter(
+        Document.category_id == category.id
+    ).scalar() or 0
+    
+    # Convert domains to response format
+    domain_responses = [DomainResponse.from_orm(d) for d in category.domains] if category.domains else []
+    
+    return CategoryResponse(
+        id=category.id,
+        name=category.name,
+        description=category.description,
+        domains=domain_responses,
+        collection_name=category.collection_name,
+        is_active=category.is_active,
+        created_at=category.created_at,
+        updated_at=category.updated_at,
+        document_count=doc_count
+    )
+
+
+@router.delete("/categories/{category_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_category(
+    category_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Delete a category by ID (admin only).
+    Also deletes the corresponding ChromaDB collection if it exists and is empty.
+    """
+    from app.vector_logic.vector_store import _get_chroma_client, _get_persist_directory
+    
+    category = db.query(Category).filter(Category.id == category_id).first()
+    if not category:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Category with id {category_id} not found"
+        )
+    
+    # Check if category has documents
+    doc_count = db.query(func.count(Document.id)).filter(
+        Document.category_id == category.id
+    ).scalar() or 0
+    
+    if doc_count > 0:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Cannot delete category with {doc_count} document(s). Please reassign or delete documents first."
+        )
+    
+    collection_name = category.collection_name
+    
+    # Delete from SQLite first
+    db.delete(category)
+    db.commit()
+    
+    # Try to delete ChromaDB collection if it exists and is empty
+    try:
+        persist_directory = _get_persist_directory(None)
+        client = _get_chroma_client(persist_directory)
+        
+        try:
+            collection = client.get_collection(name=collection_name)
+            # Check if collection is empty
+            count = collection.count()
+            if count == 0:
+                client.delete_collection(name=collection_name)
+                print(f"Deleted empty ChromaDB collection: {collection_name}")
+            else:
+                print(f"Warning: ChromaDB collection '{collection_name}' has {count} items, not deleting")
+        except Exception as e:
+            # Collection doesn't exist or error accessing it, which is fine
+            print(f"Info: Could not delete ChromaDB collection '{collection_name}': {e}")
+    except Exception as e:
+        print(f"Warning: Error accessing ChromaDB during category deletion: {e}")
+        # Don't fail the deletion if ChromaDB operation fails
+    
+    return None
+
+
+    # ============================================================
+# GENERATE AI DESCRIPTION FOR CATEGORY
+# Analyzes all documents in category to create searchable description
+# ============================================================
+
+@router.post("/categories/{category_id}/generate-description")
+def generate_category_ai_description(
+    category_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Generate AI description for a category by analyzing all its documents.
+    Uses Few-Shot + Structured Output for optimal search matching.
+    """
+    # Import the category description generator
+    from app.vector_logic.description_generator import generate_category_description
+    from app.vector_logic.vector_store import update_collection_metadata
+    
+    # Step 1: Get category from database
+    category = db.query(Category).filter(Category.id == category_id).first()
+    if not category:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Category with id {category_id} not found"
+        )
+    
+    # Step 2: Get all documents in this category
+    documents = db.query(Document).filter(Document.category_id == category_id).all()
+    
+    if not documents:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No documents in this category to analyze"
+        )
+    
+    # Step 3: Collect all document descriptions
+    doc_summaries = []
+    for doc in documents:
+        if doc.description:
+            doc_summaries.append(f"Document: {doc.title}\n{doc.description}")
+    
+    if not doc_summaries:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No document descriptions available. Upload and process documents first."
+        )
+    
+    # Step 4: Generate category description using AI
+    try:
+        combined_content = "\n\n---\n\n".join(doc_summaries)
+        new_description = generate_category_description(
+            category_name=category.name,
+            document_summaries=combined_content
+        )
+        
+        # Step 5: Update category description in database
+        category.description = new_description
+        db.commit()
+        db.refresh(category)
+        
+        # Step 6: Update ChromaDB collection metadata
+        update_collection_metadata(category.collection_name, category_description=new_description)
+        
+        return {
+            "success": True,
+            "category_id": category_id,
+            "category_name": category.name,
+            "new_description": new_description,
+            "documents_analyzed": len(doc_summaries)
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to generate description: {str(e)}"
+        )
+
+
+# Logs Management Routes
+@router.get("/logs/queries", response_model=list[QueryLogResponse])
+def get_query_logs(
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get query logs (admin only).
+    """
+    query_logs = db.query(QueryLog).options(
+        joinedload(QueryLog.user)
+    ).order_by(QueryLog.created_at.desc()).offset(skip).limit(limit).all()
+    
+    result = []
+    for log in query_logs:
+        # Fetch sources joined with Document to get real file names
+        raw_sources = (
+            db.query(QuerySource, Document)
+            .join(Document, QuerySource.document_id == Document.id)
+            .filter(QuerySource.query_id == log.id)
+            .all()
+        )
+        source_count = len(raw_sources)
+        sources = [
+            QuerySourceInfo(
+                document_id=qs.document_id,
+                document_title=doc.title,
+                file_name=doc.file_name,
+                relevance_score=qs.relevance_score
+            )
+            for qs, doc in raw_sources
+        ]
+        
+        result.append(QueryLogResponse(
+            id=log.id,
+            user_id=log.user_id,
+            user_name=log.user.name if log.user else None,
+            user_email=log.user.email if log.user else None,
+            query=log.query,
+            intent=log.intent,
+            response_type=log.response_type,
+            used_internal_only=log.used_internal_only,
+            created_at=log.created_at,
+            source_count=source_count,
+            sources=sources,
+            answer=log.answer,
+            processing_time_seconds=log.processing_time_seconds,
+            total_tokens_used=log.total_tokens_used,
+            total_tokens_without_toon=log.total_tokens_without_toon,
+            token_savings=log.token_savings,
+            token_savings_percent=log.token_savings_percent,
+            token_usage_json=log.token_usage_json,
+            api_calls_json=log.api_calls_json,
+            toon_savings_json=log.toon_savings_json,
+            slack_user_email=log.slack_user_email
+        ))
+    
+    return result
+
+
+# Domain Management Routes  
+@router.get("/domains", response_model=list[DomainResponse])
+def get_all_domains(
+    skip: int = 0,
+    limit: int = 100,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Get all domains (admin only).
+    """
+    from app.sqlite.models import Domain
+    domains = db.query(Domain).offset(skip).limit(limit).all()
+    return domains
+
+
+@router.post("/domains", response_model=DomainResponse, status_code=status.HTTP_201_CREATED)
+def create_domain(
+    domain_data: dict,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new domain (admin only).
+    """
+    from app.sqlite.models import Domain
+    
+    # Check if domain name already exists
+    existing_domain = db.query(Domain).filter(Domain.name == domain_data.get("name")).first()
+    if existing_domain:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Domain name already exists"
+        )
+    
+    # Create new domain
+    new_domain = Domain(
+        name=domain_data.get("name").strip(),
+        description=domain_data.get("description"),
+        is_active=domain_data.get("is_active", True)
+    )
+    db.add(new_domain)
+    db.commit()
+    db.refresh(new_domain)
+    
+    return new_domain
+
+
+@router.delete("/domains/{domain_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_domain(
+    domain_id: int,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Delete a domain by ID (admin only).
+    Cascades: deletes associated documents, upload logs, and cleans metadata.
+    """
+    from app.sqlite.models import Domain, Document, DocumentUploadLog
+    domain = db.query(Domain).filter(Domain.id == domain_id).first()
+    if not domain:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Domain with id {domain_id} not found"
+        )
+    # Delete associated documents and upload logs
+    docs = db.query(Document).filter(Document.domain_id == domain_id).all()
+    for doc in docs:
+        db.query(DocumentUploadLog).filter(DocumentUploadLog.document_id == doc.id).delete()
+        db.delete(doc)
+    db.delete(domain)
+    db.commit()
+    return None
+
+
+# Update Domain endpoint
+from pydantic import BaseModel
+
+class DomainUpdate(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    is_active: bool | None = None
+
+@router.put("/domains/{domain_id}", response_model=DomainResponse)
+def update_domain(
+    domain_id: int,
+    domain_update: DomainUpdate,
+    current_user: User = Depends(get_current_admin_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update a domain by ID (admin only).
+    """
+    from app.sqlite.models import Domain
+    domain = db.query(Domain).filter(Domain.id == domain_id).first()
+    if not domain:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Domain with id {domain_id} not found"
+        )
+    # Check if name is being updated and if it already exists
+    if domain_update.name and domain_update.name != domain.name:
+        existing_domain = db.query(Domain).filter(Domain.name == domain_update.name).first()
+        if existing_domain:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Domain name already exists"
+            )
+        domain.name = domain_update.name.strip()
+    if domain_update.description is not None:
+        domain.description = domain_update.description
+    if domain_update.is_active is not None:
+        domain.is_active = domain_update.is_active
+    db.commit()
+    db.refresh(domain)
+    return domain
+
