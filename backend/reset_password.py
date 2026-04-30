@@ -4,10 +4,16 @@ Run this script to update a user's password:
     python reset_password.py
 """
 import sys
+from pathlib import Path
 from sqlalchemy.orm import Session
-from app.sqlite.database import SessionLocal
-from app.sqlite.models import User
-from app.core.security import get_password_hash, verify_password
+# Ensure project root (the folder containing 'app/') is on sys.path so imports work
+_ROOT = Path(__file__).resolve().parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from app.sqlite.database import SessionLocal  # type: ignore
+from app.sqlite.models import User  # type: ignore
+from app.core.security import get_password_hash, verify_password  # type: ignore
 
 
 def reset_user_password(email: str, new_password: str):
@@ -44,12 +50,21 @@ if __name__ == "__main__":
         print("Email is required!")
         sys.exit(1)
     
-    new_password = input("Enter new password: ").strip()
+    # Use getpass to avoid echoing passwords in terminal
+    try:
+        import getpass
+        new_password = getpass.getpass("Enter new password: ").strip()
+    except Exception:
+        new_password = input("Enter new password: ").strip()
     if not new_password:
         print("Password is required!")
         sys.exit(1)
     
-    confirm_password = input("Confirm new password: ").strip()
+    try:
+        import getpass
+        confirm_password = getpass.getpass("Confirm new password: ").strip()
+    except Exception:
+        confirm_password = input("Confirm new password: ").strip()
     if new_password != confirm_password:
         print("Passwords do not match!")
         sys.exit(1)

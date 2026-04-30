@@ -23,7 +23,7 @@ MAX_SIDE_LIMIT = 1600
 DARK_BG_THRESH = 127
 
 # ── OCR ──────────────────────────────────────────────────────────────────────
-CONF_THRESHOLD = 0.4
+CONF_THRESHOLD = 0.15  # Very lenient - captures almost all text with good word count
 
 # ── OpenAI Structuring ───────────────────────────────────────────────────────
 MODEL_NAME = "gpt-4o-mini"

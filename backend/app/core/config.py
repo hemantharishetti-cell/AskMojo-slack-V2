@@ -1,5 +1,10 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from dotenv import load_dotenv
 import multiprocessing
+import os
+
+# Load .env file explicitly
+load_dotenv(dotenv_path=".env", override=True)
 
 
 class Settings(BaseSettings):
@@ -60,9 +65,12 @@ class Settings(BaseSettings):
     adobe_polling_interval_seconds: int = 2  # Poll Adobe for job status every 2 seconds
     adobe_polling_max_retries: int = 150  # Max polls (150 * 2s = 5min timeout)
 
-    class Config:
-        env_file = ".env"
-        extra = "ignore"  # Ignore extra environment variables that aren't in the Settings class
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",  # Ignore extra environment variables that aren't in the Settings class
+        case_sensitive=False,  # Environment variables are case-insensitive
+    )
 
 
 settings = Settings()

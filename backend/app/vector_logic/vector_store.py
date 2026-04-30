@@ -266,8 +266,15 @@ def _embed_query(text: str) -> list:
 
 _reranker_tokenizer = None
 _reranker_model_instance = None
-_RERANKER_MODEL = os.getenv("ASKMOJO_RERANKER_MODEL", "jinaai/jina-reranker-v1-tiny-en").strip() or "jinaai/jina-reranker-v1-tiny-en"
-_RERANKER_LOCAL_ONLY = (os.getenv("ASKMOJO_RERANKER_LOCAL_ONLY", "1").strip().lower() not in {"0", "false", "no", "off"})
+# Prefer a local pre-downloaded reranker if present; otherwise fall back to public HF id.
+_DEFAULT_LOCAL_RERANKER_DIR = str((Path(__file__).resolve().parents[2] / "models" / "jina-reranker-v1-tiny-en")).rstrip("/")
+_DEFAULT_REMOTE_RERANKER = "jinaai/jina-reranker-v1-tiny-en"
+_RERANKER_MODEL = os.getenv(
+    "ASKMOJO_RERANKER_MODEL",
+    _DEFAULT_LOCAL_RERANKER_DIR if os.path.isdir(_DEFAULT_LOCAL_RERANKER_DIR) else _DEFAULT_REMOTE_RERANKER,
+).strip() or (_DEFAULT_LOCAL_RERANKER_DIR if os.path.isdir(_DEFAULT_LOCAL_RERANKER_DIR) else _DEFAULT_REMOTE_RERANKER)
+# Allow remote download by default only if using the remote id; local path implies offline use is OK.
+_RERANKER_LOCAL_ONLY = (os.getenv("ASKMOJO_RERANKER_LOCAL_ONLY", "0").strip().lower() not in {"0", "false", "no", "off"})
 _RERANKER_MAX_LENGTH = int(os.getenv("ASKMOJO_RERANKER_MAX_LENGTH", "384"))
 _RERANKER_BATCH_SIZE = int(os.getenv("ASKMOJO_RERANKER_BATCH_SIZE", "16"))
 
@@ -378,8 +385,14 @@ def _get_reranker():
             "trust_remote_code": needs_trust_remote_code,
             "torch_dtype": torch.float32,
         }
-        if _requires_trust_remote_code(_RERANKER_MODEL) or _requires_trust_remote_code(model_path):
+        # Ensure correct head shape for Jina rerankers regardless of local/remote path
+        model_id_l = (_RERANKER_MODEL or "").lower()
+        path_l = str(model_path).lower()
+        is_jina_reranker = ("jina-reranker" in model_id_l) or ("jina-reranker" in path_l)
+        if is_jina_reranker:
             model_kwargs["num_labels"] = 1
+            # Be resilient to config mismatches by reinitializing the head when shapes differ
+            model_kwargs["ignore_mismatched_sizes"] = True
 
         _reranker_tokenizer = AutoTokenizer.from_pretrained(
             model_path,

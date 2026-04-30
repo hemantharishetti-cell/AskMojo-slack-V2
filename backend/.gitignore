@@ -1,0 +1,27 @@
+# Python
+venv/
+__pycache__/
+
+# Env
+.env
+
+# Logs
+*.log
+
+# Uploads
+app/uploads/
+
+# Vector DB
+app/vector_db/
+
+# Models
+models/
+
+# ML files
+*.bin
+*.onnx
+*.pkl
+*.safetensors
+
+# OS
+.DS_Store

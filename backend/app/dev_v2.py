@@ -29,7 +29,52 @@ from sqlalchemy.orm import Session
 import re
 import concurrent.futures
 from typing import Any
-from toon_format import estimate_savings, compare_formats, count_tokens
+# Optional Jina Toon formatting helpers; provide local fallbacks if unavailable
+try:
+    from toon_format import estimate_savings, compare_formats, count_tokens  # type: ignore
+except Exception:
+    def _approx_token_count(text: str) -> int:
+        try:
+            import tiktoken as _tiktoken
+            enc = _tiktoken.get_encoding("cl100k_base")
+            return len(enc.encode(text or ""))
+        except Exception:
+            # Rough heuristic: ~4 chars per token
+            s = text or ""
+            return max(1, (len(s) + 3) // 4)
+
+    def count_tokens(text: str) -> int:  # fallback
+        return _approx_token_count(text)
+
+    def estimate_savings(toon_str: str, json_str: str) -> dict:  # fallback
+        jt = _approx_token_count(json_str)
+        tt = _approx_token_count(toon_str)
+        saved = max(jt - tt, 0)
+        pct = round((saved / jt) * 100, 2) if jt else 0.0
+        return {
+            "json_tokens": jt,
+            "toon_tokens": tt,
+            "saved_tokens": saved,
+            "saved_percent": pct,
+        }
+
+    def compare_formats(obj) -> str:  # fallback pretty summary
+        json_str = None
+        toon_str = None
+        if isinstance(obj, dict):
+            json_str = obj.get("json") or obj.get("json_str") or obj.get("original_json") or ""
+            toon_str = obj.get("toon") or obj.get("toon_str") or obj.get("compact") or ""
+        elif isinstance(obj, (list, tuple)) and len(obj) >= 2:
+            json_str, toon_str = obj[0], obj[1]
+        else:
+            json_str = str(obj) if obj is not None else ""
+            toon_str = ""
+        stats = estimate_savings(toon_str or "", json_str or "")
+        return (
+            f"Original JSON tokens: {stats['json_tokens']}\n"
+            f"Toon tokens:         {stats['toon_tokens']}\n"
+            f"Saved tokens:        {stats['saved_tokens']} ({stats['saved_percent']}%)"
+        )
 
 # Optional third-party dependencies (graceful fallbacks if missing)
 try:

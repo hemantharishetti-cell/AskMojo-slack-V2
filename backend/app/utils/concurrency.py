@@ -9,12 +9,15 @@ logger = logging.getLogger(__name__)
 class ConcurrencyManager:
     """
     Manages concurrent processing slots for admins.
-    Max 15 parallel documents per admin.
+    Max 1 document per admin (sequential processing for stability).
     """
     # In-memory tracking of active slots: {admin_id: count}
     _active_slots: Dict[int, int] = {}
     _lock = asyncio.Lock()
-    MAX_CAPACITY = 15
+    MAX_CAPACITY = 1  # Sequential: process 1 document at a time
+    # Global concurrency guard across all admins
+    _global_active: int = 0
+    MAX_GLOBAL_CAPACITY = 1  # Allow at most N documents across all admins
 
     @classmethod
     def get_concurrent_count(cls, admin_id: int) -> int:
@@ -28,8 +31,9 @@ class ConcurrencyManager:
     async def acquire_slot(cls, admin_id: int) -> bool:
         async with cls._lock:
             current = cls._active_slots.get(admin_id, 0)
-            if current < cls.MAX_CAPACITY:
+            if current < cls.MAX_CAPACITY and cls._global_active < cls.MAX_GLOBAL_CAPACITY:
                 cls._active_slots[admin_id] = current + 1
+                cls._global_active += 1
                 return True
             return False
 
@@ -37,6 +41,8 @@ class ConcurrencyManager:
     def release_slot(cls, admin_id: int):
         if admin_id in cls._active_slots:
             cls._active_slots[admin_id] = max(0, cls._active_slots[admin_id] - 1)
+        if cls._global_active > 0:
+            cls._global_active -= 1
 
     @classmethod
     def get_stats(cls, admin_id: int, db: Session) -> Dict[str, Any]:
@@ -46,6 +52,7 @@ class ConcurrencyManager:
         from app.sqlite.models import Document
         
         concurrent_count = cls.get_concurrent_count(admin_id)
+        global_concurrent = cls._global_active
         
         # Count documents in the queue (uploaded by this admin but not processed)
         queue_length = db.query(func.count(Document.id)).filter(
@@ -59,9 +66,12 @@ class ConcurrencyManager:
         return {
             "admin_id": admin_id,
             "concurrent_processing": concurrent_count,
+            "global_concurrent_processing": global_concurrent,
             "queue_length": queue_length,
             "remaining_capacity": remaining,
             "max_capacity": cls.MAX_CAPACITY,
+            "global_remaining_capacity": max(0, cls.MAX_GLOBAL_CAPACITY - global_concurrent),
+            "max_global_capacity": cls.MAX_GLOBAL_CAPACITY,
             "utilization_percent": utilization
         }
 

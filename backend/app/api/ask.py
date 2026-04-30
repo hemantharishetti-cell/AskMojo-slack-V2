@@ -31,32 +31,13 @@ router = APIRouter(tags=["Ask"])
 _AGENT_RUN_TIMEOUT_SECONDS = 180.0
 
 
-def _extract_embedding_mismatch_warning(agent_data: dict) -> dict | None:
-    steps = agent_data.get("steps", [])
-    if not isinstance(steps, list):
-        return None
-
-    for step in steps:
-        if not isinstance(step, dict):
-            continue
-        output = step.get("output")
-        if isinstance(output, dict) and output.get("error_type") == "embedding_dim_mismatch":
-            return {
-                "type": "embedding_dim_mismatch",
-                "severity": "critical",
-                "collection_name": output.get("collection_name"),
-                "message": output.get("message"),
-                "original_error": output.get("original_error"),
-            }
-    return None
-
-@router.post("/ask", response_model=AskResponse)
-async def ask_question(
+async def _ask_question_impl(
     request: AskRequest,
-    db: Session = Depends(get_db),
+    db: Session,
 ):
     """
-    Answer a user's question using the Deep Agent system.
+    Internal implementation of ask_question. 
+    Can be called directly without FastAPI dependency injection.
     """
 
     q_preview = (request.question or "").strip()[:80]
@@ -149,24 +130,6 @@ async def ask_question(
                     "api_calls": api_calls
                 }
 
-                openai_non_embedding_usage = agent_data.get("openai_non_embedding_token_usage") if isinstance(agent_data, dict) else None
-                if isinstance(openai_non_embedding_usage, dict):
-                    token_usage_dict["openai_non_embedding_token_usage"] = openai_non_embedding_usage
-
-                tool_timing_summary = agent_data.get("tool_timing_summary") if isinstance(agent_data, dict) else None
-                if isinstance(tool_timing_summary, list):
-                    token_usage_dict["tool_timing_summary"] = tool_timing_summary
-
-                toon_usage = agent_data.get("toon_token_usage") if isinstance(agent_data, dict) else None
-                if isinstance(toon_usage, dict):
-                    if "total_json_tokens" in toon_usage and "total_tokens_without_toon" not in token_usage_dict:
-                        token_usage_dict["total_tokens_without_toon"] = toon_usage.get("total_json_tokens")
-                    if "total_savings" in toon_usage and "total_savings" not in token_usage_dict:
-                        token_usage_dict["total_savings"] = toon_usage.get("total_savings")
-                    if "total_savings_percent" in toon_usage and "total_savings_percent" not in token_usage_dict:
-                        token_usage_dict["total_savings_percent"] = toon_usage.get("total_savings_percent")
-                    if "breakdown_by_call" in toon_usage and "breakdown_by_call" not in token_usage_dict:
-                        token_usage_dict["breakdown_by_call"] = toon_usage.get("breakdown_by_call")
                 mismatch_warning = _extract_embedding_mismatch_warning(agent_data)
                 if mismatch_warning:
                     token_usage_dict["system_warnings"] = [mismatch_warning]
@@ -202,3 +165,34 @@ async def ask_question(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error processing question: {e}",
         )
+
+
+def _extract_embedding_mismatch_warning(agent_data: dict) -> dict | None:
+    steps = agent_data.get("steps", [])
+    if not isinstance(steps, list):
+        return None
+
+    for step in steps:
+        if not isinstance(step, dict):
+            continue
+        output = step.get("output")
+        if isinstance(output, dict) and output.get("error_type") == "embedding_dim_mismatch":
+            return {
+                "type": "embedding_dim_mismatch",
+                "severity": "critical",
+                "collection_name": output.get("collection_name"),
+                "message": output.get("message"),
+                "original_error": output.get("original_error"),
+            }
+    return None
+
+@router.post("/ask", response_model=AskResponse)
+async def ask_question(
+    request: AskRequest,
+    db: Session = Depends(get_db),
+):
+    """
+    Answer a user's question using the Deep Agent system.
+    FastAPI route handler that delegates to _ask_question_impl.
+    """
+    return await _ask_question_impl(request, db)

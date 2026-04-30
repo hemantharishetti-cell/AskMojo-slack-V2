@@ -13,13 +13,13 @@ from slack_sdk.socket_mode.response import SocketModeResponse
 from sqlalchemy.orm import Session
 from app.sqlite.database import SessionLocal
 from app.sqlite.models import SlackIntegration, SlackUser
-from app.vector_logic.schemas import AskRequest
+from app.schemas.response import AskRequest
 from app.core.config import settings
 from app.utils.request_locks import (
     USER_REQUEST_BUSY_MESSAGE,
     is_user_request_in_progress,
 )
-import httpx
+from app.api.ask import _ask_question_impl
 from datetime import datetime, timedelta
 import threading
 import atexit
@@ -653,7 +653,7 @@ async def handle_app_home_opened(event: dict, bot_token: str):
 async def process_slack_message(
     event: dict,
     bot_token: str,
-    base_url: str = "http://127.0.0.1:8000"
+    base_url: str = "http://168.144.110.180:8000"
 ) -> None:
     """
     Process a Slack message event following this flow:
@@ -953,31 +953,22 @@ async def process_slack_message(
     except Exception as e:
         logger.warning(f"Could not post loading message: {e}")
 
-    # Call the /ask endpoint
+    # Call the ask_question function directly
+    db = SessionLocal()
     try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                f"{base_url}/api/v1/ask",
-                json=request_data,
-                timeout=300.0
-            )
-            response.raise_for_status()
-            ask_response = response.json()
-            logger.info(f"[OK] Successfully received answer from /api/v1/ask endpoint")
-    except httpx.HTTPStatusError as e:
-        logger.error(f"HTTP error calling /ask endpoint: {e.response.status_code} - {e.response.text}")
-        error_detail = None
-        try:
-            error_detail = e.response.json().get("detail")
-        except Exception:
-            error_detail = None
+        request_obj = AskRequest(**request_data)
+        result = await _ask_question_impl(request_obj, db)
+
         ask_response = {
-            "answer": error_detail
-            or f"Sorry, I encountered an error processing your question (HTTP {e.response.status_code}). Please try again."
+            "answer": result.answer
         }
+
+        logger.info("[OK] Successfully received answer from direct function call")
     except Exception as e:
-        logger.error(f"Error calling /ask endpoint: {e}")
+        logger.error(f"Error calling _ask_question_impl: {e}")
         ask_response = {"answer": f"Sorry, I encountered an error processing your question: {str(e)}"}
+    finally:
+        db.close()
 
     # Extract answer from response
     answer_text = ask_response.get("answer", "I couldn't process your question. Please try again.")

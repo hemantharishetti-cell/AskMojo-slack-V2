@@ -1,0 +1,32 @@
+# Core ML
+
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+
+# PyTorch (CPU ONLY)
+
+torch==2.2.2
+
+# NLP / Transformers
+
+transformers==4.30.2
+huggingface_hub==0.23.5
+tiktoken==0.12.0
+safetensors==0.7.0
+
+# Image / OCR
+
+opencv-python-headless==4.11.0.86
+pillow==12.1.1
+
+# OCR stack (CPU works fine)
+
+paddlepaddle==2.6.2
+paddleocr==2.7.3
+paddlex==3.4.2
+
+# Inference
+
+onnxruntime==1.23.2

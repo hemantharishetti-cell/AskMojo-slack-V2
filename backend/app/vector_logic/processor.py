@@ -516,7 +516,7 @@ async def process_document_async(
             stats = ConcurrencyManager.get_stats(admin_id, db)
             logger.info(
                 f"Released concurrency slot for admin {admin_id}. "
-                f"Active: {stats['concurrent_processing']}/15, Queue: {stats['queue_length']}"
+                f"Active: {stats['concurrent_processing']}/{ConcurrencyManager.MAX_CAPACITY}, Queue: {stats['queue_length']}"
             )
         
     except Exception as e:
@@ -551,13 +551,53 @@ def process_document_background(
     asyncio.set_event_loop(loop)
     
     try:
+        # Run the initial document
         loop.run_until_complete(
             process_document_async(
                 document_id=document_id,
                 delay_seconds=delay_seconds,
                 collection_name=collection_name,
-                persist_directory=persist_directory
+                persist_directory=persist_directory,
             )
         )
+
+        # Option A: Immediately drain the per-admin queue on the same (live) loop
+        # Find next unprocessed documents for the same admin and run them sequentially
+        db = SessionLocal()
+        try:
+            current_doc = db.query(Document).filter(Document.id == document_id).first()
+            if current_doc is not None:
+                admin_id = current_doc.uploaded_by
+                processed_ids = {document_id}
+
+                while True:
+                    next_doc = (
+                        db.query(Document)
+                        .filter(
+                            Document.uploaded_by == admin_id,
+                            Document.processed == False,
+                            ~Document.id.in_(processed_ids),
+                        )
+                        .order_by(Document.id.asc())
+                        .first()
+                    )
+                    if next_doc is None:
+                        break
+
+                    logger.info(
+                        f"[RETRY] Processing queued document {next_doc.id} for admin {admin_id}"
+                    )
+
+                    loop.run_until_complete(
+                        process_document_async(
+                            document_id=next_doc.id,
+                            delay_seconds=0,
+                            collection_name=collection_name,
+                            persist_directory=persist_directory,
+                        )
+                    )
+                    processed_ids.add(next_doc.id)
+        finally:
+            db.close()
     finally:
         loop.close()

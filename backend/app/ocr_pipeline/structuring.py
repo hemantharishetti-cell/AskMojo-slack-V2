@@ -13,6 +13,7 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List
 
+from app.core.config import settings
 from app.ocr_pipeline.config import BATCH_SIZE, MAX_WORKERS, MODEL_NAME
 from app.ocr_pipeline.models import StructuredDocument
 from app.ocr_pipeline.text_utils import clean_text
@@ -29,9 +30,9 @@ def get_openai_client():
     if _opened_openai_client is None:
         from openai import OpenAI
 
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = settings.openai_api_key
         if not api_key:
-            raise ValueError("❌ OPENAI_API_KEY is not set.")
+            raise ValueError("❌ OPENAI_API_KEY is not set in settings.")
         _opened_openai_client = OpenAI(api_key=api_key)
     return _opened_openai_client
 
