@@ -1,3 +1,5 @@
+from __future__ import annotations
+from typing import List
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from dotenv import load_dotenv
 import multiprocessing
@@ -14,12 +16,12 @@ class Settings(BaseSettings):
     port: int = 8000
     # SQLite database URL, default stored under app/sqlite/app.db
     database_url: str = "sqlite:///./app/sqlite/app.db"
-    # DB connection pool settings (optimized for multiprocessing)
-    pool_size: int = max(5, multiprocessing.cpu_count())  # Scale with CPU cores
-    max_overflow: int = 20  # Increased for better concurrency
+    # DB connection pool settings (tuned for 2-vCPU Linux server)
+    pool_size: int = 3           # 3 is sufficient on 2 vCPU; cpu_count() over-provisions
+    max_overflow: int = 7        # max 10 total connections — safe for SQLite WAL mode
     pool_pre_ping: bool = True
-    pool_recycle: int = 3600  # Recycle connections after 1 hour
-    pool_timeout: int = 30  # Timeout for getting connection from pool
+    pool_recycle: int = 1800     # Recycle every 30 min (was 60 — frees stale handles faster)
+    pool_timeout: int = 30       # Timeout for getting connection from pool
     # SQLite-specific settings for multiprocessing
     sqlite_timeout: int = 20  # SQLite connection timeout in seconds
     sqlite_check_same_thread: bool = False  # Allow connections from different threads
@@ -27,7 +29,14 @@ class Settings(BaseSettings):
     vector_processing_delay: int = 5
     # OpenAI API key for description generation
     openai_api_key: str | None = None
+    # CORS — comma-separated list of allowed origins (read from CORS_ORIGINS env var)
+    # Example in .env:  CORS_ORIGINS=https://app.askmojo.io,https://admin.askmojo.io
+    # In development leave as ["*"]; in production MUST be locked to your domain.
+    cors_origins: List[str] = ["*"]
+
     # JWT Authentication settings
+    # PRODUCTION: set SECRET_KEY to a 64-char random hex string in .env
+    # Generate one with:  python -c "import secrets; print(secrets.token_hex(32))"
     secret_key: str = "your-secret-key-change-in-production"
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 480  # 8 hours for better UX
@@ -75,3 +84,12 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
+# ── Production safety guard ───────────────────────────────────────────────────
+# Crash fast on startup if the secret key has never been changed.
+# This prevents silent auth bypass in production.
+if settings.environment == "production" and settings.secret_key == "your-secret-key-change-in-production":
+    raise RuntimeError(
+        "[FATAL] SECRET_KEY is still the insecure default. "
+        "Set a real key in .env:  SECRET_KEY=<64-char hex string>\n"
+        "Generate with:  python -c \"import secrets; print(secrets.token_hex(32))\""
+    )

@@ -56,9 +56,10 @@ app = FastAPI(
 )
 
 # Add CORS middleware
+# Allowed origins are set via CORS_ORIGINS in .env — never use ["*"] in production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify your frontend domain
+    allow_origins=settings.cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

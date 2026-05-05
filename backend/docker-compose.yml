@@ -1,56 +1,74 @@
-version: "3.9"
+# ── AskMojo Backend — Production docker-compose ───────────────────────────────
+# Compatible with: docker compose v2 (plugin) and docker-compose v1.29+
+# Resource limits use the v2 top-level syntax (works WITHOUT Swarm mode).
 
 services:
   askmojo-backend:
     build:
       context: .
-      dockerfile: Dockerfile
-    image: askmojo-backend:latest
+      dockerfile: Dockerfile.prod
+    image: askmojo-backend:prod
     container_name: askmojo_backend
-    restart: unless-stopped        # auto-restart on server reboot or crash
+    restart: always                   # auto-restart on crash AND server reboot
 
     ports:
-      - "8004:8004"                # host_port:container_port
+      - "127.0.0.1:8004:8004"         # bind to loopback only — Nginx proxies externally
 
-    # ── Secrets injected at runtime (never baked into image) ────────────────
+    # ── Secrets injected at runtime (NEVER baked into image) ─────────────────
     env_file:
       - .env
 
-    # ── Persistent volumes ───────────────────────────────────────────────────
-    # Data here survives: container restarts, docker compose down, image rebuilds
-    volumes:
-      - ./app/sqlite:/app/app/sqlite          # SQLite database (documents, users, auth)
-      - ./app/uploads:/app/app/uploads        # Uploaded PDF files
-      - chroma_data:/app/chromadb             # ChromaDB vector store (embeddings)
-      # Optional: uncomment to persist PaddleOCR model files (avoids re-download)
-      # - paddle_model_cache:/root/.paddleocr
+    # ── Per-container resource hard limits ────────────────────────────────────
+    # mem_limit:     hard OOM kill threshold
+    # memswap_limit: same as mem_limit → disables swap usage entirely
+    # cpus:          soft CPU share (not a hard cap but prevents starvation)
+    mem_limit: 2500m
+    memswap_limit: 2500m              # = mem_limit disables swap
+    cpus: "1.8"                       # leave 0.2 vCPU headroom for OS / Nginx
 
+    # ── Log rotation — prevents disk exhaustion ───────────────────────────────
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    # ── Persistent volumes ────────────────────────────────────────────────────
+    # All data that must survive container restarts / image rebuilds
+    volumes:
+      - ./app/sqlite:/app/app/sqlite          # SQLite DB
+      - ./app/uploads:/app/app/uploads        # Uploaded PDFs
+      - chroma_data:/app/chromadb             # ChromaDB vector store
+      - paddle_cache:/root/.paddleocr         # PaddleOCR model cache (avoids re-download)
+      - hf_cache:/root/.cache/huggingface     # HuggingFace / Jina model cache
+
+    # ── Extra runtime environment overrides ───────────────────────────────────
     environment:
       - PYTHONUNBUFFERED=1
+      - ENVIRONMENT=production
       - OMP_NUM_THREADS=1
       - MKL_NUM_THREADS=1
+      - OPENBLAS_NUM_THREADS=1
       - TOKENIZERS_PARALLELISM=false
+      - GLOG_minloglevel=3
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
+      - ASKMOJO_RERANKER_LOCAL_ONLY=1
 
-    # ── Resource limits ──────────────────────────────────────────────────────
-    # Hard cap at 2.5 GB — matches OCR batch processing safe limit.
-    # With 3-page batching: peak ~900 MB, headroom ~1.6 GB.
-    deploy:
-      resources:
-        limits:
-          memory: 2500M
-
-    # ── Health check ─────────────────────────────────────────────────────────
-    # start_period: 60s gives PaddleOCR model time to load before first check
+    # ── Health check ──────────────────────────────────────────────────────────
+    # start_period: 90s gives PaddleOCR + Jina reranker time to load
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8004/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 60s
+      start_period: 90s
 
-# ── Named volumes (managed by Docker, persist across compose down) ────────────
+# ── Named volumes (managed by Docker, survive compose down) ──────────────────
 volumes:
   chroma_data:
     driver: local
-  # paddle_model_cache:
-  #   driver: local
+  paddle_cache:
+    driver: local
+  hf_cache:
+    driver: local

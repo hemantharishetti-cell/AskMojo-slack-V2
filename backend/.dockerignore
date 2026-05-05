@@ -1,49 +1,84 @@
-# ── AskMojo Backend — .dockerignore ──────────────────────────────────────────
+# ── AskMojo Backend — .dockerignore (Production) ─────────────────────────────
 
-# ── Secrets — NEVER bake into image (inject via --env-file at runtime) ────────
+# ── Secrets — NEVER bake into image ──────────────────────────────────────────
 .env
 .env.*
+.env_backup
 
-# ── Python bytecode — not needed in image ─────────────────────────────────────
+# ── Python bytecode ───────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pdb
 
-# ── Virtual environments — never copy (image has its own pip install) ──────────
+# ── Virtual environments ──────────────────────────────────────────────────────
 venv/
 .venv/
 env/
-.env_backup
+.python-version
 
-# ── Large data directories — mounted as Docker volumes instead ─────────────────
-# These must NOT be baked into the image:
-#   - They make the image huge
-#   - Data would be lost on rebuild if not mounted
+# ── Large data dirs — mounted as Docker volumes ───────────────────────────────
 app/uploads/
-app/sqlite/app.db
+app/sqlite/
+app/vector_db/           # local dev ChromaDB — server uses named volume at /app/chromadb
 chromadb/
+.paddleocr/
+.hf_modules_cache/
 
-# ── PaddleOCR model cache — optional: also mount as volume to avoid re-download ──
-# Uncomment if you want to preserve model cache across rebuilds:
-# .paddleocr/
+# ── Dev/legacy files — do NOT ship to production ─────────────────────────────
+app/dev_v2.py
+app/debug_extraction_analyzer.py
 
-# ── Dev / test artefacts ──────────────────────────────────────────────────────
+# ── Documentation & audit files (not needed at runtime) ──────────────────────
+*.md
+ACTION_PLAN_OOM_FIX.md
+CONCURRENCY_AND_BATCH_ANALYSIS.md
+DEPENDENCY_ANALYSIS_REPORT.md
+EXECUTIVE_SUMMARY.md
+IMPLEMENTATION_GUIDE.md
+INDEX.md
+OOM_CRASH_ROOT_CAUSE_ANALYSIS.md
+OPTION_A_DETAILED_EXPLANATION.md
+QUICK_FIX_REFERENCE.md
+START_HERE.md
+URGENT_ACTION_ITEMS.md
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
 *.log
+logs/
+logs.txt
+
+# ── Dev/test artifacts ────────────────────────────────────────────────────────
 .pytest_cache/
 tests/
+test_*.py
+*_test.py
+htmlcov/
+.coverage
 *.sqlite
 *.db
 
-# ── IDE / OS files ────────────────────────────────────────────────────────────
+# ── Dev requirements (only prod requirements should be in image) ──────────────
+requirements.txt
+requirements-ai.txt
+requirements-core.txt
+requirements-ml.txt
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.DS_Store
 Thumbs.db
+desktop.ini
 
 # ── Git ───────────────────────────────────────────────────────────────────────
 .git/
 .gitignore
 
-# ── HuggingFace model cache (large, re-downloaded on first run) ───────────────
-.hf_modules_cache/
+# ── Monitoring config (only needed on host) ───────────────────────────────────
+monitoring/
+
+# ── Node (if any frontend assets exist) ──────────────────────────────────────
+node_modules/
+npm-debug.log
