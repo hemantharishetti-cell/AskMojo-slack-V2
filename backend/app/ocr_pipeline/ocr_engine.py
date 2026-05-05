@@ -10,6 +10,7 @@ import logging
 import warnings
 
 import numpy as np
+from paddleocr import PaddleOCR
 
 from app.ocr_pipeline.config import CONF_THRESHOLD, MAX_SIDE_LIMIT
 from app.ocr_pipeline.preprocessing import (
@@ -31,8 +32,6 @@ def get_ocr():
     """Return a lazily-initialized PaddleOCR instance."""
     global _ocr_engine
     if _ocr_engine is None:
-        from paddleocr import PaddleOCR
-
         logger.info("🚀 Initializing PaddleOCR...")
         _ocr_engine = PaddleOCR(
             lang="en",
