@@ -152,13 +152,13 @@ def process_page(i: int, page) -> dict:
         except Exception:
             pass
 
+    # Free heavy numpy arrays before returning — caller (batch loop) will gc.collect()
+    del img_rgb, processed
     gc.collect()
     texts, scores = _spatial_sort(texts, scores, boxes, orig_w)
-    
     # Debug: Show extraction stats
     raw_extracted = "\n".join(texts) if texts else ""
     logger.info(f"  Page {i + 1}: Extracted {len(texts)} text blocks (confidence range: {min(scores) if scores else 'N/A'}~{max(scores) if scores else 'N/A'})")
-    
     lines = [t for t, s in zip(texts, scores) if s > CONF_THRESHOLD]
     logger.info(f"  Page {i + 1}: After CONF_THRESHOLD ({CONF_THRESHOLD}): {len(lines)} text blocks remain")
     

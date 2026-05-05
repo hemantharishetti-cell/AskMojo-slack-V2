@@ -18,6 +18,12 @@ os.environ.setdefault("GLOG_minloglevel", "3")
 DPI = 200
 PDF_WORKERS = 1
 
+# ── Memory-Safe Batch Rendering ───────────────────────────────────────────────
+# Render + OCR this many pages at a time, then free memory before next batch.
+# 3 pages ≈ peak ~900 MB (model 600 MB + 3×PIL 105 MB + numpy 80 MB + overhead)
+# Safe limit on a 2.5 GB constrained server.
+RENDER_BATCH_SIZE = 3
+
 # ── Image Preprocessing ─────────────────────────────────────────────────────
 MAX_SIDE_LIMIT = 1600
 DARK_BG_THRESH = 127

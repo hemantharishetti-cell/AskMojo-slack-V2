@@ -15,7 +15,7 @@ from pathlib import Path
 from pdf2image import convert_from_path, pdfinfo_from_path
 from PIL import Image
 
-from app.ocr_pipeline.config import DPI, PDF_WORKERS
+from app.ocr_pipeline.config import DPI, PDF_WORKERS, RENDER_BATCH_SIZE
 from app.ocr_pipeline.ocr_engine import get_ocr, process_page
 from app.ocr_pipeline.structuring import structure_pages
 

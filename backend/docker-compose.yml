@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  askmojo-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: askmojo-backend:latest
+    container_name: askmojo_backend
+    restart: unless-stopped        # auto-restart on server reboot or crash
+
+    ports:
+      - "8004:8004"                # host_port:container_port
+
+    # ── Secrets injected at runtime (never baked into image) ────────────────
+    env_file:
+      - .env
+
+    # ── Persistent volumes ───────────────────────────────────────────────────
+    # Data here survives: container restarts, docker compose down, image rebuilds
+    volumes:
+      - ./app/sqlite:/app/app/sqlite          # SQLite database (documents, users, auth)
+      - ./app/uploads:/app/app/uploads        # Uploaded PDF files
+      - chroma_data:/app/chromadb             # ChromaDB vector store (embeddings)
+      # Optional: uncomment to persist PaddleOCR model files (avoids re-download)
+      # - paddle_model_cache:/root/.paddleocr
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OMP_NUM_THREADS=1
+      - MKL_NUM_THREADS=1
+      - TOKENIZERS_PARALLELISM=false
+
+    # ── Resource limits ──────────────────────────────────────────────────────
+    # Hard cap at 2.5 GB — matches OCR batch processing safe limit.
+    # With 3-page batching: peak ~900 MB, headroom ~1.6 GB.
+    deploy:
+      resources:
+        limits:
+          memory: 2500M
+
+    # ── Health check ─────────────────────────────────────────────────────────
+    # start_period: 60s gives PaddleOCR model time to load before first check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+# ── Named volumes (managed by Docker, persist across compose down) ────────────
+volumes:
+  chroma_data:
+    driver: local
+  # paddle_model_cache:
+  #   driver: local

@@ -1,0 +1,49 @@
+# ── AskMojo Backend — .dockerignore ──────────────────────────────────────────
+
+# ── Secrets — NEVER bake into image (inject via --env-file at runtime) ────────
+.env
+.env.*
+
+# ── Python bytecode — not needed in image ─────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Virtual environments — never copy (image has its own pip install) ──────────
+venv/
+.venv/
+env/
+.env_backup
+
+# ── Large data directories — mounted as Docker volumes instead ─────────────────
+# These must NOT be baked into the image:
+#   - They make the image huge
+#   - Data would be lost on rebuild if not mounted
+app/uploads/
+app/sqlite/app.db
+chromadb/
+
+# ── PaddleOCR model cache — optional: also mount as volume to avoid re-download ──
+# Uncomment if you want to preserve model cache across rebuilds:
+# .paddleocr/
+
+# ── Dev / test artefacts ──────────────────────────────────────────────────────
+*.log
+.pytest_cache/
+tests/
+*.sqlite
+*.db
+
+# ── IDE / OS files ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Git ───────────────────────────────────────────────────────────────────────
+.git/
+.gitignore
+
+# ── HuggingFace model cache (large, re-downloaded on first run) ───────────────
+.hf_modules_cache/
